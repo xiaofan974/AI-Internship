@@ -9,7 +9,38 @@ from pathlib import Path
 
 import httpx
 
+from main import DEFAULT_MODEL, AskRequest, AskResponse
+
 WORKDIR = Path(__file__).resolve().parent
+
+
+def request_contract_is_valid() -> bool:
+    """Verify minimal and extended payload defaults without calling OpenAI."""
+
+    minimal = AskRequest.model_validate({"question": "What is RAG?"})
+    extended = AskRequest.model_validate(
+        {
+            "question": "What is RAG?",
+            "model": "gpt-4o-mini",
+            "force_bad": True,
+        }
+    )
+    expected_response_fields = {
+        "answer",
+        "tokens_used",
+        "model",
+        "latency_ms",
+        "cost_usd",
+        "attempts",
+    }
+
+    return (
+        minimal.model == DEFAULT_MODEL
+        and minimal.force_bad is False
+        and extended.model == "gpt-4o-mini"
+        and extended.force_bad is True
+        and set(AskResponse.model_fields) == expected_response_fields
+    )
 
 
 def free_port() -> int:
@@ -32,6 +63,10 @@ def wait_for_health(base_url: str, timeout: float = 15.0) -> bool:
 
 
 def main() -> int:
+    if not request_contract_is_valid():
+        print("FAIL: /ask request or response contract is incorrect")
+        return 1
+
     port = free_port()
     base_url = f"http://127.0.0.1:{port}"
     proc = subprocess.Popen(
@@ -60,7 +95,10 @@ def main() -> int:
             print(f"FAIL: /docs returned HTTP {docs_response.status_code}")
             return 1
 
-        print(f"PASS: API health and docs are available at {base_url}")
+        print(
+            "PASS: minimal and extended /ask contracts, API health, "
+            f"and docs are available at {base_url}"
+        )
         return 0
     finally:
         proc.terminate()

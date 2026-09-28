@@ -135,14 +135,17 @@ Render. Do not append `/ask`; the UI adds the endpoint path automatically.
 
 ## 6. Testing the API
 
-Send a request to `POST /ask`:
+The minimal course request only requires `question`:
 
 ```bash
-curl --fail-with-body --silent --show-error \
-  --request POST http://127.0.0.1:8000/ask \
-  --header "Content-Type: application/json" \
-  --data '{"question":"What is an API in one sentence?","model":"gpt-4o-mini","force_bad":false}'
+curl -sS -X POST http://127.0.0.1:8000/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question":"What is RAG?"}' \
+  | python -m json.tool
 ```
+
+`model` is optional and defaults to `gpt-4o-mini`. `force_bad` is optional and defaults
+to `false`.
 
 Illustrative response:
 
@@ -182,6 +185,15 @@ Response fields:
 - `attempts` — validation result for each model call, including retry details when used.
 
 Actual wording, token counts, latency, and cost vary between requests.
+
+The optional `model` and `force_bad` fields remain available for an extended request:
+
+```bash
+curl --fail-with-body --silent --show-error \
+  --request POST http://127.0.0.1:8000/ask \
+  --header "Content-Type: application/json" \
+  --data '{"question":"What is RAG?","model":"gpt-4o-mini","force_bad":false}'
+```
 
 ## 7. Guardrail Demonstration
 
@@ -246,7 +258,7 @@ Test the deployed AI endpoint:
 curl --fail-with-body --silent --show-error \
   --request POST https://YOUR-SERVICE.onrender.com/ask \
   --header "Content-Type: application/json" \
-  --data '{"question":"What is an API in one sentence?","model":"gpt-4o-mini","force_bad":false}'
+  --data '{"question":"What is RAG?"}'
 ```
 
 To use the local Streamlit UI with Render, enter

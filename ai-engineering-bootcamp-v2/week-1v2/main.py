@@ -39,7 +39,7 @@ class Answer(BaseModel):
 
 class AskRequest(BaseModel):
     question: str = Field(min_length=1)
-    model: ModelName | None = None
+    model: ModelName | None = DEFAULT_MODEL
     force_bad: bool = False
 
 
