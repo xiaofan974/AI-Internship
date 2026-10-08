@@ -30,7 +30,7 @@ them. Do not reuse `northwind-handbook` unless you intend to replace it.
 | Method | Path | Purpose |
 | --- | --- | --- |
 | `POST` | `/ingest` | Chunk, embed, and upsert a document. Requires `X-Ingest-Key`. |
-| `GET` | `/debug/retrieve` | Return retrieved chunks for a query. Requires `X-Ingest-Key`. |
+| `GET` | `/debug/retrieve` | Return retrieved chunks. Optional `source` / `document_id` filters. Requires `X-Ingest-Key`. |
 | `POST` | `/ask` | Retrieve context and return a grounded, validated answer. |
 | `GET` | `/health` | Liveness check. Does not call OpenAI or Pinecone. |
 
@@ -160,6 +160,12 @@ Inspect retrieved chunks:
 ```bash
 curl -sS "http://127.0.0.1:8000/debug/retrieve?q=ExampleCo%20remote%20work&top_k=5" \
   -H "X-Ingest-Key: $INGEST_API_KEY"
+
+# Optional metadata filters (server-built; not raw Pinecone JSON)
+curl -sS "http://127.0.0.1:8000/debug/retrieve?q=ExampleCo%20remote%20work&top_k=5&source=exampleco-synthetic-policies" \
+  -H "X-Ingest-Key: $INGEST_API_KEY"
+curl -sS "http://127.0.0.1:8000/debug/retrieve?q=ExampleCo%20remote%20work&top_k=5&document_id=exampleco-remote-work" \
+  -H "X-Ingest-Key: $INGEST_API_KEY"
 ```
 
 ## Citations and Refusals
@@ -212,6 +218,108 @@ Measured on five synthetic-policy questions with the current 800/100 chunking:
 ranked seventh (`exampleco-information-security:2`) under the current chunking
 configuration, so it is outside the default top-5 retrieval window.
 
+## Session 2 optional add-ons
+
+The basic RAG assignment is deployed: ingest, retrieve, grounded `/ask`, Streamlit, and
+the Render service. The six add-ons below are mostly **local experiments**. Only metadata
+filtering is part of the FastAPI debug API. Hybrid search and reranking are **not** wired
+into `POST /ask`.
+
+The evaluation corpus is small and synthetic (five ExampleCo policies plus two refusal
+questions). Results are exploratory, not statistically significant.
+
+| Add-on | Status | Notes |
+| --- | --- | --- |
+| 1. Golden-set evaluation | Experiment (`eval_rag.py`) | Not deployed |
+| 2. Chunking A/B | Experiment (`chunking_experiment.py`) | Production kept 800/100 |
+| 3. Hybrid BM25 + RRF | Experiment (`hybrid_experiment.py`) | Not wired into `/ask` |
+| 4. Metadata filtering | Deployed on authenticated `GET /debug/retrieve` | `/ask` remains unfiltered |
+| 5. Batch ingest | CLI (`batch_ingest.py`) | Dry-run by default; uses existing `/ingest` |
+| 6. Cross-encoder reranking | Experiment (`rerank_experiment.py`) | Not wired into `/ask` |
+
+**Golden-set evaluation**
+
+| Metric | Result |
+| --- | --- |
+| Retrieval hit | 80% (4/5 factual) |
+| Answer correctness | 80% (4/5 factual) |
+| Heuristic faithfulness | 86% (6/7); lexical overlap only, not a definitive grounding score |
+| Citation validity | 86% (6/7) |
+| Refusal success | 100% (2/2) |
+
+**Chunking A/B** (isolated test namespaces)
+
+| Condition | Recall@5 | Hit@1 | MRR |
+| --- | --- | --- | --- |
+| 800/100 | 80% | 60% | 0.70 |
+| 600/100 | 80% | 60% | 0.67 |
+
+Retained 800/100.
+
+**Hybrid search** (experimental only)
+
+| Condition | Recall@5 | Hit@1 | MRR |
+| --- | --- | --- | --- |
+| Dense | 80% | 60% | 0.70 |
+| BM25 | 80% | 80% | 0.80 |
+| Hybrid RRF | 100% | 60% | 0.77 |
+
+**Metadata filtering:** optional `source` and `document_id` on authenticated
+`/debug/retrieve`. Filters are built server-side (no raw Pinecone JSON). Verified against
+Pinecone. `POST /ask` does not accept or apply filters.
+
+**Batch ingest:** dry-run by default. Live mode requires `X-Ingest-Key`, `--allow-replace`,
+and `--id-prefix`. One successful live test ingested `batch-addon5-helpdesk`.
+
+**Cross-encoder reranking** (optional `sentence-transformers` / PyTorch; not production)
+
+| Condition | Recall@5 | Hit@1 | MRR |
+| --- | --- | --- | --- |
+| Dense | 80% | 60% | 0.70 |
+| Reranked | 100% | 60% | 0.77 |
+
+The 60-day security chunk moved from rank 7 to rank 1. Average local reranking latency was
+180.5 ms.
+
+### Safe experiment commands
+
+Default is dry-run: no OpenAI, Pinecone, or model-download calls. Pass `--live` only after
+explicit authorization.
+
+```bash
+# 1. Golden-set
+python eval_rag.py
+python eval_rag.py --live
+
+# 2. Chunking A/B (live writes only to isolated test namespaces)
+python chunking_experiment.py
+python chunking_experiment.py --live
+
+# 3. Hybrid RRF — optional: pip install rank-bm25
+python hybrid_experiment.py
+python hybrid_experiment.py --live
+
+# 4. Metadata filters (authenticated debug API; not /ask)
+curl -sS "http://127.0.0.1:8000/debug/retrieve?q=ExampleCo%20remote%20work&top_k=5&source=exampleco-synthetic-policies" \
+  -H "X-Ingest-Key: $INGEST_API_KEY"
+
+# 5. Batch ingest — live needs --allow-replace and --id-prefix
+python batch_ingest.py sample_docs --source exampleco-synthetic-policies
+python batch_ingest.py /tmp/batch-demo --live --allow-replace --id-prefix batch-addon5 --source exampleco-batch-demo
+
+# 6. Cross-encoder rerank — optional: pip install sentence-transformers
+python rerank_experiment.py
+python rerank_experiment.py --live
+```
+
+Do not re-ingest `northwind-handbook` or the production ExampleCo document IDs. Chunking
+`--live` must not target `maven-session2`. Batch ingest `--id-prefix` exists to avoid
+colliding with those IDs.
+
+`rank-bm25` and `sentence-transformers` / PyTorch are **optional local experiment
+dependencies**. They are not in production `requirements.txt`, so a Render build can start
+FastAPI without them. Hybrid tests that exercise BM25 need `rank-bm25` installed locally.
+
 ## Deploying to Render
 
 The repository is a monorepo. Render must build from this subdirectory.
@@ -241,7 +349,10 @@ Mocked tests do not call OpenAI or Pinecone:
 
 ```bash
 source .venv/bin/activate
-python -m unittest -v test_ingest.py test_retrieve.py test_ask_rag.py test_demo_page.py
+python -m unittest -v \
+  test_ingest.py test_retrieve.py test_ask_rag.py test_demo_page.py \
+  test_eval_rag.py test_chunking_experiment.py test_hybrid_experiment.py \
+  test_batch_ingest.py test_rerank_experiment.py
 python smoke_test.py
 ```
 
@@ -252,18 +363,18 @@ python smoke_test.py
 ```text
 week-1v2/
 ├── README.md
-├── main.py              # FastAPI: /ask, /ingest, /debug/retrieve
-├── rag.py               # Chunking, embeddings, Pinecone
-├── demo_page.py         # Streamlit Ask + Ingest client
-├── test_demo_page.py    # Mocked Streamlit helper tests
-├── test_ingest.py
-├── test_retrieve.py
-├── test_ask_rag.py
-├── smoke_test.py
-├── sample_docs/         # Synthetic ExampleCo policies
-├── requirements.txt
-├── .env.example
-└── stages/              # Session 1 teaching stages
+├── main.py                 # FastAPI: /ask, /ingest, /debug/retrieve
+├── rag.py                  # Chunking, embeddings, Pinecone, optional metadata filters
+├── demo_page.py            # Streamlit Ask + Ingest client
+├── batch_ingest.py         # CLI client for POST /ingest (dry-run default)
+├── eval_rag.py             # Golden-set evaluation (add-on 1)
+├── chunking_experiment.py  # 800 vs 600 A/B (add-on 2)
+├── hybrid_experiment.py    # Dense + BM25 + RRF (add-on 3)
+├── rerank_experiment.py    # Cross-encoder rerank (add-on 6)
+├── eval_cases.json
+├── sample_docs/
+├── requirements.txt        # Production FastAPI + Streamlit only
+└── stages/
 ```
 
 ## Troubleshooting

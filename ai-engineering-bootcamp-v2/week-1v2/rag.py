@@ -22,6 +22,7 @@ DEFAULT_CHUNK_SIZE = 800
 DEFAULT_CHUNK_OVERLAP = 100
 DEFAULT_TOP_K = 5
 MAX_TOP_K = 20
+MAX_FILTER_VALUE_LENGTH = 200
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +45,10 @@ class PineconeConnectionError(RAGError):
 
 class EmbeddingError(RAGError):
     """Raised when OpenAI cannot create document embeddings."""
+
+
+class MetadataFilterError(RAGError):
+    """Raised when retrieval filter arguments are invalid."""
 
 
 @dataclass(frozen=True)
@@ -377,11 +382,47 @@ def _embedding_usage(embedding_response: Any) -> tuple[int, bool]:
     return int(tokens or 0), True
 
 
+def _normalized_filter_value(value: str | None, field_name: str) -> str | None:
+    if value is None:
+        return None
+    stripped = str(value).strip()
+    if not stripped:
+        raise MetadataFilterError(f"{field_name} cannot be empty.")
+    if len(stripped) > MAX_FILTER_VALUE_LENGTH:
+        raise MetadataFilterError(f"{field_name} is too long.")
+    if any(ord(character) < 32 for character in stripped):
+        raise MetadataFilterError(f"{field_name} contains invalid characters.")
+    return stripped
+
+
+def build_metadata_filter(
+    *,
+    source: str | None = None,
+    document_id: str | None = None,
+) -> dict[str, Any] | None:
+    """Build a Pinecone metadata filter from allowlisted fields only."""
+
+    clauses: list[dict[str, Any]] = []
+    source_value = _normalized_filter_value(source, "source")
+    document_value = _normalized_filter_value(document_id, "document_id")
+    if source_value:
+        clauses.append({"source": {"$eq": source_value}})
+    if document_value:
+        clauses.append({"document_id": {"$eq": document_value}})
+    if not clauses:
+        return None
+    if len(clauses) == 1:
+        return clauses[0]
+    return {"$and": clauses}
+
+
 def retrieve_with_usage(
     *,
     query: str,
     top_k: int = DEFAULT_TOP_K,
     config: PineconeConfig | None = None,
+    source: str | None = None,
+    document_id: str | None = None,
 ) -> RetrievalResult:
     """Embed a query, search Pinecone, and return matches plus embedding usage."""
 
@@ -391,6 +432,7 @@ def retrieve_with_usage(
     if top_k < 1 or top_k > MAX_TOP_K:
         raise RAGError("top_k is out of range.")
 
+    metadata_filter = build_metadata_filter(source=source, document_id=document_id)
     config = config or PineconeConfig.from_env()
 
     try:
@@ -411,13 +453,16 @@ def retrieve_with_usage(
 
     try:
         index = connect_to_index(config)
-        response = index.query(
-            vector=embedding,
-            top_k=top_k,
-            namespace=config.namespace,
-            include_metadata=True,
-            include_values=False,
-        )
+        query_kwargs: dict[str, Any] = {
+            "vector": embedding,
+            "top_k": top_k,
+            "namespace": config.namespace,
+            "include_metadata": True,
+            "include_values": False,
+        }
+        if metadata_filter is not None:
+            query_kwargs["filter"] = metadata_filter
+        response = index.query(**query_kwargs)
     except NotFoundError:
         return RetrievalResult(
             chunks=[],
@@ -466,10 +511,18 @@ def retrieve_chunks(
     query: str,
     top_k: int = DEFAULT_TOP_K,
     config: PineconeConfig | None = None,
+    source: str | None = None,
+    document_id: str | None = None,
 ) -> list[RetrievedChunk]:
     """Embed a query and return the top matching chunks. Never generates an answer."""
 
-    return retrieve_with_usage(query=query, top_k=top_k, config=config).chunks
+    return retrieve_with_usage(
+        query=query,
+        top_k=top_k,
+        config=config,
+        source=source,
+        document_id=document_id,
+    ).chunks
 
 
 def check_pinecone_connectivity(

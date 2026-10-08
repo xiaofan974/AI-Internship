@@ -1,0 +1,85 @@
+{
+  "description": "Golden set for Session 2 RAG evaluation. Questions and expected sources come from sample_docs/README.md.",
+  "refusal_answer": "I don't have enough information to answer that.",
+  "top_k": 5,
+  "previous_retrieval_baseline": {
+    "label": "Previous retrieval baseline (not re-measured by this script)",
+    "question_count": 5,
+    "recall_at_5": 0.8,
+    "hit_at_1": 0.6,
+    "mrr": 0.7,
+    "notes": "Measured earlier on the five synthetic-policy factual questions. The unused production-access supporting chunk ranked 7th with 800/100 chunking."
+  },
+  "cases": [
+    {
+      "id": "q1_remote_days",
+      "type": "factual",
+      "question": "How many remote days can ExampleCo employees work, and which weekdays?",
+      "expected_document_id": "exampleco-remote-work",
+      "forbidden_document_ids": [],
+      "expected_answer": "Tuesday and Thursday only; Monday, Wednesday, and Friday are office days.",
+      "evidence_phrases": ["tuesday and thursday", "monday, wednesday, and friday"],
+      "answer_phrases": ["tuesday", "thursday"]
+    },
+    {
+      "id": "q2_annual_leave",
+      "type": "factual",
+      "question": "How many days of paid annual leave do full-time ExampleCo employees receive?",
+      "expected_document_id": "exampleco-annual-leave",
+      "forbidden_document_ids": [],
+      "expected_answer": "22 days plus English public holidays observed by ExampleCo.",
+      "evidence_phrases": ["22 days", "public holidays"],
+      "answer_phrases": ["22", "public holidays"]
+    },
+    {
+      "id": "q3_expense_approval",
+      "type": "factual",
+      "question": "What expense amount can an ExampleCo line manager approve on their own?",
+      "expected_document_id": "exampleco-expenses",
+      "forbidden_document_ids": [],
+      "expected_answer": "Up to £250 in a single submission.",
+      "evidence_phrases": ["line managers may approve", "250"],
+      "answer_phrases": ["250"]
+    },
+    {
+      "id": "q4_laptop_approval",
+      "type": "factual",
+      "question": "Who approves an ExampleCo catalogue laptop that costs £500?",
+      "expected_document_id": "exampleco-it-equipment",
+      "forbidden_document_ids": ["exampleco-expenses", "exampleco-remote-work"],
+      "expected_answer": "The Head of IT (items £400.01–£1,200). A line manager's £250 expense approval does not authorise hardware.",
+      "evidence_phrases": ["head of it", "400.01"],
+      "answer_phrases": ["head of it"]
+    },
+    {
+      "id": "q5_unused_access",
+      "type": "factual",
+      "question": "When is unused ExampleCo production access revoked?",
+      "expected_document_id": "exampleco-information-security",
+      "forbidden_document_ids": [],
+      "expected_answer": "After 60 days unused.",
+      "evidence_phrases": ["60 days"],
+      "answer_phrases": ["60 days"]
+    },
+    {
+      "id": "r1_office_dogs",
+      "type": "refusal",
+      "question": "Can ExampleCo employees bring dogs to the office?",
+      "expected_document_id": null,
+      "forbidden_document_ids": [],
+      "expected_answer": "I don't have enough information to answer that.",
+      "evidence_phrases": [],
+      "answer_phrases": []
+    },
+    {
+      "id": "r2_sabbatical",
+      "type": "refusal",
+      "question": "Does ExampleCo offer a paid sabbatical after five years?",
+      "expected_document_id": null,
+      "forbidden_document_ids": [],
+      "expected_answer": "I don't have enough information to answer that.",
+      "evidence_phrases": [],
+      "answer_phrases": []
+    }
+  ]
+}

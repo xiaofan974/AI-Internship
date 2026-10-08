@@ -162,6 +162,115 @@ class RetrieveEndpointTests(unittest.TestCase):
         self.assertEqual(response.json(), {"detail": "Document retrieval failed."})
         mock_retrieve.assert_called_once()
 
+    @patch.dict(os.environ, {"INGEST_API_KEY": "configured-secret"})
+    @patch("main.retrieve_chunks")
+    def test_source_filter_is_passed(self, mock_retrieve: MagicMock) -> None:
+        mock_retrieve.return_value = []
+        response = self.client.get(
+            "/debug/retrieve",
+            params={
+                "q": "remote work",
+                "source": "exampleco-synthetic-policies",
+            },
+            headers={"X-Ingest-Key": "configured-secret"},
+        )
+        self.assertEqual(response.status_code, 200)
+        mock_retrieve.assert_called_once_with(
+            query="remote work",
+            top_k=5,
+            source="exampleco-synthetic-policies",
+        )
+
+    @patch.dict(os.environ, {"INGEST_API_KEY": "configured-secret"})
+    @patch("main.retrieve_chunks")
+    def test_document_id_filter_is_passed(self, mock_retrieve: MagicMock) -> None:
+        mock_retrieve.return_value = []
+        response = self.client.get(
+            "/debug/retrieve",
+            params={"q": "remote work", "document_id": "exampleco-remote-work"},
+            headers={"X-Ingest-Key": "configured-secret"},
+        )
+        self.assertEqual(response.status_code, 200)
+        mock_retrieve.assert_called_once_with(
+            query="remote work",
+            top_k=5,
+            document_id="exampleco-remote-work",
+        )
+
+    @patch.dict(os.environ, {"INGEST_API_KEY": "configured-secret"})
+    @patch("main.retrieve_chunks")
+    def test_combined_filters_are_passed(self, mock_retrieve: MagicMock) -> None:
+        mock_retrieve.return_value = []
+        response = self.client.get(
+            "/debug/retrieve",
+            params={
+                "q": "remote work",
+                "source": "exampleco-synthetic-policies",
+                "document_id": "exampleco-remote-work",
+            },
+            headers={"X-Ingest-Key": "configured-secret"},
+        )
+        self.assertEqual(response.status_code, 200)
+        mock_retrieve.assert_called_once_with(
+            query="remote work",
+            top_k=5,
+            source="exampleco-synthetic-policies",
+            document_id="exampleco-remote-work",
+        )
+
+    @patch.dict(os.environ, {"INGEST_API_KEY": "configured-secret"})
+    @patch("main.retrieve_chunks")
+    def test_empty_filter_values_return_400(self, mock_retrieve: MagicMock) -> None:
+        for params in (
+            {"q": "remote work", "source": "   "},
+            {"q": "remote work", "document_id": "   "},
+        ):
+            with self.subTest(params=params):
+                response = self.client.get(
+                    "/debug/retrieve",
+                    params=params,
+                    headers={"X-Ingest-Key": "configured-secret"},
+                )
+                self.assertEqual(response.status_code, 400)
+        mock_retrieve.assert_not_called()
+
+
+class MetadataFilterHelperTests(unittest.TestCase):
+    def test_no_fields_returns_none(self) -> None:
+        self.assertIsNone(rag.build_metadata_filter())
+
+    def test_source_filter(self) -> None:
+        self.assertEqual(
+            rag.build_metadata_filter(source="exampleco-synthetic-policies"),
+            {"source": {"$eq": "exampleco-synthetic-policies"}},
+        )
+
+    def test_document_id_filter(self) -> None:
+        self.assertEqual(
+            rag.build_metadata_filter(document_id="exampleco-remote-work"),
+            {"document_id": {"$eq": "exampleco-remote-work"}},
+        )
+
+    def test_combined_filter_uses_and(self) -> None:
+        self.assertEqual(
+            rag.build_metadata_filter(
+                source="exampleco-synthetic-policies",
+                document_id="exampleco-remote-work",
+            ),
+            {
+                "$and": [
+                    {"source": {"$eq": "exampleco-synthetic-policies"}},
+                    {"document_id": {"$eq": "exampleco-remote-work"}},
+                ]
+            },
+        )
+
+    def test_invalid_filter_values_raise(self) -> None:
+        with self.assertRaises(rag.MetadataFilterError):
+            rag.build_metadata_filter(source="   ")
+        with self.assertRaises(rag.MetadataFilterError):
+            rag.build_metadata_filter(document_id="x" * 201)
+
 
 class RetrievalPipelineTests(unittest.TestCase):
     @patch("rag.connect_to_index")
@@ -201,6 +310,89 @@ class RetrievalPipelineTests(unittest.TestCase):
         )
         index.upsert.assert_not_called()
         index.delete.assert_not_called()
+
+    @patch("rag.connect_to_index")
+    @patch("rag.get_openai_client")
+    def test_source_filter_is_sent_to_pinecone(
+        self, mock_openai_client: MagicMock, mock_connect: MagicMock
+    ) -> None:
+        openai_client = mock_openai_client.return_value
+        openai_client.embeddings.create.side_effect = (
+            lambda *, model, input: embedding_response(input)
+        )
+        index = mock_connect.return_value
+        index.query.return_value = SimpleNamespace(matches=[])
+
+        matches = rag.retrieve_chunks(
+            query="remote work policy",
+            top_k=5,
+            config=test_config(),
+            source="exampleco-synthetic-policies",
+        )
+
+        self.assertEqual(matches, [])
+        index.query.assert_called_once_with(
+            vector=[0.0] * 1536,
+            top_k=5,
+            namespace="maven-session2",
+            include_metadata=True,
+            include_values=False,
+            filter={"source": {"$eq": "exampleco-synthetic-policies"}},
+        )
+
+    @patch("rag.connect_to_index")
+    @patch("rag.get_openai_client")
+    def test_document_id_filter_is_sent_to_pinecone(
+        self, mock_openai_client: MagicMock, mock_connect: MagicMock
+    ) -> None:
+        openai_client = mock_openai_client.return_value
+        openai_client.embeddings.create.side_effect = (
+            lambda *, model, input: embedding_response(input)
+        )
+        index = mock_connect.return_value
+        index.query.return_value = SimpleNamespace(matches=[])
+
+        rag.retrieve_chunks(
+            query="remote work policy",
+            config=test_config(),
+            document_id="exampleco-remote-work",
+        )
+
+        kwargs = index.query.call_args.kwargs
+        self.assertEqual(
+            kwargs["filter"],
+            {"document_id": {"$eq": "exampleco-remote-work"}},
+        )
+
+    @patch("rag.connect_to_index")
+    @patch("rag.get_openai_client")
+    def test_combined_filters_are_sent_to_pinecone(
+        self, mock_openai_client: MagicMock, mock_connect: MagicMock
+    ) -> None:
+        openai_client = mock_openai_client.return_value
+        openai_client.embeddings.create.side_effect = (
+            lambda *, model, input: embedding_response(input)
+        )
+        index = mock_connect.return_value
+        index.query.return_value = SimpleNamespace(matches=[])
+
+        rag.retrieve_chunks(
+            query="remote work policy",
+            config=test_config(),
+            source="exampleco-synthetic-policies",
+            document_id="exampleco-remote-work",
+        )
+
+        kwargs = index.query.call_args.kwargs
+        self.assertEqual(
+            kwargs["filter"],
+            {
+                "$and": [
+                    {"source": {"$eq": "exampleco-synthetic-policies"}},
+                    {"document_id": {"$eq": "exampleco-remote-work"}},
+                ]
+            },
+        )
 
     @patch("rag.connect_to_index")
     @patch("rag.get_openai_client")

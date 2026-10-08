@@ -19,8 +19,10 @@ from rag import (
     DEFAULT_EMBEDDING_MODEL,
     DEFAULT_TOP_K,
     MAX_TOP_K,
+    MetadataFilterError,
     PineconeConfigurationError,
     RAGError,
+    build_metadata_filter,
     ingest_document,
     retrieve_chunks,
     retrieve_with_usage,
@@ -191,6 +193,8 @@ def ingest(
 def debug_retrieve(
     q: str,
     top_k: int = DEFAULT_TOP_K,
+    source: str | None = None,
+    document_id: str | None = None,
     x_ingest_key: str | None = Header(default=None, alias="X-Ingest-Key"),
 ) -> RetrieveDebugResponse:
     require_ingest_credentials(x_ingest_key, required=True)
@@ -205,7 +209,20 @@ def debug_retrieve(
         )
 
     try:
-        matches = retrieve_chunks(query=query, top_k=top_k)
+        build_metadata_filter(source=source, document_id=document_id)
+    except MetadataFilterError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    retrieve_kwargs: dict[str, str | int] = {"query": query, "top_k": top_k}
+    if source is not None:
+        retrieve_kwargs["source"] = source
+    if document_id is not None:
+        retrieve_kwargs["document_id"] = document_id
+
+    try:
+        matches = retrieve_chunks(**retrieve_kwargs)
+    except MetadataFilterError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
     except PineconeConfigurationError as exc:
         logger.error(
             "rag_retrieval_failed stage=configuration exception_type=%s "
