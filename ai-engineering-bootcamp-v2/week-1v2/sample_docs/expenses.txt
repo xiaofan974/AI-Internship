@@ -1,0 +1,15 @@
+SYNTHETIC DEMONSTRATION DATA — ExampleCo is a fictional company created for RAG testing. This is not official Northwind or Maven material.
+
+ExampleCo Employee Expenses Policy (effective 1 April 2026). Use this policy for travel, meals, client entertainment, and miscellaneous out-of-pocket costs. Do not use it to buy computers, phones, or monitors. Those follow the IT Equipment Policy, including when the employee works from home.
+
+Submission. Enter claims in the expense tool within 30 days of the transaction. Receipts are required for £10 or more. Missing receipts above £25 are rejected.
+
+Approval. Line managers may approve a single submission up to £250. Claims from £250.01 to £1,000 need director approval. Amounts above £1,000 need Finance. Do not split one purchase to stay under a threshold.
+
+Travel. Standard-class rail is the default. UK flights need director approval. Hotels are capped at £160 per night in London and £120 elsewhere unless a conference rate is pre-approved.
+
+Meals. Overnight travel meals may be claimed up to £35 per person per day. Alcohol is not reimbursable except one drink per person at a pre-approved client dinner.
+
+Home working. Approved hybrid employees may claim broadband of up to £30 per month here. Home furniture is not allowed. Claims described as remote kit, laptop, monitor, or headset will be returned for filing under IT Equipment.
+
+Corporate cards are for business costs only. Personal spend must be repaid within 14 days.

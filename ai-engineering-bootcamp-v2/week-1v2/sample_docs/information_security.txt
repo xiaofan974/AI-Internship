@@ -1,0 +1,15 @@
+SYNTHETIC DEMONSTRATION DATA — ExampleCo is a fictional company created for RAG testing. This is not official Northwind or Maven material.
+
+ExampleCo Information Security Policy (effective 1 May 2026). Applies to employees, contractors, and temporary staff who access company systems.
+
+Accounts. Multi-factor authentication is required on email, Slack, GitHub, and the production VPN. Sharing passwords or MFA codes is prohibited. Contractor accounts expire on the contract end date unless IT Security extends them in writing.
+
+Devices. Only ExampleCo-managed laptops may connect to the production VPN. Personal home computers are not permitted for production access, including on remote-work days. Lost devices must be reported to security@exampleco.example within one hour if customer data may be involved, otherwise within one business day.
+
+Data. Customer personal data must stay in approved systems. It must not be copied to personal cloud drives, USB sticks, or unapproved AI tools. Exports of more than 500 customer records require Data Protection Officer approval before the file is generated.
+
+Incidents. Phishing, malware, or unauthorised access must be reported in #sec-incidents and to security@exampleco.example immediately.
+
+Access. Managers confirm team access every quarter. Access unused for 60 days is revoked. Appeals go to IT Security.
+
+Violations. First minor issues receive a written reminder. Unauthorised data export may lead to dismissal.

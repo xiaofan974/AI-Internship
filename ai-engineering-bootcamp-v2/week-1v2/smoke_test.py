@@ -32,6 +32,7 @@ def request_contract_is_valid() -> bool:
         "latency_ms",
         "cost_usd",
         "attempts",
+        "retrieved_chunk_ids",
     }
 
     return (

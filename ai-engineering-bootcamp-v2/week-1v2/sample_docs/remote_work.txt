@@ -1,0 +1,13 @@
+SYNTHETIC DEMONSTRATION DATA — ExampleCo is a fictional company created for RAG testing. This is not official Northwind or Maven material.
+
+ExampleCo Remote Work Policy (effective 1 March 2026). Applies to full-time employees in the United Kingdom and Ireland.
+
+Eligibility. Employees may request a hybrid schedule after completing probation, usually 90 days. Contractors and interns are not eligible. New hires remain office-based until their manager confirms onboarding is complete.
+
+Hybrid schedule. Eligible staff may work remotely on Tuesday and Thursday only. Monday, Wednesday, and Friday are mandatory office days at the London or Dublin hub on the employee record. Remote days cannot be moved to another week without written approval.
+
+Approval. The line manager must approve the schedule in the People portal at least ten working days before it starts. A People Partner reviews any request that would leave a team with fewer than two people on site.
+
+Home office. ExampleCo does not pay a general home-office stipend. Approved hybrid employees may claim documented broadband of up to £30 per month through expenses. Desks and chairs are not reimbursed. Company laptops and monitors used at home remain ExampleCo property. Additional hardware must be ordered under the IT Equipment Policy; a manager cannot approve a laptop from a remote-work request.
+
+Core hours. Remote staff must be available on Slack and email from 10:00 to 16:00 UK time.

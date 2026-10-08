@@ -1,0 +1,15 @@
+SYNTHETIC DEMONSTRATION DATA — ExampleCo is a fictional company created for RAG testing. This is not official Northwind or Maven material.
+
+ExampleCo Annual Leave Policy (effective 1 January 2026). Covers full-time and part-time employees. Contractors are excluded.
+
+Entitlement. Full-time employees receive 22 days of paid annual leave plus English public holidays observed by ExampleCo. Part-time leave is pro-rated by contracted hours. Up to 5 unused days may be carried into the next calendar year. Any remainder above 5 days is forfeited on 31 January unless People Operations grants a written exception.
+
+Booking. Requests of 5 days or more must be submitted in the People portal at least 15 working days in advance. Shorter absences need 5 working days’ notice. Managers should respond within 3 working days.
+
+Blackout. Product Engineering has a release blackout in the last two weeks of March and September. Leave in those windows also needs director approval.
+
+Sickness during leave. Days may be converted to sick leave only if the employee provides a fit note and notifies their manager on the first day of illness.
+
+Pay. ExampleCo does not pay unused leave except on termination. Buying extra leave is not offered.
+
+Escalation. Balance disputes go first to the line manager, then to People Operations at people@exampleco.example, which is the final interpreter of this policy.

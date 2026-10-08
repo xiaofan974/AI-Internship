@@ -1,0 +1,13 @@
+SYNTHETIC DEMONSTRATION DATA — ExampleCo is a fictional company created for RAG testing. This is not official Northwind or Maven material.
+
+ExampleCo IT Equipment Policy (effective 15 February 2026). Covers issuance, replacement, and purchase of ExampleCo-owned devices for office and approved hybrid staff.
+
+Standard kit. Full-time employees receive one company laptop, one headset, and one security key at onboarding. Office staff may use a shared dock and monitor. Hybrid staff may request one 27-inch ExampleCo-standard monitor for home use after 90 days.
+
+Orders. Employees must not buy hardware on personal cards and expense it. All device orders go through the IT Service Desk catalogue. The IT Operations Manager approves catalogue items up to £400. Items from £400.01 to £1,200 require the Head of IT. Anything above £1,200 also needs Finance.
+
+This is not the Expenses Policy. A line manager’s £250 expense approval does not authorise a laptop or monitor. Remote-work approval also does not authorise hardware spend.
+
+Replacement. Lost, stolen, or damaged devices must be reported to IT within one business day. Theft requires a police report. Replacement before the 36-month refresh cycle is charged to the employee’s cost centre unless accidental-damage cover applies.
+
+Return. Devices are returned to IT at the London or Dublin hub on the last working day. Home monitors ship with the prepaid IT label.
