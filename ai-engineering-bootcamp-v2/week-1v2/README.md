@@ -247,6 +247,33 @@ questions). Results are exploratory, not statistically significant.
 | Citation validity | 86% (6/7) |
 | Refusal success | 100% (2/2) |
 
+Faithfulness is a **heuristic** (required phrases and numbers in retrieved text), not a
+definitive grounding or NLI assessment.
+
+| ID | Question | Retrieval hit | Answer correctness | Heuristic faithfulness |
+| --- | --- | --- | --- | --- |
+| q1 | How many remote days can ExampleCo employees work, and which weekdays? | pass | pass | pass |
+| q2 | How many days of paid annual leave do full-time ExampleCo employees receive? | pass | pass | pass |
+| q3 | What expense amount can an ExampleCo line manager approve on their own? | pass | pass | pass |
+| q4 | Who approves an ExampleCo catalogue laptop that costs £500? | pass | pass | fail |
+| q5 | When is unused ExampleCo production access revoked? | fail | fail | pass |
+| r1 | Can ExampleCo employees bring dogs to the office? | n/a | pass | pass |
+| r2 | Does ExampleCo offer a paid sabbatical after five years? | n/a | pass | pass |
+
+**What broke / lessons learned**
+
+**Q4:** The faithfulness heuristic flagged £500 even though the correct approval authority
+(Head of IT) was retrieved. The policy uses the £400.01–£1,200 band, so repeating the
+question’s £500 is a likely evaluation false positive, not a confirmed grounding failure.
+
+**Q5:** The supporting security-policy chunk (`exampleco-information-security:2`) ranked
+seventh, outside the default top-five retrieval window. That retrieval miss led to an
+incorrect or incomplete answer and missing supporting citations.
+
+**Evaluation limitation:** Q5’s heuristic faithfulness check passed vacuously because the
+answer did not contain the required “60 days” phrases, so the extra-number check never
+fired. That pass must not be read as verified faithfulness.
+
 **Chunking A/B** (isolated test namespaces)
 
 | Condition | Recall@5 | Hit@1 | MRR |
