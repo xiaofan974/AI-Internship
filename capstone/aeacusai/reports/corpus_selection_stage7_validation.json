@@ -1,0 +1,133 @@
+{
+  "stage": "corpus_selection_stage7",
+  "selection_status": "pending_review",
+  "ingestion_permitted": false,
+  "active_retrieval_edition": null,
+  "technical_checks": {
+    "explicit_6_file_allowlist_used_without_wildcards": true,
+    "excluded_sample_baseline_and_superseded_stage6_v1": true,
+    "all_raw_artifacts_match_acquisition_manifest_sha256": true,
+    "original_ai_act_total_equals_306": true,
+    "pinned_consolidated_ai_act_total_equals_133": true,
+    "charter_v2_total_equals_54": true,
+    "combined_selected_total_equals_493": true,
+    "all_493_records_satisfy_json_schema": true,
+    "all_493_record_ids_unique_across_selection": true,
+    "all_493_text_sha256_digests_match_text": true,
+    "all_493_records_pending_not_reviewed_and_indexable_false": true,
+    "all_493_records_belong_to_declared_source_snapshots": true,
+    "markdown_review_pack_contains_complete_untruncated_excerpts": true
+  },
+  "measured_totals": {
+    "original_ai_act": 306,
+    "pinned_consolidated_ai_act": 133,
+    "charter": 54,
+    "total": 493
+  },
+  "selected_files": [
+    {
+      "stage": "original_articles_stage1",
+      "relative_path": "records/original_articles_stage1.json",
+      "file_sha256": "620d6374605727dccc5fbc86efb91f28adef6ea86c8f984e057e5fb345d8a5cc",
+      "source_id": "T1-AIA-OJ-2024",
+      "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "edition_group": "original_ai_act_oj_2024",
+      "unit_kind": "article",
+      "record_count": 113
+    },
+    {
+      "stage": "original_recitals_stage2",
+      "relative_path": "records/original_recitals_stage2.json",
+      "file_sha256": "6c495219c72436bf1ea07c31b848d45123d0268a326bdd6cb8c2130dd734bfb9",
+      "source_id": "T1-AIA-OJ-2024",
+      "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "edition_group": "original_ai_act_oj_2024",
+      "unit_kind": "recital",
+      "record_count": 180
+    },
+    {
+      "stage": "original_annexes_stage3",
+      "relative_path": "records/original_annexes_stage3.json",
+      "file_sha256": "ffb1435fc99be1a1e4b50398c0e02d8ceafcc7e48e9f6ea27167ac05fafc36aa",
+      "source_id": "T1-AIA-OJ-2024",
+      "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "edition_group": "original_ai_act_oj_2024",
+      "unit_kind": "annex",
+      "record_count": 13
+    },
+    {
+      "stage": "consolidated_articles_stage4",
+      "relative_path": "records/consolidated_articles_stage4.json",
+      "file_sha256": "895676f7f372fd0f626ba4d0430572acc9a2b4c6426c9b562b9cf0bcfbe03a1b",
+      "source_id": "T1-AIA-CONS-20260727",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "edition_group": "pinned_consolidated_ai_act_20260727",
+      "unit_kind": "article",
+      "record_count": 119
+    },
+    {
+      "stage": "consolidated_annexes_stage5",
+      "relative_path": "records/consolidated_annexes_stage5.json",
+      "file_sha256": "a60f3f4efc88883d1d3e0277400b91954c52c4ffaa302bfaa3181752b72e3ebe",
+      "source_id": "T1-AIA-CONS-20260727",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "edition_group": "pinned_consolidated_ai_act_20260727",
+      "unit_kind": "annex",
+      "record_count": 14
+    },
+    {
+      "stage": "charter_articles_stage6_v2",
+      "relative_path": "records/charter_articles_stage6_v2.json",
+      "file_sha256": "c3bcacac655ca28d4cb3f2bffd97701d5db3c3ebd0a5e2d4b28ef183ab28444b",
+      "source_id": "T1-CHARTER-OJ-2012",
+      "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "edition_group": "charter_of_fundamental_rights_2012",
+      "unit_kind": "article",
+      "record_count": 54
+    }
+  ],
+  "review_pack_excerpts_verified": [
+    {
+      "title": "Consolidated Article 6",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "char_length": 4848,
+      "text_sha256": "b6a58d42b6248038baaf14c5918103289bc0af1aed90da5d974b7ef846a5b5ee"
+    },
+    {
+      "title": "Consolidated Annex III",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "char_length": 7350,
+      "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf"
+    },
+    {
+      "title": "Consolidated Article 113",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "char_length": 957,
+      "text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d"
+    },
+    {
+      "title": "Charter Article 51",
+      "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/51",
+      "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "char_length": 697,
+      "text_sha256": "45f2c3c2e489cc831de5ba38ee0a174f82324ff980f727a775a1b6c1ed38f1bd"
+    },
+    {
+      "title": "Charter Article 52",
+      "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/52",
+      "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "char_length": 1846,
+      "text_sha256": "766f4e2727ad89ace1faf80a4afe0abac3865db26f9b37e495947b22ffa1545b"
+    },
+    {
+      "title": "Charter Article 54 (corrected v2 boundary)",
+      "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/54",
+      "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "char_length": 314,
+      "text_sha256": "ce552ea083a96962e6722f57b5e35d7011d0ff755bae68783cace3e096612a5c"
+    }
+  ]
+}

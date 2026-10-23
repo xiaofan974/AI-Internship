@@ -1,0 +1,1362 @@
+{
+  "schema": "aeacus.week4.codify.results.v1",
+  "result_id": "week4_codify_baseline_v1",
+  "checkpoint": "baseline",
+  "claim": "This file records baseline results only. It does not claim a before/after improvement.",
+  "evaluated_at": "2026-10-22T21:30:33.657632+00:00",
+  "source": {
+    "path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/traces/week4_adk_preview_v1.jsonl",
+    "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+    "sha256_verified": true,
+    "n_traces": 20,
+    "unattempted_scenarios": [],
+    "missing_fields": []
+  },
+  "frozen": {
+    "baseline_id": "week4_adk_preview_v1",
+    "taxonomy_id": "week4_adk_preview_failure_taxonomy_v1",
+    "taxonomy_path": "evals/week4/taxonomy_v1.json",
+    "annotations_path": "evals/week4/annotations_v1.json",
+    "collection_manifest_path": "evals/week4/baselines/week4_adk_preview_v1/manifest.json",
+    "first_improvement_target": "F1",
+    "priority_weights": {
+      "F1": 3,
+      "F2": 3,
+      "F3": 2,
+      "F4": 1
+    },
+    "review": {
+      "date": "2026-10-23",
+      "accepted_by": "Lily",
+      "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+      "not": "independent expert legal adjudication",
+      "acceptance_time": null
+    }
+  },
+  "hashes": {
+    "taxonomy_v1": "336f5f3e6fe9ab7042b83bf1869161be1e86aaee4c718d9e9b0738f7808d7718",
+    "annotations_v1": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee",
+    "checkers_py": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33",
+    "codify_py": "4a7ea41d17a576b39d85c002fd505d93777d5051e77b92710401dcadb849ee05",
+    "scenarios_v1": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070",
+    "collection_manifest": "fdd0e4d96b314a4c3e37aea1d7d00b9f67ee3a86337e3000c43b2c35727643e3",
+    "source_traces": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+    "checker_config": "4423834db6d0360ecdfe426c29df0686780b89dcbcbd00a4a8c8ef2ef59519cc"
+  },
+  "checker_suite": {
+    "id": "week4_codify_v1",
+    "config": {
+      "suite_id": "week4_codify_v1",
+      "uses_human_labels": false,
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "inspects": "Timing and scope",
+          "trigger": "December 2027 or August 2028 deferral summary",
+          "required_markers": [
+            "Chapter III",
+            "Sections 1–3 or an equivalent list/range",
+            "Article 6(5) exception"
+          ],
+          "semantic_completeness": false,
+          "note": "This checks explicit qualification markers in Timing and scope, not complete semantic correctness."
+        },
+        "s19_retrieval_budget_v1": {
+          "scenario_id": "TRACE-S19",
+          "max_preview_classification_search_calls": 2,
+          "count": "act events named preview_classification_search",
+          "not_counted": [
+            "observe events",
+            "distinct query strings"
+          ],
+          "scope": "Scenario-specific regression rule, not a universal agent limit."
+        }
+      }
+    }
+  },
+  "human_reviewed_taxonomy": {
+    "category_failures": {
+      "F1": 5,
+      "F2": 5,
+      "F3": 2,
+      "F4": 1
+    },
+    "category_fail_ids": {
+      "F1": [
+        "TRACE-S04",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S13",
+        "TRACE-S20"
+      ],
+      "F2": [
+        "TRACE-S05",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S16",
+        "TRACE-S18"
+      ],
+      "F3": [
+        "TRACE-S02",
+        "TRACE-S20"
+      ],
+      "F4": [
+        "TRACE-S19"
+      ]
+    },
+    "distinct_failing_traces": 12,
+    "distinct_failing_ids": [
+      "TRACE-S02",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S11",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S16",
+      "TRACE-S18",
+      "TRACE-S19",
+      "TRACE-S20"
+    ],
+    "overall_pass_ids": [
+      "TRACE-S01",
+      "TRACE-S03",
+      "TRACE-S06",
+      "TRACE-S07",
+      "TRACE-S10",
+      "TRACE-S14",
+      "TRACE-S15",
+      "TRACE-S17"
+    ],
+    "overall_fail_ids": [
+      "TRACE-S02",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S11",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S16",
+      "TRACE-S18",
+      "TRACE-S19",
+      "TRACE-S20"
+    ],
+    "overall_pass": 8,
+    "overall_fail": 12,
+    "n_traces": 20,
+    "summed_category_frequencies": 13,
+    "summed_category_frequencies_are_not_an_overall_count": true
+  },
+  "deterministic_assertions": {
+    "deferred_date_qualifications_v1": {
+      "checker_id": "deferred_date_qualifications_v1",
+      "applicable": 20,
+      "denominator": 20,
+      "pass": 18,
+      "fail": 2,
+      "not_applicable": 0,
+      "fail_ids": [
+        "TRACE-S02",
+        "TRACE-S20"
+      ],
+      "pass_ids": [
+        "TRACE-S01",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S19"
+      ],
+      "not_applicable_ids": [],
+      "excluded_from_denominator": []
+    },
+    "s19_retrieval_budget_v1": {
+      "checker_id": "s19_retrieval_budget_v1",
+      "applicable": 1,
+      "denominator": 1,
+      "pass": 0,
+      "fail": 1,
+      "not_applicable": 19,
+      "fail_ids": [
+        "TRACE-S19"
+      ],
+      "pass_ids": [],
+      "not_applicable_ids": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ],
+      "excluded_from_denominator": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ]
+    }
+  },
+  "per_trace": [
+    {
+      "scenario_id": "TRACE-S01",
+      "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "human": {
+        "scenario_id": "TRACE-S01",
+        "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S01",
+          "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S01",
+          "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "human": {
+        "scenario_id": "TRACE-S02",
+        "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "fail",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S02",
+          "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S02",
+          "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "human": {
+        "scenario_id": "TRACE-S03",
+        "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S03",
+          "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S03",
+          "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "human": {
+        "scenario_id": "TRACE-S04",
+        "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+        "categories": {
+          "F1": "fail",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S04",
+          "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S04",
+          "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "human": {
+        "scenario_id": "TRACE-S05",
+        "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+        "categories": {
+          "F1": "pass",
+          "F2": "fail",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S05",
+          "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S05",
+          "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "human": {
+        "scenario_id": "TRACE-S06",
+        "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S06",
+          "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S06",
+          "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 2,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "human": {
+        "scenario_id": "TRACE-S07",
+        "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S07",
+          "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S07",
+          "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "human": {
+        "scenario_id": "TRACE-S08",
+        "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+        "categories": {
+          "F1": "fail",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S08",
+          "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S08",
+          "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "human": {
+        "scenario_id": "TRACE-S09",
+        "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+        "categories": {
+          "F1": "fail",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S09",
+          "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S09",
+          "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "human": {
+        "scenario_id": "TRACE-S10",
+        "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S10",
+          "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S10",
+          "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "human": {
+        "scenario_id": "TRACE-S11",
+        "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+        "categories": {
+          "F1": "pass",
+          "F2": "fail",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S11",
+          "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S11",
+          "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "human": {
+        "scenario_id": "TRACE-S12",
+        "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+        "categories": {
+          "F1": "pass",
+          "F2": "fail",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S12",
+          "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S12",
+          "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 2,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "human": {
+        "scenario_id": "TRACE-S13",
+        "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+        "categories": {
+          "F1": "fail",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S13",
+          "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S13",
+          "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "human": {
+        "scenario_id": "TRACE-S14",
+        "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S14",
+          "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S14",
+          "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "human": {
+        "scenario_id": "TRACE-S15",
+        "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S15",
+          "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S15",
+          "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "human": {
+        "scenario_id": "TRACE-S16",
+        "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+        "categories": {
+          "F1": "pass",
+          "F2": "fail",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S16",
+          "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S16",
+          "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "human": {
+        "scenario_id": "TRACE-S17",
+        "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "pass"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S17",
+          "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S17",
+          "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "human": {
+        "scenario_id": "TRACE-S18",
+        "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+        "categories": {
+          "F1": "pass",
+          "F2": "fail",
+          "F3": "pass",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S18",
+          "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S18",
+          "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "human": {
+        "scenario_id": "TRACE-S19",
+        "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+        "categories": {
+          "F1": "pass",
+          "F2": "pass",
+          "F3": "pass",
+          "F4": "fail"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S19",
+          "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S19",
+          "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "TRACE-S19 made 6 preview_classification_search call events; at most 2 are allowed."
+          ],
+          "evidence": {
+            "search_call_events": 6,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "human": {
+        "scenario_id": "TRACE-S20",
+        "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+        "categories": {
+          "F1": "fail",
+          "F2": "pass",
+          "F3": "fail",
+          "F4": "pass"
+        },
+        "overall": "fail"
+      },
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S20",
+          "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S20",
+          "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "disagreements_with_reviewed_labels": [],
+  "original_human_annotation_fields": {
+    "populated": false,
+    "value": {
+      "annotator": null,
+      "notes": null,
+      "labels": [],
+      "scores": {},
+      "reviewed_at": null
+    }
+  },
+  "limitations": [
+    "Deferred-date checking looks for explicit qualification markers in Timing and scope. It does not prove complete semantic correctness.",
+    "The S19 rule counts preview_classification_search call events only. It is a scenario-specific regression threshold, not a judgment that context was already complete.",
+    "F1 and F2 have no deterministic assertion in this checkpoint.",
+    "Reviewed labels are AI-assisted observations accepted by Lily on 2026-10-23. They are not independent expert legal adjudication.",
+    "Original JSONL human_annotation fields were left empty.",
+    "This checkpoint contains baseline results only."
+  ]
+}

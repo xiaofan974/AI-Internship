@@ -1,0 +1,21 @@
+[server]
+address = "0.0.0.0"
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#17213A"
+borderColor = "#E2E5EA"
+baseRadius = "0.5rem"
+buttonRadius = "0.5rem"
+showWidgetBorder = true
+linkColor = "#0F766E"
+orangeColor = "#B45309"
+orangeBackgroundColor = "#FEF3C7"
+headingFontSizes = ["1.55rem", "1.2rem", "1.08rem", "1rem", "0.95rem", "0.9rem"]

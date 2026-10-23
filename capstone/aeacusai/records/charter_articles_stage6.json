@@ -1,0 +1,1514 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/1",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 1",
+    "locator": {
+      "path": "article/1",
+      "article": "1"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 1 Human dignity Human dignity is inviolable. It must be respected and protected.",
+    "text_sha256": "d42c47bd1f51a81b682adcbab82adbc991063ae8374666001646b2a1fc81ca55",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[13] | /*/*[2]/*[14]/*[14] | /*/*[2]/*[14]/*[15]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/2",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 2",
+    "locator": {
+      "path": "article/2",
+      "article": "2"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 2 Right to life 1. Everyone has the right to life. 2. No one shall be condemned to the death penalty, or executed.",
+    "text_sha256": "c2edb75a84320c2a8275de9aeadd284a6ba3408bb7f01b65e164fa8582d2f415",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[16] | /*/*[2]/*[14]/*[17] | /*/*[2]/*[14]/*[18] | /*/*[2]/*[14]/*[19]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/3",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 3",
+    "locator": {
+      "path": "article/3",
+      "article": "3"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 3 Right to the integrity of the person 1. Everyone has the right to respect for his or her physical and mental integrity. 2. In the fields of medicine and biology, the following must be respected in particular: (a) the free and informed consent of the person concerned, according to the procedures laid down by law; (b) the prohibition of eugenic practices, in particular those aiming at the selection of persons; (c) the prohibition on making the human body and its parts as such a source of financial gain; (d) the prohibition of the reproductive cloning of human beings.",
+    "text_sha256": "dbe6e852271ebd74a4304d5059de328e55b184d6d4f1a87241d6531bd5f7bd95",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[20] | /*/*[2]/*[14]/*[21] | /*/*[2]/*[14]/*[22] | /*/*[2]/*[14]/*[23] | /*/*[2]/*[14]/*[24] | /*/*[2]/*[14]/*[25] | /*/*[2]/*[14]/*[26] | /*/*[2]/*[14]/*[27]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/4",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 4",
+    "locator": {
+      "path": "article/4",
+      "article": "4"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 4 Prohibition of torture and inhuman or degrading treatment or punishment No one shall be subjected to torture or to inhuman or degrading treatment or punishment.",
+    "text_sha256": "407d30e6ff293947128cb5aa38a026ef1884ee4fcd1f39994270fda02c96c0d8",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[28] | /*/*[2]/*[14]/*[29] | /*/*[2]/*[14]/*[30]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/5",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 5",
+    "locator": {
+      "path": "article/5",
+      "article": "5"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 5 Prohibition of slavery and forced labour 1. No one shall be held in slavery or servitude. 2. No one shall be required to perform forced or compulsory labour. 3. Trafficking in human beings is prohibited.",
+    "text_sha256": "1b7096dc37acfcf298102cca98f277bfc429dbb4b74a5473f481bf8b4617fe99",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[31] | /*/*[2]/*[14]/*[32] | /*/*[2]/*[14]/*[33] | /*/*[2]/*[14]/*[34] | /*/*[2]/*[14]/*[35]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/6",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 6",
+    "locator": {
+      "path": "article/6",
+      "article": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 6 Right to liberty and security Everyone has the right to liberty and security of person.",
+    "text_sha256": "9ad8d82ca90ab3ffc4f55d4588612265b2390f33fff30bb0dd3523f474d3db90",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[38] | /*/*[2]/*[14]/*[39] | /*/*[2]/*[14]/*[40]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/7",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 7",
+    "locator": {
+      "path": "article/7",
+      "article": "7"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 7 Respect for private and family life Everyone has the right to respect for his or her private and family life, home and communications.",
+    "text_sha256": "382422782597b127f4e5985bd3b26c878e07d4d39f3b5e17a008e51c6bcfee8b",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[41] | /*/*[2]/*[14]/*[42] | /*/*[2]/*[14]/*[43]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/8",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 8",
+    "locator": {
+      "path": "article/8",
+      "article": "8"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 8 Protection of personal data 1. Everyone has the right to the protection of personal data concerning him or her. 2. Such data must be processed fairly for specified purposes and on the basis of the consent of the person concerned or some other legitimate basis laid down by law. Everyone has the right of access to data which has been collected concerning him or her, and the right to have it rectified. 3. Compliance with these rules shall be subject to control by an independent authority.",
+    "text_sha256": "2dc8d9df927841d0a0b07fae33207b142b563031e9617a29061329de19c311e3",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[44] | /*/*[2]/*[14]/*[45] | /*/*[2]/*[14]/*[46] | /*/*[2]/*[14]/*[47] | /*/*[2]/*[14]/*[48]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/9",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 9",
+    "locator": {
+      "path": "article/9",
+      "article": "9"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 9 Right to marry and right to found a family The right to marry and the right to found a family shall be guaranteed in accordance with the national laws governing the exercise of these rights.",
+    "text_sha256": "83e9da64180829745d87e9624952b765207ce8c7711ea5692d044531fda75cba",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[49] | /*/*[2]/*[14]/*[50] | /*/*[2]/*[14]/*[51]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/10",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 10",
+    "locator": {
+      "path": "article/10",
+      "article": "10"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 10 Freedom of thought, conscience and religion 1. Everyone has the right to freedom of thought, conscience and religion. This right includes freedom to change religion or belief and freedom, either alone or in community with others and in public or in private, to manifest religion or belief, in worship, teaching, practice and observance. 2. The right to conscientious objection is recognised, in accordance with the national laws governing the exercise of this right.",
+    "text_sha256": "a44730ee30373f4292485049a9c57ea363b5efc47f3646709f81e6a189b334ad",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[52] | /*/*[2]/*[14]/*[53] | /*/*[2]/*[14]/*[54] | /*/*[2]/*[14]/*[55]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/11",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 11",
+    "locator": {
+      "path": "article/11",
+      "article": "11"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 11 Freedom of expression and information 1. Everyone has the right to freedom of expression. This right shall include freedom to hold opinions and to receive and impart information and ideas without interference by public authority and regardless of frontiers. 2. The freedom and pluralism of the media shall be respected.",
+    "text_sha256": "71f893139046b1cd6eae0c2581c83911082d10cfe6062faec96a051f94cdacf6",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[56] | /*/*[2]/*[14]/*[57] | /*/*[2]/*[14]/*[58] | /*/*[2]/*[14]/*[59]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/12",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 12",
+    "locator": {
+      "path": "article/12",
+      "article": "12"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 12 Freedom of assembly and of association 1. Everyone has the right to freedom of peaceful assembly and to freedom of association at all levels, in particular in political, trade union and civic matters, which implies the right of everyone to form and to join trade unions for the protection of his or her interests. 2. Political parties at Union level contribute to expressing the political will of the citizens of the Union.",
+    "text_sha256": "f2a24aee81d36ee640d17261b6dbceaa25ca6aeca9609650edcf87131c0fdad3",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[60] | /*/*[2]/*[14]/*[61] | /*/*[2]/*[14]/*[62] | /*/*[2]/*[14]/*[63]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/13",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 13",
+    "locator": {
+      "path": "article/13",
+      "article": "13"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 13 Freedom of the arts and sciences The arts and scientific research shall be free of constraint. Academic freedom shall be respected.",
+    "text_sha256": "6535264d1488581f43deaac8bab2bdb4a773449cfdc83e7815b82c1f63f74118",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[64] | /*/*[2]/*[14]/*[65] | /*/*[2]/*[14]/*[66]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/14",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 14",
+    "locator": {
+      "path": "article/14",
+      "article": "14"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 14 Right to education 1. Everyone has the right to education and to have access to vocational and continuing training. 2. This right includes the possibility to receive free compulsory education. 3. The freedom to found educational establishments with due respect for democratic principles and the right of parents to ensure the education and teaching of their children in conformity with their religious, philosophical and pedagogical convictions shall be respected, in accordance with the national laws governing the exercise of such freedom and right.",
+    "text_sha256": "840366c1dd3d1326aff79ff5ab7fc9299c6685b5611a4a2e0b18b62cefcbe99b",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[67] | /*/*[2]/*[14]/*[68] | /*/*[2]/*[14]/*[69] | /*/*[2]/*[14]/*[70] | /*/*[2]/*[14]/*[71]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/15",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 15",
+    "locator": {
+      "path": "article/15",
+      "article": "15"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 15 Freedom to choose an occupation and right to engage in work 1. Everyone has the right to engage in work and to pursue a freely chosen or accepted occupation. 2. Every citizen of the Union has the freedom to seek employment, to work, to exercise the right of establishment and to provide services in any Member State. 3. Nationals of third countries who are authorised to work in the territories of the Member States are entitled to working conditions equivalent to those of citizens of the Union.",
+    "text_sha256": "db1e5e077f30052e90e111eadb0a4442186fb60924f6a7d256b18e0601e0d16f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[72] | /*/*[2]/*[14]/*[73] | /*/*[2]/*[14]/*[74] | /*/*[2]/*[14]/*[75] | /*/*[2]/*[14]/*[76]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/16",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 16",
+    "locator": {
+      "path": "article/16",
+      "article": "16"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 16 Freedom to conduct a business The freedom to conduct a business in accordance with Union law and national laws and practices is recognised.",
+    "text_sha256": "694b8b560fb5e380a04c514b2c160d92cca2d0066c19a98c9d074df38dd64403",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[77] | /*/*[2]/*[14]/*[78] | /*/*[2]/*[14]/*[79]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/17",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 17",
+    "locator": {
+      "path": "article/17",
+      "article": "17"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 17 Right to property 1. Everyone has the right to own, use, dispose of and bequeath his or her lawfully acquired possessions. No one may be deprived of his or her possessions, except in the public interest and in the cases and under the conditions provided for by law, subject to fair compensation being paid in good time for their loss. The use of property may be regulated by law in so far as is necessary for the general interest. 2. Intellectual property shall be protected.",
+    "text_sha256": "707bbd762c14ae59255dce0bbaaef9c3a11aba3f81f4d70734c099cff906ccf1",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[80] | /*/*[2]/*[14]/*[81] | /*/*[2]/*[14]/*[82] | /*/*[2]/*[14]/*[83]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/18",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 18",
+    "locator": {
+      "path": "article/18",
+      "article": "18"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 18 Right to asylum The right to asylum shall be guaranteed with due respect for the rules of the Geneva Convention of 28 July 1951 and the Protocol of 31 January 1967 relating to the status of refugees and in accordance with the Treaty on European Union and the Treaty on the Functioning of the European Union (hereinafter referred to as ‘the Treaties’).",
+    "text_sha256": "2583f6a2fd639d2f5f5e7d59b9de88993f5dc5b8c4b11cf7f3be57ff1a49cc1e",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[84] | /*/*[2]/*[14]/*[85] | /*/*[2]/*[14]/*[86]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/19",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 19",
+    "locator": {
+      "path": "article/19",
+      "article": "19"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 19 Protection in the event of removal, expulsion or extradition 1. Collective expulsions are prohibited. 2. No one may be removed, expelled or extradited to a State where there is a serious risk that he or she would be subjected to the death penalty, torture or other inhuman or degrading treatment or punishment.",
+    "text_sha256": "8cbe79f3f538f45a9a3eedd68c205a2f7d0941042edcad56669d4e7b871518c0",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[87] | /*/*[2]/*[14]/*[88] | /*/*[2]/*[14]/*[89] | /*/*[2]/*[14]/*[90]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/20",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 20",
+    "locator": {
+      "path": "article/20",
+      "article": "20"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 20 Equality before the law Everyone is equal before the law.",
+    "text_sha256": "c99d931e3e28ee73669646ab7580066cd1c00d21d80ecfd517be905c62ad0b32",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[93] | /*/*[2]/*[14]/*[94] | /*/*[2]/*[14]/*[95]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/21",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 21",
+    "locator": {
+      "path": "article/21",
+      "article": "21"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 21 Non-discrimination 1. Any discrimination based on any ground such as sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation shall be prohibited. 2. Within the scope of application of the Treaties and without prejudice to any of their specific provisions, any discrimination on grounds of nationality shall be prohibited.",
+    "text_sha256": "6066f9ae7e65516cb039f3f3918d1e25492a13256e691153aab5f7181540a4fc",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[96] | /*/*[2]/*[14]/*[97] | /*/*[2]/*[14]/*[98] | /*/*[2]/*[14]/*[99]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/22",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 22",
+    "locator": {
+      "path": "article/22",
+      "article": "22"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 22 Cultural, religious and linguistic diversity The Union shall respect cultural, religious and linguistic diversity.",
+    "text_sha256": "725c722ad8268ea2266e2bd8f16badbc37834a2b5ec6e38b07b002aacba5035a",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[100] | /*/*[2]/*[14]/*[101] | /*/*[2]/*[14]/*[102]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/23",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 23",
+    "locator": {
+      "path": "article/23",
+      "article": "23"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 23 Equality between women and men Equality between women and men must be ensured in all areas, including employment, work and pay. The principle of equality shall not prevent the maintenance or adoption of measures providing for specific advantages in favour of the under-represented sex.",
+    "text_sha256": "8b43d40c7e33287520216f9a15c3b6c5137f4f80c69ca3f7eed63107ef50d5d7",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[103] | /*/*[2]/*[14]/*[104] | /*/*[2]/*[14]/*[105] | /*/*[2]/*[14]/*[106]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/24",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 24",
+    "locator": {
+      "path": "article/24",
+      "article": "24"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 24 The rights of the child 1. Children shall have the right to such protection and care as is necessary for their well-being. They may express their views freely. Such views shall be taken into consideration on matters which concern them in accordance with their age and maturity. 2. In all actions relating to children, whether taken by public authorities or private institutions, the child's best interests must be a primary consideration. 3. Every child shall have the right to maintain on a regular basis a personal relationship and direct contact with both his or her parents, unless that is contrary to his or her interests.",
+    "text_sha256": "58ba7c4c287624526fd43c67198aa7bd0d1c6e50981d761263fac3ee2f541684",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[107] | /*/*[2]/*[14]/*[108] | /*/*[2]/*[14]/*[109] | /*/*[2]/*[14]/*[110] | /*/*[2]/*[14]/*[111]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/25",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 25",
+    "locator": {
+      "path": "article/25",
+      "article": "25"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 25 The rights of the elderly The Union recognises and respects the rights of the elderly to lead a life of dignity and independence and to participate in social and cultural life.",
+    "text_sha256": "a76fe60dc79297affe7fac046f1a80726731070f8214828908630ab7939eb8a4",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[112] | /*/*[2]/*[14]/*[113] | /*/*[2]/*[14]/*[114]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/26",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 26",
+    "locator": {
+      "path": "article/26",
+      "article": "26"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 26 Integration of persons with disabilities The Union recognises and respects the right of persons with disabilities to benefit from measures designed to ensure their independence, social and occupational integration and participation in the life of the community.",
+    "text_sha256": "55fc90956ede0e7d60df50067039ccfbd12e402841baa71667b99c36856e86a6",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[115] | /*/*[2]/*[14]/*[116] | /*/*[2]/*[14]/*[117]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/27",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 27",
+    "locator": {
+      "path": "article/27",
+      "article": "27"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 27 Workers' right to information and consultation within the undertaking Workers or their representatives must, at the appropriate levels, be guaranteed information and consultation in good time in the cases and under the conditions provided for by Union law and national laws and practices.",
+    "text_sha256": "9e5dfeb13cf8df2178dd90c5bd5adfea0cf2bc5ba1c12b5b7767c9390ff02e65",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[120] | /*/*[2]/*[14]/*[121] | /*/*[2]/*[14]/*[122]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/28",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 28",
+    "locator": {
+      "path": "article/28",
+      "article": "28"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 28 Right of collective bargaining and action Workers and employers, or their respective organisations, have, in accordance with Union law and national laws and practices, the right to negotiate and conclude collective agreements at the appropriate levels and, in cases of conflicts of interest, to take collective action to defend their interests, including strike action.",
+    "text_sha256": "348639aca2c3e67376c288e293b99dfe9f8eaae364bb9a93fe693dc0f3836f7d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[123] | /*/*[2]/*[14]/*[124] | /*/*[2]/*[14]/*[125]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/29",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 29",
+    "locator": {
+      "path": "article/29",
+      "article": "29"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 29 Right of access to placement services Everyone has the right of access to a free placement service.",
+    "text_sha256": "77bd1015f122e4a19476fa069d8ecba3eaabcc80ce7a83f8959d41fe8968107f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[126] | /*/*[2]/*[14]/*[127] | /*/*[2]/*[14]/*[128]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/30",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 30",
+    "locator": {
+      "path": "article/30",
+      "article": "30"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 30 Protection in the event of unjustified dismissal Every worker has the right to protection against unjustified dismissal, in accordance with Union law and national laws and practices.",
+    "text_sha256": "dae97342815b70151f19d037984a45be567f865a9affc72e70a3c75b734bfd15",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[129] | /*/*[2]/*[14]/*[130] | /*/*[2]/*[14]/*[131]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/31",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 31",
+    "locator": {
+      "path": "article/31",
+      "article": "31"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 31 Fair and just working conditions 1. Every worker has the right to working conditions which respect his or her health, safety and dignity. 2. Every worker has the right to limitation of maximum working hours, to daily and weekly rest periods and to an annual period of paid leave.",
+    "text_sha256": "30f46060838c818655b596373aba74c444efae1be1c82f7b88e755e1c3b2aad6",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[132] | /*/*[2]/*[14]/*[133] | /*/*[2]/*[14]/*[134] | /*/*[2]/*[14]/*[135]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/32",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 32",
+    "locator": {
+      "path": "article/32",
+      "article": "32"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 32 Prohibition of child labour and protection of young people at work The employment of children is prohibited. The minimum age of admission to employment may not be lower than the minimum school-leaving age, without prejudice to such rules as may be more favourable to young people and except for limited derogations. Young people admitted to work must have working conditions appropriate to their age and be protected against economic exploitation and any work likely to harm their safety, health or physical, mental, moral or social development or to interfere with their education.",
+    "text_sha256": "df5a6f38992adeaddf7f36dc5efa05246cfd7095123bab62b039e8d7682f38cd",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[136] | /*/*[2]/*[14]/*[137] | /*/*[2]/*[14]/*[138] | /*/*[2]/*[14]/*[139]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/33",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 33",
+    "locator": {
+      "path": "article/33",
+      "article": "33"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 33 Family and professional life 1. The family shall enjoy legal, economic and social protection. 2. To reconcile family and professional life, everyone shall have the right to protection from dismissal for a reason connected with maternity and the right to paid maternity leave and to parental leave following the birth or adoption of a child.",
+    "text_sha256": "a3b3de5bd78002a33486fc8243f29e4ac640e4b6a5af42a18b1e88afc690f1e1",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[140] | /*/*[2]/*[14]/*[141] | /*/*[2]/*[14]/*[142] | /*/*[2]/*[14]/*[143]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/34",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 34",
+    "locator": {
+      "path": "article/34",
+      "article": "34"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 34 Social security and social assistance 1. The Union recognises and respects the entitlement to social security benefits and social services providing protection in cases such as maternity, illness, industrial accidents, dependency or old age, and in the case of loss of employment, in accordance with the rules laid down by Union law and national laws and practices. 2. Everyone residing and moving legally within the European Union is entitled to social security benefits and social advantages in accordance with Union law and national laws and practices. 3. In order to combat social exclusion and poverty, the Union recognises and respects the right to social and housing assistance so as to ensure a decent existence for all those who lack sufficient resources, in accordance with the rules laid down by Union law and national laws and practices.",
+    "text_sha256": "7f1bfad4fda4f3e2652cfc25ef81e8dc97a682b3e6290a5ee5c0c6222a9e470e",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[144] | /*/*[2]/*[14]/*[145] | /*/*[2]/*[14]/*[146] | /*/*[2]/*[14]/*[147] | /*/*[2]/*[14]/*[148]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/35",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 35",
+    "locator": {
+      "path": "article/35",
+      "article": "35"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 35 Health care Everyone has the right of access to preventive health care and the right to benefit from medical treatment under the conditions established by national laws and practices. A high level of human health protection shall be ensured in the definition and implementation of all the Union's policies and activities.",
+    "text_sha256": "f64a8cb77cd302cd5e85df01e12527b4bba707370bca2c86dda6cf4265aa52e9",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[149] | /*/*[2]/*[14]/*[150] | /*/*[2]/*[14]/*[151]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/36",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 36",
+    "locator": {
+      "path": "article/36",
+      "article": "36"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 36 Access to services of general economic interest The Union recognises and respects access to services of general economic interest as provided for in national laws and practices, in accordance with the Treaties, in order to promote the social and territorial cohesion of the Union.",
+    "text_sha256": "7030d817c800e5d0bcbb34b810f2ede04f6040a93cef53a4aeee8967b55821f1",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[152] | /*/*[2]/*[14]/*[153] | /*/*[2]/*[14]/*[154]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/37",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 37",
+    "locator": {
+      "path": "article/37",
+      "article": "37"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 37 Environmental protection A high level of environmental protection and the improvement of the quality of the environment must be integrated into the policies of the Union and ensured in accordance with the principle of sustainable development.",
+    "text_sha256": "595e57a54e1e3bee07a3f3d0ddb028ba0abcbac7933e3b59c573a811784ac329",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[155] | /*/*[2]/*[14]/*[156] | /*/*[2]/*[14]/*[157]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/38",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 38",
+    "locator": {
+      "path": "article/38",
+      "article": "38"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 38 Consumer protection Union policies shall ensure a high level of consumer protection.",
+    "text_sha256": "c905ad98567f601f53de89bbb5ce2685166a4ced25253801e10fd435179c199f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[158] | /*/*[2]/*[14]/*[159] | /*/*[2]/*[14]/*[160]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/39",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 39",
+    "locator": {
+      "path": "article/39",
+      "article": "39"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 39 Right to vote and to stand as a candidate at elections to the European Parliament 1. Every citizen of the Union has the right to vote and to stand as a candidate at elections to the European Parliament in the Member State in which he or she resides, under the same conditions as nationals of that State. 2. Members of the European Parliament shall be elected by direct universal suffrage in a free and secret ballot.",
+    "text_sha256": "d5d530bc8cbfcf6ccf97373923aea5d36e79a59c3c447438110335f20ddf1a8e",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[163] | /*/*[2]/*[14]/*[164] | /*/*[2]/*[14]/*[165] | /*/*[2]/*[14]/*[166]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/40",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 40",
+    "locator": {
+      "path": "article/40",
+      "article": "40"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 40 Right to vote and to stand as a candidate at municipal elections Every citizen of the Union has the right to vote and to stand as a candidate at municipal elections in the Member State in which he or she resides under the same conditions as nationals of that State.",
+    "text_sha256": "2de35d352110a85fc9bca1a553f911f47276a60586c72ba008f4aff8c1e5b6d8",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[167] | /*/*[2]/*[14]/*[168] | /*/*[2]/*[14]/*[169]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/41",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 41",
+    "locator": {
+      "path": "article/41",
+      "article": "41"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 41 Right to good administration 1. Every person has the right to have his or her affairs handled impartially, fairly and within a reasonable time by the institutions, bodies, offices and agencies of the Union. 2. This right includes: (a) the right of every person to be heard, before any individual measure which would affect him or her adversely is taken; (b) the right of every person to have access to his or her file, while respecting the legitimate interests of confidentiality and of professional and business secrecy; (c) the obligation of the administration to give reasons for its decisions. 3. Every person has the right to have the Union make good any damage caused by its institutions or by its servants in the performance of their duties, in accordance with the general principles common to the laws of the Member States. 4. Every person may write to the institutions of the Union in one of the languages of the Treaties and must have an answer in the same language.",
+    "text_sha256": "f786ad8a31f38a9334755bcaade333786c61d26a1f516dae97469f4dc04d8597",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[170] | /*/*[2]/*[14]/*[171] | /*/*[2]/*[14]/*[172] | /*/*[2]/*[14]/*[173] | /*/*[2]/*[14]/*[174] | /*/*[2]/*[14]/*[175] | /*/*[2]/*[14]/*[176] | /*/*[2]/*[14]/*[177] | /*/*[2]/*[14]/*[178]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/42",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 42",
+    "locator": {
+      "path": "article/42",
+      "article": "42"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 42 Right of access to documents Any citizen of the Union, and any natural or legal person residing or having its registered office in a Member State, has a right of access to documents of the institutions, bodies, offices and agencies of the Union, whatever their medium.",
+    "text_sha256": "62ce82f20cc40dbf849c02db8d53f75296299c28a54f09050ff829126f87cce2",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[179] | /*/*[2]/*[14]/*[180] | /*/*[2]/*[14]/*[181]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/43",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 43",
+    "locator": {
+      "path": "article/43",
+      "article": "43"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 43 European Ombudsman Any citizen of the Union and any natural or legal person residing or having its registered office in a Member State has the right to refer to the European Ombudsman cases of maladministration in the activities of the institutions, bodies, offices or agencies of the Union, with the exception of the Court of Justice of the European Union acting in its judicial role.",
+    "text_sha256": "a696f267b24a98d7e1adf4364a9706192f5a0e7ec61589b1ac888f6ad41638f2",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[182] | /*/*[2]/*[14]/*[183] | /*/*[2]/*[14]/*[184]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/44",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 44",
+    "locator": {
+      "path": "article/44",
+      "article": "44"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 44 Right to petition Any citizen of the Union and any natural or legal person residing or having its registered office in a Member State has the right to petition the European Parliament.",
+    "text_sha256": "7bf648b6e3618aa8f090e8586c60f7f0600ff6ed4bafd3dd40f458bd3b95182e",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[185] | /*/*[2]/*[14]/*[186] | /*/*[2]/*[14]/*[187]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/45",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 45",
+    "locator": {
+      "path": "article/45",
+      "article": "45"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 45 Freedom of movement and of residence 1. Every citizen of the Union has the right to move and reside freely within the territory of the Member States. 2. Freedom of movement and residence may be granted, in accordance with the Treaties, to nationals of third countries legally resident in the territory of a Member State.",
+    "text_sha256": "2ad83357c84d198ee6fc112f82c8fbf3bd0e4303971f2e7fdc5ee5b0bfe09753",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[188] | /*/*[2]/*[14]/*[189] | /*/*[2]/*[14]/*[190] | /*/*[2]/*[14]/*[191]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/46",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 46",
+    "locator": {
+      "path": "article/46",
+      "article": "46"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 46 Diplomatic and consular protection Every citizen of the Union shall, in the territory of a third country in which the Member State of which he or she is a national is not represented, be entitled to protection by the diplomatic or consular authorities of any Member State, on the same conditions as the nationals of that Member State.",
+    "text_sha256": "0f542d286519a085a1e990340329867f524eabd4b06dc27cb28e815928e036f9",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[192] | /*/*[2]/*[14]/*[193] | /*/*[2]/*[14]/*[194]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/47",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 47",
+    "locator": {
+      "path": "article/47",
+      "article": "47"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 47 Right to an effective remedy and to a fair trial Everyone whose rights and freedoms guaranteed by the law of the Union are violated has the right to an effective remedy before a tribunal in compliance with the conditions laid down in this Article. Everyone is entitled to a fair and public hearing within a reasonable time by an independent and impartial tribunal previously established by law. Everyone shall have the possibility of being advised, defended and represented. Legal aid shall be made available to those who lack sufficient resources in so far as such aid is necessary to ensure effective access to justice.",
+    "text_sha256": "2936f9aca90633dcc769d82ee9de1f8fe43a431f3b635b81ad218de585923cf2",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[197] | /*/*[2]/*[14]/*[198] | /*/*[2]/*[14]/*[199] | /*/*[2]/*[14]/*[200] | /*/*[2]/*[14]/*[201]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/48",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 48",
+    "locator": {
+      "path": "article/48",
+      "article": "48"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 48 Presumption of innocence and right of defence 1. Everyone who has been charged shall be presumed innocent until proved guilty according to law. 2. Respect for the rights of the defence of anyone who has been charged shall be guaranteed.",
+    "text_sha256": "85e6da9e73bbfad32973c0728914cae470524d6739afb421198e22d57d0a3fd0",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[202] | /*/*[2]/*[14]/*[203] | /*/*[2]/*[14]/*[204] | /*/*[2]/*[14]/*[205]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/49",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 49",
+    "locator": {
+      "path": "article/49",
+      "article": "49"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 49 Principles of legality and proportionality of criminal offences and penalties 1. No one shall be held guilty of any criminal offence on account of any act or omission which did not constitute a criminal offence under national law or international law at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the criminal offence was committed. If, subsequent to the commission of a criminal offence, the law provides for a lighter penalty, that penalty shall be applicable. 2. This Article shall not prejudice the trial and punishment of any person for any act or omission which, at the time when it was committed, was criminal according to the general principles recognised by the community of nations. 3. The severity of penalties must not be disproportionate to the criminal offence.",
+    "text_sha256": "bcde5c97c3212c02a43090bfe79ca4ac8cbe416c729a32253d4c1a397f80d751",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[206] | /*/*[2]/*[14]/*[207] | /*/*[2]/*[14]/*[208] | /*/*[2]/*[14]/*[209] | /*/*[2]/*[14]/*[210]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/50",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 50",
+    "locator": {
+      "path": "article/50",
+      "article": "50"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 50 Right not to be tried or punished twice in criminal proceedings for the same criminal offence No one shall be liable to be tried or punished again in criminal proceedings for an offence for which he or she has already been finally acquitted or convicted within the Union in accordance with the law.",
+    "text_sha256": "1a5593342a3123861afc7c3212f41ff507ef147708ff0cc790f4093018491d3f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[211] | /*/*[2]/*[14]/*[212] | /*/*[2]/*[14]/*[213]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/51",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 51",
+    "locator": {
+      "path": "article/51",
+      "article": "51"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 51 Field of application 1. The provisions of this Charter are addressed to the institutions, bodies, offices and agencies of the Union with due regard for the principle of subsidiarity and to the Member States only when they are implementing Union law. They shall therefore respect the rights, observe the principles and promote the application thereof in accordance with their respective powers and respecting the limits of the powers of the Union as conferred on it in the Treaties. 2. The Charter does not extend the field of application of Union law beyond the powers of the Union or establish any new power or task for the Union, or modify powers and tasks as defined in the Treaties.",
+    "text_sha256": "45f2c3c2e489cc831de5ba38ee0a174f82324ff980f727a775a1b6c1ed38f1bd",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[216] | /*/*[2]/*[14]/*[217] | /*/*[2]/*[14]/*[218] | /*/*[2]/*[14]/*[219]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/52",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 52",
+    "locator": {
+      "path": "article/52",
+      "article": "52"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 52 Scope and interpretation of rights and principles 1. Any limitation on the exercise of the rights and freedoms recognised by this Charter must be provided for by law and respect the essence of those rights and freedoms. Subject to the principle of proportionality, limitations may be made only if they are necessary and genuinely meet objectives of general interest recognised by the Union or the need to protect the rights and freedoms of others. 2. Rights recognised by this Charter for which provision is made in the Treaties shall be exercised under the conditions and within the limits defined by those Treaties. 3. In so far as this Charter contains rights which correspond to rights guaranteed by the Convention for the Protection of Human Rights and Fundamental Freedoms, the meaning and scope of those rights shall be the same as those laid down by the said Convention. This provision shall not prevent Union law providing more extensive protection. 4. In so far as this Charter recognises fundamental rights as they result from the constitutional traditions common to the Member States, those rights shall be interpreted in harmony with those traditions. 5. The provisions of this Charter which contain principles may be implemented by legislative and executive acts taken by institutions, bodies, offices and agencies of the Union, and by acts of Member States when they are implementing Union law, in the exercise of their respective powers. They shall be judicially cognisable only in the interpretation of such acts and in the ruling on their legality. 6. Full account shall be taken of national laws and practices as specified in this Charter. 7. The explanations drawn up as a way of providing guidance in the interpretation of this Charter shall be given due regard by the courts of the Union and of the Member States.",
+    "text_sha256": "766f4e2727ad89ace1faf80a4afe0abac3865db26f9b37e495947b22ffa1545b",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[220] | /*/*[2]/*[14]/*[221] | /*/*[2]/*[14]/*[222] | /*/*[2]/*[14]/*[223] | /*/*[2]/*[14]/*[224] | /*/*[2]/*[14]/*[225] | /*/*[2]/*[14]/*[226] | /*/*[2]/*[14]/*[227] | /*/*[2]/*[14]/*[228]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/53",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 53",
+    "locator": {
+      "path": "article/53",
+      "article": "53"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 53 Level of protection Nothing in this Charter shall be interpreted as restricting or adversely affecting human rights and fundamental freedoms as recognised, in their respective fields of application, by Union law and international law and by international agreements to which the Union or all the Member States are party, including the European Convention for the Protection of Human Rights and Fundamental Freedoms, and by the Member States' constitutions.",
+    "text_sha256": "be7cef052a17d8845a2b8c635c6c6606c3f251f4f351c6d4c5c40bc6c918560f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[229] | /*/*[2]/*[14]/*[230] | /*/*[2]/*[14]/*[231]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/54",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 54",
+    "locator": {
+      "path": "article/54",
+      "article": "54"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 54 Prohibition of abuse of rights Nothing in this Charter shall be interpreted as implying any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms recognised in this Charter or at their limitation to a greater extent than is provided for herein. ° °° The above text adapts the wording of the Charter proclaimed on 7 December 2000, and will replace it as from the date of entry into force of the Treaty of Lisbon.",
+    "text_sha256": "4003a2b3d029a370a04f55c897735bd93ea51db879017896a378b13f9a16cb3d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[232] | /*/*[2]/*[14]/*[233] | /*/*[2]/*[14]/*[234] | /*/*[2]/*[14]/*[235] | /*/*[2]/*[14]/*[236] | /*/*[2]/*[14]/*[237]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  }
+]

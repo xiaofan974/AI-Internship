@@ -1,0 +1,38 @@
+{
+  "schema": "aeacus.week4.taxonomy.v1",
+  "taxonomy_id": "week4_adk_preview_failure_taxonomy_v1",
+  "baseline_id": "week4_adk_preview_v1",
+  "review": {
+    "date": "2026-10-23",
+    "accepted_by": "Lily",
+    "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+    "not": "independent expert legal adjudication",
+    "acceptance_time": null
+  },
+  "priority_note": "Weights are prioritization weights, not answer-quality ratings. First improvement target is F1, which breaks its priority tie with F2.",
+  "first_improvement_target": "F1",
+  "overall_pass_rule": "Overall pass requires all four category judgments to be pass.",
+  "counting_rule": "Report category failure counts separately. Do not sum category frequencies into an overall failure count. Also report the number of distinct traces with at least one category fail.",
+  "categories": [
+    {
+      "id": "F1",
+      "title": "Classification relies on an unstated premise or extends to an underspecified product.",
+      "priority_weight": 3
+    },
+    {
+      "id": "F2",
+      "title": "Explanation broadens or invents a statutory condition or consequence.",
+      "priority_weight": 3
+    },
+    {
+      "id": "F3",
+      "title": "Timing summary omits the specific sections whose application is deferred.",
+      "priority_weight": 2
+    },
+    {
+      "id": "F4",
+      "title": "Searches continue after relevant child passages and complete context are available.",
+      "priority_weight": 1
+    }
+  ]
+}

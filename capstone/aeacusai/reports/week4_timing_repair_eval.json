@@ -1,0 +1,995 @@
+{
+  "schema": "aeacus.week4.timing_repair_eval.v1",
+  "title": "Week 4 timing-repair evaluation",
+  "not": [
+    "20 new live runs",
+    "a model-quality improvement",
+    "an F1 resolution",
+    "an overall quality pass rate",
+    "a source-review or ingestion-gate opening"
+  ],
+  "label_replay": "Application-layer replay of 20 saved live traces.",
+  "accepted_f1_comparison": {
+    "schema": "aeacus.week4.annotations.f1_candidate.v1",
+    "taxonomy_id": "week4_adk_preview_failure_taxonomy_v1",
+    "candidate_baseline_id": "week4_adk_preview_f1_v2",
+    "parent_baseline_id": "week4_adk_preview_v1",
+    "category_scope": [
+      "F1"
+    ],
+    "review": {
+      "date": "2026-10-23",
+      "accepted_by": "Lily",
+      "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+      "not": "independent expert legal adjudication",
+      "acceptance_time": null
+    },
+    "annotation_location_note": "F1 judgments live in this file. Candidate trace human_annotation fields were not populated. Candidate F2 labels were not assigned.",
+    "candidate_f2_labels_assigned": false,
+    "overall_quality_pass_rate_reported": false,
+    "source_traces": {
+      "path": "data/local/traces/week4_adk_preview_f1_v2.jsonl",
+      "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848"
+    },
+    "parent_source_traces": {
+      "path": "data/local/traces/week4_adk_preview_v1.jsonl",
+      "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1"
+    },
+    "f1_fail_ids": [
+      "TRACE-S01",
+      "TRACE-S04",
+      "TRACE-S09",
+      "TRACE-S13",
+      "TRACE-S15"
+    ],
+    "comparison_to_parent_f1": {
+      "parent_fail_ids": [
+        "TRACE-S04",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S13",
+        "TRACE-S20"
+      ],
+      "candidate_fail_ids": [
+        "TRACE-S01",
+        "TRACE-S04",
+        "TRACE-S09",
+        "TRACE-S13",
+        "TRACE-S15"
+      ],
+      "recoveries": [
+        "TRACE-S08",
+        "TRACE-S20"
+      ],
+      "regressions": [
+        "TRACE-S01",
+        "TRACE-S15"
+      ],
+      "persistent_failures": [
+        "TRACE-S04",
+        "TRACE-S09",
+        "TRACE-S13"
+      ],
+      "parent_f1_failure_count": 5,
+      "candidate_f1_failure_count": 5,
+      "n_traces": 20,
+      "note": "Two F1 recoveries, two regressions, three persistent failures. 5/20 F1 failures in both versions. These counts are not an overall quality pass rate."
+    },
+    "joined_labels": [
+      {
+        "scenario_id": "TRACE-S01",
+        "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+        "F1": "fail"
+      },
+      {
+        "scenario_id": "TRACE-S02",
+        "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S03",
+        "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S04",
+        "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+        "F1": "fail"
+      },
+      {
+        "scenario_id": "TRACE-S05",
+        "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S06",
+        "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S07",
+        "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S08",
+        "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S09",
+        "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+        "F1": "fail"
+      },
+      {
+        "scenario_id": "TRACE-S10",
+        "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S11",
+        "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S12",
+        "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S13",
+        "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+        "F1": "fail"
+      },
+      {
+        "scenario_id": "TRACE-S14",
+        "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S15",
+        "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+        "F1": "fail"
+      },
+      {
+        "scenario_id": "TRACE-S16",
+        "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S17",
+        "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S18",
+        "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S19",
+        "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+        "F1": "pass"
+      },
+      {
+        "scenario_id": "TRACE-S20",
+        "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+        "F1": "pass"
+      }
+    ],
+    "status": "unresolved",
+    "experiment_outcome": "Unsuccessful instruction-only F1 experiment. Two recoveries (TRACE-S08, TRACE-S20), two regressions (TRACE-S01, TRACE-S15), three persistent failures (TRACE-S04, TRACE-S09, TRACE-S13). 5/20 F1 failures in both versions. These counts are not an overall quality pass rate."
+  },
+  "instruction_restore": {
+    "scope": "primary preview AEACUS_PREVIEW_INSTRUCTION text only",
+    "expected_sha256": "6d28bfa7d6d42c8ce1c21211b1e87adf877137ed878b1082c0ec6f36716a7de7",
+    "observed_sha256": "6d28bfa7d6d42c8ce1c21211b1e87adf877137ed878b1082c0ec6f36716a7de7",
+    "match": true,
+    "candidate_instruction_sha256_not_restored_into_agent": "20f72d6ea00bb6a052266a9abc79066d93119f321a56a3cea446f556cda9517e",
+    "whole_files_restored_from_git": false
+  },
+  "repair": {
+    "formatter_id": "aeacus.timing_scope.v1",
+    "formatter_version": "1",
+    "implementation": "aeacus_agent/timing_scope.py",
+    "integration": [
+      "streamlit_app.finalize_preview_result",
+      "run_classification_preview after run_review"
+    ],
+    "unchanged": [
+      "model generation",
+      "retrieval",
+      "tools",
+      "approval controls and requirements",
+      "MCP / dual / LangGraph architectures"
+    ],
+    "behavior": {
+      "replaces": "model-authored Timing and scope section",
+      "does_not": [
+        "append a correction while leaving the original timing paragraph",
+        "hardcode statutory dates if evidence is missing or inconsistent",
+        "invent Article 113 text from Stage 4 fallback",
+        "expose hidden thoughts"
+      ],
+      "grounds_in": "complete Article 113 observation from that invocation",
+      "prefers": "exact source excerpts with Article 113 citation",
+      "keeps_explicit": "provisional classification-subset scope",
+      "preserves": "complete raw model answer separately",
+      "fail_explicitly_on": [
+        "missing_article_113_observation",
+        "observation_hash_mismatch",
+        "source_text_hash_mismatch",
+        "wrong_edition_snapshot",
+        "wrong_edition_record_id",
+        "ambiguous_timing_heading",
+        "ambiguous_section_boundaries",
+        "inconsistent_article_113_observations",
+        "missing or incomplete source excerpts"
+      ],
+      "pending_review_binds_to": "exact delivered assessment"
+    },
+    "provenance_pins": {
+      "snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "article_113_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+      "article_113_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d"
+    },
+    "recorded_fields": [
+      "raw_output",
+      "delivered_output",
+      "formatter_id",
+      "formatter_version",
+      "source_record_id",
+      "source_text_sha256",
+      "source_snapshot_id",
+      "status",
+      "reason"
+    ]
+  },
+  "preserved_artifacts": {
+    "parent_traces": {
+      "path": "data/local/traces/week4_adk_preview_v1.jsonl",
+      "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1"
+    },
+    "candidate_traces": {
+      "path": "data/local/traces/week4_adk_preview_f1_v2.jsonl",
+      "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848"
+    },
+    "parent_manifest": {
+      "path": "evals/week4/baselines/week4_adk_preview_v1/manifest.json",
+      "sha256": "fdd0e4d96b314a4c3e37aea1d7d00b9f67ee3a86337e3000c43b2c35727643e3"
+    },
+    "candidate_manifest": {
+      "path": "evals/week4/baselines/week4_adk_preview_f1_v2/manifest.json",
+      "sha256": "c1a5aaf95b84662f2461f5fb5fedc65acac611bd68a657de89caa20e3b13d97f"
+    },
+    "checkers": {
+      "path": "evals/week4/checkers.py",
+      "sha256": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33"
+    },
+    "scenarios": {
+      "path": "evals/week4/scenarios_v1.json",
+      "sha256": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070"
+    },
+    "parent_annotations": {
+      "path": "evals/week4/annotations_v1.json",
+      "sha256": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee"
+    },
+    "candidate_f1_annotations": {
+      "path": "evals/week4/annotations_f1_v2.json",
+      "sha256": "c382664896c8b909654dd1628fcb1a61fd1ce75b6be35cf3cd5484e4970a819a"
+    }
+  },
+  "offline_verification": {
+    "unittests": {
+      "command": ".venv/bin/python -m unittest test_timing_scope test_preview_presentation test_streamlit_app test_trace_store test_week4_codify test_week4_baseline test_review_register test_prompt_injection test_context_preview -q",
+      "ran": 78,
+      "failures": 0,
+      "coverage": [
+        "valid rendering",
+        "missing Article 113 evidence",
+        "tampered observation hash",
+        "wrong-edition snapshot/record",
+        "source text hash mismatch",
+        "ambiguous heading / section-boundary handling",
+        "raw-answer preservation",
+        "pending-review artifact binds to delivered assessment"
+      ]
+    },
+    "replay": {
+      "label": "Application-layer replay of 20 saved live traces.",
+      "not": [
+        "20 new live runs",
+        "a model-quality improvement"
+      ],
+      "formatter_id": "aeacus.timing_scope.v1",
+      "formatter_version": "1",
+      "source": {
+        "path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/traces/week4_adk_preview_v1.jsonl",
+        "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+        "n_traces": 20
+      },
+      "prefix_unchanged_ids": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S19",
+        "TRACE-S20"
+      ],
+      "prefix_mismatches": [],
+      "repair_status_counts": {
+        "ok": 20,
+        "failed": 0
+      },
+      "per_trace": [
+        {
+          "scenario_id": "TRACE-S01",
+          "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S02",
+          "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S03",
+          "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S04",
+          "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S05",
+          "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S06",
+          "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S07",
+          "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S08",
+          "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S09",
+          "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S10",
+          "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S11",
+          "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S12",
+          "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S13",
+          "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S14",
+          "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S15",
+          "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S16",
+          "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S17",
+          "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S18",
+          "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S19",
+          "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": false,
+          "delivered_has_both_dates": true
+        },
+        {
+          "scenario_id": "TRACE-S20",
+          "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "status": "ok",
+          "reason": null,
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+          "prefix_unchanged": true,
+          "raw_mentions_dec_2027": true,
+          "raw_mentions_aug_2028": true,
+          "delivered_has_both_dates": true
+        }
+      ],
+      "deterministic_assertions": {
+        "raw": {
+          "deferred_date_qualifications_v1": {
+            "checker_id": "deferred_date_qualifications_v1",
+            "applicable": 20,
+            "denominator": 20,
+            "pass": 18,
+            "fail": 2,
+            "not_applicable": 0,
+            "fail_ids": [
+              "TRACE-S02",
+              "TRACE-S20"
+            ],
+            "pass_ids": [
+              "TRACE-S01",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S19"
+            ],
+            "not_applicable_ids": [],
+            "excluded_from_denominator": []
+          },
+          "s19_retrieval_budget_v1": {
+            "checker_id": "s19_retrieval_budget_v1",
+            "applicable": 1,
+            "denominator": 1,
+            "pass": 0,
+            "fail": 1,
+            "not_applicable": 19,
+            "fail_ids": [
+              "TRACE-S19"
+            ],
+            "pass_ids": [],
+            "not_applicable_ids": [
+              "TRACE-S01",
+              "TRACE-S02",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S20"
+            ],
+            "excluded_from_denominator": [
+              "TRACE-S01",
+              "TRACE-S02",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S20"
+            ]
+          }
+        },
+        "delivered": {
+          "deferred_date_qualifications_v1": {
+            "checker_id": "deferred_date_qualifications_v1",
+            "applicable": 20,
+            "denominator": 20,
+            "pass": 20,
+            "fail": 0,
+            "not_applicable": 0,
+            "fail_ids": [],
+            "pass_ids": [
+              "TRACE-S01",
+              "TRACE-S02",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S19",
+              "TRACE-S20"
+            ],
+            "not_applicable_ids": [],
+            "excluded_from_denominator": []
+          },
+          "s19_retrieval_budget_v1": {
+            "checker_id": "s19_retrieval_budget_v1",
+            "applicable": 1,
+            "denominator": 1,
+            "pass": 0,
+            "fail": 1,
+            "not_applicable": 19,
+            "fail_ids": [
+              "TRACE-S19"
+            ],
+            "pass_ids": [],
+            "not_applicable_ids": [
+              "TRACE-S01",
+              "TRACE-S02",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S20"
+            ],
+            "excluded_from_denominator": [
+              "TRACE-S01",
+              "TRACE-S02",
+              "TRACE-S03",
+              "TRACE-S04",
+              "TRACE-S05",
+              "TRACE-S06",
+              "TRACE-S07",
+              "TRACE-S08",
+              "TRACE-S09",
+              "TRACE-S10",
+              "TRACE-S11",
+              "TRACE-S12",
+              "TRACE-S13",
+              "TRACE-S14",
+              "TRACE-S15",
+              "TRACE-S16",
+              "TRACE-S17",
+              "TRACE-S18",
+              "TRACE-S20"
+            ]
+          }
+        }
+      },
+      "comparison_to_saved_baseline_assertions": {
+        "deferred_date_qualifications_v1": {
+          "baseline_denominator": 20,
+          "candidate_denominator": 20,
+          "baseline_fail_ids": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "candidate_fail_ids": [],
+          "still_failing": [],
+          "newly_failing": [],
+          "newly_passing": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "regressed_from_pass": []
+        },
+        "s19_retrieval_budget_v1": {
+          "baseline_denominator": 1,
+          "candidate_denominator": 1,
+          "baseline_fail_ids": [
+            "TRACE-S19"
+          ],
+          "candidate_fail_ids": [
+            "TRACE-S19"
+          ],
+          "still_failing": [
+            "TRACE-S19"
+          ],
+          "newly_failing": [],
+          "newly_passing": [],
+          "regressed_from_pass": []
+        }
+      },
+      "raw_versus_saved_baseline": {
+        "deferred_date_qualifications_v1": {
+          "baseline_denominator": 20,
+          "candidate_denominator": 20,
+          "baseline_fail_ids": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "candidate_fail_ids": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "still_failing": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "newly_failing": [],
+          "newly_passing": [],
+          "regressed_from_pass": []
+        },
+        "s19_retrieval_budget_v1": {
+          "baseline_denominator": 1,
+          "candidate_denominator": 1,
+          "baseline_fail_ids": [
+            "TRACE-S19"
+          ],
+          "candidate_fail_ids": [
+            "TRACE-S19"
+          ],
+          "still_failing": [
+            "TRACE-S19"
+          ],
+          "newly_failing": [],
+          "newly_passing": [],
+          "regressed_from_pass": []
+        }
+      },
+      "checker_file_sha256": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33"
+    }
+  },
+  "unchanged_check": {
+    "label": "Application-layer replay of 20 saved live traces.",
+    "what_was_checked": "Text before the Timing and scope heading is byte-equal between raw and delivered for all 20 parent traces. Deterministic assertions were then run on delivered outputs and compared to the saved week4_codify_baseline_v1 results. Raw-output assertion results were retained and match the saved baseline.",
+    "prefix_unchanged": "20/20",
+    "prefix_mismatches": [],
+    "before_raw_matches_saved_baseline": true,
+    "denominators": {
+      "deferred_date_qualifications_v1": 20,
+      "s19_retrieval_budget_v1": 1
+    },
+    "raw_before": {
+      "deferred_date_qualifications_v1": {
+        "denominator": 20,
+        "pass": 18,
+        "fail": 2,
+        "fail_ids": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ]
+      },
+      "s19_retrieval_budget_v1": {
+        "denominator": 1,
+        "pass": 0,
+        "fail": 1,
+        "fail_ids": [
+          "TRACE-S19"
+        ]
+      }
+    },
+    "delivered_after": {
+      "deferred_date_qualifications_v1": {
+        "denominator": 20,
+        "pass": 20,
+        "fail": 0,
+        "fail_ids": [],
+        "newly_passing": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ]
+      },
+      "s19_retrieval_budget_v1": {
+        "denominator": 1,
+        "pass": 0,
+        "fail": 1,
+        "fail_ids": [
+          "TRACE-S19"
+        ],
+        "still_failing": [
+          "TRACE-S19"
+        ],
+        "note": "Retrieval was not changed; S19 still recorded 6 preview_classification_search act events."
+      }
+    }
+  },
+  "raw_versus_delivered": {
+    "replay_repair_ok": "20/20",
+    "replay_repair_failed": "0/20",
+    "replay_raw_assertion_A_fail_ids": [
+      "TRACE-S02",
+      "TRACE-S20"
+    ],
+    "replay_delivered_assertion_A_fail_ids": [],
+    "replay_raw_assertion_B_fail_ids": [
+      "TRACE-S19"
+    ],
+    "replay_delivered_assertion_B_fail_ids": [
+      "TRACE-S19"
+    ],
+    "note": "Delivered Timing and scope quotes the verified Article 113 excerpts (general application from 2 August 2026; Chapter III Sections 1\u20133 except Article 6(5); 2 December 2027 for Article 6(2)/Annex III; 2 August 2028 for Article 6(1)/Annex I). Raw answers are stored unchanged under timing_repair.raw_output."
+  },
+  "live_smoke": {
+    "label": "One live TRACE-S02 integration smoke. Not a frozen dataset member.",
+    "added_to_frozen_datasets": false,
+    "review_register": "not opened",
+    "retries": 0,
+    "limits": {
+      "max_llm_calls": 8,
+      "timeout_seconds": 90
+    },
+    "path": "data/local/traces/timing_repair_smoke.jsonl",
+    "sha256": "f490a1fd0d90840a0fb16f26bcdbeae52e7fb32bc7a191d7c43962cc330dc56d",
+    "scenario_id": "timing_repair_smoke",
+    "source_scenario_id": "TRACE-S02",
+    "run_id": "fb634225-74e4-4ad8-ae5f-5a7cc52087ae",
+    "execution_status": "ok",
+    "elapsed_ms": 27549.755,
+    "model": "gemini-3.8-flash",
+    "agent_name": "aeacus_preview_agent",
+    "formatter_id": "aeacus.timing_scope.v1",
+    "formatter_version": "1",
+    "repair_status": "ok",
+    "repair_reason": null,
+    "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+    "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "deferred_date_qualifications_v1": {
+      "raw": {
+        "result": "pass",
+        "mentions_december_2027": true,
+        "mentions_august_2028": false,
+        "chapter_iii": true,
+        "sections_1_to_3": true,
+        "article_6_5_exception": true,
+        "note": "This live raw already named Chapter III Sections 1\u20133 and the Article 6(5) exception for the December 2027 date it mentioned. It omitted 2 August 2028. The checker only requires markers for dates that appear, so raw passed."
+      },
+      "delivered": {
+        "result": "pass",
+        "mentions_december_2027": true,
+        "mentions_august_2028": true,
+        "chapter_iii": true,
+        "sections_1_to_3": true,
+        "article_6_5_exception": true
+      }
+    },
+    "raw_output": "### Provisional finding\n\nThe software provisionally falls within the scope of a high-risk AI system under Article 6(2) and Annex III, point 3, unless it satisfies the derogation criteria set out in Article 6(3) and the associated provider obligations under Article 6(4).\n\n### Why\n\nAnnex III, point 3(b) identifies as high-risk AI systems intended to be used to evaluate learning outcomes in educational and vocational training institutions at all levels. In addition, Annex III, point 3(c) covers AI systems intended to assess the appropriate level of education that an individual will receive or be able to access within such institutions. Scoring oral examinations evaluates learning outcomes, and assigning a Common European Framework of Reference (CEFR) level may also assess the appropriate educational level accessible to the student.\n\nUnder Article 6(2), systems listed in Annex III are considered high-risk by default. The fact that a teacher can alter the suggested CEFR level before it is delivered to the student does not automatically exempt the system. Under Article 6(3), an Annex III system is not considered high-risk only if it does not pose a significant risk of harm to health, safety, or fundamental rights, including by not materially influencing the outcome of decision-making, and meets at least one specific condition, such as performing a preparatory task to an assessment under Article 6(3)(d). If the software's score or suggested level materially influences the teacher\u2019s final determination, the derogation does not apply.\n\n### What could change this\n\n- The classification would not be high-risk if the system satisfies Article 6(3)\u2014for example, by acting strictly as a preparatory task under Article 6(3)(d) without materially influencing the teacher's independent decision-making.\n- To rely on an Article 6(3) derogation, the provider must satisfy Article 6(4), which requires documenting the assessment before the system is placed on the market or put into service and complying with registration requirements.\n- Conversely, pursuant to the final subparagraph of Article 6(3), if the system performs profiling of natural persons, it is always considered high-risk regardless of any other conditions.\n\n### Missing facts\n\n- The degree of teacher reliance on the automated score and suggested CEFR level (for example, whether teachers conduct a comprehensive, independent evaluation of the recording or routinely defer to the generated suggestion).\n- Whether the software performs profiling of students.\n- The precise institutional context and operational purpose of the test (such as formal academic credit, admission/placement, or purely informal practice).\n- Whether the provider evaluated and documented an assessment under Article 6(4) showing that the software does not materially influence the grading decision.\n\n### Timing and scope\n\nThis reading is provisional and confined to the classification subset of Article 6, Annex III, and Article 113. It does not assess general legal obligations, governance requirements, or overall regulatory conformity under the broader regulation. Under Article 113, the Regulation generally applies from 2 August 2026; however, under Article 113(c)(i), Chapter III, Sections 1, 2, and 3\u2014with the exception of Article 6(5)\u2014apply from 2 December 2027 for systems classified under Article 6(2) and Annex III.",
+    "delivered_output": "### Provisional finding\n\nThe software provisionally falls within the scope of a high-risk AI system under Article 6(2) and Annex III, point 3, unless it satisfies the derogation criteria set out in Article 6(3) and the associated provider obligations under Article 6(4).\n\n### Why\n\nAnnex III, point 3(b) identifies as high-risk AI systems intended to be used to evaluate learning outcomes in educational and vocational training institutions at all levels. In addition, Annex III, point 3(c) covers AI systems intended to assess the appropriate level of education that an individual will receive or be able to access within such institutions. Scoring oral examinations evaluates learning outcomes, and assigning a Common European Framework of Reference (CEFR) level may also assess the appropriate educational level accessible to the student.\n\nUnder Article 6(2), systems listed in Annex III are considered high-risk by default. The fact that a teacher can alter the suggested CEFR level before it is delivered to the student does not automatically exempt the system. Under Article 6(3), an Annex III system is not considered high-risk only if it does not pose a significant risk of harm to health, safety, or fundamental rights, including by not materially influencing the outcome of decision-making, and meets at least one specific condition, such as performing a preparatory task to an assessment under Article 6(3)(d). If the software's score or suggested level materially influences the teacher\u2019s final determination, the derogation does not apply.\n\n### What could change this\n\n- The classification would not be high-risk if the system satisfies Article 6(3)\u2014for example, by acting strictly as a preparatory task under Article 6(3)(d) without materially influencing the teacher's independent decision-making.\n- To rely on an Article 6(3) derogation, the provider must satisfy Article 6(4), which requires documenting the assessment before the system is placed on the market or put into service and complying with registration requirements.\n- Conversely, pursuant to the final subparagraph of Article 6(3), if the system performs profiling of natural persons, it is always considered high-risk regardless of any other conditions.\n\n### Missing facts\n\n- The degree of teacher reliance on the automated score and suggested CEFR level (for example, whether teachers conduct a comprehensive, independent evaluation of the recording or routinely defer to the generated suggestion).\n- Whether the software performs profiling of students.\n- The precise institutional context and operational purpose of the test (such as formal academic credit, admission/placement, or purely informal practice).\n- Whether the provider evaluated and documented an assessment under Article 6(4) showing that the software does not materially influence the grading decision.\n\n### Timing and scope\n\nThis is a provisional reading against the pinned classification subset only: Article 6, Annex III, and Article 113, from the consolidated edition dated 27 July 2026. It does not cover the whole EU AI Act.\n\nFrom Article 113 \u2014 Entry into force and application:\n\n> It shall apply from 2 August 2026.\n\n> Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;\n"
+  },
+  "replay_versus_live_smoke": {
+    "replay": "Application-layer replay of 20 saved live traces. Uses frozen week4_adk_preview_v1 observations only. No retrieval or model calls.",
+    "live_smoke": "One new live TRACE-S02 invocation after offline checks, stored at data/local/traces/timing_repair_smoke.jsonl. Not added to either frozen 20-run dataset.",
+    "do_not_combine": true
+  },
+  "failures_and_limitations": [
+    "F1 remains unresolved: 5/20 failures on both parent and candidate after the unsuccessful instruction experiment.",
+    "Candidate F2 labels were not assigned. No overall quality pass rate is reported.",
+    "Source review and ingestion gates stay closed. Corpus was not changed.",
+    "s19_retrieval_budget_v1 still fails on the replayed parent TRACE-S19 (6 act events). Retrieval was not changed.",
+    "deferred_date_qualifications_v1 only inspects dates that are mentioned. Omitting 2 August 2028 is not itself a fail if December 2027 is qualified. The formatter still inserts both deferred dates from the verified source.",
+    "The live smoke raw already passed deferred_date_qualifications_v1; that is not evidence that the frozen TRACE-S02 raw was correct, and it is not a 20-run result.",
+    "Formatter success on these 20 traces required a complete Article 113 observation in the saved events. Missing, tampered, or wrong-edition evidence fails closed and states no statutory dates.",
+    "MCP, SequentialAgent dual preview, and LangGraph paths were not modified and were not collected.",
+    "This is not a model-quality improvement and not 20 new live runs."
+  ],
+  "gates": {
+    "f1": "unresolved",
+    "source_review": "closed",
+    "ingestion": "closed"
+  },
+  "dependency_or_corpus_changes": false,
+  "commits_or_pushes": false
+}

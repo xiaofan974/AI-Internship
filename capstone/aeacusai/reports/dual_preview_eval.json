@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-10-22T20:04:10.487743+00:00",
+  "versions": {
+    "python": "3.12.13",
+    "executable": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/bin/python",
+    "google-adk": "2.12.0",
+    "mcp": "1.25.0",
+    "google-genai": "2.32.0",
+    "model": "gemini-3.8-flash"
+  },
+  "timeouts": {
+    "max_llm_calls": 8,
+    "run_timeout_seconds": 90
+  },
+  "offline": {
+    "kind": "mocked_or_local_only",
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/lib/python3.12/site-packages/google/adk/features/_feature_decorator.py:71: UserWarning: [EXPERIMENTAL] feature FeatureName.PLUGGABLE_AUTH is enabled.\n  check_feature_enabled()\n...../Users/aureliemahe/AI-Internship/capstone/aeacusai/aeacus_agent/dual_preview.py:319: DeprecationWarning: SequentialAgent is deprecated in favor of Workflow and will be removed in a future version. Workflow cannot yet be used as an LlmAgent sub-agent.\n  pipeline = SequentialAgent(\n./Users/aureliemahe/AI-Internship/capstone/aeacusai/aeacus_agent/dual_preview.py:319: DeprecationWarning: SequentialAgent is deprecated in favor of Workflow and will be removed in a future version. Workflow cannot yet be used as an LlmAgent sub-agent.\n  pipeline = SequentialAgent(\n..\n----------------------------------------------------------------------\nRan 8 tests in 0.031s\n\nOK\n"
+  },
+  "live_run": {
+    "execution": "ok",
+    "invocations_used": 1,
+    "pipeline": "aeacus_dual_preview",
+    "agents": [
+      "aeacus_classifier",
+      "aeacus_evidence_critic"
+    ],
+    "classifier_draft": "### Provisional finding\nThe AI system is provisionally classified as high-risk pursuant to Article 6(2) and Annex III, point 4, subject to whether an exception under Article 6(3) is substantiated.\n\n### Why\nAnnex III, point 4(a) specifically covers AI systems intended to be used for the recruitment or selection of natural persons, particularly to analyse and filter job applications and evaluate candidates. Under Article 6(2), systems listed in Annex III are considered high-risk. The stated core functionalities—analysing applications, filtering candidates, and ranking them for recruiters—fall squarely within the use case described in Annex III, point 4(a).\n\n### What could change this\nUnder Article 6(3), an AI system referred to in Annex III is not considered high-risk if it does not pose a significant risk of harm to the health, safety, or fundamental rights of natural persons, including by not materially influencing the outcome of decision-making, provided it meets at least one of four specific conditions:\n1. It is intended to perform a narrow procedural task;\n2. It is intended to improve the result of a previously completed human activity;\n3. It is intended to detect decision-making patterns or deviations without replacing or influencing a previously completed human assessment without proper human review; or\n4. It is intended to perform a preparatory task to an assessment.\n\nThe fact that recruiters make the final hiring decision does not in itself exempt the system. If the AI system materially influences recruiter decisions or screens candidates out, it would not meet the threshold of not materially influencing the outcome. Moreover, under Article 6(3), if the system performs profiling of natural persons, it remains high-risk regardless of any other conditions. If an exception under Article 6(3) is claimed, Article 6(4) mandates documenting the assessment before placing the system on the market or putting it into service.\n\n### Missing facts\nTo conclude whether an exception applies, several facts are required:\n- Whether the system carries out profiling of natural persons;\n- The operational workflow between the AI outputs and the recruiter (for instance, whether low-ranked or filtered applications are completely excluded from human review or merely ordered on a screen);\n- The technical scope of the analysis (such as basic administrative pre-checks versus substantive scoring of skills and personality);\n- The legal role of the company (provider or deployer) and whether provider documentation under Article 6(4) exists.\n\n### Timing and scope\nThis provisional reading is strictly limited to the classification subset of Article 6, Annex III, and Article 113, and does not determine overall compliance or prohibitions under the broader framework. Under Article 113(c)(i), Chapter III, Sections 1, 2, and 3—with the exception of Article 6(5)—apply from 2 December 2027 to AI systems classified as high-risk under Article 6(2) and Annex III.",
+    "critic_raw": "{\n  \"verdict\": \"supported\",\n  \"findings\": [],\n  \"scope_note\": \"Assessment is confined to the retrieved classification subset of Article 6, Annex III (specifically point 4), and Article 113. This automated critique verifies evidence alignment and does not constitute legal certification or approval.\"\n}",
+    "critic_verdict": {
+      "verdict": "supported",
+      "findings": [],
+      "scope_note": "Assessment is confined to the retrieved classification subset of Article 6, Annex III (specifically point 4), and Article 113. This automated critique verifies evidence alignment and does not constitute legal certification or approval.",
+      "parse_ok": true,
+      "raw": "{\n  \"verdict\": \"supported\",\n  \"findings\": [],\n  \"scope_note\": \"Assessment is confined to the retrieved classification subset of Article 6, Annex III (specifically point 4), and Article 113. This automated critique verifies evidence alignment and does not constitute legal certification or approval.\"\n}"
+    },
+    "deterministic_checks": {
+      "citation_ids": {
+        "ok": true,
+        "cited": [],
+        "unknown": []
+      },
+      "provisions": {
+        "cited": [
+          "Article 6(2)",
+          "Annex III, point 4",
+          "Article 6(3)",
+          "Article 6(4)",
+          "Article 6",
+          "Article 113",
+          "Article 113(c)",
+          "Article 6(5)"
+        ],
+        "unsupported": [],
+        "ok": true
+      },
+      "quotations": {
+        "ok": true,
+        "checked": [],
+        "unsupported": []
+      },
+      "ok": true
+    },
+    "handoff": {
+      "handoff_ok": true,
+      "handoff_error": null,
+      "system_description": "A company uses an AI system to analyse and filter job applications and rank candidates for recruiters. Recruiters make the final hiring decision. Give a provisional classification assessment against the pinned corpus, identify relevant exceptions, and state which additional facts are needed.",
+      "classifier_draft": "### Provisional finding\nThe AI system is provisionally classified as high-risk pursuant to Article 6(2) and Annex III, point 4, subject to whether an exception under Article 6(3) is substantiated.\n\n### Why\nAnnex III, point 4(a) specifically covers AI systems intended to be used for the recruitment or selection of natural persons, particularly to analyse and filter job applications and evaluate candidates. Under Article 6(2), systems listed in Annex III are considered high-risk. The stated core functionalities—analysing applications, filtering candidates, and ranking them for recruiters—fall squarely within the use case described in Annex III, point 4(a).\n\n### What could change this\nUnder Article 6(3), an AI system referred to in Annex III is not considered high-risk if it does not pose a significant risk of harm to the health, safety, or fundamental rights of natural persons, including by not materially influencing the outcome of decision-making, provided it meets at least one of four specific conditions:\n1. It is intended to perform a narrow procedural task;\n2. It is intended to improve the result of a previously completed human activity;\n3. It is intended to detect decision-making patterns or deviations without replacing or influencing a previously completed human assessment without proper human review; or\n4. It is intended to perform a preparatory task to an assessment.\n\nThe fact that recruiters make the final hiring decision does not in itself exempt the system. If the AI system materially influences recruiter decisions or screens candidates out, it would not meet the threshold of not materially influencing the outcome. Moreover, under Article 6(3), if the system performs profiling of natural persons, it remains high-risk regardless of any other conditions. If an exception under Article 6(3) is claimed, Article 6(4) mandates documenting the assessment before placing the system on the market or putting it into service.\n\n### Missing facts\nTo conclude whether an exception applies, several facts are required:\n- Whether the system carries out profiling of natural persons;\n- The operational workflow between the AI outputs and the recruiter (for instance, whether low-ranked or filtered applications are completely excluded from human review or merely ordered on a screen);\n- The technical scope of the analysis (such as basic administrative pre-checks versus substantive scoring of skills and personality);\n- The legal role of the company (provider or deployer) and whether provider documentation under Article 6(4) exists.\n\n### Timing and scope\nThis provisional reading is strictly limited to the classification subset of Article 6, Annex III, and Article 113, and does not determine overall compliance or prohibitions under the broader framework. Under Article 113(c)(i), Chapter III, Sections 1, 2, and 3—with the exception of Article 6(5)—apply from 2 December 2027 to AI systems classified as high-risk under Article 6(2) and Annex III.",
+      "evidence_record_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ],
+      "evidence_labels": [
+        "Annex III, point 4",
+        "Article 6(3)",
+        "Article 6(6)",
+        "Annex III, point 6",
+        "Article 6(4)",
+        "Annex III — High-risk AI systems referred to in Article 6(2)",
+        "Article 6 — Classification rules for high-risk AI systems",
+        "Article 113 — Entry into force and application"
+      ],
+      "evidence_hashes": [
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+          "text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+          "text_sha256": "f859f5a2e435bd84c7da404fd214279544868d431a63a582b4fe548dc94fb3e0"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+          "text_sha256": "987006acfe5d6aa147f67adf7b0c51670f42c6e30e14ccba58e33f06677dc047"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+          "text_sha256": "e869e195ab27d1812d5f496675e5d61bf25e81bee50fa44bdc386431cc627604"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+          "text_sha256": "51ce6d9ffc701ea01ff899f329c19c5733c7d99097165b10bb28bb532d24e67a"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+          "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+          "text_sha256": "b6a58d42b6248038baaf14c5918103289bc0af1aed90da5d974b7ef846a5b5ee"
+        },
+        {
+          "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d"
+        }
+      ],
+      "tool_calls": [
+        {
+          "id": "call_147357",
+          "tool": "preview_classification_search",
+          "query": "recruitment candidate filtering rank job applications Annex III Article 6"
+        }
+      ],
+      "observation_statuses": [
+        {
+          "call_id": "call_147357",
+          "tool": "preview_classification_search",
+          "query": "recruitment candidate filtering rank job applications Annex III Article 6",
+          "status": "ok"
+        }
+      ]
+    },
+    "tool_log": [
+      {
+        "type": "call",
+        "author": "aeacus_classifier",
+        "tool": "preview_classification_search",
+        "query": "recruitment candidate filtering rank job applications Annex III Article 6"
+      }
+    ],
+    "register_opened": false,
+    "cleanup": {
+      "ok": true,
+      "leftover_child_pids": [],
+      "close_error": null
+    }
+  },
+  "limits": "One SequentialAgent live run is automated evidence critique, not legal certification, approval, or readiness for registration."
+}

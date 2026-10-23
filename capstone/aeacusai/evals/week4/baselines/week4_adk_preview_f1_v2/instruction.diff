@@ -1,0 +1,12 @@
+--- week4_adk_preview_v1/AEACUS_PREVIEW_INSTRUCTION
++++ week4_adk_preview_f1_v2/AEACUS_PREVIEW_INSTRUCTION
+@@ -30,3 +30,9 @@
+ 5. Scope of the reading:
+    - This is a provisional reading against the pinned classification subset only.
+    - Do not make full-compliance, regulatory conformity, or “not prohibited” conclusions. This tool does not cover the whole EU AI Act.
++6. Specific system and unresolved facts:
++   - Assess only the specific system and deployment described. Do not extend a finding to another vendor product or a downstream system without sufficient deployment facts.
++   - Distinguish stated facts from assumptions. Retrieved legislation establishes rules, not facts about the submitted system.
++   - Do not convert an omitted fact into a negative assertion. For example, silence about an identity claim does not establish that none exists.
++   - When applying a classification provision depends on an unresolved material fact, make that dependency explicit in the Provisional finding and in Why. Listing the fact under Missing facts alone is insufficient.
++   - Preserve useful supported conclusions. Do not refuse all classification merely because additional technical details could be requested.

@@ -1,0 +1,50 @@
+{
+  "schema": "aeacus.week4.f1_judge.refinement_provenance.v1",
+  "judge_id": "week4_f1_judge_v2",
+  "parent_judge_id": "week4_f1_judge_v1",
+  "refinement_index": 1,
+  "max_permitted_calibration_refinements": 1,
+  "used_validation": false,
+  "hypothesis": "V1 accepted an answer whenever its opening or Missing facts section acknowledged uncertainty, without checking whether Why still asserted that unresolved fact.",
+  "informed_by_calibration_cases": [
+    {
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "scenario_id": "TRACE-S01",
+      "v1_role": "false_negative",
+      "use": "hypothesis only; not copied into the prompt"
+    },
+    {
+      "evaluation_id": "c953f67527f058d9",
+      "scenario_id": "TRACE-S04",
+      "v1_role": "false_negative",
+      "use": "Example A (fail despite a caveat); identifiers omitted from the prompt"
+    },
+    {
+      "evaluation_id": "4913922de88dad21",
+      "scenario_id": "TRACE-S04",
+      "v1_role": "false_negative",
+      "use": "hypothesis only; paired output of the Example A scenario"
+    },
+    {
+      "evaluation_id": "f9aafb2598bd29ec",
+      "scenario_id": "TRACE-S09",
+      "v1_role": "false_negative",
+      "use": "hypothesis only; not copied into the prompt"
+    },
+    {
+      "evaluation_id": "13df6b9eac4fa317",
+      "scenario_id": "TRACE-S09",
+      "v1_role": "false_negative",
+      "use": "hypothesis only; not copied into the prompt"
+    },
+    {
+      "evaluation_id": "c46d129cacb772e2",
+      "scenario_id": "TRACE-S02",
+      "v1_role": "true_negative",
+      "use": "Example B (supported conditional inference); identifiers omitted from the prompt"
+    }
+  ],
+  "example_source_split": "calibration",
+  "examples_are_held_out": false,
+  "validation_cases_inspected": []
+}

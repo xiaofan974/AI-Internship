@@ -1,0 +1,152 @@
+{
+  "baseline_id": "week4_adk_preview_f1_v2",
+  "architecture": "adk_single_agent_preview",
+  "agent_name": "aeacus_preview_agent",
+  "tool_backend": "direct_python",
+  "excluded_from_baseline": [
+    "capture_smoke"
+  ],
+  "scenarios": {
+    "path": "evals/week4/scenarios_v1.json",
+    "sha256": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070",
+    "count": 20,
+    "ids": [
+      "TRACE-S01",
+      "TRACE-S02",
+      "TRACE-S03",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S06",
+      "TRACE-S07",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S10",
+      "TRACE-S11",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S14",
+      "TRACE-S15",
+      "TRACE-S16",
+      "TRACE-S17",
+      "TRACE-S18",
+      "TRACE-S19",
+      "TRACE-S20"
+    ]
+  },
+  "model": {
+    "name": "gemini-3.8-flash",
+    "default_model": "gemini-3.8-flash",
+    "env_model": "gemini-3.8-flash"
+  },
+  "generation": {
+    "generate_content_config": null,
+    "generate_content_config_status": "not_set_on_agent",
+    "run_config": {
+      "max_llm_calls": 8
+    },
+    "timeout_seconds": 90
+  },
+  "instructions": {
+    "sha256": "20f72d6ea00bb6a052266a9abc79066d93119f321a56a3cea446f556cda9517e",
+    "status": "observed"
+  },
+  "tool_definitions": {
+    "sha256": "2a41a31f0f9020030b72f550421eee0a7ca700087817c3af2d0d113d5855c894",
+    "names": [
+      "preview_classification_search"
+    ]
+  },
+  "implementation_files": {
+    "aeacus_agent/preview_agent.py": {
+      "sha256": "666e3469275e25f4736dce9a71502b4bbff6513b73fa7c68535f5cba106441af",
+      "status": "observed"
+    },
+    "aeacus_agent/context_preview.py": {
+      "sha256": "7c26d55f004a38b65eb777d994a0af28a4b91d51f1565cae5a008c46fc73369a",
+      "status": "observed"
+    },
+    "aeacus_agent/trace_store.py": {
+      "sha256": "48ccbc19deec112bfc64a58b03d2b20b783e4bbe225b6c5c767e5aaf5030c8e3",
+      "status": "observed"
+    },
+    "aeacus_agent/agent.py": {
+      "sha256": "b5e1f996e10cf6dbd2f49efb861b10820df41ba29b9296677cb0c94bf26f2b91",
+      "status": "observed"
+    },
+    "run_review.py": {
+      "sha256": "5bb886fbb5148571456beab11e37d9bc062437d13b0f04ff8fc665374cf171b0",
+      "status": "observed"
+    },
+    "evals/week4/baseline.py": {
+      "sha256": "58b5736a79c5e28fbfc85147fdd4b63d55a22cb6e6da7454e4e5c3aa6a2bc133",
+      "status": "observed"
+    },
+    "run_week4_baseline.py": {
+      "sha256": "cfce57633e7dbf841618260f37a129165e0077de95f84767704dc7b024fde132",
+      "status": "observed"
+    }
+  },
+  "corpus": {
+    "pinned_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "artifacts": {
+      "records/classification_children_stage9.json": {
+        "sha256": "5b1530c1ed0be3863d6d3814c4802ec54f1849eec54dc7f209120b2416ae3995",
+        "status": "observed"
+      },
+      "records/consolidated_articles_stage4.json": {
+        "sha256": "895676f7f372fd0f626ba4d0430572acc9a2b4c6426c9b562b9cf0bcfbe03a1b",
+        "status": "observed"
+      },
+      "records/consolidated_annexes_stage5.json": {
+        "sha256": "a60f3f4efc88883d1d3e0277400b91954c52c4ffaa302bfaa3181752b72e3ebe",
+        "status": "observed"
+      }
+    }
+  },
+  "execution_limits": {
+    "max_llm_calls": 8,
+    "timeout_seconds": 90
+  },
+  "trace_path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/traces/week4_adk_preview_f1_v2.jsonl",
+  "scenario_attempts": {
+    "TRACE-S01": null,
+    "TRACE-S02": null,
+    "TRACE-S03": null,
+    "TRACE-S04": null,
+    "TRACE-S05": null,
+    "TRACE-S06": null,
+    "TRACE-S07": null,
+    "TRACE-S08": null,
+    "TRACE-S09": null,
+    "TRACE-S10": null,
+    "TRACE-S11": null,
+    "TRACE-S12": null,
+    "TRACE-S13": null,
+    "TRACE-S14": null,
+    "TRACE-S15": null,
+    "TRACE-S16": null,
+    "TRACE-S17": null,
+    "TRACE-S18": null,
+    "TRACE-S19": null,
+    "TRACE-S20": null
+  },
+  "frozen_at": "2026-10-22T21:35:57.083461+00:00",
+  "parent_baseline_id": "week4_adk_preview_v1",
+  "parent_manifest": "evals/week4/baselines/week4_adk_preview_v1/manifest.json",
+  "change": {
+    "kind": "instruction_only",
+    "target": "F1",
+    "instruction_sha256_parent": "6d28bfa7d6d42c8ce1c21211b1e87adf877137ed878b1082c0ec6f36716a7de7",
+    "instruction_sha256_candidate": "20f72d6ea00bb6a052266a9abc79066d93119f321a56a3cea446f556cda9517e",
+    "instruction_diff_path": "evals/week4/baselines/week4_adk_preview_f1_v2/instruction.diff",
+    "note": "Intentional instruction change for F1. Model, tools, corpus, generation configuration, and limits are unchanged. The parent manifest is not rewritten; its instruction mismatch is expected."
+  },
+  "unchanged_from_parent": {
+    "model": true,
+    "tool_definitions": true,
+    "corpus": true,
+    "generation": true,
+    "execution_limits": true,
+    "scenarios.sha256": true
+  }
+}

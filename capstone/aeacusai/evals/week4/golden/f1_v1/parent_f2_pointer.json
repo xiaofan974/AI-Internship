@@ -1,0 +1,18 @@
+{
+  "schema": "aeacus.week4.parent_f2_pointer.v1",
+  "note": "F2 labels are kept separate from this F1 golden dataset. Parent F2 lives in annotations_v1. Candidate F2 remains unreviewed.",
+  "parent_annotations": {
+    "path": "evals/week4/annotations_v1.json",
+    "sha256": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee"
+  },
+  "parent_f2_fail_ids": [
+    "TRACE-S05",
+    "TRACE-S11",
+    "TRACE-S12",
+    "TRACE-S16",
+    "TRACE-S18"
+  ],
+  "candidate_f2_reviewed": false,
+  "included_in_f1_goldens": false,
+  "included_in_judge_payloads": false
+}

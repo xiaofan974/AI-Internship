@@ -1,0 +1,118 @@
+{
+  "schema": "aeacus.week4.f1_judge.calibration_report.v1",
+  "judge_id": "week4_f1_judge_v1",
+  "split": "calibration",
+  "not_an_application_or_approval_gate": true,
+  "prompt_refined_after_batch": false,
+  "validation_inference": false,
+  "run": {
+    "judge_id": "week4_f1_judge_v1",
+    "split": "calibration",
+    "model": "gemini-3.8-flash",
+    "prompt_version": "f1_judge_prompt_v1",
+    "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+    "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+    "generation": {
+      "temperature": 0.0,
+      "max_output_tokens": 400,
+      "candidate_count": 1,
+      "response_mime_type": "application/json",
+      "thinking_budget": 0,
+      "include_thoughts": false,
+      "tools": []
+    },
+    "n_existing": 0,
+    "n_pending": 20,
+    "stopped": false,
+    "stop_reason": null,
+    "started_at": "2026-10-23T12:04:53.971038+00:00",
+    "ended_at": "2026-10-23T12:06:14.495037+00:00",
+    "n_persisted": 20
+  },
+  "hashes": {
+    "prompt": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+    "inference_config": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+    "manifest": "262ce9b1401be57dd61ff8f0b43c08b6cea9d44008e030a816acacad78669963",
+    "split": "a57e8cac7d357b67f98a04f5b83a65da39a5cc8f54b6c26ecad3ae6596e54d30",
+    "f1_rubric": "1db86276750dab8e6f93c34ef429482065eff5373a6d6e72b4c43625999a7502",
+    "judge_contract": "91aae84736794d980e37251173dfc98b999147086ef56e8142224f369ec5a480",
+    "cases_jsonl": "152adaebbcd9c51c83bbdfcbf37bab694eeb4f9668c226563c9f69c652a0c15c",
+    "judge_payloads_jsonl": "1f9abd172f98692b3d62a071664caf7be3347fbd23a3cb2d5b961bf234d8f3f6"
+  },
+  "score": {
+    "metrics": {
+      "TP": 0,
+      "FN": 5,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.0,
+      "TNR": 1.0,
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail"
+    },
+    "expected_n": 20,
+    "valid_n": 20,
+    "invalid_n": 0,
+    "missing_n": 0,
+    "prediction_coverage": 1.0,
+    "valid_response_only": false,
+    "invalid": [],
+    "missing": []
+  },
+  "false_negatives": [
+    {
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "scenario_id": "TRACE-S01",
+      "input": "A mid-size logistics company uses an AI system to read incoming CVs, discard applications that lack a driving licence, and show remaining candidates in a ranked list to human recruiters. Recruiters may interview anyone on the list.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe system provisionally falls within the high-risk classification scope under Annex III, point 4 via Article 6(2). However, whether the system is ultimately classified as high-risk depends on unresolved material facts: specifically, whether the automated…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The classification directly evaluates the submitted system and explicitly states reasonable inferences and dependencies as conditions or missing facts."
+    },
+    {
+      "evaluation_id": "c953f67527f058d9",
+      "scenario_id": "TRACE-S04",
+      "input": "An office-building operator runs cameras at the lobby turnstiles. Software compares faces to an employee watchlist and unlocks the gate when it reports a match. Security staff are notified only on a mismatch.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe system provisionally classifies as a high-risk AI system under Article 6(2) and Annex III, point 1(a). This finding depends on two unresolved material facts: whether the turnstile entry process operates purely as 1-to-many remote biometric identificat…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer accurately conditions its classification on explicit dependencies and missing facts without relying on unstated premises."
+    },
+    {
+      "evaluation_id": "4913922de88dad21",
+      "scenario_id": "TRACE-S04",
+      "input": "An office-building operator runs cameras at the lobby turnstiles. Software compares faces to an employee watchlist and unlocks the gate when it reports a match. Security staff are notified only on a mismatch.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe lobby turnstile facial comparison system provisionally falls within the scope of a high-risk AI system under Article 6(2) and Annex III, point 1(a), unless it qualifies as a biometric verification system or meets the derogation conditions set out in A…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer properly evaluates the described system under Annex III point 1(a) and explicitly frames contingencies and missing facts rather than relying on unstated premises."
+    },
+    {
+      "evaluation_id": "f9aafb2598bd29ec",
+      "scenario_id": "TRACE-S09",
+      "input": "A government contractor uses a tool that reads asylum-file PDFs and proposes a “complexity score” so caseworkers can pick which files to open first. The score is visible on the caseworker dashboard.",
+      "relevant_answer_excerpt": "### Provisional finding\nThe tool provisionally falls within the scope of Annex III, point 7(c) as an AI system used on behalf of competent public authorities to assist in examining applications for asylum. However, its classification as high-risk under Article 6(2) versus non-hig…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer identifies the potential classification under Annex III and Article 6 and explicitly states reasonable dependencies on missing facts."
+    },
+    {
+      "evaluation_id": "13df6b9eac4fa317",
+      "scenario_id": "TRACE-S09",
+      "input": "A government contractor uses a tool that reads asylum-file PDFs and proposes a “complexity score” so caseworkers can pick which files to open first. The score is visible on the caseworker dashboard.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe tool is provisionally classified as a high-risk AI system under Article 6(2) and Annex III, point 7, unless it satisfies the conditions for an exception under Article 6(3).\n\n### Why\n\nThe tool is used by a government contractor on asylum files to gener…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The classification addresses the submitted system directly and clearly conditions potential variations on explicit factual dependencies without unstated premises or underspecified product scope."
+    }
+  ],
+  "false_positives": [],
+  "limitations": [
+    "20 outputs from 10 paired scenarios",
+    "only 5 labeled failures",
+    "AI-assisted labels reviewed by Lily",
+    "same model family as the assessed agent",
+    "calibration performance is not held-out validation"
+  ]
+}

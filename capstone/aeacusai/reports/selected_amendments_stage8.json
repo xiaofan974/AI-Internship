@@ -1,0 +1,238 @@
+{
+  "stage": "selected_amendments_stage8",
+  "scope": "Bounded provenance check for AI Act Articles 6 and 113 only",
+  "ingestion_permitted": false,
+  "active_retrieval_edition": null,
+  "verified_sources": {
+    "T1-AIA-OJ-2024": {
+      "source_id": "T1-AIA-OJ-2024",
+      "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "relative_path": "data/raw/ai-act-oj-2024-en.xhtml",
+      "sha256": "8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "manifest_sha256_verified": true
+    },
+    "T1-AIA-AMEND-2026-1744": {
+      "source_id": "T1-AIA-AMEND-2026-1744",
+      "source_snapshot_id": "T1-AIA-AMEND-2026-1744@sha256:9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+      "relative_path": "data/raw/ai-act-amendment-2026-1744-en.xhtml",
+      "sha256": "9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+      "manifest_sha256_verified": true
+    },
+    "T1-AIA-CONS-20260727": {
+      "source_id": "T1-AIA-CONS-20260727",
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "relative_path": "data/raw/ai-act-consolidated-20260727-en.xhtml",
+      "sha256": "5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "manifest_sha256_verified": true
+    }
+  },
+  "temporary_comparison_normalizations": [
+    {
+      "name": "legal-whitespace-v1",
+      "description": "Collapses consecutive whitespace characters via ' '.join(''.join(element.itertext()).split())."
+    },
+    {
+      "name": "strip_outer_amendment_quotes",
+      "description": "On temporary derived text for Amending Regulation (EU) 2026/1744 quoted blocks only, strips the single leading opening quote (‘) and/or single trailing closing quote (’) enclosing the quoted provision, and excludes the trailing ';' paragraph sibling that terminates the amending point row. Internal quotes, punctuation, and symbols are preserved."
+    },
+    {
+      "name": "exclude_consolidated_modref_elements_for_residual_check",
+      "description": "On temporary derived comparison copies of consolidated Articles 6 and 113, excludes <p class='modref'> editorial revision markers ('▼M1', '▼B') when comparing residual wording against the original 2024 OJ edition."
+    }
+  ],
+  "verification_summary": {
+    "all_three_sources_verified_against_manifest": true,
+    "article_6_inserted_paragraphs_1a_to_1c_match_amendment": true,
+    "article_6_residual_wording_matches_original_oj": true,
+    "article_113_replacement_and_addition_clauses_match_amendment": true,
+    "article_113_remaining_wording_matches_original_oj": true,
+    "article_113_full_reconstructed_text_matches_consolidated_without_modrefs": true,
+    "discrepancy_count": 0
+  },
+  "article_6_check": {
+    "article": "6",
+    "amending_provision": "Article 1, point (8)",
+    "amending_container_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[11]",
+    "operation_label_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[11]/*[3]/*/*[2]/*[1]",
+    "operation_label": "in Article 6, the following paragraphs are inserted:",
+    "quoted_amendment_text": "‘1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components. 1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components. 1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).’",
+    "derived_amendment_text": "1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components. 1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components. 1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).",
+    "consolidated_inserted_text": "1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components. 1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components. 1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).",
+    "inserted_paragraphs_all_match": true,
+    "paragraph_comparisons": [
+      {
+        "paragraph": "1a",
+        "amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[11]/*[3]/*/*[2]/*[2]",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[5]",
+        "quoted_amendment_text_raw": "‘1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components.",
+        "derived_amendment_text_outer_quote_stripped": "1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components.",
+        "consolidated_paragraph_text": "1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components.",
+        "exact_match": true
+      },
+      {
+        "paragraph": "1b",
+        "amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[11]/*[3]/*/*[2]/*[3]",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[6]",
+        "quoted_amendment_text_raw": "1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components.",
+        "derived_amendment_text_outer_quote_stripped": "1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components.",
+        "consolidated_paragraph_text": "1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components.",
+        "exact_match": true
+      },
+      {
+        "paragraph": "1c",
+        "amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[11]/*[3]/*/*[2]/*[4]",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7]",
+        "quoted_amendment_text_raw": "1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).’",
+        "derived_amendment_text_outer_quote_stripped": "1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).",
+        "consolidated_paragraph_text": "1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).",
+        "exact_match": true
+      }
+    ],
+    "identified_editorial_markers_removed_for_comparison": [
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[4]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼M1"
+      },
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[8]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼B"
+      }
+    ],
+    "residual_wording_comparison": {
+      "original_oj_selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]",
+      "original_oj_char_length": 4041,
+      "original_oj_sha256": "f4c56417818fa2f1eea5d28b5be8b562ab2e7eb18a6cfe143ebbed7ce5aa61ac",
+      "consolidated_residual_char_length": 4041,
+      "consolidated_residual_sha256": "f4c56417818fa2f1eea5d28b5be8b562ab2e7eb18a6cfe143ebbed7ce5aa61ac",
+      "residual_matches_original_article_6_wording": true
+    },
+    "discrepancies": []
+  },
+  "article_113_check": {
+    "article": "113",
+    "amending_provision": "Article 1, point (40)",
+    "amending_container_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]",
+    "introductory_operation_label_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[1]",
+    "introductory_operation_label": "in Article 113, the third paragraph is amended as follows:",
+    "clause_comparisons": [
+      {
+        "amending_subpoint": "(40)(a)",
+        "target_article_113_point": "(a)",
+        "operation_kind": "replacement",
+        "subpoint_container_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[2]",
+        "operation_label_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[2]/*[3]/*/*[2]/*[1]",
+        "operation_label": "point (a) is replaced by the following:",
+        "quoted_amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[2]/*[3]/*/*[2]/*[2]",
+        "quoted_amendment_text_raw": "‘(a) Chapters I and II shall apply from 2 February 2025, with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) which shall apply from 2 December 2026;’",
+        "derived_amendment_text_outer_quote_stripped": "(a) Chapters I and II shall apply from 2 February 2025, with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) which shall apply from 2 December 2026;",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[7]",
+        "consolidated_text": "(a) Chapters I and II shall apply from 2 February 2025, with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) which shall apply from 2 December 2026;",
+        "original_oj_selector": "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[6]",
+        "original_oj_text": "(a) Chapters I and II shall apply from 2 February 2025;",
+        "matches_amendment": true
+      },
+      {
+        "amending_subpoint": "(40)(b)",
+        "target_article_113_point": "(c)",
+        "operation_kind": "replacement",
+        "subpoint_container_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[3]",
+        "operation_label_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[3]/*[3]/*/*[2]/*[1]",
+        "operation_label": "point (c) is replaced by the following:",
+        "quoted_amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[3]/*[3]/*/*[2]/*[2]",
+        "quoted_amendment_text_raw": "‘(c) Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;’",
+        "derived_amendment_text_outer_quote_stripped": "(c) Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[11]",
+        "consolidated_text": "(c) Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;",
+        "original_oj_selector": "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[8]",
+        "original_oj_text": "(c) Article 6(1) and the corresponding obligations in this Regulation shall apply from 2 August 2027.",
+        "matches_amendment": true
+      },
+      {
+        "amending_subpoint": "(40)(c)",
+        "target_article_113_point": "(d)",
+        "operation_kind": "addition",
+        "subpoint_container_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[4]",
+        "operation_label_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[4]/*[3]/*/*[2]/*[1]",
+        "operation_label": "the following point is added:",
+        "quoted_amendment_selector": "/*/*[2]/*[4]/*[3]/*[1]/*[43]/*[3]/*/*[2]/*[4]/*[3]/*/*[2]/*[2]",
+        "quoted_amendment_text_raw": "‘(d) Articles 102 to 110 shall apply from 27 July 2026.’",
+        "derived_amendment_text_outer_quote_stripped": "(d) Articles 102 to 110 shall apply from 27 July 2026.",
+        "consolidated_selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[13]",
+        "consolidated_text": "(d) Articles 102 to 110 shall apply from 27 July 2026.",
+        "original_oj_selector": null,
+        "original_oj_text": null,
+        "matches_amendment": true
+      }
+    ],
+    "all_replacement_and_addition_clauses_match_amendment": true,
+    "identified_editorial_markers_removed_for_comparison": [
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[6]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼M1"
+      },
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[8]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼B"
+      },
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[10]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼M1"
+      },
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[12]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼M1"
+      },
+      {
+        "selector": "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[14]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼B"
+      }
+    ],
+    "remaining_unchanged_wording_comparison": {
+      "original_oj_unchanged_selectors": [
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[1]",
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[2]",
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[3]",
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[4]",
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[5]",
+        "/*/*[2]/*[4]/*[3]/*[13]/*[14]/*[7]"
+      ],
+      "consolidated_unchanged_selectors": [
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[1]",
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[2]",
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[3]",
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[4]",
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[5]",
+        "/*/*[2]/*[9]/*[4]/*[14]/*[14]/*[9]"
+      ],
+      "original_oj_unchanged_text": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union. It shall apply from 2 August 2026. However: (b) Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101;",
+      "consolidated_unchanged_text": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union. It shall apply from 2 August 2026. However: (b) Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101;",
+      "original_oj_unchanged_sha256": "949b29e3a41d3d5f028143f5dd7fdd89e7e09f0d50324839ebb8c72bfb6d0aaf",
+      "consolidated_unchanged_sha256": "949b29e3a41d3d5f028143f5dd7fdd89e7e09f0d50324839ebb8c72bfb6d0aaf",
+      "remaining_wording_matches_original": true,
+      "full_reconstructed_article_113_matches_consolidated_without_modrefs": true
+    },
+    "discrepancies": []
+  },
+  "unresolved_and_out_of_scope": {
+    "full_amendment_reconciliation": "unresolved (only Article 1 points (8) and (40) checked)",
+    "corrigendum_verification": "unresolved (candidates 32024R1689R(01), 32024R1689R(03), 32024R1689R(04), 32026R1744R(01) not yet audited)",
+    "current_law_or_applicability_certified": false,
+    "legal_review_completed": false,
+    "canonical_records_modified": false,
+    "stage7_manifest_modified": false
+  }
+}

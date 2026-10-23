@@ -1,0 +1,913 @@
+{
+  "schema": "aeacus.week4.langfuse_baseline_import.v1",
+  "baseline_id": "week4_adk_preview_v1",
+  "source_sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+  "source_sha256_verified": true,
+  "config": {
+    "LANGFUSE_PUBLIC_KEY": "configured",
+    "LANGFUSE_SECRET_KEY": "configured",
+    "LANGFUSE_BASE_URL": "configured",
+    "AEACUS_LANGFUSE_TRACING": "missing"
+  },
+  "missing_credentials": [],
+  "sdk_available": true,
+  "ledger_path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/evals/week4/langfuse/week4_adk_preview_v1_import_ledger.json",
+  "importer_existed": false,
+  "expected": {
+    "n_traces": 20,
+    "timing_pass": 18,
+    "timing_fail": 2,
+    "s19_fail": 1,
+    "s19_excluded": 19
+  },
+  "review": {
+    "date": "2026-10-23",
+    "accepted_by": "Lily",
+    "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+    "not": "independent expert legal adjudication",
+    "acceptance_time": null
+  },
+  "invented": {
+    "per_event_timestamps": false,
+    "model_generations": false,
+    "tool_durations": false
+  },
+  "pilot": {
+    "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+    "scenario_id": "TRACE-S01",
+    "action": "verified",
+    "trace_id": "7166080e55ad08c29d937285cfb7de6a",
+    "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7166080e55ad08c29d937285cfb7de6a",
+    "verified": {
+      "ok": true,
+      "ingestion_delay_seconds": 14.9,
+      "observation_names": [
+        "recorded-evidence",
+        "recorded-events",
+        "historical-import"
+      ],
+      "observation_count": 3,
+      "score_names": [
+        "automated_deferred_date_qualifications_v1",
+        "reviewed_f1",
+        "reviewed_f2",
+        "reviewed_f3",
+        "reviewed_f4"
+      ],
+      "score_values": {
+        "reviewed_f1": 1.0,
+        "reviewed_f4": 1.0,
+        "automated_deferred_date_qualifications_v1": 1.0,
+        "reviewed_f3": 1.0,
+        "reviewed_f2": 1.0
+      },
+      "missing_observations": [],
+      "missing_scores": [],
+      "mismatched_scores": [],
+      "missing_fields": [],
+      "score_query_error": null
+    }
+  },
+  "remaining": [
+    {
+      "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "scenario_id": "TRACE-S02",
+      "action": "verified",
+      "trace_id": "2e6260ed434a1d403b2f57b2c3d7de15",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2e6260ed434a1d403b2f57b2c3d7de15",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 15.6,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 1.0,
+          "reviewed_f2": 1.0,
+          "automated_deferred_date_qualifications_v1": 0.0,
+          "reviewed_f3": 0.0,
+          "reviewed_f4": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "scenario_id": "TRACE-S03",
+      "action": "verified",
+      "trace_id": "b2eb412a339c3478a3062ea349af117b",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b2eb412a339c3478a3062ea349af117b",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 29.4,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f3": 1.0,
+          "reviewed_f1": 1.0,
+          "reviewed_f4": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f2": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "scenario_id": "TRACE-S04",
+      "action": "verified",
+      "trace_id": "28eb0512d039da0dfb54268b0cc4de93",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/28eb0512d039da0dfb54268b0cc4de93",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 15.1,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f2": 1.0,
+          "reviewed_f1": 0.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f4": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "scenario_id": "TRACE-S05",
+      "action": "verified",
+      "trace_id": "9cf279574ce7d8007de5c59ccb4d1fbe",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9cf279574ce7d8007de5c59ccb4d1fbe",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.8,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 0.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "scenario_id": "TRACE-S06",
+      "action": "verified",
+      "trace_id": "71a0090cbb31d42dfb6ab691337ef107",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/71a0090cbb31d42dfb6ab691337ef107",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 25.4,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f3": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f1": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "scenario_id": "TRACE-S07",
+      "action": "verified",
+      "trace_id": "3aa8a5a909a8a2e4180aae797bdd02cf",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3aa8a5a909a8a2e4180aae797bdd02cf",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 15.0,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f4": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f2": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f1": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "scenario_id": "TRACE-S08",
+      "action": "verified",
+      "trace_id": "235e3b9abf157c5a4ac153f1c830fd64",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/235e3b9abf157c5a4ac153f1c830fd64",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 19.2,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f1": 0.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f2": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "scenario_id": "TRACE-S09",
+      "action": "verified",
+      "trace_id": "9e45a212095b701c97937cd966aaeb8a",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9e45a212095b701c97937cd966aaeb8a",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 24.5,
+        "observation_names": [
+          "recorded-evidence",
+          "historical-import",
+          "recorded-events"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 0.0,
+          "reviewed_f3": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "scenario_id": "TRACE-S10",
+      "action": "verified",
+      "trace_id": "47a39139f47117d6aa2945c996ee6de7",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/47a39139f47117d6aa2945c996ee6de7",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 15.3,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 1.0,
+          "reviewed_f3": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "scenario_id": "TRACE-S11",
+      "action": "verified",
+      "trace_id": "077a7658f59e50284d71fca5f1510c7c",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/077a7658f59e50284d71fca5f1510c7c",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.6,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 0.0,
+          "reviewed_f1": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "scenario_id": "TRACE-S12",
+      "action": "verified",
+      "trace_id": "36c0ae2d4315f8f77a82131e519e6721",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/36c0ae2d4315f8f77a82131e519e6721",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 25.8,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f2": 0.0,
+          "reviewed_f3": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f1": 1.0,
+          "reviewed_f4": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "scenario_id": "TRACE-S13",
+      "action": "verified",
+      "trace_id": "01469e43fbce99f65e581ce2d5999260",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/01469e43fbce99f65e581ce2d5999260",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.4,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 0.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f2": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "scenario_id": "TRACE-S14",
+      "action": "verified",
+      "trace_id": "9b2086eafe0284b210b92900e76847eb",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9b2086eafe0284b210b92900e76847eb",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.6,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f2": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f1": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "scenario_id": "TRACE-S15",
+      "action": "verified",
+      "trace_id": "1355dd598fa8f31b1e34d5f04a77432d",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1355dd598fa8f31b1e34d5f04a77432d",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 25.2,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f3": 1.0,
+          "reviewed_f2": 1.0,
+          "reviewed_f4": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "scenario_id": "TRACE-S16",
+      "action": "verified",
+      "trace_id": "72593e9538937b213690d37e75773994",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/72593e9538937b213690d37e75773994",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.6,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f3": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f1": 1.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 0.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "scenario_id": "TRACE-S17",
+      "action": "verified",
+      "trace_id": "41b6cecee4186aca0995d5a6ee36a902",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/41b6cecee4186aca0995d5a6ee36a902",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.6,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f1": 1.0,
+          "reviewed_f2": 1.0,
+          "reviewed_f3": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f4": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "scenario_id": "TRACE-S18",
+      "action": "verified",
+      "trace_id": "130eef63a19e17745b8109b9a013c0c6",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/130eef63a19e17745b8109b9a013c0c6",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.0,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f2": 0.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f1": 1.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f3": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "scenario_id": "TRACE-S19",
+      "action": "verified",
+      "trace_id": "f59c25e59f453edf2534336af62f5221",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f59c25e59f453edf2534336af62f5221",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 14.7,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "automated_s19_retrieval_budget_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "reviewed_f3": 1.0,
+          "reviewed_f1": 1.0,
+          "automated_s19_retrieval_budget_v1": 0.0,
+          "reviewed_f4": 0.0,
+          "automated_deferred_date_qualifications_v1": 1.0,
+          "reviewed_f2": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    },
+    {
+      "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "scenario_id": "TRACE-S20",
+      "action": "verified",
+      "trace_id": "6a3c91627c769b051ec0e9d13aa24681",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6a3c91627c769b051ec0e9d13aa24681",
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 15.1,
+        "observation_names": [
+          "recorded-evidence",
+          "recorded-events",
+          "historical-import"
+        ],
+        "observation_count": 3,
+        "score_names": [
+          "automated_deferred_date_qualifications_v1",
+          "reviewed_f1",
+          "reviewed_f2",
+          "reviewed_f3",
+          "reviewed_f4"
+        ],
+        "score_values": {
+          "automated_deferred_date_qualifications_v1": 0.0,
+          "reviewed_f1": 0.0,
+          "reviewed_f3": 0.0,
+          "reviewed_f4": 1.0,
+          "reviewed_f2": 1.0
+        },
+        "missing_observations": [],
+        "missing_scores": [],
+        "mismatched_scores": [],
+        "missing_fields": [],
+        "score_query_error": null
+      }
+    }
+  ],
+  "counts": {
+    "prepared": 20,
+    "verified": 20,
+    "uploaded_unverified": 0,
+    "failed": 0,
+    "skipped_verified": 0
+  },
+  "links": [
+    {
+      "scenario_id": "TRACE-S01",
+      "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "trace_id": "7166080e55ad08c29d937285cfb7de6a",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7166080e55ad08c29d937285cfb7de6a",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "trace_id": "2e6260ed434a1d403b2f57b2c3d7de15",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2e6260ed434a1d403b2f57b2c3d7de15",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "trace_id": "b2eb412a339c3478a3062ea349af117b",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b2eb412a339c3478a3062ea349af117b",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "trace_id": "28eb0512d039da0dfb54268b0cc4de93",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/28eb0512d039da0dfb54268b0cc4de93",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "trace_id": "9cf279574ce7d8007de5c59ccb4d1fbe",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9cf279574ce7d8007de5c59ccb4d1fbe",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "trace_id": "71a0090cbb31d42dfb6ab691337ef107",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/71a0090cbb31d42dfb6ab691337ef107",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "trace_id": "3aa8a5a909a8a2e4180aae797bdd02cf",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3aa8a5a909a8a2e4180aae797bdd02cf",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "trace_id": "235e3b9abf157c5a4ac153f1c830fd64",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/235e3b9abf157c5a4ac153f1c830fd64",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "trace_id": "9e45a212095b701c97937cd966aaeb8a",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9e45a212095b701c97937cd966aaeb8a",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "trace_id": "47a39139f47117d6aa2945c996ee6de7",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/47a39139f47117d6aa2945c996ee6de7",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "trace_id": "077a7658f59e50284d71fca5f1510c7c",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/077a7658f59e50284d71fca5f1510c7c",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "trace_id": "36c0ae2d4315f8f77a82131e519e6721",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/36c0ae2d4315f8f77a82131e519e6721",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "trace_id": "01469e43fbce99f65e581ce2d5999260",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/01469e43fbce99f65e581ce2d5999260",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "trace_id": "9b2086eafe0284b210b92900e76847eb",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9b2086eafe0284b210b92900e76847eb",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "trace_id": "1355dd598fa8f31b1e34d5f04a77432d",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1355dd598fa8f31b1e34d5f04a77432d",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "trace_id": "72593e9538937b213690d37e75773994",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/72593e9538937b213690d37e75773994",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "trace_id": "41b6cecee4186aca0995d5a6ee36a902",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/41b6cecee4186aca0995d5a6ee36a902",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "trace_id": "130eef63a19e17745b8109b9a013c0c6",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/130eef63a19e17745b8109b9a013c0c6",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "trace_id": "f59c25e59f453edf2534336af62f5221",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f59c25e59f453edf2534336af62f5221",
+      "status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "trace_id": "6a3c91627c769b051ec0e9d13aa24681",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6a3c91627c769b051ec0e9d13aa24681",
+      "status": "verified"
+    }
+  ],
+  "live": true,
+  "auth_check": {
+    "ok": true,
+    "error": null
+  }
+}

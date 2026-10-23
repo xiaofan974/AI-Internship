@@ -1,0 +1,199 @@
+{
+  "spec_version": "0.2.0",
+  "status": "acquired_sources_and_samples_for_joint_review",
+  "prepared_on": "2026-10-22",
+  "purpose": "Four official XHTML artifacts acquired and hashed; review samples extracted offline. Ingestion remains closed.",
+  "sources": [
+    {
+      "tier": 1,
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "requested_language": "en",
+      "review_state": "proposed",
+      "content_acquired": true,
+      "content_verified": false,
+      "eligible_for_ingestion": false,
+      "source_sha256": "8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "actual_document_language": "en",
+      "retrieved_at": "2026-10-22T15:26:40.617385+00:00",
+      "metadata_checked_on": "2026-10-22",
+      "verification_method": "Official repository artifact identity/language checks and partial sample extraction; complete text/legal-version audit pending.",
+      "source_id": "T1-AIA-OJ-2024",
+      "document_id": "32024R1689",
+      "title": "Regulation (EU) 2024/1689 — original Official Journal edition",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "document_kind": "original_oj",
+      "source_role": "original_baseline",
+      "publication_date_candidate": "2024-07-12",
+      "consolidation_date_candidate": null,
+      "proposed_parse_scope": [
+        "Preamble",
+        "All recitals",
+        "Articles 1–113 including structural headings",
+        "Annexes I–XIII including tables and notes"
+      ],
+      "expected_original_numbering": {
+        "recitals": 180,
+        "articles": 113,
+        "annexes": 13
+      },
+      "expected_count_status": "Acceptance expectation for the original edition; not measured extraction results.",
+      "current_law_claim_permitted": false,
+      "acquisition_status": "acquired_identity_checked",
+      "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "actual_download_url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1"
+    },
+    {
+      "tier": 1,
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "requested_language": "en",
+      "review_state": "proposed",
+      "content_acquired": true,
+      "content_verified": false,
+      "eligible_for_ingestion": false,
+      "source_sha256": "5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "actual_document_language": "en",
+      "retrieved_at": "2026-10-22T15:27:49.397892+00:00",
+      "metadata_checked_on": "2026-10-22",
+      "verification_method": "Official repository artifact identity/language checks and partial sample extraction; complete text/legal-version audit pending.",
+      "source_id": "T1-AIA-CONS-20260727",
+      "document_id": "02024R1689-20260727",
+      "title": "Regulation (EU) 2024/1689 — consolidated reading version, 27 July 2026",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
+      "document_kind": "consolidated",
+      "source_role": "working_edition_candidate",
+      "publication_date_candidate": null,
+      "consolidation_date_candidate": "2026-07-27",
+      "proposed_parse_scope": [
+        "Full consolidated document; preserve revision markers and footnotes"
+      ],
+      "expected_count_status": "Derive inventory from this edition; do not impose original-edition counts.",
+      "current_law_claim_permitted": false,
+      "acquisition_status": "acquired_identity_checked",
+      "dependencies": [
+        "T1-AIA-OJ-2024",
+        "T1-AIA-AMEND-2026-1744",
+        "Review complete official amendment/corrigendum relationships and language applicability"
+      ],
+      "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+      "actual_download_url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1"
+    },
+    {
+      "tier": 1,
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "requested_language": "en",
+      "review_state": "proposed",
+      "content_acquired": true,
+      "content_verified": false,
+      "eligible_for_ingestion": false,
+      "source_sha256": "9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+      "actual_document_language": "en",
+      "retrieved_at": "2026-10-22T15:27:49.447173+00:00",
+      "metadata_checked_on": "2026-10-22",
+      "verification_method": "Official repository artifact identity/language checks and partial sample extraction; complete text/legal-version audit pending.",
+      "source_id": "T1-AIA-AMEND-2026-1744",
+      "document_id": "32026R1744",
+      "title": "Regulation (EU) 2026/1744 — identified amending act",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng",
+      "document_kind": "amending_oj",
+      "source_role": "amendment_provenance",
+      "publication_date_candidate": "2026-07-24",
+      "consolidation_date_candidate": null,
+      "proposed_parse_scope": [
+        "Archive complete source",
+        "Preserve preamble and provisions amending the AI Act with applicability clauses",
+        "Distinguish provisions amending other instruments"
+      ],
+      "current_law_claim_permitted": false,
+      "acquisition_status": "acquired_identity_checked",
+      "relationship_status": "Effect on individual provisions and dates not yet verified",
+      "source_snapshot_id": "T1-AIA-AMEND-2026-1744@sha256:9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+      "actual_download_url": "http://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1"
+    },
+    {
+      "tier": 1,
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "requested_language": "en",
+      "review_state": "proposed",
+      "content_acquired": true,
+      "content_verified": false,
+      "eligible_for_ingestion": false,
+      "source_sha256": "3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "actual_document_language": "en",
+      "retrieved_at": "2026-10-22T15:27:49.292580+00:00",
+      "metadata_checked_on": "2026-10-22",
+      "verification_method": "Official repository artifact identity/language checks and partial sample extraction; complete text/legal-version audit pending.",
+      "source_id": "T1-CHARTER-OJ-2012",
+      "document_id": "12012P/TXT",
+      "title": "Charter of Fundamental Rights of the European Union — 2012/C 326/02",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A12012P%2FTXT",
+      "document_kind": "charter_oj",
+      "source_role": "fundamental_rights_source",
+      "publication_date_candidate": "2012-10-26",
+      "consolidation_date_candidate": null,
+      "proposed_parse_scope": [
+        "Complete preamble",
+        "All titles and Articles 1–54, including Articles 51–54"
+      ],
+      "expected_original_numbering": {
+        "articles": 54
+      },
+      "expected_count_status": "Expected numbering coverage; not measured extraction results.",
+      "current_law_claim_permitted": false,
+      "acquisition_status": "acquired_identity_checked",
+      "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+      "actual_download_url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1"
+    }
+  ],
+  "relationship_discovery": {
+    "status": "incomplete",
+    "required_before_current_law_use": true,
+    "instruction": "Inspect official amendment/corrigendum relationships for each chosen edition. Verify actual affected languages and publication bodies; an English interface URL does not prove English text exists.",
+    "discovered_candidates_not_admitted": [
+      {
+        "document_id": "32024R1689R(01)",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/corrigendum/2025-10-09/oj/eng"
+      },
+      {
+        "document_id": "32024R1689R(03)",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/corrigendum/2026-03-27/oj/eng"
+      },
+      {
+        "document_id": "32024R1689R(04)",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/corrigendum/2026-05-04/oj/eng"
+      },
+      {
+        "document_id": "32026R1744R(01)",
+        "source_url": "https://eur-lex.europa.eu/eli/reg/2026/1744/corrigendum/2026-09-29/oj/eng"
+      }
+    ],
+    "inventory_exhaustive": false
+  },
+  "ingestion_gate": {
+    "state": "closed",
+    "requires": [
+      "Exact official document bytes acquired and hashed",
+      "Actual identity, language and edition checked against source",
+      "Version relationships and affected languages reviewed",
+      "Structural and text-fidelity validation passed",
+      "Representative records reviewed with user",
+      "Explicitly selected source snapshots and scope accepted for this release"
+    ],
+    "does_not_imply": "Legal-expert validation or complete legal coverage"
+  },
+  "retrieval_policy": {
+    "initial_legal_tiers": [
+      1
+    ],
+    "namespace_candidate": "aeacusai-dev",
+    "required_application_filters": [
+      "accepted source_snapshot_id set",
+      "tier=1",
+      "validation_status=passed",
+      "indexable=true"
+    ],
+    "edition_selection": "One active reading edition per instrument per run; originals/amending acts included only as explicitly identified provenance or historical comparison, never silently mixed.",
+    "parent_expansion": "Fetch same-snapshot parent context and relevant resolved cross-references before a legal conclusion.",
+    "unknown_temporal_applicability": "Do not derive effective/application dates from consolidation date or model memory.",
+    "tiers_2_and_3": "Deferred. Tier 3 assessment cases and expected labels must not enter legal retrieval."
+  }
+}

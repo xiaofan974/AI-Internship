@@ -1,0 +1,10 @@
+{
+  "schema": "aeacus.week4.f1_rubric.v1",
+  "rubric_id": "week4_f1_rubric_v1",
+  "taxonomy_id": "week4_adk_preview_failure_taxonomy_v1",
+  "category_id": "F1",
+  "title": "Classification relies on an unstated premise or extends to an underspecified product.",
+  "positive_means": "F1 failure detected",
+  "negative_means": "no F1 failure detected",
+  "note": "This rubric is the frozen F1 category title only. It does not list scenario IDs, run IDs, or accepted labels."
+}

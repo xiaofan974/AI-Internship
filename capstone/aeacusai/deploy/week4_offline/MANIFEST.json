@@ -1,0 +1,278 @@
+{
+  "schema": "aeacus.deploy.week4_offline_bundle.v1",
+  "service": "aeacusai-demo",
+  "generated_at": "2026-10-23T17:36:36.201994+00:00",
+  "source_root": "/Users/aureliemahe/AI-Internship/capstone/aeacusai",
+  "note": "Byte-identical copies of gitignored Week 4 traces, judge payloads, and saved predictions. Tracked scenarios, reports, and corpus files stay in the repository and are listed for review. Originals under data/local/ are not rewritten.",
+  "exclusions": [
+    ".env",
+    ".env.example values used as secrets",
+    ".venv/",
+    ".venv-langfuse/",
+    ".venv-langgraph/",
+    "data/local/review_register.sqlite",
+    "other *.sqlite*",
+    "data/local/traces/adk_preview.jsonl",
+    "data/local/traces/timing_repair_smoke.jsonl",
+    "data/local/traces/week4_langfuse_connection_smoke*",
+    "data/local/traces/*.txt",
+    "data/local/evals/week4/langfuse/",
+    "data/local/evals/week4/golden/f1_v1/cases.jsonl",
+    "data/local/evals/week4/judge/**/freeze.json",
+    "data/local/evals/week4/judge/**/scored.json",
+    "data/local/evals/week4/judge/**/predictions.jsonl",
+    "data/local/evals/week4/judge/validation_v1/requests.jsonl",
+    "data/local/evals/week4/*/run_index.json",
+    "data/raw/",
+    "credentials and API keys"
+  ],
+  "files": [
+    {
+      "role": "bundled_copy",
+      "path": "data/local/traces/week4_adk_preview_v1.jsonl",
+      "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "frozen_parent_traces",
+      "gitignored": true,
+      "bundle": "data/local/traces/week4_adk_preview_v1.jsonl"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/traces/week4_adk_preview_f1_v2.jsonl",
+      "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "frozen_candidate_traces",
+      "gitignored": true,
+      "bundle": "data/local/traces/week4_adk_preview_f1_v2.jsonl"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/evals/week4/golden/f1_v1/judge_payloads.jsonl",
+      "sha256": "1f9abd172f98692b3d62a071664caf7be3347fbd23a3cb2d5b961bf234d8f3f6",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "f1_judge_payloads",
+      "gitignored": true,
+      "bundle": "data/local/evals/week4/golden/f1_v1/judge_payloads.jsonl"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/evals/week4/judge/f1_v1/calibration_v1/predictions.json",
+      "sha256": "b834e03ec38cc25f9c10a20244d8cbb2d5f99b636711751098d0ac713ef1e3cd",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_judge_predictions",
+      "gitignored": true,
+      "bundle": "data/local/evals/week4/judge/f1_v1/calibration_v1/predictions.json"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/evals/week4/judge/f1_v2/calibration_v2/predictions.json",
+      "sha256": "c79ea68e17b16324312bc164742f9bc5661d78010b03d3002bc3826945145add",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_judge_predictions",
+      "gitignored": true,
+      "bundle": "data/local/evals/week4/judge/f1_v2/calibration_v2/predictions.json"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/evals/week4/judge/validation_v1/v1_predictions.json",
+      "sha256": "18abd8505eb10b0bc26d8586ec7a7a86aebf354b129cff98ca264e049e8ebf55",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_judge_predictions",
+      "gitignored": true,
+      "bundle": "data/local/evals/week4/judge/validation_v1/v1_predictions.json"
+    },
+    {
+      "role": "bundled_copy",
+      "path": "data/local/evals/week4/judge/validation_v1/v2_predictions.json",
+      "sha256": "7f40d6b568be008bb8b0ba24b7c7974f836225dab056cd2ba8f63e7901d7d184",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_judge_predictions",
+      "gitignored": true,
+      "bundle": "data/local/evals/week4/judge/validation_v1/v2_predictions.json"
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/scenarios_v1.json",
+      "sha256": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "fictional_scenarios",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/taxonomy_v1.json",
+      "sha256": "336f5f3e6fe9ab7042b83bf1869161be1e86aaee4c718d9e9b0738f7808d7718",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "taxonomy",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/annotations_v1.json",
+      "sha256": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "reviewed_labels",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/annotations_f1_v2.json",
+      "sha256": "c382664896c8b909654dd1628fcb1a61fd1ce75b6be35cf3cd5484e4970a819a",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "reviewed_labels",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/results/week4_codify_baseline_v1.json",
+      "sha256": "0d88dff2fb5db2adc7958d347166979071e28813803abd5cd059aea1eed905ef",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/results/week4_adk_preview_f1_v2_assertions.json",
+      "sha256": "f2d423492865767363b7c0095cf96914237cbd0debc5befe3f1faf9b8364812c",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/checkers.py",
+      "sha256": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "frozen_checker",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "reports/week4_timing_repair_eval.json",
+      "sha256": "4290fe22d2447b9601582d88438fb88dfc42c47a1023e4b01df16ac127852bfe",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/golden/f1_v1/manifest.json",
+      "sha256": "262ce9b1401be57dd61ff8f0b43c08b6cea9d44008e030a816acacad78669963",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "golden_dataset",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/golden/f1_v1/split.json",
+      "sha256": "a57e8cac7d357b67f98a04f5b83a65da39a5cc8f54b6c26ecad3ae6596e54d30",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "golden_dataset",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "evals/week4/judge/f1_v2/refinement_provenance.json",
+      "sha256": "63135e4127fdd397c9c6fe08708fc50d4812fba73a518132bdd2411411e514cc",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "judge_provenance",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "reports/week4_f1_judge_v1_calibration.json",
+      "sha256": "64f6424138d451e52b56b14355211688e0dd198e27b6108cb8b3c2de671a7de7",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "reports/week4_f1_judge_v2_calibration.json",
+      "sha256": "21b1fff265bc405f770090a42dd006eb68cadccf036e34478374034232fda952",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "reports/week4_f1_judge_validation.json",
+      "sha256": "d73eef488236679f47715e5ee6e48b3bb53b31be98ed530b1e6881e12d88b974",
+      "needed_by": [
+        "week4_evaluations"
+      ],
+      "kind": "saved_results",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "records/classification_children_stage9.json",
+      "sha256": "5b1530c1ed0be3863d6d3814c4802ec54f1849eec54dc7f209120b2416ae3995",
+      "needed_by": [
+        "assessment"
+      ],
+      "kind": "pinned_corpus",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "records/consolidated_articles_stage4.json",
+      "sha256": "895676f7f372fd0f626ba4d0430572acc9a2b4c6426c9b562b9cf0bcfbe03a1b",
+      "needed_by": [
+        "assessment"
+      ],
+      "kind": "pinned_corpus",
+      "gitignored": false
+    },
+    {
+      "role": "tracked_required",
+      "path": "records/consolidated_annexes_stage5.json",
+      "sha256": "a60f3f4efc88883d1d3e0277400b91954c52c4ffaa302bfaa3181752b72e3ebe",
+      "needed_by": [
+        "assessment"
+      ],
+      "kind": "pinned_corpus",
+      "gitignored": false
+    }
+  ]
+}

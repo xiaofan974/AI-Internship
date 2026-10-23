@@ -1,0 +1,294 @@
+{
+  "schema": "aeacus.week4.f1_judge.validation_protocol.v1",
+  "protocol_id": "week4_f1_judge_validation_v1",
+  "frozen_before_inference": true,
+  "split": "validation",
+  "n_cases": 20,
+  "n_requests": 40,
+  "n_scenario_groups": 10,
+  "target_labels": {
+    "fail": 5,
+    "pass": 15
+  },
+  "interleave": {
+    "rule": "Manifest validation-case order. Even index: v1 then v2. Odd index: v2 then v1.",
+    "alternates_first_version": true,
+    "independent_requests": true,
+    "retries": 0,
+    "labels_in_request": false,
+    "other_judge_verdict_in_request": false,
+    "calibration_results_in_request": false
+  },
+  "case_order": [
+    "10e8132586c6a86c",
+    "75e945401500df7a",
+    "6ef703aeecd56f7d",
+    "e207b6ebdb2b8ecb",
+    "d680a6aa4457bce1",
+    "6392916c190acf02",
+    "47ba3c1f4fed72c1",
+    "41102c85a34d4846",
+    "03256e0dd4fb2fec",
+    "af45b0e26669df2d",
+    "fe7126be7cfcbccf",
+    "7f145afb2e34321b",
+    "7157f6b1cf029fce",
+    "2ab7e1000409f8ae",
+    "21fabd94d4747fe4",
+    "b8eb327b10e8d7bd",
+    "65770ba5d14ec9df",
+    "9c7ad5cf9b42e9ab",
+    "85faf537492ca2f2",
+    "d6323ff114f2071d"
+  ],
+  "requests": [
+    {
+      "seq": 1,
+      "evaluation_id": "10e8132586c6a86c",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 2,
+      "evaluation_id": "10e8132586c6a86c",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 3,
+      "evaluation_id": "75e945401500df7a",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 4,
+      "evaluation_id": "75e945401500df7a",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 5,
+      "evaluation_id": "6ef703aeecd56f7d",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 6,
+      "evaluation_id": "6ef703aeecd56f7d",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 7,
+      "evaluation_id": "e207b6ebdb2b8ecb",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 8,
+      "evaluation_id": "e207b6ebdb2b8ecb",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 9,
+      "evaluation_id": "d680a6aa4457bce1",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 10,
+      "evaluation_id": "d680a6aa4457bce1",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 11,
+      "evaluation_id": "6392916c190acf02",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 12,
+      "evaluation_id": "6392916c190acf02",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 13,
+      "evaluation_id": "47ba3c1f4fed72c1",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 14,
+      "evaluation_id": "47ba3c1f4fed72c1",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 15,
+      "evaluation_id": "41102c85a34d4846",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 16,
+      "evaluation_id": "41102c85a34d4846",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 17,
+      "evaluation_id": "03256e0dd4fb2fec",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 18,
+      "evaluation_id": "03256e0dd4fb2fec",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 19,
+      "evaluation_id": "af45b0e26669df2d",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 20,
+      "evaluation_id": "af45b0e26669df2d",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 21,
+      "evaluation_id": "fe7126be7cfcbccf",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 22,
+      "evaluation_id": "fe7126be7cfcbccf",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 23,
+      "evaluation_id": "7f145afb2e34321b",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 24,
+      "evaluation_id": "7f145afb2e34321b",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 25,
+      "evaluation_id": "7157f6b1cf029fce",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 26,
+      "evaluation_id": "7157f6b1cf029fce",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 27,
+      "evaluation_id": "2ab7e1000409f8ae",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 28,
+      "evaluation_id": "2ab7e1000409f8ae",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 29,
+      "evaluation_id": "21fabd94d4747fe4",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 30,
+      "evaluation_id": "21fabd94d4747fe4",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 31,
+      "evaluation_id": "b8eb327b10e8d7bd",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 32,
+      "evaluation_id": "b8eb327b10e8d7bd",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 33,
+      "evaluation_id": "65770ba5d14ec9df",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 34,
+      "evaluation_id": "65770ba5d14ec9df",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 35,
+      "evaluation_id": "9c7ad5cf9b42e9ab",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 36,
+      "evaluation_id": "9c7ad5cf9b42e9ab",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 37,
+      "evaluation_id": "85faf537492ca2f2",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    },
+    {
+      "seq": 38,
+      "evaluation_id": "85faf537492ca2f2",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 39,
+      "evaluation_id": "d6323ff114f2071d",
+      "judge_id": "week4_f1_judge_v2",
+      "version": "v2"
+    },
+    {
+      "seq": 40,
+      "evaluation_id": "d6323ff114f2071d",
+      "judge_id": "week4_f1_judge_v1",
+      "version": "v1"
+    }
+  ],
+  "scoring": {
+    "after_both_versions_persisted": true,
+    "positive_class": "fail",
+    "undefined_denominator": "remain undefined",
+    "do_not_mix_with_calibration": true
+  },
+  "not_an_application_or_approval_gate": true,
+  "no_further_prompt_refinement": true
+}

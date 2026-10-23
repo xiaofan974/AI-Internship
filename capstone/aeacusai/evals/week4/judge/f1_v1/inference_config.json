@@ -1,0 +1,34 @@
+{
+  "schema": "aeacus.week4.f1_judge.inference_config.v1",
+  "judge_id": "week4_f1_judge_v1",
+  "prompt_path": "evals/week4/judge/f1_v1/prompt_v1.txt",
+  "prompt_version": "f1_judge_prompt_v1",
+  "model": "gemini-3.8-flash",
+  "sdk": "google-genai",
+  "separate_from_capstone_generation": true,
+  "generation": {
+    "temperature": 0.0,
+    "max_output_tokens": 400,
+    "candidate_count": 1,
+    "response_mime_type": "application/json",
+    "thinking_budget": 0,
+    "include_thoughts": false,
+    "tools": []
+  },
+  "request": {
+    "turns": 1,
+    "opaque_id_in_model_request": false,
+    "payload_fields": [
+      "system_description",
+      "retrieved_evidence",
+      "answer"
+    ],
+    "rubric_source": "frozen f1_rubric.json plus this prompt"
+  },
+  "batch": {
+    "split": "calibration",
+    "retries": 0,
+    "validation_calls": false
+  },
+  "not_an_application_or_approval_gate": true
+}

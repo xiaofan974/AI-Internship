@@ -1,0 +1,347 @@
+{
+  "stage": "consolidated_annexes_stage5",
+  "source_id": "T1-AIA-CONS-20260727",
+  "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+  "edition_description": "Pinned consolidated reading edition dated 2026-07-27 (CELEX 02024R1689-20260727). Consolidated texts produced by the Publications Office are meant purely as a documentation/reading tool and are not independently authentic Official Journal legislation, nor does this extraction claim that this snapshot is the latest or currently applicable law.",
+  "record_count": 14,
+  "technical_checks": {
+    "manifest_sha256_verified": true,
+    "exact_14_unique_annexes_I_to_XIV_in_order": true,
+    "all_records_satisfy_json_schema": true,
+    "all_text_sha256_match_extracted_text": true,
+    "consolidated_annex_III_matches_baseline_text_and_sha256": true,
+    "consolidated_annex_III_text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf",
+    "consolidated_annex_III_char_length": 7350,
+    "second_extraction_identical": true,
+    "all_records_use_consolidated_snapshot_id": true,
+    "zero_record_id_collisions_with_stage3_original_annexes": true,
+    "annex_XIV_retains_all_headings_3_norm_blocks_and_6_tables_in_order": true,
+    "unsupported_nonempty_element_count": 0
+  },
+  "annex_xiv_verification": {
+    "native_id": "anx_XIV",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/XIV",
+    "extracted_character_count": 2866,
+    "text_sha256": "0f8e593775b76232dd6350fecf3024e5b67c3b01108ba6912d9ecf6ea872f47d",
+    "skipped_empty_layout_element_count": 9,
+    "skipped_empty_layout_elements": [
+      {
+        "child_index": 0,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 1,
+        "tag": "hr",
+        "class": "separator-annex",
+        "inner_tags": []
+      },
+      {
+        "child_index": 2,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 9,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 12,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 16,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 19,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 22,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      },
+      {
+        "child_index": 25,
+        "tag": "p",
+        "class": null,
+        "inner_tags": [
+          "br"
+        ]
+      }
+    ],
+    "preserved_nonempty_direct_child_count": 20,
+    "level_1_section_headings": [
+      "1. Introduction",
+      "2. List of Codes, categories, and corresponding AI systems",
+      "3. AI technology-specific codes",
+      "4. Application for designation"
+    ],
+    "level_2_subsection_headings": [
+      "a. AI systems subject to Annex I",
+      "b. AI systems subject to point 1 of Annex III",
+      "a. Symbolic AI and expert systems",
+      "b. Machine learning, excluding generative AI and general-purpose AI systems",
+      "c. AI systems based on general-purpose AI models or generative AI",
+      "d. Emerging AI technologies"
+    ],
+    "norm_paragraph_count": 3,
+    "norm_paragraph_char_lengths": [
+      198,
+      502,
+      231
+    ],
+    "table_count": 6,
+    "tables": [
+      {
+        "table_index": 1,
+        "row_count": 12,
+        "aia_codes": [
+          "AIP 0102",
+          "AIP 0103",
+          "AIP 0104",
+          "AIP 0105",
+          "AIP 0106",
+          "AIP 0107",
+          "AIP 0108",
+          "AIP 0109",
+          "AIP 0110",
+          "AIP 0111",
+          "AIP 0112"
+        ],
+        "char_count": 704
+      },
+      {
+        "table_index": 2,
+        "row_count": 4,
+        "aia_codes": [
+          "AIB 0201",
+          "AIB 0202",
+          "AIB 0203"
+        ],
+        "char_count": 142
+      },
+      {
+        "table_index": 3,
+        "row_count": 2,
+        "aia_codes": [
+          "AIH 0101"
+        ],
+        "char_count": 134
+      },
+      {
+        "table_index": 4,
+        "row_count": 6,
+        "aia_codes": [
+          "AIH 0201",
+          "AIH 0202",
+          "AIH 0203",
+          "AIH 0204",
+          "AIH 0205"
+        ],
+        "char_count": 303
+      },
+      {
+        "table_index": 5,
+        "row_count": 2,
+        "aia_codes": [
+          "AIH 0301"
+        ],
+        "char_count": 96
+      },
+      {
+        "table_index": 6,
+        "row_count": 2,
+        "aia_codes": [
+          "AIH 0401"
+        ],
+        "char_count": 117
+      }
+    ]
+  },
+  "limitations_and_scope": {
+    "complete_parent_text_only": true,
+    "structural_table_records_created": false,
+    "row_column_semantics_established": false,
+    "table_text_limitation": "This checkpoint extracts complete parent annex records only and does not create structural section, point, table, or table_row child records. Although all 6 AIA code tables in Consolidated Annex XIV (and all grid-list blocks in Annexes I–XIII) have their text preserved in source order, flattened whitespace-normalized table text does not preserve row/column relational semantics.",
+    "child_decomposition_performed": false,
+    "cross_reference_or_legal_mapping_inferred": false
+  },
+  "content_review_and_ingestion_status": {
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "all_indexable_false": true,
+    "legally_reviewed": false,
+    "ready_for_indexing": false,
+    "note": "Passing Stage 5 technical extraction checks does not mean the corpus is legally reviewed or ready for indexing."
+  },
+  "unsupported_nonempty_structures": [],
+  "annex_inventory": [
+    {
+      "native_id": "anx_I",
+      "annex_numeral": "I",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/I",
+      "label": "Annex I — List of Union harmonisation legislation",
+      "extracted_character_count": 6037,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "a7f5a1e4fc992b63e937cefe3e7a27eb64edb51c74c7f3e2078a782de8908b9b"
+    },
+    {
+      "native_id": "anx_II",
+      "annex_numeral": "II",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/II",
+      "label": "Annex II — List of criminal offences referred to in Article 5(1), first subparagraph, point (h)(iii)",
+      "extracted_character_count": 878,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "12499beb1dae2205a923ad1227adb71fa64b176958e553afdb444de5fafc903e"
+    },
+    {
+      "native_id": "anx_III",
+      "annex_numeral": "III",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+      "label": "Annex III — High-risk AI systems referred to in Article 6(2)",
+      "extracted_character_count": 7350,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf"
+    },
+    {
+      "native_id": "anx_IV",
+      "annex_numeral": "IV",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/IV",
+      "label": "Annex IV — Technical documentation referred to in Article 11(1)",
+      "extracted_character_count": 5772,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "d44cd2d584cbdde273b760fe01506655579509a52b79a91cabee43e92cfd517f"
+    },
+    {
+      "native_id": "anx_V",
+      "annex_numeral": "V",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/V",
+      "label": "Annex V — EU declaration of conformity",
+      "extracted_character_count": 1422,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "a7ad26bf2879a04f0e5e6c8fcd54547c99e455aa21265e5200de1061edebb2ad"
+    },
+    {
+      "native_id": "anx_VI",
+      "annex_numeral": "VI",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/VI",
+      "label": "Annex VI — Conformity assessment procedure based on internal control",
+      "extracted_character_count": 728,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "ac696cc4b8f9d31c8cea87f45983475cf6d6140e492933cbc6b4563dac8cc205"
+    },
+    {
+      "native_id": "anx_VII",
+      "annex_numeral": "VII",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/VII",
+      "label": "Annex VII — Conformity based on an assessment of the quality management system and an assessment of the technical documentation",
+      "extracted_character_count": 7936,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "80e770bb2bfcb5ca4f011a188d9f7af96502e263712a295f7725254962d73e3f"
+    },
+    {
+      "native_id": "anx_VIII",
+      "annex_numeral": "VIII",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/VIII",
+      "label": "Annex VIII — Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49",
+      "extracted_character_count": 3760,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "3cf36e440af110ee54ad341e659c0009dbd8d11af5dadafd47a67fa562066f45"
+    },
+    {
+      "native_id": "anx_IX",
+      "annex_numeral": "IX",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/IX",
+      "label": "Annex IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60",
+      "extracted_character_count": 900,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "26e962deba606a57b021506368fd16f06a37ccf824264ddbd2d9e2dd450f8fb5"
+    },
+    {
+      "native_id": "anx_X",
+      "annex_numeral": "X",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/X",
+      "label": "Annex X — Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice",
+      "extracted_character_count": 5289,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "6aa01031d49018f19ac24ee88c424167dacbde8f70abc9446211fe9ff3e26179"
+    },
+    {
+      "native_id": "anx_XI",
+      "annex_numeral": "XI",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/XI",
+      "label": "Annex XI — Technical documentation referred to in Article 53(1), point (a) — technical documentation for providers of general-purpose AI models",
+      "extracted_character_count": 3083,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "d568cb895bccd01786a8528778367f7ffec796b55cf4f5f0fe5c67fc7b612c89"
+    },
+    {
+      "native_id": "anx_XII",
+      "annex_numeral": "XII",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/XII",
+      "label": "Annex XII — Transparency information referred to in Article 53(1), point (b) — technical documentation for providers of general-purpose AI models to downstream providers that integrate the model into their AI system",
+      "extracted_character_count": 1535,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "7256ccefa872f3310db361fa2484eb8514d294002af676d59cf7711e5f3ab3e2"
+    },
+    {
+      "native_id": "anx_XIII",
+      "annex_numeral": "XIII",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/XIII",
+      "label": "Annex XIII — Criteria for the designation of general-purpose AI models with systemic risk referred to in Article 51",
+      "extracted_character_count": 1504,
+      "source_table_count": 0,
+      "skipped_empty_layout_element_count": 3,
+      "text_sha256": "69716c6c5f699e325e487883fcfdce91fc70119ad5638fb527922d5db5f9f177"
+    },
+    {
+      "native_id": "anx_XIV",
+      "annex_numeral": "XIV",
+      "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/XIV",
+      "label": "Annex XIV",
+      "extracted_character_count": 2866,
+      "source_table_count": 6,
+      "skipped_empty_layout_element_count": 9,
+      "text_sha256": "0f8e593775b76232dd6350fecf3024e5b67c3b01108ba6912d9ecf6ea872f47d"
+    }
+  ]
+}

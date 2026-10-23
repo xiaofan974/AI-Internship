@@ -1,0 +1,354 @@
+{
+  "stage": "classification_children_stage9",
+  "source_id": "T1-AIA-CONS-20260727",
+  "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+  "record_count": 19,
+  "article_6_paragraph_count": 11,
+  "annex_iii_area_count": 8,
+  "technical_checks": {
+    "manifest_sha256_verified": true,
+    "extracted_from_consolidated_xhtml_not_baseline": true,
+    "exact_19_schema_valid_child_records": true,
+    "all_parent_ids_resolve_to_stage4_art6_or_stage5_annex_iii": true,
+    "article_6_1_retains_intro_and_both_conditions_a_b": true,
+    "article_6_3_retains_intro_conditions_a_to_d_and_profiling_rule": true,
+    "annex_iii_area_4_retains_heading_and_both_subpoints_a_b": true,
+    "other_annex_iii_areas_retain_qualifications_and_exceptions": true,
+    "no_arbitrary_token_or_character_splitting": true,
+    "all_text_sha256_digests_verified": true,
+    "unique_record_ids_and_selectors_in_source_order": true,
+    "second_extraction_identical": true,
+    "all_records_pending_not_reviewed_and_indexable_false": true
+  },
+  "parent_context_retrieval_policy": {
+    "policy_type": "retrieval_policy_requirement (not an inferred statutory cross-reference mapping)",
+    "same_snapshot_parent_expansion": "Retrieving any Article 6(1)–(8) paragraph child or Annex III area 1–8 point child must make its complete same-snapshot parent record available (T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6 or T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III) so introductory wording, sibling paragraphs, and surrounding qualifications are never omitted.",
+    "annex_iii_to_article_6_co_retrieval_context": "When an Annex III area 1–8 child record is retrieved, the retrieval layer must also provide same-snapshot Article 6 classification context (T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6, specifically including Article 6(2) and the Article 6(3) derogation conditions and profiling rule) before any high-risk classification assessment is drafted.",
+    "child_text_purity": "Child record text remains strictly source-faithful to its own DOM element(s); no parent text, generated summaries, or legal interpretations are prepended."
+  },
+  "baseline_comparison_summary": {
+    "total_compared": 19,
+    "exact_matches_with_v0_2_baseline": 17,
+    "intentional_modref_boundary_differences": 2,
+    "discrepancies_explained": [
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1",
+        "label": "Article 6(1)",
+        "stage9_char_length": 763,
+        "baseline_char_length": 767,
+        "stage9_text_sha256": "00b56a3a4b45556fa5b2a0fdbbb4f84bf7b67b23832a67345056e61ba74b180d",
+        "baseline_text_sha256": "c811a7cb0e70a0fb88668dd029f21088826df5b9ef1d1381f70348ee813bb8c6",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[3]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[3] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[4]",
+        "exact_text_and_sha256_match": false,
+        "difference_explanation": "In the v0.2 sample extractor (scripts/extract_review_samples.py), paragraph_groups(article) appended every non-numbered <p> or <div> sibling to the preceding paragraph group, including standalone <p class='modref'> editorial revision markers ('▼M1' after paragraph 1 and '▼B' after paragraph 1c). Stage 9's clean_paragraph_groups excludes standalone p.modref siblings from child paragraph text (matching Stage 8's verified paragraph wording) while the complete Stage 4 Article 6 parent record retains those markers in source position."
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1c",
+        "label": "Article 6(1c)",
+        "stage9_char_length": 352,
+        "baseline_char_length": 355,
+        "stage9_text_sha256": "a7e6e44a2a481e5dd0a9df24ab82db4929293182397ee7816a7c52f052ab9997",
+        "baseline_text_sha256": "638f879a87d4e7a2ec1f240f460ac4b3204fb33fa4db61f09e7b0dfc9095b8d3",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[8]",
+        "exact_text_and_sha256_match": false,
+        "difference_explanation": "In the v0.2 sample extractor (scripts/extract_review_samples.py), paragraph_groups(article) appended every non-numbered <p> or <div> sibling to the preceding paragraph group, including standalone <p class='modref'> editorial revision markers ('▼M1' after paragraph 1 and '▼B' after paragraph 1c). Stage 9's clean_paragraph_groups excludes standalone p.modref siblings from child paragraph text (matching Stage 8's verified paragraph wording) while the complete Stage 4 Article 6 parent record retains those markers in source position."
+      }
+    ],
+    "all_19_comparisons": [
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1",
+        "label": "Article 6(1)",
+        "stage9_char_length": 763,
+        "baseline_char_length": 767,
+        "stage9_text_sha256": "00b56a3a4b45556fa5b2a0fdbbb4f84bf7b67b23832a67345056e61ba74b180d",
+        "baseline_text_sha256": "c811a7cb0e70a0fb88668dd029f21088826df5b9ef1d1381f70348ee813bb8c6",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[3]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[3] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[4]",
+        "exact_text_and_sha256_match": false
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1a",
+        "label": "Article 6(1a)",
+        "stage9_char_length": 293,
+        "baseline_char_length": 293,
+        "stage9_text_sha256": "2d548f2e11ff03c4a78648a6b595fbc8ed46026114b6d33a2e27b2a083e49d43",
+        "baseline_text_sha256": "2d548f2e11ff03c4a78648a6b595fbc8ed46026114b6d33a2e27b2a083e49d43",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[5]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[5]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1b",
+        "label": "Article 6(1b)",
+        "stage9_char_length": 152,
+        "baseline_char_length": 152,
+        "stage9_text_sha256": "b17387c7822cdea9f11a59120ddd79d6d7b2955ee2bd02e9854ee61a0b21a6c7",
+        "baseline_text_sha256": "b17387c7822cdea9f11a59120ddd79d6d7b2955ee2bd02e9854ee61a0b21a6c7",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[6]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[6]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1c",
+        "label": "Article 6(1c)",
+        "stage9_char_length": 352,
+        "baseline_char_length": 355,
+        "stage9_text_sha256": "a7e6e44a2a481e5dd0a9df24ab82db4929293182397ee7816a7c52f052ab9997",
+        "baseline_text_sha256": "638f879a87d4e7a2ec1f240f460ac4b3204fb33fa4db61f09e7b0dfc9095b8d3",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[8]",
+        "exact_text_and_sha256_match": false
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/2",
+        "label": "Article 6(2)",
+        "stage9_char_length": 143,
+        "baseline_char_length": 143,
+        "stage9_text_sha256": "eeed91ee4bc59a1d5e45660ea081a5eb7886f569e2489504c8a0cddcb4e4b3d7",
+        "baseline_text_sha256": "eeed91ee4bc59a1d5e45660ea081a5eb7886f569e2489504c8a0cddcb4e4b3d7",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[9]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[9]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+        "label": "Article 6(3)",
+        "stage9_char_length": 1098,
+        "baseline_char_length": 1098,
+        "stage9_text_sha256": "f859f5a2e435bd84c7da404fd214279544868d431a63a582b4fe548dc94fb3e0",
+        "baseline_text_sha256": "f859f5a2e435bd84c7da404fd214279544868d431a63a582b4fe548dc94fb3e0",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[10] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[11] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[12] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[13] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[14] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[15] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[16]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[10] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[11] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[12] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[13] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[14] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[15] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[16]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+        "label": "Article 6(4)",
+        "stage9_char_length": 381,
+        "baseline_char_length": 381,
+        "stage9_text_sha256": "51ce6d9ffc701ea01ff899f329c19c5733c7d99097165b10bb28bb532d24e67a",
+        "baseline_text_sha256": "51ce6d9ffc701ea01ff899f329c19c5733c7d99097165b10bb28bb532d24e67a",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[17]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[17]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/5",
+        "label": "Article 6(5)",
+        "stage9_char_length": 355,
+        "baseline_char_length": 355,
+        "stage9_text_sha256": "0ea6d6b47da7db207035b4326932f034864282743e4d2deccfdccd940d151774",
+        "baseline_text_sha256": "0ea6d6b47da7db207035b4326932f034864282743e4d2deccfdccd940d151774",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[18]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[18]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+        "label": "Article 6(6)",
+        "stage9_char_length": 451,
+        "baseline_char_length": 451,
+        "stage9_text_sha256": "987006acfe5d6aa147f67adf7b0c51670f42c6e30e14ccba58e33f06677dc047",
+        "baseline_text_sha256": "987006acfe5d6aa147f67adf7b0c51670f42c6e30e14ccba58e33f06677dc047",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[19]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[19]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/7",
+        "label": "Article 6(7)",
+        "stage9_char_length": 374,
+        "baseline_char_length": 374,
+        "stage9_text_sha256": "88cfef482e25ee93c555cabb48876addd6efa060160d564b7a0fbcf53957137f",
+        "baseline_text_sha256": "88cfef482e25ee93c555cabb48876addd6efa060160d564b7a0fbcf53957137f",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[20]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[20]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/8",
+        "label": "Article 6(8)",
+        "stage9_char_length": 413,
+        "baseline_char_length": 413,
+        "stage9_text_sha256": "5195742df39dc65f80e499b2f340b2352bce761228c31a6c44284f32996e0cc4",
+        "baseline_text_sha256": "5195742df39dc65f80e499b2f340b2352bce761228c31a6c44284f32996e0cc4",
+        "stage9_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[21]",
+        "baseline_selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[21]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/1",
+        "label": "Annex III, point 1",
+        "stage9_char_length": 577,
+        "baseline_char_length": 577,
+        "stage9_text_sha256": "6d16febaee401fa1175dc933360d411a28a98b2f2dd0b4929d50042f73518f56",
+        "baseline_text_sha256": "6d16febaee401fa1175dc933360d411a28a98b2f2dd0b4929d50042f73518f56",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[7]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[7]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/2",
+        "label": "Annex III, point 2",
+        "stage9_char_length": 217,
+        "baseline_char_length": 217,
+        "stage9_text_sha256": "e56950faf8923612a7b256a7851d49c2231e1f44798b9fa42aa49079235fd213",
+        "baseline_text_sha256": "e56950faf8923612a7b256a7851d49c2231e1f44798b9fa42aa49079235fd213",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[8]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[8]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/3",
+        "label": "Annex III, point 3",
+        "stage9_char_length": 874,
+        "baseline_char_length": 874,
+        "stage9_text_sha256": "8866d581920d56710a6cb0bad1f1962fa43ed66d3d28ca70b6a424f56b909bc8",
+        "baseline_text_sha256": "8866d581920d56710a6cb0bad1f1962fa43ed66d3d28ca70b6a424f56b909bc8",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[9]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[9]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "label": "Annex III, point 4",
+        "stage9_char_length": 622,
+        "baseline_char_length": 622,
+        "stage9_text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d",
+        "baseline_text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[10]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[10]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/5",
+        "label": "Annex III, point 5",
+        "stage9_char_length": 1049,
+        "baseline_char_length": 1049,
+        "stage9_text_sha256": "01d47b54e03796dd3f19dea39b9f8aa2b547193580bb38cb9c569c9e080b14ea",
+        "baseline_text_sha256": "01d47b54e03796dd3f19dea39b9f8aa2b547193580bb38cb9c569c9e080b14ea",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[11]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[11]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+        "label": "Annex III, point 6",
+        "stage9_char_length": 1708,
+        "baseline_char_length": 1708,
+        "stage9_text_sha256": "e869e195ab27d1812d5f496675e5d61bf25e81bee50fa44bdc386431cc627604",
+        "baseline_text_sha256": "e869e195ab27d1812d5f496675e5d61bf25e81bee50fa44bdc386431cc627604",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[12]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[12]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7",
+        "label": "Annex III, point 7",
+        "stage9_char_length": 1387,
+        "baseline_char_length": 1387,
+        "stage9_text_sha256": "b72207d9438caef8296d722af969879c78ba5bbbc802e2fa91c4ab04aad09ffc",
+        "baseline_text_sha256": "b72207d9438caef8296d722af969879c78ba5bbbc802e2fa91c4ab04aad09ffc",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[13]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[13]",
+        "exact_text_and_sha256_match": true
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/8",
+        "label": "Annex III, point 8",
+        "stage9_char_length": 747,
+        "baseline_char_length": 747,
+        "stage9_text_sha256": "da46f7a66524161f78460700811fc174c9be5f11b0754c138420b9a74077ca68",
+        "baseline_text_sha256": "da46f7a66524161f78460700811fc174c9be5f11b0754c138420b9a74077ca68",
+        "stage9_selector": "/*/*[2]/*[9]/*[8]/*[14]",
+        "baseline_selector": "/*/*[2]/*[9]/*[8]/*[14]",
+        "exact_text_and_sha256_match": true
+      }
+    ]
+  },
+  "omitted_editorial_and_layout_elements": {
+    "article_6_non_child_elements": [
+      {
+        "category": "article_heading_or_title_retained_in_parent",
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[1]",
+        "tag": "p",
+        "class": "title-article-norm",
+        "text": "Article 6"
+      },
+      {
+        "category": "article_heading_or_title_retained_in_parent",
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[2]",
+        "tag": "div",
+        "class": "eli-title",
+        "text": "Classification rules for high-risk AI systems"
+      },
+      {
+        "category": "editorial_revision_marker",
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[4]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼M1"
+      },
+      {
+        "category": "editorial_revision_marker",
+        "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[8]",
+        "tag": "p",
+        "class": "modref",
+        "text": "▼B"
+      }
+    ],
+    "annex_iii_non_child_elements": [
+      {
+        "category": "empty_layout_spacer",
+        "selector": "/*/*[2]/*[9]/*[8]/*[1]",
+        "tag": "p",
+        "class": null,
+        "text": ""
+      },
+      {
+        "category": "empty_layout_spacer",
+        "selector": "/*/*[2]/*[9]/*[8]/*[2]",
+        "tag": "hr",
+        "class": "separator-annex",
+        "text": ""
+      },
+      {
+        "category": "empty_layout_spacer",
+        "selector": "/*/*[2]/*[9]/*[8]/*[3]",
+        "tag": "p",
+        "class": null,
+        "text": ""
+      },
+      {
+        "category": "annex_heading_or_intro_retained_in_parent",
+        "selector": "/*/*[2]/*[9]/*[8]/*[4]",
+        "tag": "p",
+        "class": "title-annex-1",
+        "text": "ANNEX III"
+      },
+      {
+        "category": "annex_heading_or_intro_retained_in_parent",
+        "selector": "/*/*[2]/*[9]/*[8]/*[5]",
+        "tag": "p",
+        "class": "title-annex-2",
+        "text": "High-risk AI systems referred to in Article 6(2)"
+      },
+      {
+        "category": "annex_heading_or_intro_retained_in_parent",
+        "selector": "/*/*[2]/*[9]/*[8]/*[6]",
+        "tag": "p",
+        "class": "norm",
+        "text": "High-risk AI systems pursuant to Article 6(2) are the AI systems listed in any of the following areas:"
+      }
+    ]
+  },
+  "content_review_and_ingestion_status": {
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "all_indexable_false": true,
+    "ingestion_permitted": false,
+    "stage7_manifest_modified": false
+  }
+}

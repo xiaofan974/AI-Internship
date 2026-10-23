@@ -1,0 +1,40 @@
+{
+  "schema": "aeacus.week4.golden.split.v1",
+  "split_id": "week4_f1_split_v1",
+  "frozen_before_judge_inference": true,
+  "selected_from_judge_performance": false,
+  "rule": "Group-stratified by scenario-level F1 pattern, then by sorted scenario ID. Persistent failures (fail in both versions) are TRACE-S04, S09, S13. Mixed (fail in exactly one version) are TRACE-S01, S08, S15, S20. All other scenarios pass in both versions. Calibration takes the first two persistent IDs, the first mixed ID, and the first seven pass-pass IDs. Validation takes the remainder. Both versions of a scenario stay in the same group. The split was frozen before judge inference and was not chosen from judge performance.",
+  "validation_note": "Validation examples are held out from judge-prompt refinement; they are not unseen capstone scenarios.",
+  "calibration_scenario_ids": [
+    "TRACE-S01",
+    "TRACE-S02",
+    "TRACE-S03",
+    "TRACE-S04",
+    "TRACE-S05",
+    "TRACE-S06",
+    "TRACE-S07",
+    "TRACE-S09",
+    "TRACE-S10",
+    "TRACE-S11"
+  ],
+  "validation_scenario_ids": [
+    "TRACE-S08",
+    "TRACE-S12",
+    "TRACE-S13",
+    "TRACE-S14",
+    "TRACE-S15",
+    "TRACE-S16",
+    "TRACE-S17",
+    "TRACE-S18",
+    "TRACE-S19",
+    "TRACE-S20"
+  ],
+  "calibration_n_scenarios": 10,
+  "validation_n_scenarios": 10,
+  "calibration_n_outputs": 20,
+  "validation_n_outputs": 20,
+  "target_balance_per_group": {
+    "fail": 5,
+    "pass": 15
+  }
+}

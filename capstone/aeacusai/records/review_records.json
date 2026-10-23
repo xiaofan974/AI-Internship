@@ -1,0 +1,1336 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Article 6 — complete source parent",
+    "locator": {
+      "path": "article/6",
+      "article": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 6 Classification rules for high-risk AI systems 1. Irrespective of whether an AI system is placed on the market or put into service independently of the products referred to in points (a) and (b), that AI system shall be considered to be high-risk where both of the following conditions are fulfilled: (a) the AI system is intended to be used as a safety component of a product, or the AI system is itself a product, covered by the Union harmonisation legislation listed in Annex I; (b) the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment, with a view to the placing on the market or the putting into service of that product pursuant to the Union harmonisation legislation listed in Annex I. 2. In addition to the high-risk AI systems referred to in paragraph 1, AI systems referred to in Annex III shall be considered to be high-risk. 3. By derogation from paragraph 2, an AI system referred to in Annex III shall not be considered to be high-risk where it does not pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including by not materially influencing the outcome of decision making. The first subparagraph shall apply where any of the following conditions is fulfilled: (a) the AI system is intended to perform a narrow procedural task; (b) the AI system is intended to improve the result of a previously completed human activity; (c) the AI system is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment, without proper human review; or (d) the AI system is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III. Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons. 4. A provider who considers that an AI system referred to in Annex III is not high-risk shall document its assessment before that system is placed on the market or put into service. Such provider shall be subject to the registration obligation set out in Article 49(2). Upon request of national competent authorities, the provider shall provide the documentation of the assessment. 5. The Commission shall, after consulting the European Artificial Intelligence Board (the ‘Board’), and no later than 2 February 2026, provide guidelines specifying the practical implementation of this Article in line with Article 96 together with a comprehensive list of practical examples of use cases of AI systems that are high-risk and not high-risk. 6. The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by adding new conditions to those laid down therein, or by modifying them, where there is concrete and reliable evidence of the existence of AI systems that fall under the scope of Annex III, but do not pose a significant risk of harm to the health, safety or fundamental rights of natural persons. 7. The Commission shall adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by deleting any of the conditions laid down therein, where there is concrete and reliable evidence that this is necessary to maintain the level of protection of health, safety and fundamental rights provided for by this Regulation. 8. Any amendment to the conditions laid down in paragraph 3, second subparagraph, adopted in accordance with paragraphs 6 and 7 of this Article shall not decrease the overall level of protection of health, safety and fundamental rights provided for by this Regulation and shall ensure consistency with the delegated acts adopted pursuant to Article 7(1), and take account of market and technological developments.",
+    "text_sha256": "f4c56417818fa2f1eea5d28b5be8b562ab2e7eb18a6cfe143ebbed7ce5aa61ac",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]"
+    },
+    "children": [
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/1",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/2",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/3",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/4",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/5",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/6",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/7",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/8"
+    ],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/1",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(1)",
+    "locator": {
+      "path": "article/6/paragraph/1",
+      "article": "6",
+      "paragraph": "1"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1. Irrespective of whether an AI system is placed on the market or put into service independently of the products referred to in points (a) and (b), that AI system shall be considered to be high-risk where both of the following conditions are fulfilled: (a) the AI system is intended to be used as a safety component of a product, or the AI system is itself a product, covered by the Union harmonisation legislation listed in Annex I; (b) the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment, with a view to the placing on the market or the putting into service of that product pursuant to the Union harmonisation legislation listed in Annex I.",
+    "text_sha256": "00b56a3a4b45556fa5b2a0fdbbb4f84bf7b67b23832a67345056e61ba74b180d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[3]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/2",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(2)",
+    "locator": {
+      "path": "article/6/paragraph/2",
+      "article": "6",
+      "paragraph": "2"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "2. In addition to the high-risk AI systems referred to in paragraph 1, AI systems referred to in Annex III shall be considered to be high-risk.",
+    "text_sha256": "eeed91ee4bc59a1d5e45660ea081a5eb7886f569e2489504c8a0cddcb4e4b3d7",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[4]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/3",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(3)",
+    "locator": {
+      "path": "article/6/paragraph/3",
+      "article": "6",
+      "paragraph": "3"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "3. By derogation from paragraph 2, an AI system referred to in Annex III shall not be considered to be high-risk where it does not pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including by not materially influencing the outcome of decision making. The first subparagraph shall apply where any of the following conditions is fulfilled: (a) the AI system is intended to perform a narrow procedural task; (b) the AI system is intended to improve the result of a previously completed human activity; (c) the AI system is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment, without proper human review; or (d) the AI system is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III. Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+    "text_sha256": "f859f5a2e435bd84c7da404fd214279544868d431a63a582b4fe548dc94fb3e0",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[5]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/4",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(4)",
+    "locator": {
+      "path": "article/6/paragraph/4",
+      "article": "6",
+      "paragraph": "4"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "4. A provider who considers that an AI system referred to in Annex III is not high-risk shall document its assessment before that system is placed on the market or put into service. Such provider shall be subject to the registration obligation set out in Article 49(2). Upon request of national competent authorities, the provider shall provide the documentation of the assessment.",
+    "text_sha256": "51ce6d9ffc701ea01ff899f329c19c5733c7d99097165b10bb28bb532d24e67a",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[6]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/5",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(5)",
+    "locator": {
+      "path": "article/6/paragraph/5",
+      "article": "6",
+      "paragraph": "5"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "5. The Commission shall, after consulting the European Artificial Intelligence Board (the ‘Board’), and no later than 2 February 2026, provide guidelines specifying the practical implementation of this Article in line with Article 96 together with a comprehensive list of practical examples of use cases of AI systems that are high-risk and not high-risk.",
+    "text_sha256": "0ea6d6b47da7db207035b4326932f034864282743e4d2deccfdccd940d151774",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[7]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/6",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(6)",
+    "locator": {
+      "path": "article/6/paragraph/6",
+      "article": "6",
+      "paragraph": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "6. The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by adding new conditions to those laid down therein, or by modifying them, where there is concrete and reliable evidence of the existence of AI systems that fall under the scope of Annex III, but do not pose a significant risk of harm to the health, safety or fundamental rights of natural persons.",
+    "text_sha256": "987006acfe5d6aa147f67adf7b0c51670f42c6e30e14ccba58e33f06677dc047",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[8]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/7",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(7)",
+    "locator": {
+      "path": "article/6/paragraph/7",
+      "article": "6",
+      "paragraph": "7"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "7. The Commission shall adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by deleting any of the conditions laid down therein, where there is concrete and reliable evidence that this is necessary to maintain the level of protection of health, safety and fundamental rights provided for by this Regulation.",
+    "text_sha256": "88cfef482e25ee93c555cabb48876addd6efa060160d564b7a0fbcf53957137f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[9]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6/paragraph/8",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(8)",
+    "locator": {
+      "path": "article/6/paragraph/8",
+      "article": "6",
+      "paragraph": "8"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "8. Any amendment to the conditions laid down in paragraph 3, second subparagraph, adopted in accordance with paragraphs 6 and 7 of this Article shall not decrease the overall level of protection of health, safety and fundamental rights provided for by this Regulation and shall ensure consistency with the delegated acts adopted pursuant to Article 7(1), and take account of market and technological developments.",
+    "text_sha256": "5195742df39dc65f80e499b2f340b2352bce761228c31a6c44284f32996e0cc4",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[3]/*[3]/*[3]/*[3]/*[10]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": null,
+    "unit_kind": "annex",
+    "legal_function": "operative",
+    "label": "Annex III — complete source parent",
+    "locator": {
+      "path": "annex/III",
+      "annex": "III"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "ANNEX III High-risk AI systems referred to in Article 6(2) High-risk AI systems pursuant to Article 6(2) are the AI systems listed in any of the following areas: 1. Biometrics, in so far as their use is permitted under relevant Union or national law: (a) remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification the sole purpose of which is to confirm that a specific natural person is the person he or she claims to be; (b) AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics; (c) AI systems intended to be used for emotion recognition. 2. Critical infrastructure: AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity. 3. Education and vocational training: (a) AI systems intended to be used to determine access or admission or to assign natural persons to educational and vocational training institutions at all levels; (b) AI systems intended to be used to evaluate learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions at all levels; (c) AI systems intended to be used for the purpose of assessing the appropriate level of education that an individual will receive or will be able to access, in the context of or within educational and vocational training institutions at all levels; (d) AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests in the context of or within educational and vocational training institutions at all levels. 4. Employment, workers’ management and access to self-employment: (a) AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates; (b) AI systems intended to be used to make decisions affecting terms of work-related relationships, the promotion or termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics or to monitor and evaluate the performance and behaviour of persons in such relationships. 5. Access to and enjoyment of essential private services and essential public services and benefits: (a) AI systems intended to be used by public authorities or on behalf of public authorities to evaluate the eligibility of natural persons for essential public assistance benefits and services, including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services; (b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud; (c) AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance; (d) AI systems intended to evaluate and classify emergency calls by natural persons or to be used to dispatch, or to establish priority in the dispatching of, emergency first response services, including by police, firefighters and medical aid, as well as of emergency healthcare patient triage systems. 6. Law enforcement, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies in support of law enforcement authorities or on their behalf to assess the risk of a natural person becoming the victim of criminal offences; (b) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities as polygraphs or similar tools; (c) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies, in support of law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences; (d) AI systems intended to be used by law enforcement authorities or on their behalf or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for assessing the risk of a natural person offending or re-offending not solely on the basis of the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680, or to assess personality traits and characteristics or past criminal behaviour of natural persons or groups; (e) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 in the course of the detection, investigation or prosecution of criminal offences. 7. Migration, asylum and border control management, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies as polygraphs or similar tools; (b) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assess a risk, including a security risk, a risk of irregular migration, or a health risk, posed by a natural person who intends to enter or who has entered into the territory of a Member State; (c) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assist competent public authorities for the examination of applications for asylum, visa or residence permits and for associated complaints with regard to the eligibility of the natural persons applying for a status, including related assessments of the reliability of evidence; (d) AI systems intended to be used by or on behalf of competent public authorities, or by Union institutions, bodies, offices or agencies, in the context of migration, asylum or border control management, for the purpose of detecting, recognising or identifying natural persons, with the exception of the verification of travel documents. 8. Administration of justice and democratic processes: (a) AI systems intended to be used by a judicial authority or on their behalf to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts, or to be used in a similar way in alternative dispute resolution; (b) AI systems intended to be used for influencing the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote in elections or referenda. This does not include AI systems to the output of which natural persons are not directly exposed, such as tools used to organise, optimise or structure political campaigns from an administrative or logistical point of view.",
+    "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*"
+    },
+    "children": [
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/1",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/2",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/3",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/4",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/5",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/6",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/7",
+      "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/8"
+    ],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/1",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 1",
+    "locator": {
+      "path": "annex/III/point/1",
+      "annex": "III",
+      "point": "1"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1. Biometrics, in so far as their use is permitted under relevant Union or national law: (a) remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification the sole purpose of which is to confirm that a specific natural person is the person he or she claims to be; (b) AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics; (c) AI systems intended to be used for emotion recognition.",
+    "text_sha256": "6d16febaee401fa1175dc933360d411a28a98b2f2dd0b4929d50042f73518f56",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[4]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/2",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 2",
+    "locator": {
+      "path": "annex/III/point/2",
+      "annex": "III",
+      "point": "2"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "2. Critical infrastructure: AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity.",
+    "text_sha256": "e56950faf8923612a7b256a7851d49c2231e1f44798b9fa42aa49079235fd213",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[5]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/3",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 3",
+    "locator": {
+      "path": "annex/III/point/3",
+      "annex": "III",
+      "point": "3"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "3. Education and vocational training: (a) AI systems intended to be used to determine access or admission or to assign natural persons to educational and vocational training institutions at all levels; (b) AI systems intended to be used to evaluate learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions at all levels; (c) AI systems intended to be used for the purpose of assessing the appropriate level of education that an individual will receive or will be able to access, in the context of or within educational and vocational training institutions at all levels; (d) AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests in the context of or within educational and vocational training institutions at all levels.",
+    "text_sha256": "8866d581920d56710a6cb0bad1f1962fa43ed66d3d28ca70b6a424f56b909bc8",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[6]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/4",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 4",
+    "locator": {
+      "path": "annex/III/point/4",
+      "annex": "III",
+      "point": "4"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "4. Employment, workers’ management and access to self-employment: (a) AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates; (b) AI systems intended to be used to make decisions affecting terms of work-related relationships, the promotion or termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics or to monitor and evaluate the performance and behaviour of persons in such relationships.",
+    "text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[7]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/5",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 5",
+    "locator": {
+      "path": "annex/III/point/5",
+      "annex": "III",
+      "point": "5"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "5. Access to and enjoyment of essential private services and essential public services and benefits: (a) AI systems intended to be used by public authorities or on behalf of public authorities to evaluate the eligibility of natural persons for essential public assistance benefits and services, including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services; (b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud; (c) AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance; (d) AI systems intended to evaluate and classify emergency calls by natural persons or to be used to dispatch, or to establish priority in the dispatching of, emergency first response services, including by police, firefighters and medical aid, as well as of emergency healthcare patient triage systems.",
+    "text_sha256": "01d47b54e03796dd3f19dea39b9f8aa2b547193580bb38cb9c569c9e080b14ea",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[8]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/6",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 6",
+    "locator": {
+      "path": "annex/III/point/6",
+      "annex": "III",
+      "point": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "6. Law enforcement, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies in support of law enforcement authorities or on their behalf to assess the risk of a natural person becoming the victim of criminal offences; (b) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities as polygraphs or similar tools; (c) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies, in support of law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences; (d) AI systems intended to be used by law enforcement authorities or on their behalf or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for assessing the risk of a natural person offending or re-offending not solely on the basis of the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680, or to assess personality traits and characteristics or past criminal behaviour of natural persons or groups; (e) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 in the course of the detection, investigation or prosecution of criminal offences.",
+    "text_sha256": "e869e195ab27d1812d5f496675e5d61bf25e81bee50fa44bdc386431cc627604",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[9]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/7",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 7",
+    "locator": {
+      "path": "annex/III/point/7",
+      "annex": "III",
+      "point": "7"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "7. Migration, asylum and border control management, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies as polygraphs or similar tools; (b) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assess a risk, including a security risk, a risk of irregular migration, or a health risk, posed by a natural person who intends to enter or who has entered into the territory of a Member State; (c) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assist competent public authorities for the examination of applications for asylum, visa or residence permits and for associated complaints with regard to the eligibility of the natural persons applying for a status, including related assessments of the reliability of evidence; (d) AI systems intended to be used by or on behalf of competent public authorities, or by Union institutions, bodies, offices or agencies, in the context of migration, asylum or border control management, for the purpose of detecting, recognising or identifying natural persons, with the exception of the verification of travel documents.",
+    "text_sha256": "b72207d9438caef8296d722af969879c78ba5bbbc802e2fa91c4ab04aad09ffc",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[10]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III/point/8",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 8",
+    "locator": {
+      "path": "annex/III/point/8",
+      "annex": "III",
+      "point": "8"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "8. Administration of justice and democratic processes: (a) AI systems intended to be used by a judicial authority or on their behalf to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts, or to be used in a similar way in alternative dispute resolution; (b) AI systems intended to be used for influencing the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote in elections or referenda. This does not include AI systems to the output of which natural persons are not directly exposed, such as tools used to organise, optimise or structure political campaigns from an administrative or logistical point of view.",
+    "text_sha256": "da46f7a66524161f78460700811fc174c9be5f11b0754c138420b9a74077ca68",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[10]/*/*[11]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Article 6 — complete source parent",
+    "locator": {
+      "path": "article/6",
+      "article": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 6 Classification rules for high-risk AI systems 1. Irrespective of whether an AI system is placed on the market or put into service independently of the products referred to in points (a) and (b), that AI system shall be considered to be high-risk where both of the following conditions are fulfilled: (a) the AI system is intended to be used as a safety component of a product, or the AI system is itself a product, covered by the Union harmonisation legislation listed in Annex I; (b) the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment, with a view to the placing on the market or the putting into service of that product pursuant to the Union harmonisation legislation listed in Annex I. ▼M1 1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components. 1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components. 1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b). ▼B 2. In addition to the high-risk AI systems referred to in paragraph 1, AI systems referred to in Annex III shall be considered to be high-risk. 3. By derogation from paragraph 2, an AI system referred to in Annex III shall not be considered to be high-risk where it does not pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including by not materially influencing the outcome of decision making. The first subparagraph shall apply where any of the following conditions is fulfilled: (a) the AI system is intended to perform a narrow procedural task; (b) the AI system is intended to improve the result of a previously completed human activity; (c) the AI system is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment, without proper human review; or (d) the AI system is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III. Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons. 4. A provider who considers that an AI system referred to in Annex III is not high-risk shall document its assessment before that system is placed on the market or put into service. Such provider shall be subject to the registration obligation set out in Article 49(2). Upon request of national competent authorities, the provider shall provide the documentation of the assessment. 5. The Commission shall, after consulting the European Artificial Intelligence Board (the ‘Board’), and no later than 2 February 2026, provide guidelines specifying the practical implementation of this Article in line with Article 96 together with a comprehensive list of practical examples of use cases of AI systems that are high-risk and not high-risk. 6. The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by adding new conditions to those laid down therein, or by modifying them, where there is concrete and reliable evidence of the existence of AI systems that fall under the scope of Annex III, but do not pose a significant risk of harm to the health, safety or fundamental rights of natural persons. 7. The Commission shall adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by deleting any of the conditions laid down therein, where there is concrete and reliable evidence that this is necessary to maintain the level of protection of health, safety and fundamental rights provided for by this Regulation. 8. Any amendment to the conditions laid down in paragraph 3, second subparagraph, adopted in accordance with paragraphs 6 and 7 of this Article shall not decrease the overall level of protection of health, safety and fundamental rights provided for by this Regulation and shall ensure consistency with the delegated acts adopted pursuant to Article 7(1), and take account of market and technological developments.",
+    "text_sha256": "b6a58d42b6248038baaf14c5918103289bc0af1aed90da5d974b7ef846a5b5ee",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]"
+    },
+    "children": [
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1a",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1b",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1c",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/2",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/5",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/7",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/8"
+    ],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(1)",
+    "locator": {
+      "path": "article/6/paragraph/1",
+      "article": "6",
+      "paragraph": "1"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1. Irrespective of whether an AI system is placed on the market or put into service independently of the products referred to in points (a) and (b), that AI system shall be considered to be high-risk where both of the following conditions are fulfilled: (a) the AI system is intended to be used as a safety component of a product, or the AI system is itself a product, covered by the Union harmonisation legislation listed in Annex I; (b) the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment, with a view to the placing on the market or the putting into service of that product pursuant to the Union harmonisation legislation listed in Annex I. ▼M1",
+    "text_sha256": "c811a7cb0e70a0fb88668dd029f21088826df5b9ef1d1381f70348ee813bb8c6",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[3] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[4]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1a",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(1a)",
+    "locator": {
+      "path": "article/6/paragraph/1a",
+      "article": "6",
+      "paragraph": "1a"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1a. For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components.",
+    "text_sha256": "2d548f2e11ff03c4a78648a6b595fbc8ed46026114b6d33a2e27b2a083e49d43",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[5]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1b",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(1b)",
+    "locator": {
+      "path": "article/6/paragraph/1b",
+      "article": "6",
+      "paragraph": "1b"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1b. Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components.",
+    "text_sha256": "b17387c7822cdea9f11a59120ddd79d6d7b2955ee2bd02e9854ee61a0b21a6c7",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[6]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/1c",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(1c)",
+    "locator": {
+      "path": "article/6/paragraph/1c",
+      "article": "6",
+      "paragraph": "1c"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1c. A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b). ▼B",
+    "text_sha256": "638f879a87d4e7a2ec1f240f460ac4b3204fb33fa4db61f09e7b0dfc9095b8d3",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[7] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[8]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/2",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(2)",
+    "locator": {
+      "path": "article/6/paragraph/2",
+      "article": "6",
+      "paragraph": "2"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "2. In addition to the high-risk AI systems referred to in paragraph 1, AI systems referred to in Annex III shall be considered to be high-risk.",
+    "text_sha256": "eeed91ee4bc59a1d5e45660ea081a5eb7886f569e2489504c8a0cddcb4e4b3d7",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[9]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(3)",
+    "locator": {
+      "path": "article/6/paragraph/3",
+      "article": "6",
+      "paragraph": "3"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "3. By derogation from paragraph 2, an AI system referred to in Annex III shall not be considered to be high-risk where it does not pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including by not materially influencing the outcome of decision making. The first subparagraph shall apply where any of the following conditions is fulfilled: (a) the AI system is intended to perform a narrow procedural task; (b) the AI system is intended to improve the result of a previously completed human activity; (c) the AI system is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment, without proper human review; or (d) the AI system is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III. Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+    "text_sha256": "f859f5a2e435bd84c7da404fd214279544868d431a63a582b4fe548dc94fb3e0",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[10] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[11] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[12] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[13] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[14] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[15] | /*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[16]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(4)",
+    "locator": {
+      "path": "article/6/paragraph/4",
+      "article": "6",
+      "paragraph": "4"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "4. A provider who considers that an AI system referred to in Annex III is not high-risk shall document its assessment before that system is placed on the market or put into service. Such provider shall be subject to the registration obligation set out in Article 49(2). Upon request of national competent authorities, the provider shall provide the documentation of the assessment.",
+    "text_sha256": "51ce6d9ffc701ea01ff899f329c19c5733c7d99097165b10bb28bb532d24e67a",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[17]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/5",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(5)",
+    "locator": {
+      "path": "article/6/paragraph/5",
+      "article": "6",
+      "paragraph": "5"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "5. The Commission shall, after consulting the European Artificial Intelligence Board (the ‘Board’), and no later than 2 February 2026, provide guidelines specifying the practical implementation of this Article in line with Article 96 together with a comprehensive list of practical examples of use cases of AI systems that are high-risk and not high-risk.",
+    "text_sha256": "0ea6d6b47da7db207035b4326932f034864282743e4d2deccfdccd940d151774",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[18]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(6)",
+    "locator": {
+      "path": "article/6/paragraph/6",
+      "article": "6",
+      "paragraph": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "6. The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by adding new conditions to those laid down therein, or by modifying them, where there is concrete and reliable evidence of the existence of AI systems that fall under the scope of Annex III, but do not pose a significant risk of harm to the health, safety or fundamental rights of natural persons.",
+    "text_sha256": "987006acfe5d6aa147f67adf7b0c51670f42c6e30e14ccba58e33f06677dc047",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[19]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/7",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(7)",
+    "locator": {
+      "path": "article/6/paragraph/7",
+      "article": "6",
+      "paragraph": "7"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "7. The Commission shall adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by deleting any of the conditions laid down therein, where there is concrete and reliable evidence that this is necessary to maintain the level of protection of health, safety and fundamental rights provided for by this Regulation.",
+    "text_sha256": "88cfef482e25ee93c555cabb48876addd6efa060160d564b7a0fbcf53957137f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[20]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/8",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+    "unit_kind": "paragraph",
+    "legal_function": "operative",
+    "label": "Article 6(8)",
+    "locator": {
+      "path": "article/6/paragraph/8",
+      "article": "6",
+      "paragraph": "8"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "8. Any amendment to the conditions laid down in paragraph 3, second subparagraph, adopted in accordance with paragraphs 6 and 7 of this Article shall not decrease the overall level of protection of health, safety and fundamental rights provided for by this Regulation and shall ensure consistency with the delegated acts adopted pursuant to Article 7(1), and take account of market and technological developments.",
+    "text_sha256": "5195742df39dc65f80e499b2f340b2352bce761228c31a6c44284f32996e0cc4",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[4]/*[4]/*[3]/*[3]/*[21]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": null,
+    "unit_kind": "annex",
+    "legal_function": "operative",
+    "label": "Annex III — complete source parent",
+    "locator": {
+      "path": "annex/III",
+      "annex": "III"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "ANNEX III High-risk AI systems referred to in Article 6(2) High-risk AI systems pursuant to Article 6(2) are the AI systems listed in any of the following areas: 1. Biometrics, in so far as their use is permitted under relevant Union or national law: (a) remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification the sole purpose of which is to confirm that a specific natural person is the person he or she claims to be; (b) AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics; (c) AI systems intended to be used for emotion recognition. 2. Critical infrastructure: AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity. 3. Education and vocational training: (a) AI systems intended to be used to determine access or admission or to assign natural persons to educational and vocational training institutions at all levels; (b) AI systems intended to be used to evaluate learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions at all levels; (c) AI systems intended to be used for the purpose of assessing the appropriate level of education that an individual will receive or will be able to access, in the context of or within educational and vocational training institutions at all levels; (d) AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests in the context of or within educational and vocational training institutions at all levels. 4. Employment, workers’ management and access to self-employment: (a) AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates; (b) AI systems intended to be used to make decisions affecting terms of work-related relationships, the promotion or termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics or to monitor and evaluate the performance and behaviour of persons in such relationships. 5. Access to and enjoyment of essential private services and essential public services and benefits: (a) AI systems intended to be used by public authorities or on behalf of public authorities to evaluate the eligibility of natural persons for essential public assistance benefits and services, including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services; (b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud; (c) AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance; (d) AI systems intended to evaluate and classify emergency calls by natural persons or to be used to dispatch, or to establish priority in the dispatching of, emergency first response services, including by police, firefighters and medical aid, as well as of emergency healthcare patient triage systems. 6. Law enforcement, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies in support of law enforcement authorities or on their behalf to assess the risk of a natural person becoming the victim of criminal offences; (b) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities as polygraphs or similar tools; (c) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies, in support of law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences; (d) AI systems intended to be used by law enforcement authorities or on their behalf or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for assessing the risk of a natural person offending or re-offending not solely on the basis of the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680, or to assess personality traits and characteristics or past criminal behaviour of natural persons or groups; (e) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 in the course of the detection, investigation or prosecution of criminal offences. 7. Migration, asylum and border control management, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies as polygraphs or similar tools; (b) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assess a risk, including a security risk, a risk of irregular migration, or a health risk, posed by a natural person who intends to enter or who has entered into the territory of a Member State; (c) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assist competent public authorities for the examination of applications for asylum, visa or residence permits and for associated complaints with regard to the eligibility of the natural persons applying for a status, including related assessments of the reliability of evidence; (d) AI systems intended to be used by or on behalf of competent public authorities, or by Union institutions, bodies, offices or agencies, in the context of migration, asylum or border control management, for the purpose of detecting, recognising or identifying natural persons, with the exception of the verification of travel documents. 8. Administration of justice and democratic processes: (a) AI systems intended to be used by a judicial authority or on their behalf to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts, or to be used in a similar way in alternative dispute resolution; (b) AI systems intended to be used for influencing the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote in elections or referenda. This does not include AI systems to the output of which natural persons are not directly exposed, such as tools used to organise, optimise or structure political campaigns from an administrative or logistical point of view.",
+    "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]"
+    },
+    "children": [
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/1",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/2",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/3",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/5",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/8"
+    ],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/1",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 1",
+    "locator": {
+      "path": "annex/III/point/1",
+      "annex": "III",
+      "point": "1"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "1. Biometrics, in so far as their use is permitted under relevant Union or national law: (a) remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification the sole purpose of which is to confirm that a specific natural person is the person he or she claims to be; (b) AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics; (c) AI systems intended to be used for emotion recognition.",
+    "text_sha256": "6d16febaee401fa1175dc933360d411a28a98b2f2dd0b4929d50042f73518f56",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[7]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/2",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 2",
+    "locator": {
+      "path": "annex/III/point/2",
+      "annex": "III",
+      "point": "2"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "2. Critical infrastructure: AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity.",
+    "text_sha256": "e56950faf8923612a7b256a7851d49c2231e1f44798b9fa42aa49079235fd213",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[8]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/3",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 3",
+    "locator": {
+      "path": "annex/III/point/3",
+      "annex": "III",
+      "point": "3"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "3. Education and vocational training: (a) AI systems intended to be used to determine access or admission or to assign natural persons to educational and vocational training institutions at all levels; (b) AI systems intended to be used to evaluate learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions at all levels; (c) AI systems intended to be used for the purpose of assessing the appropriate level of education that an individual will receive or will be able to access, in the context of or within educational and vocational training institutions at all levels; (d) AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests in the context of or within educational and vocational training institutions at all levels.",
+    "text_sha256": "8866d581920d56710a6cb0bad1f1962fa43ed66d3d28ca70b6a424f56b909bc8",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[9]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 4",
+    "locator": {
+      "path": "annex/III/point/4",
+      "annex": "III",
+      "point": "4"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "4. Employment, workers’ management and access to self-employment: (a) AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates; (b) AI systems intended to be used to make decisions affecting terms of work-related relationships, the promotion or termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics or to monitor and evaluate the performance and behaviour of persons in such relationships.",
+    "text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[10]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/5",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 5",
+    "locator": {
+      "path": "annex/III/point/5",
+      "annex": "III",
+      "point": "5"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "5. Access to and enjoyment of essential private services and essential public services and benefits: (a) AI systems intended to be used by public authorities or on behalf of public authorities to evaluate the eligibility of natural persons for essential public assistance benefits and services, including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services; (b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud; (c) AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance; (d) AI systems intended to evaluate and classify emergency calls by natural persons or to be used to dispatch, or to establish priority in the dispatching of, emergency first response services, including by police, firefighters and medical aid, as well as of emergency healthcare patient triage systems.",
+    "text_sha256": "01d47b54e03796dd3f19dea39b9f8aa2b547193580bb38cb9c569c9e080b14ea",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[11]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 6",
+    "locator": {
+      "path": "annex/III/point/6",
+      "annex": "III",
+      "point": "6"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "6. Law enforcement, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies in support of law enforcement authorities or on their behalf to assess the risk of a natural person becoming the victim of criminal offences; (b) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities as polygraphs or similar tools; (c) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, bodies, offices or agencies, in support of law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences; (d) AI systems intended to be used by law enforcement authorities or on their behalf or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for assessing the risk of a natural person offending or re-offending not solely on the basis of the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680, or to assess personality traits and characteristics or past criminal behaviour of natural persons or groups; (e) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies, offices or agencies in support of law enforcement authorities for the profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 in the course of the detection, investigation or prosecution of criminal offences.",
+    "text_sha256": "e869e195ab27d1812d5f496675e5d61bf25e81bee50fa44bdc386431cc627604",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[12]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 7",
+    "locator": {
+      "path": "annex/III/point/7",
+      "annex": "III",
+      "point": "7"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "7. Migration, asylum and border control management, in so far as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies as polygraphs or similar tools; (b) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assess a risk, including a security risk, a risk of irregular migration, or a health risk, posed by a natural person who intends to enter or who has entered into the territory of a Member State; (c) AI systems intended to be used by or on behalf of competent public authorities or by Union institutions, bodies, offices or agencies to assist competent public authorities for the examination of applications for asylum, visa or residence permits and for associated complaints with regard to the eligibility of the natural persons applying for a status, including related assessments of the reliability of evidence; (d) AI systems intended to be used by or on behalf of competent public authorities, or by Union institutions, bodies, offices or agencies, in the context of migration, asylum or border control management, for the purpose of detecting, recognising or identifying natural persons, with the exception of the verification of travel documents.",
+    "text_sha256": "b72207d9438caef8296d722af969879c78ba5bbbc802e2fa91c4ab04aad09ffc",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[13]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/8",
+    "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+    "parent_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+    "unit_kind": "point",
+    "legal_function": "operative",
+    "label": "Annex III, point 8",
+    "locator": {
+      "path": "annex/III/point/8",
+      "annex": "III",
+      "point": "8"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "8. Administration of justice and democratic processes: (a) AI systems intended to be used by a judicial authority or on their behalf to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts, or to be used in a similar way in alternative dispute resolution; (b) AI systems intended to be used for influencing the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote in elections or referenda. This does not include AI systems to the output of which natural persons are not directly exposed, such as tools used to organise, optimise or structure political campaigns from an administrative or logistical point of view.",
+    "text_sha256": "da46f7a66524161f78460700811fc174c9be5f11b0754c138420b9a74077ca68",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[9]/*[8]/*[14]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::recital/47",
+    "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+    "parent_id": null,
+    "unit_kind": "recital",
+    "legal_function": "interpretive",
+    "label": "Recital 47",
+    "locator": {
+      "path": "recital/47",
+      "recital": "47"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "(47) AI systems could have an adverse impact on the health and safety of persons, in particular when such systems operate as safety components of products. Consistent with the objectives of Union harmonisation legislation to facilitate the free movement of products in the internal market and to ensure that only safe and otherwise compliant products find their way into the market, it is important that the safety risks that may be generated by a product as a whole due to its digital components, including AI systems, are duly prevented and mitigated. For instance, increasingly autonomous robots, whether in the context of manufacturing or personal assistance and care should be able to safely operate and performs their functions in complex environments. Similarly, in the health sector where the stakes for life and health are particularly high, increasingly sophisticated diagnostics systems and systems supporting human decisions should be reliable and accurate.",
+    "text_sha256": "bda5f30bacadb07e7031fd722c673bde12c9cf5968ca1fc23b4f4c6a366535a2",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[4]/*[2]/*[56]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/21",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 21",
+    "locator": {
+      "path": "article/21",
+      "article": "21"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 21 Non-discrimination 1. Any discrimination based on any ground such as sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation shall be prohibited. 2. Within the scope of application of the Treaties and without prejudice to any of their specific provisions, any discrimination on grounds of nationality shall be prohibited.",
+    "text_sha256": "6066f9ae7e65516cb039f3f3918d1e25492a13256e691153aab5f7181540a4fc",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[96] | /*/*[2]/*[14]/*[97] | /*/*[2]/*[14]/*[98] | /*/*[2]/*[14]/*[99]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/51",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 51",
+    "locator": {
+      "path": "article/51",
+      "article": "51"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 51 Field of application 1. The provisions of this Charter are addressed to the institutions, bodies, offices and agencies of the Union with due regard for the principle of subsidiarity and to the Member States only when they are implementing Union law. They shall therefore respect the rights, observe the principles and promote the application thereof in accordance with their respective powers and respecting the limits of the powers of the Union as conferred on it in the Treaties. 2. The Charter does not extend the field of application of Union law beyond the powers of the Union or establish any new power or task for the Union, or modify powers and tasks as defined in the Treaties.",
+    "text_sha256": "45f2c3c2e489cc831de5ba38ee0a174f82324ff980f727a775a1b6c1ed38f1bd",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[216] | /*/*[2]/*[14]/*[217] | /*/*[2]/*[14]/*[218] | /*/*[2]/*[14]/*[219]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/52",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 52",
+    "locator": {
+      "path": "article/52",
+      "article": "52"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 52 Scope and interpretation of rights and principles 1. Any limitation on the exercise of the rights and freedoms recognised by this Charter must be provided for by law and respect the essence of those rights and freedoms. Subject to the principle of proportionality, limitations may be made only if they are necessary and genuinely meet objectives of general interest recognised by the Union or the need to protect the rights and freedoms of others. 2. Rights recognised by this Charter for which provision is made in the Treaties shall be exercised under the conditions and within the limits defined by those Treaties. 3. In so far as this Charter contains rights which correspond to rights guaranteed by the Convention for the Protection of Human Rights and Fundamental Freedoms, the meaning and scope of those rights shall be the same as those laid down by the said Convention. This provision shall not prevent Union law providing more extensive protection. 4. In so far as this Charter recognises fundamental rights as they result from the constitutional traditions common to the Member States, those rights shall be interpreted in harmony with those traditions. 5. The provisions of this Charter which contain principles may be implemented by legislative and executive acts taken by institutions, bodies, offices and agencies of the Union, and by acts of Member States when they are implementing Union law, in the exercise of their respective powers. They shall be judicially cognisable only in the interpretation of such acts and in the ruling on their legality. 6. Full account shall be taken of national laws and practices as specified in this Charter. 7. The explanations drawn up as a way of providing guidance in the interpretation of this Charter shall be given due regard by the courts of the Union and of the Member States.",
+    "text_sha256": "766f4e2727ad89ace1faf80a4afe0abac3865db26f9b37e495947b22ffa1545b",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[220] | /*/*[2]/*[14]/*[221] | /*/*[2]/*[14]/*[222] | /*/*[2]/*[14]/*[223] | /*/*[2]/*[14]/*[224] | /*/*[2]/*[14]/*[225] | /*/*[2]/*[14]/*[226] | /*/*[2]/*[14]/*[227] | /*/*[2]/*[14]/*[228]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/53",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 53",
+    "locator": {
+      "path": "article/53",
+      "article": "53"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 53 Level of protection Nothing in this Charter shall be interpreted as restricting or adversely affecting human rights and fundamental freedoms as recognised, in their respective fields of application, by Union law and international law and by international agreements to which the Union or all the Member States are party, including the European Convention for the Protection of Human Rights and Fundamental Freedoms, and by the Member States' constitutions.",
+    "text_sha256": "be7cef052a17d8845a2b8c635c6c6606c3f251f4f351c6d4c5c40bc6c918560f",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[229] | /*/*[2]/*[14]/*[230] | /*/*[2]/*[14]/*[231]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  },
+  {
+    "schema_version": "0.1.0",
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/54",
+    "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+    "parent_id": null,
+    "unit_kind": "article",
+    "legal_function": "operative",
+    "label": "Charter Article 54",
+    "locator": {
+      "path": "article/54",
+      "article": "54"
+    },
+    "language": "en",
+    "tier": 1,
+    "text": "Article 54 Prohibition of abuse of rights Nothing in this Charter shall be interpreted as implying any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms recognised in this Charter or at their limitation to a greater extent than is provided for herein. ° °° The above text adapts the wording of the Charter proclaimed on 7 December 2000, and will replace it as from the date of entry into force of the Treaty of Lisbon.",
+    "text_sha256": "4003a2b3d029a370a04f55c897735bd93ea51db879017896a378b13f9a16cb3d",
+    "source_location": {
+      "url": "http://publications.europa.eu/resource/cellar/20e2519e-c2d9-4b23-86ed-7b65a7dd81ec.0020.03/DOC_1",
+      "format": "html",
+      "selector": "/*/*[2]/*[14]/*[232] | /*/*[2]/*[14]/*[233] | /*/*[2]/*[14]/*[234] | /*/*[2]/*[14]/*[235] | /*/*[2]/*[14]/*[236] | /*/*[2]/*[14]/*[237]"
+    },
+    "children": [],
+    "cross_references": [],
+    "normalization_version": "legal-whitespace-v1",
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "indexable": false
+  }
+]

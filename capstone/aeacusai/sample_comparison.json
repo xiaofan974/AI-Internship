@@ -1,0 +1,23 @@
+[
+  {
+    "locator": "article/6",
+    "normalized_text_equal": false,
+    "original_characters": 4041,
+    "consolidated_characters": 4848,
+    "legal_effect_assessed": false
+  },
+  {
+    "locator": "article/6/paragraph/3",
+    "normalized_text_equal": true,
+    "original_characters": 1098,
+    "consolidated_characters": 1098,
+    "legal_effect_assessed": false
+  },
+  {
+    "locator": "annex/III/point/4",
+    "normalized_text_equal": true,
+    "original_characters": 622,
+    "consolidated_characters": 622,
+    "legal_effect_assessed": false
+  }
+]

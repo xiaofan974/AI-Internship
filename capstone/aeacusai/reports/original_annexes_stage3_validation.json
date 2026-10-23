@@ -1,0 +1,153 @@
+{
+  "stage": "original_annexes_stage3",
+  "source_id": "T1-AIA-OJ-2024",
+  "source_snapshot_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+  "record_count": 13,
+  "technical_checks": {
+    "manifest_sha256_verified": true,
+    "exact_13_unique_annexes_I_to_XIII_in_order": true,
+    "all_records_satisfy_json_schema": true,
+    "all_text_sha256_match_extracted_text": true,
+    "annex_III_matches_baseline_text_and_sha256": true,
+    "annex_III_text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf",
+    "annex_III_char_length": 7350,
+    "second_extraction_identical": true,
+    "unsupported_nonempty_element_count": 0
+  },
+  "limitations_and_scope": {
+    "structural_table_records_created": false,
+    "row_column_semantics_established": false,
+    "table_text_limitation": "This checkpoint extracts complete parent annex records only and does not create structural table or table_row records. While all meaningful table-cell text is retained in source order under legal-whitespace-v1 normalization, retaining flattened table text does not yet establish preservation of row/column semantics (such as 2-column or 3-column list-item marker/body cells in OJ Annexes I–XIII or multi-row data tables in Consolidated Annex XIV).",
+    "child_decomposition_performed": false,
+    "cross_reference_or_risk_inference_performed": false,
+    "consolidated_or_annex_xiv_parsed": false
+  },
+  "content_review_and_ingestion_status": {
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "all_indexable_false": true,
+    "legally_reviewed": false,
+    "ready_for_indexing": false,
+    "note": "Passing Stage 3 technical extraction checks does not mean the corpus is legally reviewed or ready for indexing."
+  },
+  "unsupported_nonempty_structures": [],
+  "annex_inventory": [
+    {
+      "native_id": "anx_I",
+      "annex_numeral": "I",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/I",
+      "label": "Annex I — List of Union harmonisation legislation",
+      "extracted_character_count": 5880,
+      "source_table_count": 20,
+      "text_sha256": "c7594892d27d0877a098dbc566598d6aae6e5608419ef58d2f60ad3b21c2dff4"
+    },
+    {
+      "native_id": "anx_II",
+      "annex_numeral": "II",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/II",
+      "label": "Annex II — List of criminal offences referred to in Article 5(1), first subparagraph, point (h)(iii)",
+      "extracted_character_count": 878,
+      "source_table_count": 16,
+      "text_sha256": "12499beb1dae2205a923ad1227adb71fa64b176958e553afdb444de5fafc903e"
+    },
+    {
+      "native_id": "anx_III",
+      "annex_numeral": "III",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/III",
+      "label": "Annex III — High-risk AI systems referred to in Article 6(2)",
+      "extracted_character_count": 7350,
+      "source_table_count": 32,
+      "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf"
+    },
+    {
+      "native_id": "anx_IV",
+      "annex_numeral": "IV",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/IV",
+      "label": "Annex IV — Technical documentation referred to in Article 11(1)",
+      "extracted_character_count": 5772,
+      "source_table_count": 25,
+      "text_sha256": "d44cd2d584cbdde273b760fe01506655579509a52b79a91cabee43e92cfd517f"
+    },
+    {
+      "native_id": "anx_V",
+      "annex_numeral": "V",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/V",
+      "label": "Annex V — EU declaration of conformity",
+      "extracted_character_count": 1422,
+      "source_table_count": 8,
+      "text_sha256": "a7ad26bf2879a04f0e5e6c8fcd54547c99e455aa21265e5200de1061edebb2ad"
+    },
+    {
+      "native_id": "anx_VI",
+      "annex_numeral": "VI",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/VI",
+      "label": "Annex VI — Conformity assessment procedure based on internal control",
+      "extracted_character_count": 728,
+      "source_table_count": 0,
+      "text_sha256": "ac696cc4b8f9d31c8cea87f45983475cf6d6140e492933cbc6b4563dac8cc205"
+    },
+    {
+      "native_id": "anx_VII",
+      "annex_numeral": "VII",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/VII",
+      "label": "Annex VII — Conformity based on an assessment of the quality management system and an assessment of the technical documentation",
+      "extracted_character_count": 7936,
+      "source_table_count": 23,
+      "text_sha256": "80e770bb2bfcb5ca4f011a188d9f7af96502e263712a295f7725254962d73e3f"
+    },
+    {
+      "native_id": "anx_VIII",
+      "annex_numeral": "VIII",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/VIII",
+      "label": "Annex VIII — Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49",
+      "extracted_character_count": 4001,
+      "source_table_count": 27,
+      "text_sha256": "903adbe07e1abfff83a358f251a64901ada4d406bb08cba5bb70e14419a52643"
+    },
+    {
+      "native_id": "anx_IX",
+      "annex_numeral": "IX",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/IX",
+      "label": "Annex IX — Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60",
+      "extracted_character_count": 900,
+      "source_table_count": 5,
+      "text_sha256": "26e962deba606a57b021506368fd16f06a37ccf824264ddbd2d9e2dd450f8fb5"
+    },
+    {
+      "native_id": "anx_X",
+      "annex_numeral": "X",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/X",
+      "label": "Annex X — Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice",
+      "extracted_character_count": 5289,
+      "source_table_count": 9,
+      "text_sha256": "6aa01031d49018f19ac24ee88c424167dacbde8f70abc9446211fe9ff3e26179"
+    },
+    {
+      "native_id": "anx_XI",
+      "annex_numeral": "XI",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/XI",
+      "label": "Annex XI — Technical documentation referred to in Article 53(1), point (a) — technical documentation for providers of general-purpose AI models",
+      "extracted_character_count": 3083,
+      "source_table_count": 16,
+      "text_sha256": "d568cb895bccd01786a8528778367f7ffec796b55cf4f5f0fe5c67fc7b612c89"
+    },
+    {
+      "native_id": "anx_XII",
+      "annex_numeral": "XII",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/XII",
+      "label": "Annex XII — Transparency information referred to in Article 53(1), point (b) — technical documentation for providers of general-purpose AI models to downstream providers that integrate the model into their AI system",
+      "extracted_character_count": 1535,
+      "source_table_count": 13,
+      "text_sha256": "7256ccefa872f3310db361fa2484eb8514d294002af676d59cf7711e5f3ab3e2"
+    },
+    {
+      "native_id": "anx_XIII",
+      "annex_numeral": "XIII",
+      "record_id": "T1-AIA-OJ-2024@sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a::annex/XIII",
+      "label": "Annex XIII — Criteria for the designation of general-purpose AI models with systemic risk referred to in Article 51",
+      "extracted_character_count": 1504,
+      "source_table_count": 7,
+      "text_sha256": "69716c6c5f699e325e487883fcfdce91fc70119ad5638fb527922d5db5f9f177"
+    }
+  ]
+}

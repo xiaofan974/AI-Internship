@@ -1,0 +1,1482 @@
+{
+  "schema": "aeacus.week4.codify.results.v1",
+  "result_id": "week4_adk_preview_f1_v2_assertions",
+  "checkpoint": "f1_candidate",
+  "claim": "Deterministic assertion results only. F1 before/after measurement awaits reviewed labels. No semantic labels were assigned.",
+  "candidate_id": "week4_adk_preview_f1_v2",
+  "parent_baseline_id": "week4_adk_preview_v1",
+  "source": {
+    "path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/traces/week4_adk_preview_f1_v2.jsonl",
+    "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848",
+    "n_traces": 20
+  },
+  "checker_suite": "week4_codify_v1",
+  "uses_human_labels": false,
+  "deterministic_assertions": {
+    "deferred_date_qualifications_v1": {
+      "checker_id": "deferred_date_qualifications_v1",
+      "applicable": 20,
+      "denominator": 20,
+      "pass": 14,
+      "fail": 6,
+      "not_applicable": 0,
+      "fail_ids": [
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S12",
+        "TRACE-S16"
+      ],
+      "pass_ids": [
+        "TRACE-S01",
+        "TRACE-S04",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S19",
+        "TRACE-S20"
+      ],
+      "not_applicable_ids": [],
+      "excluded_from_denominator": []
+    },
+    "s19_retrieval_budget_v1": {
+      "checker_id": "s19_retrieval_budget_v1",
+      "applicable": 1,
+      "denominator": 1,
+      "pass": 1,
+      "fail": 0,
+      "not_applicable": 19,
+      "fail_ids": [],
+      "pass_ids": [
+        "TRACE-S19"
+      ],
+      "not_applicable_ids": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ],
+      "excluded_from_denominator": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ]
+    }
+  },
+  "comparison_to_baseline": {
+    "deferred_date_qualifications_v1": {
+      "baseline_denominator": 20,
+      "candidate_denominator": 20,
+      "baseline_fail_ids": [
+        "TRACE-S02",
+        "TRACE-S20"
+      ],
+      "candidate_fail_ids": [
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S12",
+        "TRACE-S16"
+      ],
+      "still_failing": [
+        "TRACE-S02"
+      ],
+      "newly_failing": [
+        "TRACE-S03",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S12",
+        "TRACE-S16"
+      ],
+      "newly_passing": [
+        "TRACE-S20"
+      ],
+      "regressed_from_pass": [
+        "TRACE-S03",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S12",
+        "TRACE-S16"
+      ]
+    },
+    "s19_retrieval_budget_v1": {
+      "baseline_denominator": 1,
+      "candidate_denominator": 1,
+      "baseline_fail_ids": [
+        "TRACE-S19"
+      ],
+      "candidate_fail_ids": [],
+      "still_failing": [],
+      "newly_failing": [],
+      "newly_passing": [
+        "TRACE-S19"
+      ],
+      "regressed_from_pass": []
+    }
+  },
+  "per_trace": [
+    {
+      "scenario_id": "TRACE-S01",
+      "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S01",
+          "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S01",
+          "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S02",
+          "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3, Article 6(5) exception."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": false,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S02",
+          "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S03",
+          "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S03",
+          "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S04",
+          "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S04",
+          "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S05",
+          "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Article 6(5) exception."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": false,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S05",
+          "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S06",
+          "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S06",
+          "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S07",
+          "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S07",
+          "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S08",
+          "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S08",
+          "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S09",
+          "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S09",
+          "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S10",
+          "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S10",
+          "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S11",
+          "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S11",
+          "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S12",
+          "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S12",
+          "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S13",
+          "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S13",
+          "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 2,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S14",
+          "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S14",
+          "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 2,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S15",
+          "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S15",
+          "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S16",
+          "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+          "applicable": true,
+          "result": "fail",
+          "reasons": [
+            "Timing and scope summarizes a December 2027 or August 2028 deferral but omits explicit qualification marker(s): Chapter III, Sections 1–3."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": false,
+            "sections_1_to_3": false,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S16",
+          "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S17",
+          "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S17",
+          "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S18",
+          "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S18",
+          "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S19",
+          "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": false,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S19",
+          "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "TRACE-S19 made 1 preview_classification_search call event(s), which is within the limit of 2."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "assertions": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "scenario_id": "TRACE-S20",
+          "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+          "applicable": true,
+          "result": "pass",
+          "reasons": [
+            "Timing and scope names Chapter III, Sections 1–3, and the Article 6(5) exception when summarizing the deferral."
+          ],
+          "evidence": {
+            "timing_and_scope_present": true,
+            "mentions_december_2027": true,
+            "mentions_august_2028": true,
+            "chapter_iii": true,
+            "sections_1_to_3": true,
+            "article_6_5_exception": true,
+            "checks_explicit_markers_only": true
+          }
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "scenario_id": "TRACE-S20",
+          "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+          "applicable": false,
+          "result": "not_applicable",
+          "reasons": [
+            "s19_retrieval_budget_v1 applies only to TRACE-S19."
+          ],
+          "evidence": {
+            "search_call_events": 1,
+            "max_allowed_calls": 2,
+            "counted": "act events named preview_classification_search",
+            "not_counted": [
+              "observe events",
+              "distinct query strings"
+            ]
+          }
+        }
+      },
+      "human_annotation": {
+        "annotator": null,
+        "notes": null,
+        "labels": [],
+        "scores": {},
+        "reviewed_at": null
+      }
+    }
+  ],
+  "collection_rows": [
+    {
+      "scenario_id": "TRACE-S01",
+      "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "index_run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "phase": "batch1",
+      "status": "ok",
+      "elapsed_ms": 28590.586,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "4c0c94f0-9981-4af9-9e37-67a8637adbea",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "index_run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "phase": "batch1",
+      "status": "ok",
+      "elapsed_ms": 26113.494,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "36199136-d775-4928-87d0-22c9b1b2aad0",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "index_run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "phase": "batch1",
+      "status": "ok",
+      "elapsed_ms": 23751.592,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "1d26e259-1a7a-4dc9-be14-9149424c2241",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "index_run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "phase": "batch1",
+      "status": "ok",
+      "elapsed_ms": 28020.268,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "c85d0685-68c9-45cd-84fb-9c5b905173fb",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "index_run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "phase": "batch1",
+      "status": "ok",
+      "elapsed_ms": 19944.19,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "2e7f7c97-d19a-4316-a22f-a74638cf008d",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "index_run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "phase": "batch2",
+      "status": "ok",
+      "elapsed_ms": 29736.253,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "5eefbbcf-2a0c-45ed-8098-a951fc88fb12",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "index_run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "phase": "batch2",
+      "status": "ok",
+      "elapsed_ms": 27259.804,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "2b5d6bdf-cceb-406f-a827-d653aeecc948",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "index_run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "phase": "batch2",
+      "status": "ok",
+      "elapsed_ms": 35396.318,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "7e7fba29-7efb-4ec8-a750-eb85bde7abb8",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "index_run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "phase": "batch2",
+      "status": "ok",
+      "elapsed_ms": 42726.463,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "4a06e680-8aa1-4f0c-9ab0-d43f8291988f",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "index_run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "phase": "batch2",
+      "status": "ok",
+      "elapsed_ms": 31733.313,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "9f287657-ebf7-47e9-b05e-510b8510c19d",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "index_run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "phase": "batch3",
+      "status": "ok",
+      "elapsed_ms": 33337.373,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "53a4aaa4-483c-481a-aa14-9628204c39f5",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "index_run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "phase": "batch3",
+      "status": "ok",
+      "elapsed_ms": 31636.736,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "d6e36806-41fc-4391-9d26-e9c4ace6d947",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "index_run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "phase": "batch3",
+      "status": "ok",
+      "elapsed_ms": 44099.806,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 2,
+      "search_calls": 2,
+      "session": "d154d5ec-7a0f-4003-ac10-f1a82539bde9",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "index_run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "phase": "batch3",
+      "status": "ok",
+      "elapsed_ms": 30315.542,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 2,
+      "search_calls": 2,
+      "session": "9b54a6bc-371f-4f76-aae8-912d55bb71d1",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "index_run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "phase": "batch3",
+      "status": "ok",
+      "elapsed_ms": 78284.857,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "835d9d34-02ee-4623-84ce-f1b10d98e49a",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "index_run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "phase": "batch4",
+      "status": "ok",
+      "elapsed_ms": 39639.181,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "ff5d31b6-37da-42e9-9de2-08976c06f5cf",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "index_run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "phase": "batch4",
+      "status": "ok",
+      "elapsed_ms": 23511.339,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "38a55429-97eb-4a4a-a368-f0647b5ecf1f",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "index_run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "phase": "batch4",
+      "status": "ok",
+      "elapsed_ms": 23992.152,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "c33f9b04-bbff-4e7d-9573-ca50cd0b4e96",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "index_run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "phase": "batch4",
+      "status": "ok",
+      "elapsed_ms": 29718.976,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "198e695c-9e88-4ff6-901f-0d6208391e70",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "index_run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "phase": "batch4",
+      "status": "ok",
+      "elapsed_ms": 26891.558,
+      "capture_complete": true,
+      "complete_obs": true,
+      "observe_events": 1,
+      "search_calls": 1,
+      "session": "9794389e-4f85-45c5-9b85-482d196215fb",
+      "pending": "not_created",
+      "register_opened": "not_observed"
+    }
+  ],
+  "original_human_annotation_fields_empty": true
+}

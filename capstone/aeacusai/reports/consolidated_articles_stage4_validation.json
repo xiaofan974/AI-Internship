@@ -1,0 +1,325 @@
+{
+  "stage": "consolidated_articles_stage4",
+  "source_id": "T1-AIA-CONS-20260727",
+  "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+  "edition_description": "Pinned consolidated reading edition dated 2026-07-27 (CELEX 02024R1689-20260727). Consolidated texts produced by the Publications Office are meant purely as a documentation/reading tool and are not independently authentic Official Journal legislation, nor does this extraction claim that this snapshot is the latest or currently applicable law.",
+  "record_count": 119,
+  "technical_checks": {
+    "manifest_sha256_verified": true,
+    "exact_119_unique_articles_matching_native_inventory_in_order": true,
+    "native_letter_suffix_identifiers_preserved_without_renumbering": true,
+    "all_records_satisfy_json_schema": true,
+    "all_text_sha256_match_extracted_text": true,
+    "consolidated_article_6_matches_baseline_text_and_sha256": true,
+    "consolidated_article_6_text_sha256": "b6a58d42b6248038baaf14c5918103289bc0af1aed90da5d974b7ef846a5b5ee",
+    "consolidated_article_6_char_length": 4848,
+    "second_extraction_identical": true,
+    "all_records_use_consolidated_snapshot_id": true,
+    "zero_record_id_collisions_with_stage1_original_articles": true,
+    "unsupported_nonempty_element_count": 0
+  },
+  "editorial_amendment_marker_treatment": {
+    "treatment": "Following the consolidated Article 6 parent baseline in records/review_records.json, each article parent record extracts the full normalized text of its native <div class='eli-subdivision' id='art_*'> container via join_blocks([article_el]). Editorial revision markers (<p class='modref'> such as '▼M1', '▼B', and repealed-provision ellipsis markers '▼M1 —————') that reside inside the article container are retained in-place in source order within the normalized text. Container-level <p class='modref'> siblings placed outside article divs (at chapter/section level, e.g. immediately preceding inserted articles art_4, art_4a, art_60a, art_75a) remain outside the individual article container selector and are cataloged separately below.",
+    "articles_containing_internal_modref_markers_count": 35,
+    "articles_containing_internal_modref_markers": [
+      "art_1",
+      "art_2",
+      "art_3",
+      "art_5",
+      "art_6",
+      "art_10",
+      "art_11",
+      "art_17",
+      "art_25",
+      "art_27",
+      "art_28",
+      "art_29",
+      "art_30",
+      "art_40",
+      "art_42",
+      "art_43",
+      "art_50",
+      "art_56",
+      "art_57",
+      "art_58",
+      "art_60",
+      "art_63",
+      "art_64",
+      "art_69",
+      "art_70",
+      "art_72",
+      "art_75",
+      "art_76",
+      "art_77",
+      "art_95",
+      "art_96",
+      "art_97",
+      "art_99",
+      "art_111",
+      "art_113"
+    ],
+    "sibling_modrefs_outside_article_containers": [
+      {
+        "marker_text": "▼M1",
+        "parent_id": "cpt_I",
+        "following_sibling_id": "art_4"
+      },
+      {
+        "marker_text": "▼M1",
+        "parent_id": "cpt_I",
+        "following_sibling_id": "art_4a"
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "cpt_I",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼M1",
+        "parent_id": "cpt_VI",
+        "following_sibling_id": "art_60a"
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "cpt_VI",
+        "following_sibling_id": "art_61"
+      },
+      {
+        "marker_text": "▼M1",
+        "parent_id": "cpt_IX.sct_3",
+        "following_sibling_id": "art_75a"
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "cpt_IX.sct_3",
+        "following_sibling_id": "art_76"
+      },
+      {
+        "marker_text": "▼M1 —————",
+        "parent_id": "anx_I",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "anx_I",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼M1",
+        "parent_id": "anx_I",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "anx_I",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼M1 —————",
+        "parent_id": "anx_VIII",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "anx_VIII",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼M1 —————",
+        "parent_id": "anx_VIII",
+        "following_sibling_id": null
+      },
+      {
+        "marker_text": "▼B",
+        "parent_id": "anx_VIII",
+        "following_sibling_id": "id-07aa366f-75b5-42b2-a2b7-5c03a92ceb40"
+      },
+      {
+        "marker_text": "▼M1",
+        "parent_id": null,
+        "following_sibling_id": "anx_XIV"
+      }
+    ]
+  },
+  "edition_article_identifier_comparison": {
+    "original_stage1_article_count": 113,
+    "consolidated_stage4_article_count": 119,
+    "present_in_consolidated_absent_from_original": [
+      {
+        "native_id": "art_4a",
+        "article_identifier": "4a",
+        "locator_path": "article/4a",
+        "label": "Article 4a — Processing of special categories of personal data for bias detection and correction"
+      },
+      {
+        "native_id": "art_60a",
+        "article_identifier": "60a",
+        "locator_path": "article/60a",
+        "label": "Article 60a — Testing of high-risk AI systems covered by Union harmonisation legislation listed in Section B of Annex I in real-world conditions outside AI regulatory sandboxes"
+      },
+      {
+        "native_id": "art_75a",
+        "article_identifier": "75a",
+        "locator_path": "article/75a",
+        "label": "Article 75a — Supervisory and enforcement powers of the AI Office"
+      },
+      {
+        "native_id": "art_75b",
+        "article_identifier": "75b",
+        "locator_path": "article/75b",
+        "label": "Article 75b — Commitments"
+      },
+      {
+        "native_id": "art_75c",
+        "article_identifier": "75c",
+        "locator_path": "article/75c",
+        "label": "Article 75c — Non-compliance, fines and periodic penalty payments"
+      },
+      {
+        "native_id": "art_75d",
+        "article_identifier": "75d",
+        "locator_path": "article/75d",
+        "label": "Article 75d — Safeguards and further specification"
+      }
+    ],
+    "present_in_original_absent_from_consolidated": [],
+    "legal_effect_or_applicability_assessed": false,
+    "note": "This comparison reports structural identifier presence only between the pinned 2024-07-12 OJ snapshot and the pinned 2026-07-27 consolidated snapshot. It does not interpret legal effect, entry into force, or temporal applicability dates."
+  },
+  "content_review_and_ingestion_status": {
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "all_indexable_false": true,
+    "legally_reviewed": false,
+    "ready_for_indexing": false,
+    "note": "Passing Stage 4 technical extraction checks does not mean the corpus is legally reviewed or ready for indexing. Paragraph child decomposition, consolidated annexes (including Annex XIV), cross-reference resolution, and amendment/corrigendum applicability audits remain out of scope for this checkpoint."
+  },
+  "unsupported_nonempty_structures": [],
+  "extracted_article_inventory": {
+    "first_article_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/1",
+    "first_article_label": "Article 1 — Subject matter'",
+    "last_article_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+    "last_article_label": "Article 113 — Entry into force and application",
+    "article_identifiers": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "4a",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "60a",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "75a",
+      "75b",
+      "75c",
+      "75d",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113"
+    ]
+  }
+}

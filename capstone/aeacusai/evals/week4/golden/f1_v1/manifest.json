@@ -1,0 +1,477 @@
+{
+  "schema": "aeacus.week4.golden.manifest.v1",
+  "dataset_id": "week4_f1_golden_v1",
+  "version": "1",
+  "generated_at": "2026-10-23T11:37:49.280674+00:00",
+  "n_cases": 40,
+  "n_scenarios": 20,
+  "n_versions": 2,
+  "description": "40 original live-run outputs from 20 paired fictional scenarios (parent and F1-candidate versions). This is not a dataset of 40 independent scenarios.",
+  "provenance": {
+    "kind": "Actual dogfood agent executions on fictional scenario inputs.",
+    "n_outputs": 40,
+    "n_paired_scenarios": 20,
+    "labels": "AI-assisted F1 labels reviewed and accepted by Lily on 2026-10-23.",
+    "not": [
+      "production data",
+      "independent expert legal adjudication",
+      "40 independent scenarios"
+    ]
+  },
+  "sources": {
+    "parent_traces": {
+      "path": "data/local/traces/week4_adk_preview_v1.jsonl",
+      "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1"
+    },
+    "candidate_traces": {
+      "path": "data/local/traces/week4_adk_preview_f1_v2.jsonl",
+      "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848"
+    },
+    "parent_annotations": {
+      "path": "evals/week4/annotations_v1.json",
+      "sha256": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee"
+    },
+    "candidate_f1_annotations": {
+      "path": "evals/week4/annotations_f1_v2.json",
+      "sha256": "c382664896c8b909654dd1628fcb1a61fd1ce75b6be35cf3cd5484e4970a819a"
+    },
+    "taxonomy": {
+      "path": "evals/week4/taxonomy_v1.json",
+      "sha256": "336f5f3e6fe9ab7042b83bf1869161be1e86aaee4c718d9e9b0738f7808d7718"
+    },
+    "scenarios": {
+      "path": "evals/week4/scenarios_v1.json",
+      "sha256": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070"
+    }
+  },
+  "labels": {
+    "f1_version": "week4_f1_labels_v1",
+    "f1_fail": 10,
+    "f1_pass": 30,
+    "parent_fail_ids": [
+      "TRACE-S04",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S13",
+      "TRACE-S20"
+    ],
+    "candidate_fail_ids": [
+      "TRACE-S01",
+      "TRACE-S04",
+      "TRACE-S09",
+      "TRACE-S13",
+      "TRACE-S15"
+    ],
+    "f2": "Kept separate. Parent F2 is in annotations_v1. Candidate F2 remains unreviewed."
+  },
+  "split": {
+    "schema": "aeacus.week4.golden.split.v1",
+    "split_id": "week4_f1_split_v1",
+    "frozen_before_judge_inference": true,
+    "selected_from_judge_performance": false,
+    "rule": "Group-stratified by scenario-level F1 pattern, then by sorted scenario ID. Persistent failures (fail in both versions) are TRACE-S04, S09, S13. Mixed (fail in exactly one version) are TRACE-S01, S08, S15, S20. All other scenarios pass in both versions. Calibration takes the first two persistent IDs, the first mixed ID, and the first seven pass-pass IDs. Validation takes the remainder. Both versions of a scenario stay in the same group. The split was frozen before judge inference and was not chosen from judge performance.",
+    "validation_note": "Validation examples are held out from judge-prompt refinement; they are not unseen capstone scenarios.",
+    "calibration_scenario_ids": [
+      "TRACE-S01",
+      "TRACE-S02",
+      "TRACE-S03",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S06",
+      "TRACE-S07",
+      "TRACE-S09",
+      "TRACE-S10",
+      "TRACE-S11"
+    ],
+    "validation_scenario_ids": [
+      "TRACE-S08",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S14",
+      "TRACE-S15",
+      "TRACE-S16",
+      "TRACE-S17",
+      "TRACE-S18",
+      "TRACE-S19",
+      "TRACE-S20"
+    ],
+    "calibration_n_scenarios": 10,
+    "validation_n_scenarios": 10,
+    "calibration_n_outputs": 20,
+    "validation_n_outputs": 20,
+    "target_balance_per_group": {
+      "fail": 5,
+      "pass": 15
+    }
+  },
+  "cases": [
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S01:2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S01",
+      "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "group": "calibration",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S01:4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S01",
+      "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "evaluation_id": "00e7d052fd176096",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S02:aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S02",
+      "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "evaluation_id": "c46d129cacb772e2",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S02:392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S02",
+      "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "evaluation_id": "89ac355ddc3e3971",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S03:9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S03",
+      "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "evaluation_id": "dee60f0dfd06b6aa",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S03:17017bf1-7aec-4028-8e99-eebc58193325",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S03",
+      "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "evaluation_id": "3156e26503e6797e",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S04:ab268600-0757-44ef-b07f-dfb273ce8871",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S04",
+      "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "evaluation_id": "c953f67527f058d9",
+      "group": "calibration",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S04:b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S04",
+      "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "evaluation_id": "4913922de88dad21",
+      "group": "calibration",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S05:2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S05",
+      "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "evaluation_id": "0dcc518c0ea44c27",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S05:2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S05",
+      "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "evaluation_id": "2adc07b6a6c7a8b6",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S06:c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S06",
+      "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "evaluation_id": "44c2ab491ad24fc8",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S06:8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S06",
+      "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "evaluation_id": "c803f25132fe188f",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S07:fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S07",
+      "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "evaluation_id": "580b852474962829",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S07:4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S07",
+      "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "evaluation_id": "4961b9ca64641c19",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S08:d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S08",
+      "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "evaluation_id": "10e8132586c6a86c",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S08:21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S08",
+      "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "evaluation_id": "75e945401500df7a",
+      "group": "validation",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S09:43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S09",
+      "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "evaluation_id": "f9aafb2598bd29ec",
+      "group": "calibration",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S09:1615192e-ab2a-4e8d-8902-4913644fc746",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S09",
+      "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "evaluation_id": "13df6b9eac4fa317",
+      "group": "calibration",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S10:4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S10",
+      "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "evaluation_id": "97f81b455af5d7e7",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S10:22b36ab5-77e2-454f-87e0-320245240b75",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S10",
+      "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "evaluation_id": "5f065fbe9e3154f3",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S11:acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S11",
+      "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "evaluation_id": "ab7538e34eb5dd11",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S11:a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S11",
+      "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "evaluation_id": "21796dad2a24ef12",
+      "group": "calibration",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S12:9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S12",
+      "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "evaluation_id": "6ef703aeecd56f7d",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S12:e547178d-c70a-4cca-9591-ec733fd01c26",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S12",
+      "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "evaluation_id": "e207b6ebdb2b8ecb",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S13:4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S13",
+      "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "evaluation_id": "d680a6aa4457bce1",
+      "group": "validation",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S13:7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S13",
+      "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "evaluation_id": "6392916c190acf02",
+      "group": "validation",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S14:4112acb0-e775-4193-a734-578b0cc99ae2",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S14",
+      "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "evaluation_id": "47ba3c1f4fed72c1",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S14:ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S14",
+      "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "evaluation_id": "41102c85a34d4846",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S15:0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S15",
+      "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "evaluation_id": "03256e0dd4fb2fec",
+      "group": "validation",
+      "f1": "fail"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S15:305708e0-218e-4c79-88f2-50f226ec7998",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S15",
+      "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "evaluation_id": "af45b0e26669df2d",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S16:4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S16",
+      "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "evaluation_id": "fe7126be7cfcbccf",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S16:07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S16",
+      "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "evaluation_id": "7f145afb2e34321b",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S17:4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S17",
+      "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "evaluation_id": "7157f6b1cf029fce",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S17:1fc62262-6590-4429-833a-2e9c269a5928",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S17",
+      "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "evaluation_id": "2ab7e1000409f8ae",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S18:3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S18",
+      "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "evaluation_id": "21fabd94d4747fe4",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S18:74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S18",
+      "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "evaluation_id": "b8eb327b10e8d7bd",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S19:3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S19",
+      "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "evaluation_id": "65770ba5d14ec9df",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S19:fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S19",
+      "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "evaluation_id": "9c7ad5cf9b42e9ab",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S20:39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "scenario_id": "TRACE-S20",
+      "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "evaluation_id": "85faf537492ca2f2",
+      "group": "validation",
+      "f1": "pass"
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S20:feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "baseline_id": "week4_adk_preview_v1",
+      "scenario_id": "TRACE-S20",
+      "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "evaluation_id": "d6323ff114f2071d",
+      "group": "validation",
+      "f1": "fail"
+    }
+  ],
+  "payloads": {
+    "cases_jsonl": "data/local/evals/week4/golden/f1_v1/cases.jsonl",
+    "judge_payloads_jsonl": "data/local/evals/week4/golden/f1_v1/judge_payloads.jsonl",
+    "gitignored": true,
+    "in_retrieval_corpus": false
+  },
+  "rebuild": "From capstone/aeacusai, run `.venv/bin/python -m evals.week4.build_golden_dataset`. The builder verifies source SHA-256 values, joins labels by baseline ID, scenario ID, and run ID, writes gitignored payloads under data/local/evals/week4/golden/f1_v1/, and refreshes the versioned manifest.",
+  "verify": "`.venv/bin/python -m evals.week4.build_golden_dataset --verify` or `python -m unittest test_week4_golden_dataset`."
+}

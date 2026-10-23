@@ -1,0 +1,759 @@
+{
+  "schema": "aeacus.week4.langfuse_timing_comparison.v1",
+  "baseline_id": "week4_adk_preview_v1",
+  "dataset_name": "week4_adk_preview_v1",
+  "dataset_version": "v1",
+  "source_sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+  "source_sha256_verified": true,
+  "provenance_ok": true,
+  "config": {
+    "LANGFUSE_PUBLIC_KEY": "configured",
+    "LANGFUSE_SECRET_KEY": "configured",
+    "LANGFUSE_BASE_URL": "configured",
+    "AEACUS_LANGFUSE_TRACING": "missing"
+  },
+  "missing_credentials": [],
+  "sdk_available": true,
+  "ledger_path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/evals/week4/langfuse/week4_adk_preview_v1_timing_comparison_ledger.json",
+  "import_ledger": "data/local/evals/week4/langfuse/week4_adk_preview_v1_import_ledger.json",
+  "expected": {
+    "raw": {
+      "pass": 18,
+      "fail": 2,
+      "fail_ids": [
+        "TRACE-S02",
+        "TRACE-S20"
+      ]
+    },
+    "delivered": {
+      "pass": 20,
+      "fail": 0,
+      "fail_ids": []
+    }
+  },
+  "raw_summary": {
+    "checker_id": "deferred_date_qualifications_v1",
+    "pass": 18,
+    "fail": 2,
+    "fail_ids": [
+      "TRACE-S02",
+      "TRACE-S20"
+    ],
+    "pass_ids": [
+      "TRACE-S01",
+      "TRACE-S03",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S06",
+      "TRACE-S07",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S10",
+      "TRACE-S11",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S14",
+      "TRACE-S15",
+      "TRACE-S16",
+      "TRACE-S17",
+      "TRACE-S18",
+      "TRACE-S19"
+    ]
+  },
+  "delivered_summary": {
+    "checker_id": "deferred_date_qualifications_v1",
+    "pass": 20,
+    "fail": 0,
+    "fail_ids": [],
+    "pass_ids": [
+      "TRACE-S01",
+      "TRACE-S02",
+      "TRACE-S03",
+      "TRACE-S04",
+      "TRACE-S05",
+      "TRACE-S06",
+      "TRACE-S07",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S10",
+      "TRACE-S11",
+      "TRACE-S12",
+      "TRACE-S13",
+      "TRACE-S14",
+      "TRACE-S15",
+      "TRACE-S16",
+      "TRACE-S17",
+      "TRACE-S18",
+      "TRACE-S19",
+      "TRACE-S20"
+    ]
+  },
+  "delivered_generation": {
+    "method": "fresh_application_layer_replay",
+    "formatter_id": "aeacus.timing_scope.v1",
+    "formatter_version": "1",
+    "label": "Fresh application-layer replay of the original saved observations. No model or retrieval calls.",
+    "model_calls": false,
+    "retrieval_calls": false,
+    "hosted_judges": false
+  },
+  "comparison_not": [
+    "improved model reasoning",
+    "20 new live agent executions",
+    "a hosted judge",
+    "a gold-standard model answer"
+  ],
+  "review": {
+    "date": "2026-10-23",
+    "accepted_by": "Lily",
+    "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+    "not": "independent expert legal adjudication",
+    "acceptance_time": null
+  },
+  "score_name": "deferred_date_qualifications_v1",
+  "score_encoding": {
+    "pass": 1,
+    "fail": 0
+  },
+  "run_names": {
+    "historical_raw": "Historical raw model answers",
+    "timing_repair": "Timing repair: application-layer replay"
+  },
+  "pilot": {
+    "scenario_id": "TRACE-S01",
+    "action": "verified",
+    "raw": {
+      "scenario_id": "TRACE-S01",
+      "run_key": "historical_raw",
+      "action": "skipped_verified",
+      "trace_id": "02344074d3687bdc80c08a49b17f8763",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/02344074d3687bdc80c08a49b17f8763",
+      "score_value": 1,
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 18.0,
+        "observation_names": [
+          "experiment-item-evaluation",
+          "evaluator",
+          "experiment-item-task",
+          "experiment-item-run"
+        ],
+        "score_value": 1.0,
+        "output_sha256": "4cb1dfa108875ec158beef72f1f2cd29be83da57e7b8a3762c8b30c1d4677da9",
+        "source_has_comparison_score": false,
+        "linked_trace_id": "02344074d3687bdc80c08a49b17f8763",
+        "experiment_id": "22a7a562-ddc9-41ae-9829-1c4fb94d6c09",
+        "score_query_error": null
+      }
+    },
+    "delivered": {
+      "scenario_id": "TRACE-S01",
+      "run_key": "timing_repair",
+      "action": "skipped_verified",
+      "trace_id": "193fd9f2f61664bd634b6d16f23a3fb1",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/193fd9f2f61664bd634b6d16f23a3fb1",
+      "score_value": 1,
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 46.2,
+        "observation_names": [
+          "evaluator",
+          "experiment-item-evaluation",
+          "experiment-item-task",
+          "experiment-item-run"
+        ],
+        "score_value": 1.0,
+        "output_sha256": "39197520838c978867892f3c427b52d86ee8b8e741abf44a796fa119afa95d1c",
+        "source_has_comparison_score": false,
+        "linked_trace_id": "193fd9f2f61664bd634b6d16f23a3fb1",
+        "experiment_id": "0559cdda-847b-4f3b-9727-8f4b53620820",
+        "score_query_error": null
+      }
+    }
+  },
+  "remaining": [],
+  "dataset": {
+    "id": "cmvl38qq70005ad0n1jlmyvuk",
+    "name": "week4_adk_preview_v1",
+    "project_id": "cmvl15h4200gnad0hwelqbeas",
+    "url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl38qq70005ad0n1jlmyvuk",
+    "created": false
+  },
+  "read_back": {
+    "item_count": 20,
+    "dataset_id": "cmvl38qq70005ad0n1jlmyvuk",
+    "raw_item_count": 20,
+    "delivered_item_count": 20,
+    "raw_run_id": "22a7a562-ddc9-41ae-9829-1c4fb94d6c09",
+    "delivered_run_id": "0559cdda-847b-4f3b-9727-8f4b53620820",
+    "source_links": [
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S20",
+        "source_trace_id": "6a3c91627c769b051ec0e9d13aa24681"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S19",
+        "source_trace_id": "f59c25e59f453edf2534336af62f5221"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S18",
+        "source_trace_id": "130eef63a19e17745b8109b9a013c0c6"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S17",
+        "source_trace_id": "41b6cecee4186aca0995d5a6ee36a902"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S16",
+        "source_trace_id": "72593e9538937b213690d37e75773994"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S15",
+        "source_trace_id": "1355dd598fa8f31b1e34d5f04a77432d"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S14",
+        "source_trace_id": "9b2086eafe0284b210b92900e76847eb"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S13",
+        "source_trace_id": "01469e43fbce99f65e581ce2d5999260"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S12",
+        "source_trace_id": "36c0ae2d4315f8f77a82131e519e6721"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S11",
+        "source_trace_id": "077a7658f59e50284d71fca5f1510c7c"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S10",
+        "source_trace_id": "47a39139f47117d6aa2945c996ee6de7"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S09",
+        "source_trace_id": "9e45a212095b701c97937cd966aaeb8a"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S08",
+        "source_trace_id": "235e3b9abf157c5a4ac153f1c830fd64"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S07",
+        "source_trace_id": "3aa8a5a909a8a2e4180aae797bdd02cf"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S06",
+        "source_trace_id": "71a0090cbb31d42dfb6ab691337ef107"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S05",
+        "source_trace_id": "9cf279574ce7d8007de5c59ccb4d1fbe"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S04",
+        "source_trace_id": "28eb0512d039da0dfb54268b0cc4de93"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S03",
+        "source_trace_id": "b2eb412a339c3478a3062ea349af117b"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S02",
+        "source_trace_id": "2e6260ed434a1d403b2f57b2c3d7de15"
+      },
+      {
+        "id": "week4_adk_preview_v1:item:TRACE-S01",
+        "source_trace_id": "7166080e55ad08c29d937285cfb7de6a"
+      }
+    ]
+  },
+  "links": {
+    "dataset": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl38qq70005ad0n1jlmyvuk",
+    "historical_raw_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl38qq70005ad0n1jlmyvuk/runs/22a7a562-ddc9-41ae-9829-1c4fb94d6c09",
+    "timing_repair_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl38qq70005ad0n1jlmyvuk/runs/0559cdda-847b-4f3b-9727-8f4b53620820",
+    "comparison": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl38qq70005ad0n1jlmyvuk/compare?runs=22a7a562-ddc9-41ae-9829-1c4fb94d6c09&runs=0559cdda-847b-4f3b-9727-8f4b53620820"
+  },
+  "counts": {
+    "prepared": 20,
+    "items_verified": 20,
+    "raw_verified": 20,
+    "delivered_verified": 20,
+    "paired_verified": 20,
+    "failed": 0
+  },
+  "live": true,
+  "auth_check": {
+    "ok": true,
+    "error": null
+  },
+  "item_outcomes": [
+    {
+      "scenario_id": "TRACE-S01",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "action": "skipped_verified",
+      "source_trace_id": null
+    }
+  ],
+  "per_trace": [
+    {
+      "scenario_id": "TRACE-S01",
+      "original_run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S01",
+      "source_trace_id": "7166080e55ad08c29d937285cfb7de6a",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7166080e55ad08c29d937285cfb7de6a",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "4cb1dfa108875ec158beef72f1f2cd29be83da57e7b8a3762c8b30c1d4677da9",
+      "delivered_output_sha256": "39197520838c978867892f3c427b52d86ee8b8e741abf44a796fa119afa95d1c",
+      "raw_trace_id": "02344074d3687bdc80c08a49b17f8763",
+      "delivered_trace_id": "193fd9f2f61664bd634b6d16f23a3fb1",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/02344074d3687bdc80c08a49b17f8763",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/193fd9f2f61664bd634b6d16f23a3fb1",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "original_run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S02",
+      "source_trace_id": "2e6260ed434a1d403b2f57b2c3d7de15",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2e6260ed434a1d403b2f57b2c3d7de15",
+      "raw_score": 0,
+      "delivered_score": 1,
+      "raw_output_sha256": "6d1f7c7816856b349ba4249bade4fda3271dbc5ef8f03440f9271e42e5f709ec",
+      "delivered_output_sha256": "a438f77c9554034fe85ae0312301c8bcfe97e1c0067b123d81df15d94552b7b0",
+      "raw_trace_id": "7863decbe23e028ea318bf195534e1ca",
+      "delivered_trace_id": "3b91b52f6188c0012a5148e52074c737",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7863decbe23e028ea318bf195534e1ca",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3b91b52f6188c0012a5148e52074c737",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "original_run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S03",
+      "source_trace_id": "b2eb412a339c3478a3062ea349af117b",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b2eb412a339c3478a3062ea349af117b",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "b90a3cbf9b135c6ef3c4f335ad5327a4c4af3b3e8935f2e3856c9b28a515086f",
+      "delivered_output_sha256": "74476cec42870648627119f89f8c163823dbbc11468c963744260c8250b009bf",
+      "raw_trace_id": "82d51a8603dae0d988981648293e5fce",
+      "delivered_trace_id": "fa192d58aa0ffe5473e67f6393ea4073",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/82d51a8603dae0d988981648293e5fce",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/fa192d58aa0ffe5473e67f6393ea4073",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "original_run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S04",
+      "source_trace_id": "28eb0512d039da0dfb54268b0cc4de93",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/28eb0512d039da0dfb54268b0cc4de93",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "d64d13a18fd169e25e8fc1bf302d10e6f911869c8a5d4283bd7ce42aab726734",
+      "delivered_output_sha256": "0698f31d6cdaf5ea12c9b7d6d3675b2ed9b88fa8025803503141c08b58fa0e39",
+      "raw_trace_id": "17fce61a059ffcd16983e26aed917b06",
+      "delivered_trace_id": "311f0450541a82ecf282b1066280d85e",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/17fce61a059ffcd16983e26aed917b06",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/311f0450541a82ecf282b1066280d85e",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "original_run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S05",
+      "source_trace_id": "9cf279574ce7d8007de5c59ccb4d1fbe",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9cf279574ce7d8007de5c59ccb4d1fbe",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "9e6b796315b97b28e83dc9472d12c8067bb27088c8aca3bb90a7f62a55506b4f",
+      "delivered_output_sha256": "df1da49eb63155bf55a79e08397b74203a760a48f282e088b5564cc55d39dd62",
+      "raw_trace_id": "2dcbec3e5c64584f11ec33bc4485368c",
+      "delivered_trace_id": "19a8b0a2209a7d80e1962e39f06f2b74",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2dcbec3e5c64584f11ec33bc4485368c",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/19a8b0a2209a7d80e1962e39f06f2b74",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "original_run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S06",
+      "source_trace_id": "71a0090cbb31d42dfb6ab691337ef107",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/71a0090cbb31d42dfb6ab691337ef107",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "e5a8c63e0094a4700fcb56c46f398c5c39b99f390ce6a3bab29fac1cafd746e9",
+      "delivered_output_sha256": "03121fa94b87cd72c8ae52461a0564f9c71d753884caf5b26bd9ee5277bef26f",
+      "raw_trace_id": "09fbe68b053420d8555de2259bfbfaab",
+      "delivered_trace_id": "911425f9049533e9d5c4f973ade5a437",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/09fbe68b053420d8555de2259bfbfaab",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/911425f9049533e9d5c4f973ade5a437",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "original_run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S07",
+      "source_trace_id": "3aa8a5a909a8a2e4180aae797bdd02cf",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3aa8a5a909a8a2e4180aae797bdd02cf",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "548a5c2d73d509af50191bfeb713f917b7a40b33693fe68faf56b2270cd551b5",
+      "delivered_output_sha256": "2ace098137eef8780f474dc18a3142a4d40561ff7f9f0ee97febf35a3059b527",
+      "raw_trace_id": "218b60ef701c78f833c40a94df8de82b",
+      "delivered_trace_id": "50bb1d695164b6305ec6ef037e61baad",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/218b60ef701c78f833c40a94df8de82b",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/50bb1d695164b6305ec6ef037e61baad",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "original_run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S08",
+      "source_trace_id": "235e3b9abf157c5a4ac153f1c830fd64",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/235e3b9abf157c5a4ac153f1c830fd64",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "1193e1efa15c70878f23cd48b4ce74a99679be297484566ee5ea70ce51bf9414",
+      "delivered_output_sha256": "7da0be5f9094ad6e478be83caf942cf6a3430d0973b0ca74361e77c170414c39",
+      "raw_trace_id": "ef0cf8bf1e472581e56e34efaa89ec36",
+      "delivered_trace_id": "705e959f995a4bb8429849075712fc5f",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/ef0cf8bf1e472581e56e34efaa89ec36",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/705e959f995a4bb8429849075712fc5f",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "original_run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S09",
+      "source_trace_id": "9e45a212095b701c97937cd966aaeb8a",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9e45a212095b701c97937cd966aaeb8a",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "d735bfe609c60d16982ca2cb73213bec76bbd0a826f7779068ed5b7688e971c7",
+      "delivered_output_sha256": "383a145afaca7cbba5bc6685a2a2e4e8d37575b07c2a874b8ee662fae5705ddc",
+      "raw_trace_id": "87f6bf6e060fa4a312741c2652cb8873",
+      "delivered_trace_id": "05b4dd51988bc5ee7553f6004dfd9d68",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/87f6bf6e060fa4a312741c2652cb8873",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/05b4dd51988bc5ee7553f6004dfd9d68",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "original_run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S10",
+      "source_trace_id": "47a39139f47117d6aa2945c996ee6de7",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/47a39139f47117d6aa2945c996ee6de7",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "ba83d4eecf8283eb1e275b79f459853c31b3533be5bc75cfe90c7accb810bffc",
+      "delivered_output_sha256": "85481942ffe3ee1c1f0b21b8ad76bc45387d9b847733edcfbed8234bc4b57318",
+      "raw_trace_id": "259586b7e46f3ce377d0d44b80f422a1",
+      "delivered_trace_id": "299f6e9fc8eabdf9f4e063a6b8d44243",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/259586b7e46f3ce377d0d44b80f422a1",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/299f6e9fc8eabdf9f4e063a6b8d44243",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "original_run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S11",
+      "source_trace_id": "077a7658f59e50284d71fca5f1510c7c",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/077a7658f59e50284d71fca5f1510c7c",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "9b4c4d802886288838f4d65f180a06e02d4f99b6ab20e0517b9d45e571eb3b8f",
+      "delivered_output_sha256": "79a0b259a46765e5681b2a13b1023c845e939c49f8ba1cda707615d96163b069",
+      "raw_trace_id": "890460b50769c8538dee5ad9d0c1f89c",
+      "delivered_trace_id": "da3f98e43aab7078ed00dfbdd6b76209",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/890460b50769c8538dee5ad9d0c1f89c",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/da3f98e43aab7078ed00dfbdd6b76209",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "original_run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S12",
+      "source_trace_id": "36c0ae2d4315f8f77a82131e519e6721",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/36c0ae2d4315f8f77a82131e519e6721",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "46da14d08404a9b671642ac96d95ff056ad8a916a2596d56f7614ae99887c21a",
+      "delivered_output_sha256": "fe54bd4bc22bde42987267db120daba2d2daa7a068ab2cc156deabca32e9853e",
+      "raw_trace_id": "fd876614b3a0cab832587dffd3a181d4",
+      "delivered_trace_id": "66615967a59475c7426566c6fe4dc867",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/fd876614b3a0cab832587dffd3a181d4",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/66615967a59475c7426566c6fe4dc867",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "original_run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S13",
+      "source_trace_id": "01469e43fbce99f65e581ce2d5999260",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/01469e43fbce99f65e581ce2d5999260",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "8813c9560a9b0abddee1dea19425ae98afc618b56b8f5f9fdfd495088c47665e",
+      "delivered_output_sha256": "6f7b1430ebc3bd3ed6ce2faa356b94bf47e93555b1d7d47384229ff444684d4e",
+      "raw_trace_id": "b37853b029ee3c01f2d999c137e61b6c",
+      "delivered_trace_id": "bc6756351f357b78ee7c76716247060f",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b37853b029ee3c01f2d999c137e61b6c",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/bc6756351f357b78ee7c76716247060f",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "original_run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S14",
+      "source_trace_id": "9b2086eafe0284b210b92900e76847eb",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9b2086eafe0284b210b92900e76847eb",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "33e4655466a0c4d80ee958c4b458cee6ac56c184fe033aba260a3498eeb451cd",
+      "delivered_output_sha256": "7c4bd21a48584b179ad95017e8b2353d0f1e7ba8510d0f56255a065fc461fc0a",
+      "raw_trace_id": "949bfb70e9a9e8cd13536a083f78b660",
+      "delivered_trace_id": "aca3f281df0f5ce458b3b47a8fcfac83",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/949bfb70e9a9e8cd13536a083f78b660",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/aca3f281df0f5ce458b3b47a8fcfac83",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "original_run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S15",
+      "source_trace_id": "1355dd598fa8f31b1e34d5f04a77432d",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1355dd598fa8f31b1e34d5f04a77432d",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "21e00ba45be1c3a888a94ccf6e615c6692d102b01b507960dcb90a09abbdb5a9",
+      "delivered_output_sha256": "b65b130aad1e40bb8ea0ac6dbd71f5e053999c9c540c58eba82ad916f67736ea",
+      "raw_trace_id": "0b33d8d7526b99174c6b133bd6259ecf",
+      "delivered_trace_id": "5acda1283c2dbfc14acef1c214975cd0",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/0b33d8d7526b99174c6b133bd6259ecf",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/5acda1283c2dbfc14acef1c214975cd0",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "original_run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S16",
+      "source_trace_id": "72593e9538937b213690d37e75773994",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/72593e9538937b213690d37e75773994",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "6e620a31f9dcc7c400851da0405842c7e67cfa962fd227108d148a2697b045c2",
+      "delivered_output_sha256": "b5f2d510cded85cc135e43826e2b3a4062a30fb6ed113e80c4045d8e8695556e",
+      "raw_trace_id": "66027ba0e71dd086a3100a2433d0c124",
+      "delivered_trace_id": "613b4cb796f5b65fbceeb7d5433e0c37",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/66027ba0e71dd086a3100a2433d0c124",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/613b4cb796f5b65fbceeb7d5433e0c37",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "original_run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S17",
+      "source_trace_id": "41b6cecee4186aca0995d5a6ee36a902",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/41b6cecee4186aca0995d5a6ee36a902",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "70fef77862b2bf964affa840ef3c3e93dda44a315832fb6739735bbcd0c9f18b",
+      "delivered_output_sha256": "babd15a3bebbc839c908198785192c996d47a1b13812149b51f6df645cd97a6f",
+      "raw_trace_id": "b8d4ff4310c7bcc12bf6b8e4dba67958",
+      "delivered_trace_id": "40f6fd4fa0135791dc712cca759064c6",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b8d4ff4310c7bcc12bf6b8e4dba67958",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/40f6fd4fa0135791dc712cca759064c6",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "original_run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S18",
+      "source_trace_id": "130eef63a19e17745b8109b9a013c0c6",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/130eef63a19e17745b8109b9a013c0c6",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "05e05afd8b95491920d7cdd259bdd6f6383be63143c23efb0d51a036e9321f06",
+      "delivered_output_sha256": "84e78d83b05183f59dc751adcc4f50334feb7a180a0c2367052a181ac6980540",
+      "raw_trace_id": "8a6e83542288d1eecd08dbd9749513a4",
+      "delivered_trace_id": "77a1aba0536a767ed885ec6a4b30eece",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/8a6e83542288d1eecd08dbd9749513a4",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/77a1aba0536a767ed885ec6a4b30eece",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "original_run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S19",
+      "source_trace_id": "f59c25e59f453edf2534336af62f5221",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f59c25e59f453edf2534336af62f5221",
+      "raw_score": 1,
+      "delivered_score": 1,
+      "raw_output_sha256": "047fa01dd05d3ce5221debd1b0fbfd0e3f82ed6ffd244c3b9d16589fcce065d6",
+      "delivered_output_sha256": "d1dfa8894b239e48842b27022b60e062f38ced15e3770a0ed79dbfa3605fd4d1",
+      "raw_trace_id": "89e330c85e8be58b5460d65326946382",
+      "delivered_trace_id": "9362fe10e5ae72ab0179805f48dc3615",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/89e330c85e8be58b5460d65326946382",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9362fe10e5ae72ab0179805f48dc3615",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "original_run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "item_id": "week4_adk_preview_v1:item:TRACE-S20",
+      "source_trace_id": "6a3c91627c769b051ec0e9d13aa24681",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6a3c91627c769b051ec0e9d13aa24681",
+      "raw_score": 0,
+      "delivered_score": 1,
+      "raw_output_sha256": "2a61cb85bc804923351591ac6f10b404e22d97cb03c181d8829cd06320ea1862",
+      "delivered_output_sha256": "dbbdb57b8e59c7c5fc2bf786fe53528b9c1e4c2b608c28439eefc53aebdf06da",
+      "raw_trace_id": "369cf17f4a21d898761749e42c736aac",
+      "delivered_trace_id": "c1859faf74d5366a534827bab9dc939a",
+      "raw_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/369cf17f4a21d898761749e42c736aac",
+      "delivered_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/c1859faf74d5366a534827bab9dc939a",
+      "item_status": "verified",
+      "raw_status": "verified",
+      "delivered_status": "verified"
+    }
+  ],
+  "dataset_run_ids": {
+    "historical_raw": "22a7a562-ddc9-41ae-9829-1c4fb94d6c09",
+    "timing_repair": "0559cdda-847b-4f3b-9727-8f4b53620820"
+  }
+}

@@ -1,0 +1,710 @@
+{
+  "schema": "aeacus.week4.f1_judge.predictions.v1",
+  "judge_id": "week4_f1_judge_v2",
+  "split": "calibration",
+  "labels_included": false,
+  "frozen": {
+    "judge_id": "week4_f1_judge_v2",
+    "split": "calibration",
+    "model": "gemini-3.8-flash",
+    "prompt_version": "f1_judge_prompt_v2",
+    "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+    "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+    "generation": {
+      "temperature": 0.0,
+      "max_output_tokens": 400,
+      "candidate_count": 1,
+      "response_mime_type": "application/json",
+      "thinking_budget": 0,
+      "include_thoughts": false,
+      "tools": []
+    },
+    "n_existing": 0,
+    "n_pending": 20,
+    "stopped": false,
+    "stop_reason": null,
+    "started_at": "2026-10-23T12:12:21.722021+00:00"
+  },
+  "predictions": [
+    {
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly treats the statutory criteria and missing technical facts as open conditions rather than asserting unstated premises as established facts.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly treats the statutory criteria and missing technical facts as open conditions rather than asserting unstated premises as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4813,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 4861
+      },
+      "elapsed_ms": 2858.1,
+      "started_at": "2026-10-23T12:12:21.963846+00:00",
+      "ended_at": "2026-10-23T12:12:24.821974+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "00e7d052fd176096",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer correctly maps stated facts to Annex III, point 4(a) and treats the Article 6(3) derogation, profiling, and influence as explicit open conditions rather than settled facts.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer correctly maps stated facts to Annex III, point 4(a) and treats the Article 6(3) derogation, profiling, and influence as explicit open conditions rather than settled facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4702,
+        "candidates_token_count": 54,
+        "thoughts_token_count": null,
+        "total_token_count": 4756
+      },
+      "elapsed_ms": 3503.2,
+      "started_at": "2026-10-23T12:12:24.823668+00:00",
+      "ended_at": "2026-10-23T12:12:28.326898+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "c46d129cacb772e2",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer maintains unstated deployment details as explicit open conditions rather than asserting them as established facts.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer maintains unstated deployment details as explicit open conditions rather than asserting them as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6007,
+        "candidates_token_count": 32,
+        "thoughts_token_count": null,
+        "total_token_count": 6039
+      },
+      "elapsed_ms": 2929.5,
+      "started_at": "2026-10-23T12:12:28.330491+00:00",
+      "ended_at": "2026-10-23T12:12:31.259982+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "89ac355ddc3e3971",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly treats the provisional classification, potential derogations, and institution status as conditional inferences rather than unstated premises.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly treats the provisional classification, potential derogations, and institution status as conditional inferences rather than unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5980,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 6028
+      },
+      "elapsed_ms": 3560.5,
+      "started_at": "2026-10-23T12:12:31.261994+00:00",
+      "ended_at": "2026-10-23T12:12:34.822523+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "dee60f0dfd06b6aa",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer grounds its evaluation directly on the user's facts (branch staff almost always follow the recommendation to assign risk bands to loan applicants) and properly leaves unstated possibilities (such as fraud detection carve-out) as open conditions.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer grounds its evaluation directly on the user's facts (branch staff almost always follow the recommendation to assign risk bands to loan applicants) and properly leaves unstated possibilities (such as fraud detection carve-out) as open conditions.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6052,
+        "candidates_token_count": 71,
+        "thoughts_token_count": null,
+        "total_token_count": 6123
+      },
+      "elapsed_ms": 3964.0,
+      "started_at": "2026-10-23T12:12:34.825346+00:00",
+      "ended_at": "2026-10-23T12:12:38.789322+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "3156e26503e6797e",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer relies directly on the user's facts and treats open conditions conditionally without adopting unstated premises.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer relies directly on the user's facts and treats open conditions conditionally without adopting unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4831,
+        "candidates_token_count": 36,
+        "thoughts_token_count": null,
+        "total_token_count": 4867
+      },
+      "elapsed_ms": 4541.7,
+      "started_at": "2026-10-23T12:12:38.790924+00:00",
+      "ended_at": "2026-10-23T12:12:43.332666+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "c953f67527f058d9",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"fail\",\n  \"reason\": \"The answer treats the absence of a prior identity claim as an established fact in the analysis despite listing it as unknown.\",\n  \"excerpt\": \"Because the described setup searches across a database rather than verifying an identity claimed by the person (such as presenting an ID badge first), it functions as a 1-to-many biometric identification system rather than verification.\"\n}",
+      "parsed": {
+        "verdict": "fail",
+        "reason": "The answer treats the absence of a prior identity claim as an established fact in the analysis despite listing it as unknown.",
+        "excerpt": "Because the described setup searches across a database rather than verifying an identity claimed by the person (such as presenting an ID badge first), it functions as a 1-to-many biometric identification system rather than verification."
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6126,
+        "candidates_token_count": 90,
+        "thoughts_token_count": null,
+        "total_token_count": 6216
+      },
+      "elapsed_ms": 3136.2,
+      "started_at": "2026-10-23T12:12:43.336544+00:00",
+      "ended_at": "2026-10-23T12:12:46.472755+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "4913922de88dad21",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"fail\", \"reason\": \"The answer establishes as fact that the setup functions without an individual claim of identity despite that fact being unstated and listed as missing.\", \"excerpt\": \"Because the system checks persons against a collective watchlist without an individual claim of identity, it falls under remote biometric identification rather than the verification exception.\"}",
+      "parsed": {
+        "verdict": "fail",
+        "reason": "The answer establishes as fact that the setup functions without an individual claim of identity despite that fact being unstated and listed as missing.",
+        "excerpt": "Because the system checks persons against a collective watchlist without an individual claim of identity, it falls under remote biometric identification rather than the verification exception."
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6337,
+        "candidates_token_count": 70,
+        "thoughts_token_count": null,
+        "total_token_count": 6407
+      },
+      "elapsed_ms": 4135.5,
+      "started_at": "2026-10-23T12:12:46.474754+00:00",
+      "ended_at": "2026-10-23T12:12:50.610267+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "0dcc518c0ea44c27",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer evaluates the provided FAQ chatbot description without adopting unsupported premises as established facts.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer evaluates the provided FAQ chatbot description without adopting unsupported premises as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6249,
+        "candidates_token_count": 31,
+        "thoughts_token_count": null,
+        "total_token_count": 6280
+      },
+      "elapsed_ms": 3478.5,
+      "started_at": "2026-10-23T12:12:50.612663+00:00",
+      "ended_at": "2026-10-23T12:12:54.091176+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "2adc07b6a6c7a8b6",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer evaluates the chatbot strictly based on stated facts without treating unstated premises as established, properly presenting potential expansions as hypothetical conditions.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer evaluates the chatbot strictly based on stated facts without treating unstated premises as established, properly presenting potential expansions as hypothetical conditions.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6104,
+        "candidates_token_count": 50,
+        "thoughts_token_count": null,
+        "total_token_count": 6154
+      },
+      "elapsed_ms": 2799.3,
+      "started_at": "2026-10-23T12:12:54.093570+00:00",
+      "ended_at": "2026-10-23T12:12:56.892900+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "44c2ab491ad24fc8",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer evaluates the provided email host scanner directly against Article 6 and Annex III rules without assuming unstated facts as true.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer evaluates the provided email host scanner directly against Article 6 and Annex III rules without assuming unstated facts as true.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6324,
+        "candidates_token_count": 49,
+        "thoughts_token_count": null,
+        "total_token_count": 6373
+      },
+      "elapsed_ms": 2662.0,
+      "started_at": "2026-10-23T12:12:56.896196+00:00",
+      "ended_at": "2026-10-23T12:12:59.558253+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "c803f25132fe188f",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer properly relies only on the user's facts and keeps unstated deployment facts as open conditions without treating unproven facts as established.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly relies only on the user's facts and keeps unstated deployment facts as open conditions without treating unproven facts as established.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 10854,
+        "candidates_token_count": 43,
+        "thoughts_token_count": null,
+        "total_token_count": 10897
+      },
+      "elapsed_ms": 2765.2,
+      "started_at": "2026-10-23T12:12:59.561753+00:00",
+      "ended_at": "2026-10-23T12:13:02.326993+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "580b852474962829",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly conditions high-risk classification under Annex III, point 5 and Article 6(1) on open factual prerequisites without treating unstated premises as established facts.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly conditions high-risk classification under Annex III, point 5 and Article 6(1) on open factual prerequisites without treating unstated premises as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6399,
+        "candidates_token_count": 59,
+        "thoughts_token_count": null,
+        "total_token_count": 6458
+      },
+      "elapsed_ms": 2773.3,
+      "started_at": "2026-10-23T12:13:02.329777+00:00",
+      "ended_at": "2026-10-23T12:13:05.103106+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "4961b9ca64641c19",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer evaluates the system based on provided facts without assuming unstated premises as established.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer evaluates the system based on provided facts without assuming unstated premises as established.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6167,
+        "candidates_token_count": 41,
+        "thoughts_token_count": null,
+        "total_token_count": 6208
+      },
+      "elapsed_ms": 2253.3,
+      "started_at": "2026-10-23T12:13:05.106141+00:00",
+      "ended_at": "2026-10-23T12:13:07.359414+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "f9aafb2598bd29ec",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly treats the classification under Article 6(3) as conditional and does not assume unstated premises as established facts.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly treats the classification under Article 6(3) as conditional and does not assume unstated premises as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5515,
+        "candidates_token_count": 50,
+        "thoughts_token_count": null,
+        "total_token_count": 5565
+      },
+      "elapsed_ms": 2493.7,
+      "started_at": "2026-10-23T12:13:07.363461+00:00",
+      "ended_at": "2026-10-23T12:13:09.857131+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "13df6b9eac4fa317",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly conditions the Annex III and Article 6(3) analysis on the facts provided without treating missing premises as established.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly conditions the Annex III and Article 6(3) analysis on the facts provided without treating missing premises as established.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6193,
+        "candidates_token_count": 50,
+        "thoughts_token_count": null,
+        "total_token_count": 6243
+      },
+      "elapsed_ms": 2829.5,
+      "started_at": "2026-10-23T12:13:09.859561+00:00",
+      "ended_at": "2026-10-23T12:13:12.689038+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "97f81b455af5d7e7",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer maintains the high-risk classification under Annex III point 4 and Article 6(3) as conditional without treating unknown operational details as established facts.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer maintains the high-risk classification under Annex III point 4 and Article 6(3) as conditional without treating unknown operational details as established facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6216,
+        "candidates_token_count": 45,
+        "thoughts_token_count": null,
+        "total_token_count": 6261
+      },
+      "elapsed_ms": 2800.6,
+      "started_at": "2026-10-23T12:13:12.696180+00:00",
+      "ended_at": "2026-10-23T12:13:15.496763+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "5f065fbe9e3154f3",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer treats the system's exact role conditionally under Annex III, point 4(a) or 4(b) without improperly assuming unstated facts as settled.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer treats the system's exact role conditionally under Annex III, point 4(a) or 4(b) without improperly assuming unstated facts as settled.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4810,
+        "candidates_token_count": 59,
+        "thoughts_token_count": null,
+        "total_token_count": 4869
+      },
+      "elapsed_ms": 2449.1,
+      "started_at": "2026-10-23T12:13:15.500669+00:00",
+      "ended_at": "2026-10-23T12:13:17.949835+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "ab7538e34eb5dd11",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer properly treats classification as indeterminate, framing potential outcomes as explicit conditions without adopting unstated premises.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly treats classification as indeterminate, framing potential outcomes as explicit conditions without adopting unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6465,
+        "candidates_token_count": 33,
+        "thoughts_token_count": null,
+        "total_token_count": 6498
+      },
+      "elapsed_ms": 4711.5,
+      "started_at": "2026-10-23T12:13:17.953870+00:00",
+      "ended_at": "2026-10-23T12:13:22.665343+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    },
+    {
+      "evaluation_id": "21796dad2a24ef12",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer correctly identifies that the product is underspecified, keeps all classification branches conditional, and assumes no unstated facts.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer correctly identifies that the product is underspecified, keeps all classification branches conditional, and assumes no unstated facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6337,
+        "candidates_token_count": 49,
+        "thoughts_token_count": null,
+        "total_token_count": 6386
+      },
+      "elapsed_ms": 2383.9,
+      "started_at": "2026-10-23T12:13:22.668043+00:00",
+      "ended_at": "2026-10-23T12:13:25.052001+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v2",
+      "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+      "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash"
+    }
+  ]
+}

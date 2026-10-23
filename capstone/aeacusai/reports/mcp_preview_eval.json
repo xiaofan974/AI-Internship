@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-10-22T19:45:37.393512+00:00",
+  "versions": {
+    "python": "3.12.13",
+    "executable": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/bin/python",
+    "google-adk": "2.12.0",
+    "mcp": "1.25.0",
+    "google-genai": "2.32.0",
+    "model": "gemini-3.8-flash"
+  },
+  "launch": {
+    "command": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/bin/python",
+    "args": [
+      "-m",
+      "aeacus_agent.mcp_server"
+    ],
+    "cwd": "/Users/aureliemahe/AI-Internship/capstone/aeacusai"
+  },
+  "timeouts": {
+    "connection_seconds": 15.0,
+    "call_seconds": 30.0,
+    "max_llm_calls": 8,
+    "run_timeout_seconds": 90
+  },
+  "offline_configuration": {
+    "default_preview_agent": "aeacus_preview_agent",
+    "default_preview_tools": [
+      "preview_classification_search"
+    ],
+    "mcp_allowlist": [
+      "preview_classification_search"
+    ],
+    "pinecone_agent_tools": [
+      "search_legal_sources"
+    ]
+  },
+  "protocol": {
+    "launch": {
+      "command": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/bin/python",
+      "args": [
+        "-m",
+        "aeacus_agent.mcp_server"
+      ],
+      "cwd": "/Users/aureliemahe/AI-Internship/capstone/aeacusai"
+    },
+    "initialize": {
+      "ok": true,
+      "protocolVersion": "2025-11-25",
+      "server": {
+        "name": "aeacus-classification-preview",
+        "title": null,
+        "version": "1.25.0",
+        "websiteUrl": null,
+        "icons": null
+      },
+      "spawned_pids": [
+        90815
+      ]
+    },
+    "list_tools": {
+      "ok": true,
+      "names": [
+        "preview_classification_search"
+      ],
+      "count": 1
+    },
+    "recruitment_call": {
+      "ok": true,
+      "query": "recruitment job applications filter candidates workers",
+      "isError": false,
+      "mcp_status": "ok",
+      "mcp_match_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7"
+      ],
+      "mcp_context_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ],
+      "direct_match_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7"
+      ],
+      "direct_context_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ],
+      "parity": true
+    },
+    "empty_query": {
+      "ok": true,
+      "mcp_status": "error",
+      "mcp_error": {
+        "category": "invalid_query",
+        "message": "Search query cannot be empty."
+      },
+      "direct_status": "error",
+      "direct_error": {
+        "category": "invalid_query",
+        "message": "Search query cannot be empty."
+      },
+      "parity": true
+    },
+    "parity": {
+      "recruitment": true,
+      "empty_query": true,
+      "ok": true
+    },
+    "cleanup": {
+      "ok": true,
+      "spawned_pids": [
+        90815
+      ],
+      "leftover_pids": []
+    }
+  },
+  "unittest": {
+    "returncode": 0,
+    "passed": true,
+    "stderr_tail": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/lib/python3.12/site-packages/google/adk/features/_feature_decorator.py:71: UserWarning: [EXPERIMENTAL] feature FeatureName.PLUGGABLE_AUTH is enabled.\n  check_feature_enabled()\nStarting AeacusAI classification preview MCP server on stdio.\n/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv/lib/python3.12/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.\n  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)\naeacus-mcp-server INFO: Processing request of type ListToolsRequest\naeacus-mcp-server INFO: Processing request of type CallToolRequest\naeacus-mcp-server INFO: Processing request of type CallToolRequest\n.\n----------------------------------------------------------------------\nRan 1 test in 0.547s\n\nOK\n"
+  },
+  "live_run": {
+    "execution": "ok",
+    "invocations_used": 1,
+    "agent": "aeacus_mcp_preview_agent",
+    "final_answer": "### Provisional finding\n\nThe AI system is provisionally classified as high-risk under Article 6(2) in conjunction with Annex III, point 4, subject to the potential application of the derogation under Article 6(3).\n\n### Why\n\nUnder Annex III, point 4(a), high-risk use cases include AI systems intended to be used for the recruitment or selection of natural persons, “in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates”. The stated facts indicate that the system analyses and filters job applications and ranks candidates. Under Article 6(2), AI systems referred to in Annex III are classified as high-risk. Although human recruiters retain final hiring authority, candidate filtering and ranking fall directly within the recruitment activities identified in Annex III, point 4(a).\n\n### What could change this\n\nUnder Article 6(3), first subparagraph, an AI system referred to in Annex III is not considered high-risk if it does not pose a significant risk of harm to the health, safety, or fundamental rights of natural persons, including by not materially influencing the outcome of decision-making. To rely on this derogation, the system must fulfill at least one condition in Article 6(3), second subparagraph:\n- performing a narrow procedural task;\n- improving the result of a previously completed human activity;\n- detecting decision-making patterns or deviations from prior patterns without replacing or influencing the human assessment without proper human review; or\n- performing a preparatory task to an assessment relevant for the Annex III use cases.\n\nHowever, pursuant to Article 6(3), third subparagraph, the system is always considered high-risk if it performs profiling of natural persons. Where a provider considers the system not high-risk pursuant to Article 6(3), Article 6(4) requires documenting that assessment before placing the system on the market or putting it into service.\n\n### Missing facts\n\nTo determine whether an Article 6(3) derogation could apply, the following facts are required:\n- How the filtering and ranking outputs affect recruiter workflows, including whether they materially influence recruitment decisions or exclude candidates from human review.\n- Whether the system’s processing involves profiling of candidates.\n- The exact technical scope of the AI task, such as whether it performs purely administrative sorting or substantive candidate evaluation.\n\n### Timing and scope\n\nPursuant to Article 113, the Regulation generally applies from 2 August 2026. However, under Article 113(c)(i), Chapter III, Sections 1, 2, and 3—with the exception of Article 6(5)—apply from 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III. This assessment is provisional and limited exclusively to the classification subset of Article 6, Annex III, and Article 113, and does not evaluate general regulatory conformity.",
+    "tool_calls": [
+      {
+        "tool": "preview_classification_search",
+        "query": "recruitment filter job applications rank candidates employment"
+      }
+    ],
+    "tool_log": [
+      {
+        "type": "call",
+        "tool": "preview_classification_search",
+        "args": {
+          "query": "recruitment filter job applications rank candidates employment"
+        }
+      },
+      {
+        "type": "response",
+        "tool": "preview_classification_search",
+        "status": "ok",
+        "match_labels": [
+          "Annex III, point 4",
+          "Annex III, point 7"
+        ],
+        "match_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7"
+        ],
+        "context_labels": [
+          "Annex III — High-risk AI systems referred to in Article 6(2)",
+          "Article 6 — Classification rules for high-risk AI systems",
+          "Article 113 — Entry into force and application"
+        ],
+        "context_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+        ]
+      }
+    ],
+    "observed_record_ids": [
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/7",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+      "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+    ],
+    "cited_record_ids": [],
+    "cited_ids_missing_from_observations": [],
+    "register_opened": false,
+    "cleanup": {
+      "ok": true,
+      "leftover_child_pids": []
+    },
+    "observed_ids_note": "The live ADK observation wrapped MCP JSON as text content, so IDs were not in the compacted tool_log. These IDs were recovered by calling the same MCP tool with the live-chosen query, without another model call.",
+    "observed_match_labels": [
+      "Annex III, point 4",
+      "Annex III, point 7"
+    ],
+    "observed_context_labels": [
+      "Annex III — High-risk AI systems referred to in Article 6(2)",
+      "Article 6 — Classification rules for high-risk AI systems",
+      "Article 113 — Entry into force and application"
+    ]
+  },
+  "limits": "One MCP-backed live run is not a general MCP security or reliability proof."
+}

@@ -1,0 +1,207 @@
+{
+  "schema": "aeacus.week4.annotations.f1_candidate.v1",
+  "taxonomy_id": "week4_adk_preview_failure_taxonomy_v1",
+  "baseline_id": "week4_adk_preview_f1_v2",
+  "parent_baseline_id": "week4_adk_preview_v1",
+  "category_scope": [
+    "F1"
+  ],
+  "source_traces": {
+    "path": "data/local/traces/week4_adk_preview_f1_v2.jsonl",
+    "sha256": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848"
+  },
+  "parent_source_traces": {
+    "path": "data/local/traces/week4_adk_preview_v1.jsonl",
+    "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1"
+  },
+  "review": {
+    "date": "2026-10-23",
+    "accepted_by": "Lily",
+    "method": "AI-assisted observations and proposed labels reviewed and accepted by Lily in the conversation.",
+    "not": "independent expert legal adjudication",
+    "acceptance_time": null
+  },
+  "annotation_location_note": "F1 judgments live in this file. Candidate trace human_annotation fields were not populated. Candidate F2 labels were not assigned.",
+  "f1_fail_ids": [
+    "TRACE-S01",
+    "TRACE-S04",
+    "TRACE-S09",
+    "TRACE-S13",
+    "TRACE-S15"
+  ],
+  "comparison_to_parent_f1": {
+    "parent_fail_ids": [
+      "TRACE-S04",
+      "TRACE-S08",
+      "TRACE-S09",
+      "TRACE-S13",
+      "TRACE-S20"
+    ],
+    "candidate_fail_ids": [
+      "TRACE-S01",
+      "TRACE-S04",
+      "TRACE-S09",
+      "TRACE-S13",
+      "TRACE-S15"
+    ],
+    "recoveries": [
+      "TRACE-S08",
+      "TRACE-S20"
+    ],
+    "regressions": [
+      "TRACE-S01",
+      "TRACE-S15"
+    ],
+    "persistent_failures": [
+      "TRACE-S04",
+      "TRACE-S09",
+      "TRACE-S13"
+    ],
+    "parent_f1_failure_count": 5,
+    "candidate_f1_failure_count": 5,
+    "n_traces": 20,
+    "note": "Two F1 recoveries, two regressions, three persistent failures. 5/20 F1 failures in both versions. These counts are not an overall quality pass rate."
+  },
+  "traces": [
+    {
+      "scenario_id": "TRACE-S01",
+      "run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "categories": {
+        "F1": "fail"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S02",
+      "run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S03",
+      "run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S04",
+      "run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "categories": {
+        "F1": "fail"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S05",
+      "run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S06",
+      "run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S07",
+      "run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S08",
+      "run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S09",
+      "run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "categories": {
+        "F1": "fail"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S10",
+      "run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S11",
+      "run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S12",
+      "run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S13",
+      "run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "categories": {
+        "F1": "fail"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S14",
+      "run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S15",
+      "run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "categories": {
+        "F1": "fail"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S16",
+      "run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S17",
+      "run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S18",
+      "run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S19",
+      "run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "categories": {
+        "F1": "pass"
+      }
+    },
+    {
+      "scenario_id": "TRACE-S20",
+      "run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "categories": {
+        "F1": "pass"
+      }
+    }
+  ]
+}

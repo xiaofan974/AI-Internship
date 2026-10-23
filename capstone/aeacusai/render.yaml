@@ -1,0 +1,17 @@
+# Blueprint for a new Render web service. Do not apply this to
+# ai-internship-5ei0.onrender.com. That service hosts the earlier FastAPI demo.
+services:
+  - type: web
+    name: aeacusai-demo
+    env: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: bash deploy/start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.13
+      - key: AEACUS_MODEL
+        value: gemini-3.8-flash
+      - key: AEACUS_LANGFUSE_TRACING
+        value: "0"
+      - key: GOOGLE_API_KEY
+        sync: false

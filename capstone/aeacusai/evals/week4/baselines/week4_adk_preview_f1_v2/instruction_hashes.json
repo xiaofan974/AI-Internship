@@ -1,0 +1,8 @@
+{
+  "parent_baseline_id": "week4_adk_preview_v1",
+  "candidate_id": "week4_adk_preview_f1_v2",
+  "instruction_sha256_parent": "6d28bfa7d6d42c8ce1c21211b1e87adf877137ed878b1082c0ec6f36716a7de7",
+  "instruction_sha256_candidate": "20f72d6ea00bb6a052266a9abc79066d93119f321a56a3cea446f556cda9517e",
+  "instruction_diff_path": "evals/week4/baselines/week4_adk_preview_f1_v2/instruction.diff",
+  "note": "Hashes are of AEACUS_PREVIEW_INSTRUCTION text only. Baseline traces and the parent manifest were not rewritten."
+}

@@ -1,0 +1,70 @@
+{
+  "stage": "charter_articles_stage6_v2",
+  "parser_revision": "charter-articles-stage6-v2",
+  "supersedes_stage": "charter_articles_stage6",
+  "supersession_policy": "records/charter_articles_stage6_v2.json supersedes records/charter_articles_stage6.json for all future corpus assembly. Both files share identical source-based record_id values for Articles 1–54 and must never be combined as separate corpus records.",
+  "source_id": "T1-CHARTER-OJ-2012",
+  "source_snapshot_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685",
+  "record_count": 54,
+  "technical_checks": {
+    "manifest_sha256_verified": true,
+    "exact_54_unique_articles_satisfy_json_schema": true,
+    "articles_1_to_53_unchanged_from_stage6": true,
+    "articles_21_51_52_53_match_review_baseline": true,
+    "article_54_has_heading_subtitle_and_complete_operative_text": true,
+    "article_54_excludes_closing_separators_and_proclamation_note": true,
+    "article_54_confirmed_314_chars_and_expected_sha256": true,
+    "all_text_sha256_match_extracted_text": true,
+    "second_extraction_identical": true,
+    "unsupported_nonempty_element_count": 0
+  },
+  "article_54_boundary_correction": {
+    "record_id": "T1-CHARTER-OJ-2012@sha256:3457b2dde9d11ac25bdea22e015556e6e499f01f5821f47d2ad10f11a56af685::article/54",
+    "dom_boundary_rule": "charter_article_block_v2 stops sibling traversal inside div#C_2012326EN.01039301 when encountering any element with class in {'ti-art', 'ti-section-1', 'ti-section-2', 'ti-grseq-1'}. Because the closing asterism separator (<p id='d1e829-393-1' class='ti-grseq-1'>°</p>) immediately follows Article 54's operative paragraph, traversal stops cleanly at the DOM boundary without hardcoding text or character counts.",
+    "why_article_54_intentionally_differs_from_original_baseline": "In the v0.2 sample extractor (scripts/extract_review_samples.py), article_block(tree, number) stopped only on {'ti-art', 'ti-section-1', 'ti-section-2'}. Because Article 54 is the final article in TITLE VII, no further article or title heading follows it inside div#C_2012326EN.01039301, causing the baseline extractor to sweep in three trailing document-level closing elements ('°', '°°', and the Treaty of Lisbon proclamation adaptation sentence). Treating that over-inclusion as a baseline boundary defect, Stage 6 v2 stops at p.ti-grseq-1 so Article 54 contains only its heading, subtitle, and operative text.",
+    "corrected_selector": "/*/*[2]/*[14]/*[232] | /*/*[2]/*[14]/*[233] | /*/*[2]/*[14]/*[234]",
+    "corrected_char_length": 314,
+    "corrected_text_sha256": "ce552ea083a96962e6722f57b5e35d7011d0ff755bae68783cace3e096612a5c",
+    "corrected_text": "Article 54 Prohibition of abuse of rights Nothing in this Charter shall be interpreted as implying any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms recognised in this Charter or at their limitation to a greater extent than is provided for herein.",
+    "previous_baseline_and_stage6_v1_selector": "/*/*[2]/*[14]/*[232] | /*/*[2]/*[14]/*[233] | /*/*[2]/*[14]/*[234] | /*/*[2]/*[14]/*[235] | /*/*[2]/*[14]/*[236] | /*/*[2]/*[14]/*[237]",
+    "previous_baseline_and_stage6_v1_char_length": 481,
+    "previous_baseline_and_stage6_v1_text_sha256": "4003a2b3d029a370a04f55c897735bd93ea51db879017896a378b13f9a16cb3d"
+  },
+  "excluded_document_level_closing_material": {
+    "container_id": "C_2012326EN.01039301",
+    "element_count": 3,
+    "combined_normalized_text": "° °° The above text adapts the wording of the Charter proclaimed on 7 December 2000, and will replace it as from the date of entry into force of the Treaty of Lisbon.",
+    "combined_text_sha256": "a9b20a0d10a1f893decf247fb58a50c994835ccb7a52df9675fb309e049b7889",
+    "elements": [
+      {
+        "selector": "/*/*[2]/*[14]/*[235]",
+        "id": "d1e829-393-1",
+        "tag": "p",
+        "class": "ti-grseq-1",
+        "text": "°"
+      },
+      {
+        "selector": "/*/*[2]/*[14]/*[236]",
+        "id": null,
+        "tag": "p",
+        "class": "ti-grseq-1",
+        "text": "°°"
+      },
+      {
+        "selector": "/*/*[2]/*[14]/*[237]",
+        "id": null,
+        "tag": "p",
+        "class": "normal",
+        "text": "The above text adapts the wording of the Charter proclaimed on 7 December 2000, and will replace it as from the date of entry into force of the Treaty of Lisbon."
+      }
+    ]
+  },
+  "content_review_and_ingestion_status": {
+    "validation_status": "pending",
+    "review_status": "not_reviewed",
+    "all_indexable_false": true,
+    "legally_reviewed": false,
+    "ready_for_indexing": false
+  },
+  "unsupported_nonempty_structures": []
+}

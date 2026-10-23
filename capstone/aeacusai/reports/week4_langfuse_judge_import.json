@@ -1,0 +1,2138 @@
+{
+  "schema": "aeacus.week4.langfuse_judge_import.v1",
+  "golden_dataset_id": "week4_f1_golden_v1",
+  "split_id": "week4_f1_split_v1",
+  "label_version": "week4_f1_labels_v1",
+  "hashes": {
+    "manifest": "262ce9b1401be57dd61ff8f0b43c08b6cea9d44008e030a816acacad78669963",
+    "split": "a57e8cac7d357b67f98a04f5b83a65da39a5cc8f54b6c26ecad3ae6596e54d30",
+    "f1_rubric": "1db86276750dab8e6f93c34ef429482065eff5373a6d6e72b4c43625999a7502",
+    "judge_contract": "91aae84736794d980e37251173dfc98b999147086ef56e8142224f369ec5a480",
+    "cases_jsonl": "152adaebbcd9c51c83bbdfcbf37bab694eeb4f9668c226563c9f69c652a0c15c",
+    "judge_payloads_jsonl": "1f9abd172f98692b3d62a071664caf7be3347fbd23a3cb2d5b961bf234d8f3f6",
+    "v1_prompt": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+    "v1_inference_config": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+    "v2_prompt": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+    "v2_inference_config": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+    "v2_refinement_provenance": "63135e4127fdd397c9c6fe08708fc50d4812fba73a518132bdd2411411e514cc",
+    "protocol": "344d963698f6eb9cf95dac8e93557049947a920d6177125b645036b5b3afb8b8"
+  },
+  "calibration_dataset_name": "week4_f1_calibration_v1",
+  "validation_dataset_name": "week4_f1_validation_v1",
+  "source_sha256_verified": true,
+  "provenance_ok": true,
+  "config": {
+    "LANGFUSE_PUBLIC_KEY": "configured",
+    "LANGFUSE_SECRET_KEY": "configured",
+    "LANGFUSE_BASE_URL": "configured",
+    "AEACUS_LANGFUSE_TRACING": "missing"
+  },
+  "missing_credentials": [],
+  "sdk_available": true,
+  "ledger_path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/evals/week4/langfuse/week4_f1_judge_import_ledger.json",
+  "matrices": {
+    "calibration_v1": {
+      "TP": 0,
+      "FN": 5,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.0,
+      "TNR": 1.0,
+      "TPR_fraction": "0/5",
+      "TNR_fraction": "15/15",
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "expected": {
+        "TP": 0,
+        "FN": 5,
+        "TN": 15,
+        "FP": 0
+      },
+      "matches_expected": true,
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "expected_n": 20,
+      "prediction_coverage": 1.0
+    },
+    "calibration_v2": {
+      "TP": 2,
+      "FN": 3,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.4,
+      "TNR": 1.0,
+      "TPR_fraction": "2/5",
+      "TNR_fraction": "15/15",
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "expected": {
+        "TP": 2,
+        "FN": 3,
+        "TN": 15,
+        "FP": 0
+      },
+      "matches_expected": true,
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "expected_n": 20,
+      "prediction_coverage": 1.0
+    },
+    "validation_v1": {
+      "TP": 0,
+      "FN": 5,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.0,
+      "TNR": 1.0,
+      "TPR_fraction": "0/5",
+      "TNR_fraction": "15/15",
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "expected": {
+        "TP": 0,
+        "FN": 5,
+        "TN": 15,
+        "FP": 0
+      },
+      "matches_expected": true,
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "expected_n": 20,
+      "prediction_coverage": 1.0
+    },
+    "validation_v2": {
+      "TP": 0,
+      "FN": 5,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.0,
+      "TNR": 1.0,
+      "TPR_fraction": "0/5",
+      "TNR_fraction": "15/15",
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "expected": {
+        "TP": 0,
+        "FN": 5,
+        "TN": 15,
+        "FP": 0
+      },
+      "matches_expected": true,
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "expected_n": 20,
+      "prediction_coverage": 1.0
+    }
+  },
+  "decision": "Neither frozen judge qualifies as an F1 detector, approval gate, or release gate. Calibration improvement did not transfer to validation.",
+  "score_names": {
+    "judge": "judge_f1_pass",
+    "reviewed": "reviewed_f1_pass"
+  },
+  "score_encoding": {
+    "pass": 1,
+    "fail": 0
+  },
+  "positive_class": "fail",
+  "run_names": {
+    "calibration_v1": "Calibration: frozen judge v1",
+    "calibration_v2": "Calibration: frozen judge v2",
+    "validation_v1": "Validation: frozen judge v1",
+    "validation_v2": "Validation: frozen judge v2"
+  },
+  "n_outputs": 40,
+  "n_scenarios": 20,
+  "not_40_independent_scenarios": true,
+  "model_calls": false,
+  "retrieval_calls": false,
+  "hosted_evaluators": false,
+  "judges_rerun": false,
+  "judges_refined": false,
+  "agreement_headlined": false,
+  "splits_combined": false,
+  "pilot": {
+    "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S01:2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+    "scenario_id": "TRACE-S01",
+    "baseline_id": "week4_adk_preview_f1_v2",
+    "action": "verified",
+    "item": {
+      "action": "skipped_verified",
+      "source_trace_id": null
+    },
+    "calibration_v1": {
+      "action": "skipped_verified",
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S01:2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "scenario_id": "TRACE-S01",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "judge_score_value": 1,
+      "reviewed_score_value": 0,
+      "output_sha256": "22f87d43e5a0240c29640c1390e6ced3f5bbd39d7af0fc7452fcb3f5801bae10",
+      "status": "verified",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/14d760a6375a298886bde031d0f5c2c7",
+      "langfuse_trace_id": "14d760a6375a298886bde031d0f5c2c7",
+      "dataset_run_id": "c7ec1923-ad05-4b60-9585-d6c4923e02be",
+      "uploaded_at": "2026-10-23T15:56:15.875401+00:00",
+      "verified_at": "2026-10-23T15:56:32.175335+00:00",
+      "error": null,
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 16.3,
+        "observation_names": [
+          "reviewed_evaluator",
+          "judge_evaluator",
+          "experiment-item-evaluation",
+          "experiment-item-task",
+          "experiment-item-run"
+        ],
+        "judge_score_value": 1.0,
+        "reviewed_score_value": 0.0,
+        "output": {
+          "verdict": "pass",
+          "reason": "The classification directly evaluates the submitted system and explicitly states reasonable inferences and dependencies as conditions or missing facts.",
+          "excerpt": ""
+        },
+        "linked_trace_id": "14d760a6375a298886bde031d0f5c2c7",
+        "experiment_id": "c7ec1923-ad05-4b60-9585-d6c4923e02be",
+        "score_query_error": null
+      },
+      "experiment_output_sha256": "22f87d43e5a0240c29640c1390e6ced3f5bbd39d7af0fc7452fcb3f5801bae10"
+    },
+    "calibration_v2": {
+      "action": "skipped_verified",
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S01:2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "scenario_id": "TRACE-S01",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "judge_score_value": 1,
+      "reviewed_score_value": 0,
+      "output_sha256": "6b2232cee3a6a3619ffd9d82835eb966034b5c11857602711afcaf6969c847cb",
+      "status": "verified",
+      "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2f2fc0fa36e90bebed2dff748e86aeff",
+      "langfuse_trace_id": "2f2fc0fa36e90bebed2dff748e86aeff",
+      "dataset_run_id": "922aa4d2-ac70-4747-b117-930d7613a7e5",
+      "uploaded_at": "2026-10-23T15:56:33.549413+00:00",
+      "verified_at": "2026-10-23T15:57:17.795100+00:00",
+      "error": null,
+      "verified": {
+        "ok": true,
+        "ingestion_delay_seconds": 44.2,
+        "observation_names": [
+          "reviewed_evaluator",
+          "judge_evaluator",
+          "experiment-item-evaluation",
+          "experiment-item-run",
+          "experiment-item-task"
+        ],
+        "judge_score_value": 1.0,
+        "reviewed_score_value": 0.0,
+        "output": {
+          "verdict": "pass",
+          "reason": "The answer properly treats the statutory criteria and missing technical facts as open conditions rather than asserting unstated premises as established facts.",
+          "excerpt": ""
+        },
+        "linked_trace_id": "2f2fc0fa36e90bebed2dff748e86aeff",
+        "experiment_id": "922aa4d2-ac70-4747-b117-930d7613a7e5",
+        "score_query_error": null
+      },
+      "experiment_output_sha256": "6b2232cee3a6a3619ffd9d82835eb966034b5c11857602711afcaf6969c847cb"
+    }
+  },
+  "remaining": [
+    {
+      "step": "validation_items",
+      "outcomes": [
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S08:d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S08:21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S12:9e53160d-b461-45da-9b53-3572bf5b6c13",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S12:e547178d-c70a-4cca-9591-ec733fd01c26",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S13:4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S13:7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S14:4112acb0-e775-4193-a734-578b0cc99ae2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S14:ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S15:0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S15:305708e0-218e-4c79-88f2-50f226ec7998",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S16:4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S16:07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S17:4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S17:1fc62262-6590-4429-833a-2e9c269a5928",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S18:3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S18:74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S19:3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S19:fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S20:39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S20:feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "action": "skipped_verified"
+        }
+      ]
+    },
+    {
+      "step": "validation_v1",
+      "outcomes": [
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S08:d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S08:21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S12:9e53160d-b461-45da-9b53-3572bf5b6c13",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S12:e547178d-c70a-4cca-9591-ec733fd01c26",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S13:4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S13:7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S14:4112acb0-e775-4193-a734-578b0cc99ae2",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S14:ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S15:0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S15:305708e0-218e-4c79-88f2-50f226ec7998",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S16:4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S16:07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S17:4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S17:1fc62262-6590-4429-833a-2e9c269a5928",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S18:3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S18:74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S19:3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S19:fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S20:39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S20:feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "run_key": "validation_v1",
+          "action": "skipped_verified"
+        }
+      ]
+    },
+    {
+      "step": "validation_v2",
+      "outcomes": [
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S08:d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S08:21c988a6-775a-4a2f-8513-8aa29423b18a",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S12:9e53160d-b461-45da-9b53-3572bf5b6c13",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S12:e547178d-c70a-4cca-9591-ec733fd01c26",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S13:4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S13:7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S14:4112acb0-e775-4193-a734-578b0cc99ae2",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S14:ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S15:0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S15:305708e0-218e-4c79-88f2-50f226ec7998",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S16:4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S16:07fb835c-7dbf-4b71-9aca-06a43c263150",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S17:4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S17:1fc62262-6590-4429-833a-2e9c269a5928",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S18:3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S18:74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S19:3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S19:fd86e112-fb20-42fa-b9f7-e0a65125342b",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S20:39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        },
+        {
+          "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S20:feb73275-7e82-4159-8bb9-1e90cf15edac",
+          "run_key": "validation_v2",
+          "action": "skipped_verified"
+        }
+      ]
+    }
+  ],
+  "datasets": {
+    "calibration": {
+      "id": "cmvl5jrmj0010ad0kobcprfob",
+      "name": "week4_f1_calibration_v1",
+      "project_id": "cmvl15h4200gnad0hwelqbeas",
+      "url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5jrmj0010ad0kobcprfob",
+      "created": false,
+      "group": "calibration"
+    },
+    "validation": {
+      "id": "cmvl5js41002nad0jjxk3p587",
+      "name": "week4_f1_validation_v1",
+      "project_id": "cmvl15h4200gnad0hwelqbeas",
+      "url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5js41002nad0jjxk3p587",
+      "created": false,
+      "group": "validation"
+    }
+  },
+  "read_back": {
+    "calibration": {
+      "item_count": 20,
+      "dataset_id": "cmvl5jrmj0010ad0kobcprfob",
+      "v1_item_count": 20,
+      "v2_item_count": 20,
+      "source_associations": 10,
+      "labels_in_input": 0
+    },
+    "validation": {
+      "item_count": 20,
+      "dataset_id": "cmvl5js41002nad0jjxk3p587",
+      "v1_item_count": 20,
+      "v2_item_count": 20,
+      "source_associations": 10,
+      "labels_in_input": 0
+    }
+  },
+  "links": {
+    "calibration_dataset": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5jrmj0010ad0kobcprfob",
+    "validation_dataset": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5js41002nad0jjxk3p587",
+    "calibration_v1_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5jrmj0010ad0kobcprfob/runs/c7ec1923-ad05-4b60-9585-d6c4923e02be",
+    "calibration_v2_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5jrmj0010ad0kobcprfob/runs/922aa4d2-ac70-4747-b117-930d7613a7e5",
+    "validation_v1_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5js41002nad0jjxk3p587/runs/1cda5b79-62ee-4d4f-9939-b8791039eedf",
+    "validation_v2_run": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5js41002nad0jjxk3p587/runs/6ac6dabb-a6df-4deb-82c7-2da5e75296b4",
+    "calibration_comparison": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5jrmj0010ad0kobcprfob/compare?runs=c7ec1923-ad05-4b60-9585-d6c4923e02be&runs=922aa4d2-ac70-4747-b117-930d7613a7e5",
+    "validation_comparison": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/datasets/cmvl5js41002nad0jjxk3p587/compare?runs=1cda5b79-62ee-4d4f-9939-b8791039eedf&runs=6ac6dabb-a6df-4deb-82c7-2da5e75296b4"
+  },
+  "counts": {
+    "prepared_outputs": 40,
+    "prepared_scenarios": 20,
+    "calibration_items_verified": 20,
+    "validation_items_verified": 20,
+    "calibration_v1_verified": 20,
+    "calibration_v2_verified": 20,
+    "validation_v1_verified": 20,
+    "validation_v2_verified": 20,
+    "failed": 0
+  },
+  "live": true,
+  "auth_check": {
+    "ok": true,
+    "error": null
+  },
+  "per_case": [
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S01:2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "group": "calibration",
+      "scenario_id": "TRACE-S01",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "2da3cfd8-b8be-4d2a-8754-a763ba2f21e6",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "14d760a6375a298886bde031d0f5c2c7",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/14d760a6375a298886bde031d0f5c2c7",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly evaluates the submitted system and explicitly states reasonable inferences and dependencies as conditions or missing facts.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "2f2fc0fa36e90bebed2dff748e86aeff",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2f2fc0fa36e90bebed2dff748e86aeff",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats the statutory criteria and missing technical facts as open conditions rather than asserting unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S01:4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "group": "calibration",
+      "scenario_id": "TRACE-S01",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+      "source_trace_id": "7166080e55ad08c29d937285cfb7de6a",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7166080e55ad08c29d937285cfb7de6a",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "a16082cf6dde2653b3c94b94088cdaea",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/a16082cf6dde2653b3c94b94088cdaea",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly evaluates the described recruitment AI system without unstated premises or expanding to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "f363713115238a37a63cb2a686e21869",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f363713115238a37a63cb2a686e21869",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly maps stated facts to Annex III, point 4(a) and treats the Article 6(3) derogation, profiling, and influence as explicit open conditions rather than settled facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S02:aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "group": "calibration",
+      "scenario_id": "TRACE-S02",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "aaabee81-001c-4b03-a1b6-3ed4e8efa655",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "fe55c1b0402f09f36f9fb50daeefd48d",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/fe55c1b0402f09f36f9fb50daeefd48d",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification does not rely on unstated premises or underspecified products, correctly framing inferences as conditions and missing facts.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "adc76350b9f038701d1e53b38e97abb5",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/adc76350b9f038701d1e53b38e97abb5",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer maintains unstated deployment details as explicit open conditions rather than asserting them as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S02:392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "group": "calibration",
+      "scenario_id": "TRACE-S02",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+      "source_trace_id": "2e6260ed434a1d403b2f57b2c3d7de15",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2e6260ed434a1d403b2f57b2c3d7de15",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "e7e35a117c558f0fec30bcb83a8e5386",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/e7e35a117c558f0fec30bcb83a8e5386",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly addresses the described system without relying on unstated premises or expanding to an underspecified product, explicitly noting missing facts and conditions.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "7ab3500f2de117b79a413a432980da54",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7ab3500f2de117b79a413a432980da54",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats the provisional classification, potential derogations, and institution status as conditional inferences rather than unstated premises.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S03:9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "group": "calibration",
+      "scenario_id": "TRACE-S03",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "9d315772-3c24-4440-a8c1-c52041b19dc1",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "3f361310fd8637c91bd39502cdd657b6",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3f361310fd8637c91bd39502cdd657b6",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification does not rely on unstated premises and properly addresses the submitted system with appropriate conditional reasoning.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "11c178fb88919445cad408d860d53d44",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/11c178fb88919445cad408d860d53d44",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer grounds its evaluation directly on the user's facts (branch staff almost always follow the recommendation to assign risk bands to loan applicants) and properly leaves unstated possibilities (such as fraud detection carve-out) as open conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S03:17017bf1-7aec-4028-8e99-eebc58193325",
+      "group": "calibration",
+      "scenario_id": "TRACE-S03",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+      "source_trace_id": "b2eb412a339c3478a3062ea349af117b",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b2eb412a339c3478a3062ea349af117b",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "4ac330bdfd165dd346d011c8410b8cd3",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/4ac330bdfd165dd346d011c8410b8cd3",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly addresses the submitted loan applicant risk-scoring system under Annex III, point 5, without relying on unstated premises or underspecified products.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "6b59c71330b0942c78d2dcabe0ababd7",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6b59c71330b0942c78d2dcabe0ababd7",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer relies directly on the user's facts and treats open conditions conditionally without adopting unstated premises.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S04:ab268600-0757-44ef-b07f-dfb273ce8871",
+      "group": "calibration",
+      "scenario_id": "TRACE-S04",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "ab268600-0757-44ef-b07f-dfb273ce8871",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "821d74a578166e9f12476a2f1b4ef1ac",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/821d74a578166e9f12476a2f1b4ef1ac",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer accurately conditions its classification on explicit dependencies and missing facts without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "b773b471ea4524583e2de8703ede9e83",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b773b471ea4524583e2de8703ede9e83",
+          "judge_score": 0,
+          "judge_label": "fail",
+          "output": {
+            "verdict": "fail",
+            "reason": "The answer treats the absence of a prior identity claim as an established fact in the analysis despite listing it as unknown.",
+            "excerpt": "Because the described setup searches across a database rather than verifying an identity claimed by the person (such as presenting an ID badge first), it functions as a 1-to-many biometric identification system rather than verification."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S04:b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "group": "calibration",
+      "scenario_id": "TRACE-S04",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+      "source_trace_id": "28eb0512d039da0dfb54268b0cc4de93",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/28eb0512d039da0dfb54268b0cc4de93",
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "2c136c93b5924e75e5e71c436465150e",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2c136c93b5924e75e5e71c436465150e",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly evaluates the described system under Annex III point 1(a) and explicitly frames contingencies and missing facts rather than relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "ad378df560e3a1117662009e6bfa431f",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/ad378df560e3a1117662009e6bfa431f",
+          "judge_score": 0,
+          "judge_label": "fail",
+          "output": {
+            "verdict": "fail",
+            "reason": "The answer establishes as fact that the setup functions without an individual claim of identity despite that fact being unstated and listed as missing.",
+            "excerpt": "Because the system checks persons against a collective watchlist without an individual claim of identity, it falls under remote biometric identification rather than the verification exception."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S05:2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "group": "calibration",
+      "scenario_id": "TRACE-S05",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "2aa618ff-1b1a-4c16-b74b-3ead8d11e71a",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "def051b30e8ea08af259a1e19dcb21a4",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/def051b30e8ea08af259a1e19dcb21a4",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly assesses the provided system description without relying on unstated premises or underspecified products.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "bcb7e9afd2bfa73c186bf6a7e3e9a442",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/bcb7e9afd2bfa73c186bf6a7e3e9a442",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the provided FAQ chatbot description without adopting unsupported premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S05:2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "group": "calibration",
+      "scenario_id": "TRACE-S05",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+      "source_trace_id": "9cf279574ce7d8007de5c59ccb4d1fbe",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9cf279574ce7d8007de5c59ccb4d1fbe",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "bb953b7791327d4e5735192cd19d4ecc",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/bb953b7791327d4e5735192cd19d4ecc",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification stays strictly grounded in the provided system description without unstated premises or underspecification.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "72d92c26ebc01f38ca1a7578786dd3a6",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/72d92c26ebc01f38ca1a7578786dd3a6",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the chatbot strictly based on stated facts without treating unstated premises as established, properly presenting potential expansions as hypothetical conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S06:c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "group": "calibration",
+      "scenario_id": "TRACE-S06",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "c1388a22-0ce6-49f4-a625-0ed9ecf41f23",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "789a1730b0892cce3d14ab12c162a6bc",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/789a1730b0892cce3d14ab12c162a6bc",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The provisional classification is directly tied to the submitted system description without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "451e27270317475b62be2f2b8e645e60",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/451e27270317475b62be2f2b8e645e60",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the provided email host scanner directly against Article 6 and Annex III rules without assuming unstated facts as true.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S06:8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "group": "calibration",
+      "scenario_id": "TRACE-S06",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+      "source_trace_id": "71a0090cbb31d42dfb6ab691337ef107",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/71a0090cbb31d42dfb6ab691337ef107",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "5deeaf6a4ccb76e715d07ee53d63732a",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/5deeaf6a4ccb76e715d07ee53d63732a",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer classifies the described system without relying on unstated premises and properly states contingencies and missing facts.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "83a574c5f81885ad562410d53683f163",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/83a574c5f81885ad562410d53683f163",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly relies only on the user's facts and keeps unstated deployment facts as open conditions without treating unproven facts as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S07:fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "group": "calibration",
+      "scenario_id": "TRACE-S07",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "fa38efad-1ad4-4bee-ac24-91ad2442ee9f",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "bd7767337eca560f0a52eaa5bbe3d027",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/bd7767337eca560f0a52eaa5bbe3d027",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The provisional classification explicitly conditions high-risk status on dependencies and missing facts without unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "c005f150929928bbbcc25a4f6d2b3adc",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/c005f150929928bbbcc25a4f6d2b3adc",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions high-risk classification under Annex III, point 5 and Article 6(1) on open factual prerequisites without treating unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S07:4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "group": "calibration",
+      "scenario_id": "TRACE-S07",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+      "source_trace_id": "3aa8a5a909a8a2e4180aae797bdd02cf",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3aa8a5a909a8a2e4180aae797bdd02cf",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "031322e3037e4dc65182830ee0a20379",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/031322e3037e4dc65182830ee0a20379",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly assesses the submitted system description without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "59f1c300e4ee7168e8305199ba2d9fbe",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/59f1c300e4ee7168e8305199ba2d9fbe",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the system based on provided facts without assuming unstated premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S09:43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "group": "calibration",
+      "scenario_id": "TRACE-S09",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "43b6664b-5b39-47b2-97fb-6e2e2514b9f1",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "0bfdbd627ebcf8c35594f99f38442880",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/0bfdbd627ebcf8c35594f99f38442880",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer identifies the potential classification under Annex III and Article 6 and explicitly states reasonable dependencies on missing facts.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "808e481f7837cc39c620a963134c64f3",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/808e481f7837cc39c620a963134c64f3",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats the classification under Article 6(3) as conditional and does not assume unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S09:1615192e-ab2a-4e8d-8902-4913644fc746",
+      "group": "calibration",
+      "scenario_id": "TRACE-S09",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+      "source_trace_id": "9e45a212095b701c97937cd966aaeb8a",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9e45a212095b701c97937cd966aaeb8a",
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "7a2b9b354361d77b9cd4e3a60c89cfc7",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7a2b9b354361d77b9cd4e3a60c89cfc7",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification addresses the submitted system directly and clearly conditions potential variations on explicit factual dependencies without unstated premises or underspecified product scope.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "43f9b0d99275fafce3cce7121da5eba5",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/43f9b0d99275fafce3cce7121da5eba5",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions the Annex III and Article 6(3) analysis on the facts provided without treating missing premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S10:4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "group": "calibration",
+      "scenario_id": "TRACE-S10",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "4e26e322-9f32-408f-a1ea-9ae448554e12",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "3501111800482a0ec10988f6e87106a9",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3501111800482a0ec10988f6e87106a9",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer makes reasonable provisional inferences while clearly conditioning classification on missing operational facts.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "20e7312d027c08e9b950a448d6a3e799",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/20e7312d027c08e9b950a448d6a3e799",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer maintains the high-risk classification under Annex III point 4 and Article 6(3) as conditional without treating unknown operational details as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S10:22b36ab5-77e2-454f-87e0-320245240b75",
+      "group": "calibration",
+      "scenario_id": "TRACE-S10",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+      "source_trace_id": "47a39139f47117d6aa2945c996ee6de7",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/47a39139f47117d6aa2945c996ee6de7",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "e970245de24d5fb5f0c318b5541bb01c",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/e970245de24d5fb5f0c318b5541bb01c",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer makes a provisional classification while explicitly identifying conditional dependencies and missing facts about the underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "2b39787f98b3fee74b87cba2385d2daa",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2b39787f98b3fee74b87cba2385d2daa",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer treats the system's exact role conditionally under Annex III, point 4(a) or 4(b) without improperly assuming unstated facts as settled.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S11:acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "group": "calibration",
+      "scenario_id": "TRACE-S11",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "acaa91b8-95f4-44a5-8825-4a046c29bec2",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "a0ba855894bd4ba476f796b329684638",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/a0ba855894bd4ba476f796b329684638",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions classification on missing facts without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "d4861b11789c2594feb94fc08ced3274",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/d4861b11789c2594feb94fc08ced3274",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats classification as indeterminate, framing potential outcomes as explicit conditions without adopting unstated premises.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S11:a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "group": "calibration",
+      "scenario_id": "TRACE-S11",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+      "source_trace_id": "077a7658f59e50284d71fca5f1510c7c",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/077a7658f59e50284d71fca5f1510c7c",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "calibration_v1": {
+          "status": "verified",
+          "trace_id": "343b451ae81ac2d49bac7a028bb3252e",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/343b451ae81ac2d49bac7a028bb3252e",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly identifies the submission as underspecified, conditions potential classifications on missing facts, and avoids unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "calibration_v2": {
+          "status": "verified",
+          "trace_id": "814bb88160a91cd24f4b0f911ebb18b3",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/814bb88160a91cd24f4b0f911ebb18b3",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly identifies that the product is underspecified, keeps all classification branches conditional, and assumes no unstated facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S08:d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "group": "validation",
+      "scenario_id": "TRACE-S08",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "d0eb1005-47c9-44bc-aa5c-eb9c18d3b601",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "862244677ecc051112b95675619bddef",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/862244677ecc051112b95675619bddef",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification clearly conditions its finding on whether the tool strictly processes aggregate geographic data versus personal or group data, without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "a856ecb5144ffe66a61ba12b2b064627",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/a856ecb5144ffe66a61ba12b2b064627",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer accurately treats personal data processing and profiling as open conditions and does not adopt unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S08:21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "group": "validation",
+      "scenario_id": "TRACE-S08",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+      "source_trace_id": "235e3b9abf157c5a4ac153f1c830fd64",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/235e3b9abf157c5a4ac153f1c830fd64",
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "add11e98f0414793d38b79b627b37fa0",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/add11e98f0414793d38b79b627b37fa0",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer adheres strictly to the provided system description, addresses its specific characteristics, and conditions potential classification shifts on explicit missing facts without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "d52b21d6cf1732a73e56868831b78dfd",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/d52b21d6cf1732a73e56868831b78dfd",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer strictly relies on the provided system description and appropriately treats missing facts regarding potential profiling or inputs as hypothetical conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S12:9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "group": "validation",
+      "scenario_id": "TRACE-S12",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "9e53160d-b461-45da-9b53-3572bf5b6c13",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "b3633c28e4ab54df1151b50db9f0e967",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b3633c28e4ab54df1151b50db9f0e967",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly states conditional dependencies and missing facts without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "cf4492cece4f6e38ef47cc8638536905",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/cf4492cece4f6e38ef47cc8638536905",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats potential classifications and profiling as open conditions without assuming unstated premises.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S12:e547178d-c70a-4cca-9591-ec733fd01c26",
+      "group": "validation",
+      "scenario_id": "TRACE-S12",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+      "source_trace_id": "36c0ae2d4315f8f77a82131e519e6721",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/36c0ae2d4315f8f77a82131e519e6721",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "f2aaf3badbd9a8f120b894317bf1a531",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f2aaf3badbd9a8f120b894317bf1a531",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly identifies missing facts and frames potential Annex III classifications as conditional possibilities without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "9a7424a0b533b241a48f92baf94a1623",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9a7424a0b533b241a48f92baf94a1623",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats classification under Annex III and the applicability of Article 6(3) as conditional upon unstated intended purposes, without assuming missing facts as settled.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S13:4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "group": "validation",
+      "scenario_id": "TRACE-S13",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "4eb39bb8-253c-4c56-aa5f-a1d7dc5ec1bc",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "d0eaf011553925c89d3f343549a536b9",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/d0eaf011553925c89d3f343549a536b9",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification does not rely on unstated premises, properly qualifies conditions, and addresses the specified system.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "4a3a16c1f44ffa0b4d03b86ce7f583d8",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/4a3a16c1f44ffa0b4d03b86ce7f583d8",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly analyzes the system based only on stated facts without treating unstated premises as established, phrasing potential alternative classifications conditionally.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S13:7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "group": "validation",
+      "scenario_id": "TRACE-S13",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+      "source_trace_id": "01469e43fbce99f65e581ce2d5999260",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/01469e43fbce99f65e581ce2d5999260",
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "2444e7641abf3f2292dc162d78a0d182",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/2444e7641abf3f2292dc162d78a0d182",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer classifies the described system within the provided legal framework and explicitly qualifies assumptions and missing facts.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "74858f6dbd4cb3722fccd03ea91a29aa",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/74858f6dbd4cb3722fccd03ea91a29aa",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the described general office chat tool under Article 6 and Annex III without assuming unstated facts, appropriately treating potential high-risk use cases as conditional dependencies.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S14:4112acb0-e775-4193-a734-578b0cc99ae2",
+      "group": "validation",
+      "scenario_id": "TRACE-S14",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "4112acb0-e775-4193-a734-578b0cc99ae2",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "90a555f961d37733990e9efc385a279a",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/90a555f961d37733990e9efc385a279a",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly leaves classification unresolved and explicitly conditions high-risk status on missing facts.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "4150750e64d21574e00cfc36efef8f32",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/4150750e64d21574e00cfc36efef8f32",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats classification as unresolved and maintains all missing facts regarding product safety, machinery legislation, and workplace monitoring as explicit conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S14:ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "group": "validation",
+      "scenario_id": "TRACE-S14",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+      "source_trace_id": "9b2086eafe0284b210b92900e76847eb",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/9b2086eafe0284b210b92900e76847eb",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "748beb68f5b63287daf3a955aa9e8f26",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/748beb68f5b63287daf3a955aa9e8f26",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly leaves the classification undetermined due to missing facts, outlines explicit conditional paths, and avoids unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "f7c0d4a97ad6ef0d9f07d23dc64d61a5",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f7c0d4a97ad6ef0d9f07d23dc64d61a5",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer maintains the high-risk classification as undetermined and treats missing technical and regulatory facts as open conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S15:0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "group": "validation",
+      "scenario_id": "TRACE-S15",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "0fe52a24-d0c4-4f6d-abe3-e4271e8044fa",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "acf1f870f89b8d20461f1173b675e59e",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/acf1f870f89b8d20461f1173b675e59e",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions its provisional finding on missing facts and explicitly identifies the gaps rather than relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "52b3fb6fa7031fd7c3fe3073836eee65",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/52b3fb6fa7031fd7c3fe3073836eee65",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly treats unknown facts as open conditions without asserting unsupported premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S15:305708e0-218e-4c79-88f2-50f226ec7998",
+      "group": "validation",
+      "scenario_id": "TRACE-S15",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+      "source_trace_id": "1355dd598fa8f31b1e34d5f04a77432d",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1355dd598fa8f31b1e34d5f04a77432d",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "3f73bdacd77d6a4e09d7465a64fcd135",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/3f73bdacd77d6a4e09d7465a64fcd135",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly identifies that no AI system is described and refuses classification without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "531218db025633f94b141647920a8ec1",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/531218db025633f94b141647920a8ec1",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer correctly identifies that no AI system was described, treats missing facts as unresolved conditions, and does not rely on unstated premises.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S16:4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "group": "validation",
+      "scenario_id": "TRACE-S16",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "4a7e7395-aaee-4aca-bc5f-b3109c72950d",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "a28c8c3d8699b96b01d1424b874b49d0",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/a28c8c3d8699b96b01d1424b874b49d0",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer does not rely on unstated premises or extend to an underspecified product, framing dependencies explicitly.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "107d19357d5933c1092d9273557ff2a5",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/107d19357d5933c1092d9273557ff2a5",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer maintains all unresolved factual elements (such as AI system qualification, material influence, and profiling) as conditional dependencies without treating unstated premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S16:07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "group": "validation",
+      "scenario_id": "TRACE-S16",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+      "source_trace_id": "72593e9538937b213690d37e75773994",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/72593e9538937b213690d37e75773994",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "b568cbf03dab8ef0568f6c164e5b6def",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b568cbf03dab8ef0568f6c164e5b6def",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly bounds its analysis to the submitted Excel macro without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "8777a3ec529ec2728531c83c34bf0c09",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/8777a3ec529ec2728531c83c34bf0c09",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions its alternative analysis on whether the macro is an AI system without treating unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S17:4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "group": "validation",
+      "scenario_id": "TRACE-S17",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "4c2809a3-f27d-48b2-bc4a-f8e3efc41cf5",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "1c97388d0a313108d73f7168a861492f",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1c97388d0a313108d73f7168a861492f",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the submitted warehouse monitoring software directly without relying on unstated premises or expanding to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "7786a313a35a390a29efaa65f28759c6",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/7786a313a35a390a29efaa65f28759c6",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly conditions high-risk classification on open factual questions under Article 6(3) without adopting unstated premises as established facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S17:1fc62262-6590-4429-833a-2e9c269a5928",
+      "group": "validation",
+      "scenario_id": "TRACE-S17",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+      "source_trace_id": "41b6cecee4186aca0995d5a6ee36a902",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/41b6cecee4186aca0995d5a6ee36a902",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "86926e8dc9a31b98ccbe6d95d54f213f",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/86926e8dc9a31b98ccbe6d95d54f213f",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification directly evaluates the described warehouse system under Annex III, point 4(b) and explicitly identifies relevant missing facts without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "d3140dd527917eda05440eaaaf13f290",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/d3140dd527917eda05440eaaaf13f290",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly maps stated facts to Annex III, point 4(b) and treats derogations and profiling as conditional without assuming unstated facts.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S18:3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "group": "validation",
+      "scenario_id": "TRACE-S18",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "3bcf7890-78ba-4417-ba06-5d4916bd7ba7",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "aba47c9a42dc0c94a9964852c797a3ef",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/aba47c9a42dc0c94a9964852c797a3ef",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The classification does not rely on unstated premises or extend to an underspecified product, correctly addressing the submitted motor insurance system.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "134717c6b5311934c7f4d36626ad9e11",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/134717c6b5311934c7f4d36626ad9e11",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer adheres strictly to the provided facts without assuming unstated premises as established facts, and keeps potential variations conditional.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S18:74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "group": "validation",
+      "scenario_id": "TRACE-S18",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+      "source_trace_id": "130eef63a19e17745b8109b9a013c0c6",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/130eef63a19e17745b8109b9a013c0c6",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "a9b320afaaaea3f3ddd75043a0d7b914",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/a9b320afaaaea3f3ddd75043a0d7b914",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The response assesses the specified motor insurance system directly and states reasonable conditional dependencies under missing facts without relying on unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "6684e144b48159a53ccbdd1fa5d77f7f",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6684e144b48159a53ccbdd1fa5d77f7f",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer adheres strictly to the provided facts without treating unstated premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S19:3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "group": "validation",
+      "scenario_id": "TRACE-S19",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "3386d04f-a9ec-49cf-8af0-57bdcbc1ed76",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "c8f457a18b164a3ab2121965cbc29c54",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/c8f457a18b164a3ab2121965cbc29c54",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly evaluates the described system under Annex III and Article 6 without relying on unstated premises or extending to an underspecified product.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "cef54254e9a79ebd4d8ec4292fbd926d",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/cef54254e9a79ebd4d8ec4292fbd926d",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The analysis correctly maps the stated facts to Annex III categories while treating material influence and profiling as open conditions.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S19:fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "group": "validation",
+      "scenario_id": "TRACE-S19",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+      "source_trace_id": "f59c25e59f453edf2534336af62f5221",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/f59c25e59f453edf2534336af62f5221",
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "4178dcd947aca413cf3a434286dbe09a",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/4178dcd947aca413cf3a434286dbe09a",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The provisional classification is based strictly on the provided system description and evidence, explicitly noting missing facts and conditions without unstated premises.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "b1c631523f3e2cf6bdd91a86ddef8c8d",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/b1c631523f3e2cf6bdd91a86ddef8c8d",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly anchors its high-risk analysis in the stated facts and explicitly keeps open missing factual elements such as profiling and material influence under Article 6(3).",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_f1_v2:TRACE-S20:39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "group": "validation",
+      "scenario_id": "TRACE-S20",
+      "baseline_id": "week4_adk_preview_f1_v2",
+      "original_run_id": "39349126-070f-4c7b-bb2f-a05c5ec33ab4",
+      "source_trace_id": null,
+      "source_trace_url": null,
+      "reviewed_label": "pass",
+      "reviewed_score": 1,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "1c4becefabde9b80df74f5a160410c47",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/1c4becefabde9b80df74f5a160410c47",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly scopes its classification to the submitted detector without relying on unstated premises or extending to the separate tool.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "851407f6ca675d49ec3f48e035f1d3c2",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/851407f6ca675d49ec3f48e035f1d3c2",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the system based on provided facts, properly bounds its scope, and handles missing details conditionally without treating unstated premises as established.",
+            "excerpt": ""
+          }
+        }
+      }
+    },
+    {
+      "case_id": "week4_f1_golden_v1:week4_adk_preview_v1:TRACE-S20:feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "group": "validation",
+      "scenario_id": "TRACE-S20",
+      "baseline_id": "week4_adk_preview_v1",
+      "original_run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+      "source_trace_id": "6a3c91627c769b051ec0e9d13aa24681",
+      "source_trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/6a3c91627c769b051ec0e9d13aa24681",
+      "reviewed_label": "fail",
+      "reviewed_score": 0,
+      "item_status": "verified",
+      "runs": {
+        "validation_v1": {
+          "status": "verified",
+          "trace_id": "84b5a0750ea6d3fa17a2deb97bb392e9",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/84b5a0750ea6d3fa17a2deb97bb392e9",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer properly classifies the described system without relying on unstated premises or improperly extending to underspecified products.",
+            "excerpt": ""
+          }
+        },
+        "validation_v2": {
+          "status": "verified",
+          "trace_id": "113a2b67a829dc6bf41fd703826fd9a3",
+          "trace_url": "https://cloud.langfuse.com/project/cmvl15h4200gnad0hwelqbeas/traces/113a2b67a829dc6bf41fd703826fd9a3",
+          "judge_score": 1,
+          "judge_label": "pass",
+          "output": {
+            "verdict": "pass",
+            "reason": "The answer evaluates the described newsroom detector and separate tool strictly against the provided legal rules without making unsupported material factual leaps.",
+            "excerpt": ""
+          }
+        }
+      }
+    }
+  ],
+  "dataset_run_ids": {
+    "calibration_v1": "c7ec1923-ad05-4b60-9585-d6c4923e02be",
+    "calibration_v2": "922aa4d2-ac70-4747-b117-930d7613a7e5",
+    "validation_v1": "1cda5b79-62ee-4d4f-9939-b8791039eedf",
+    "validation_v2": "6ac6dabb-a6df-4deb-82c7-2da5e75296b4"
+  }
+}

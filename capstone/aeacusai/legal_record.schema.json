@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AeacusAI Tier 1 canonical legal node — proposed v0.1",
+  "description": "A completed extracted node, not an acquisition plan or a placeholder. JSON Schema checks shape only; external checks enforce provenance, source fidelity, hierarchy and ingestion eligibility.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "source_snapshot_id",
+    "parent_id",
+    "unit_kind",
+    "legal_function",
+    "label",
+    "locator",
+    "language",
+    "tier",
+    "text",
+    "text_sha256",
+    "source_location",
+    "children",
+    "cross_references",
+    "normalization_version",
+    "validation_status",
+    "review_status",
+    "indexable"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_snapshot_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ID of an acquired immutable artifact manifest, including edition and raw-byte SHA-256. Not just a generic Act identifier."
+    },
+    "parent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unit_kind": {
+      "enum": [
+        "document",
+        "preamble",
+        "recital",
+        "article",
+        "paragraph",
+        "point",
+        "definition",
+        "annex",
+        "section",
+        "heading",
+        "table",
+        "table_row",
+        "footnote"
+      ]
+    },
+    "legal_function": {
+      "enum": [
+        "operative",
+        "interpretive",
+        "structural"
+      ],
+      "description": "Function of the content within the instrument. Authenticity and publication form belong in the source manifest. Recitals cannot be operative."
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "article": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paragraph": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "point": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recital": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "annex": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "language": {
+      "const": "en"
+    },
+    "tier": {
+      "const": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Complete text for this structural node after the declared whitespace-only normalization. No summaries or inferred law."
+    },
+    "text_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "format",
+        "selector"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "format": {
+          "enum": [
+            "html",
+            "xml",
+            "pdf"
+          ]
+        },
+        "selector": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Observed DOM/XML anchor or precise PDF page/range; never a guessed deep link."
+        }
+      }
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "raw_label",
+          "target_document_id",
+          "target_locator",
+          "target_record_id",
+          "resolution_status"
+        ],
+        "properties": {
+          "raw_label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_document_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_locator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_record_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolution_status": {
+            "enum": [
+              "resolved",
+              "out_of_corpus",
+              "ambiguous"
+            ]
+          }
+        }
+      }
+    },
+    "normalization_version": {
+      "const": "legal-whitespace-v1"
+    },
+    "validation_status": {
+      "enum": [
+        "pending",
+        "passed",
+        "failed"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "not_reviewed",
+        "accepted_for_release",
+        "rejected"
+      ]
+    },
+    "indexable": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "unit_kind": {
+            "const": "recital"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "legal_function": {
+            "const": "interpretive"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "indexable": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "validation_status": {
+            "const": "passed"
+          },
+          "review_status": {
+            "const": "accepted_for_release"
+          }
+        }
+      }
+    }
+  ]
+}

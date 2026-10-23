@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-10-22T20:12:17.490022+00:00",
+  "versions": {
+    "python": "3.12.13",
+    "executable": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/.venv-langgraph/bin/python",
+    "langgraph": "1.2.16",
+    "langchain-core": "1.7.0",
+    "google-adk": "2.12.0",
+    "google-genai": "2.32.0",
+    "model": "gemini-3.8-flash"
+  },
+  "timeouts": {
+    "max_llm_calls": 8,
+    "run_timeout_seconds": 90,
+    "graph_recursion_limit": 24
+  },
+  "offline": {
+    "kind": "mocked_or_local_only",
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.045s\n\nOK\n"
+  },
+  "live_run": {
+    "execution": "failed",
+    "status": "failed",
+    "error": "Deterministic citation or quotation checks failed.",
+    "model_calls": 2,
+    "draft": "### Provisional finding\nThe AI system is provisionally classified as high-risk under Article 6, specifically pursuant to Article 6(2) and Annex III, point 4, subject to whether the derogation criteria in Article 6(3) are satisfied.\n\n### Why\nAnnex III, point 4(a) lists:\n> \"AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;\"\n\nThe submitted facts state that the system is used to analyse and filter job applications and rank candidates for recruiters. Under Article 6(2), AI systems listed in Annex III are classified as high-risk. Although human recruiters make the final hiring decisions, the system's stated functions fall directly within the explicit scope of Annex III, point 4(a).\n\n### What could change this\nUnder Article 6(3), first subparagraph, an AI system listed in Annex III is not considered high-risk if it does not pose a significant risk of harm to the health, safety, or fundamental rights of natural persons, including by not materially influencing the outcome of decision-making. \n\nTo qualify for this derogation, the system must satisfy at least one condition in Article 6(3), second subparagraph, such as performing a narrow procedural task (point (a)) or performing a preparatory task to an assessment (point (d)). However, this exception is strictly limited by Article 6(3), third subparagraph:\n> \"Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.\"\n\nFurthermore, under Article 6(4), any provider relying on Article 6(3) must document its assessment before the system is placed on the market or put into service.\n\n### Missing facts\nWhether an Article 6(3) exception applies cannot be resolved on the available record:\n- Functional filtering behavior: The submission does not specify whether the system discards or excludes candidates automatically, or merely assists with organization.\n- Material influence: It is unknown to what extent the system's ranking influences or predetermines recruiters' evaluations in practice.\n- Profiling: It remains unresolved whether the system conducts profiling of natural persons.\n- Documentation: It is unknown whether the provider has prepared and maintained documentation of an Article 6(3) assessment pursuant to Article 6(4).\n\n### Timing and scope\nUnder Article 113, the Regulation applies generally from 2 August 2026. However, under Article 113(c)(i), Chapter III, Sections 1, 2, and 3—with the exception of Article 6(5)—apply from 2 December 2027 to AI systems classified as high-risk pursuant to Article 6(2) and Annex III. \n\nThis assessment is a provisional reading limited strictly to the classification subset of Article 6, Annex III, and Article 113. It does not address full legal conformity or other provisions of Union law.",
+    "deterministic_checks": {
+      "citation_ids": {
+        "ok": true,
+        "cited": [],
+        "unknown": []
+      },
+      "provisions": {
+        "cited": [
+          "Article 6",
+          "Article 6(2)",
+          "Annex III, point 4",
+          "Article 6(3)",
+          "Article 6(4)",
+          "Article 113",
+          "Article 113(c)",
+          "Article 6(5)"
+        ],
+        "unsupported": [],
+        "ok": true
+      },
+      "quotations": {
+        "ok": false,
+        "checked": [
+          "AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;",
+          "Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+          "\"AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;\"",
+          "\"Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.\""
+        ],
+        "unsupported": [
+          "\"AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;\"",
+          "\"Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.\""
+        ]
+      },
+      "ok": false
+    },
+    "observations": [
+      {
+        "call_id": "call_86217",
+        "tool": "preview_classification_search",
+        "query": "recruitment candidates filter rank employment",
+        "status": "ok",
+        "match_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4"
+        ],
+        "context_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+        ]
+      }
+    ],
+    "records": [
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "label": "Annex III, point 4",
+        "text_sha256": "f3c2978c732f32f1353431ad77b23d854650977c363b136c59c8de518bb4b39d",
+        "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+        "role": "match"
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "label": "Annex III — High-risk AI systems referred to in Article 6(2)",
+        "text_sha256": "533e5a42fcfe7f472c346374f5139b4152aa59a15bbc02068a33cdb751609fdf",
+        "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+        "role": "context"
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "label": "Article 6 — Classification rules for high-risk AI systems",
+        "text_sha256": "b6a58d42b6248038baaf14c5918103289bc0af1aed90da5d974b7ef846a5b5ee",
+        "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+        "role": "context"
+      },
+      {
+        "record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+        "label": "Article 113 — Entry into force and application",
+        "text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+        "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+        "role": "context"
+      }
+    ],
+    "trace": [
+      {
+        "kind": "act",
+        "tool": "preview_classification_search",
+        "query": "recruitment candidates filter rank employment",
+        "call_id": "call_86217"
+      },
+      {
+        "kind": "observe",
+        "call_id": "call_86217",
+        "tool": "preview_classification_search",
+        "query": "recruitment candidates filter rank employment",
+        "status": "ok",
+        "match_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4"
+        ],
+        "context_record_ids": [
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+          "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+        ]
+      },
+      {
+        "kind": "final",
+        "chars": 2979
+      },
+      {
+        "kind": "failed",
+        "message": "Deterministic citation or quotation checks failed."
+      }
+    ],
+    "register_opened": false,
+    "register_written": false
+  },
+  "comparison": {
+    "available": true,
+    "adk_source": "dual_preview_eval.json",
+    "wording_required_identical": false,
+    "scope": {
+      "langgraph_mentions_subset": true,
+      "adk_mentions_subset": true,
+      "langgraph_avoids_full_compliance": true,
+      "adk_avoids_full_compliance": true
+    },
+    "evidence_provenance": {
+      "langgraph_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ],
+      "adk_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/3",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6/paragraph/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ],
+      "langgraph_has_hashes": true,
+      "shared_ids": [
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III/point/4",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::annex/III",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/6",
+        "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113"
+      ]
+    },
+    "citation_validity": {
+      "langgraph_checks_ok": false,
+      "adk_checks_ok": true
+    }
+  },
+  "limits": "One LangGraph live run is a framework mirror, not legal certification or approval. Successful drafts remain review_required."
+}

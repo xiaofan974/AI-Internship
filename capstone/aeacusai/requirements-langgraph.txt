@@ -1,0 +1,25 @@
+# Separate pin for the LangGraph classification-preview mirror.
+# Install into .venv-langgraph only. Do not use this file to upgrade
+# capstone/aeacusai/.venv or the ADK / google-genai pins.
+#
+# Verified 2026-10-22 in .venv-langgraph (Python 3.12.13):
+#   langgraph==1.2.16
+#   langchain-core==1.7.0
+#   langgraph-checkpoint==4.3.0
+#   langgraph-prebuilt==1.1.1
+#   langgraph-sdk==0.4.8
+#   google-adk==2.12.0
+#   google-genai==2.32.0
+#   mcp==1.25.0
+#   pydantic==2.14.1
+#   python-dotenv==1.2.4
+#   openai==3.36.1
+#   pinecone==10.1.0
+langgraph==1.2.16
+google-genai==2.32.0
+google-adk==2.12.0
+mcp==1.25.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+openai==3.36.1
+pinecone==10.1.0

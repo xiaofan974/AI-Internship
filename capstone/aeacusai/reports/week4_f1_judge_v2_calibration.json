@@ -1,0 +1,224 @@
+{
+  "schema": "aeacus.week4.f1_judge.calibration_report.v2",
+  "judge_id": "week4_f1_judge_v2",
+  "parent_judge_id": "week4_f1_judge_v1",
+  "split": "calibration",
+  "held_out": false,
+  "examples_reused_calibration_cases": true,
+  "not_an_application_or_approval_gate": true,
+  "prompt_refined_after_batch": false,
+  "validation_inference": false,
+  "run": {
+    "judge_id": "week4_f1_judge_v2",
+    "split": "calibration",
+    "model": "gemini-3.8-flash",
+    "prompt_version": "f1_judge_prompt_v2",
+    "prompt_sha256": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+    "config_sha256": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+    "generation": {
+      "temperature": 0.0,
+      "max_output_tokens": 400,
+      "candidate_count": 1,
+      "response_mime_type": "application/json",
+      "thinking_budget": 0,
+      "include_thoughts": false,
+      "tools": []
+    },
+    "n_existing": 0,
+    "n_pending": 20,
+    "stopped": false,
+    "stop_reason": null,
+    "started_at": "2026-10-23T12:12:21.722021+00:00",
+    "ended_at": "2026-10-23T12:13:25.056360+00:00",
+    "n_persisted": 20
+  },
+  "hashes": {
+    "prompt": "abf09e1eb07c4a2da859182d6a64b2c1f94124afddfcfab1b1af08f581f7ad0e",
+    "inference_config": "98647f8ff1b59f504b1642c96a24c1f18ec1898dc4b9f4748f47d976f11f05c1",
+    "refinement_provenance": "63135e4127fdd397c9c6fe08708fc50d4812fba73a518132bdd2411411e514cc",
+    "manifest": "262ce9b1401be57dd61ff8f0b43c08b6cea9d44008e030a816acacad78669963",
+    "split": "a57e8cac7d357b67f98a04f5b83a65da39a5cc8f54b6c26ecad3ae6596e54d30",
+    "f1_rubric": "1db86276750dab8e6f93c34ef429482065eff5373a6d6e72b4c43625999a7502",
+    "judge_contract": "91aae84736794d980e37251173dfc98b999147086ef56e8142224f369ec5a480",
+    "cases_jsonl": "152adaebbcd9c51c83bbdfcbf37bab694eeb4f9668c226563c9f69c652a0c15c",
+    "judge_payloads_jsonl": "1f9abd172f98692b3d62a071664caf7be3347fbd23a3cb2d5b961bf234d8f3f6"
+  },
+  "provenance": {
+    "hypothesis": "V1 accepted an answer whenever its opening or Missing facts section acknowledged uncertainty, without checking whether Why still asserted that unresolved fact.",
+    "informed_by_calibration_cases": [
+      {
+        "evaluation_id": "bd7ec9dcdb3fcb7c",
+        "scenario_id": "TRACE-S01",
+        "v1_role": "false_negative",
+        "use": "hypothesis only; not copied into the prompt"
+      },
+      {
+        "evaluation_id": "c953f67527f058d9",
+        "scenario_id": "TRACE-S04",
+        "v1_role": "false_negative",
+        "use": "Example A (fail despite a caveat); identifiers omitted from the prompt"
+      },
+      {
+        "evaluation_id": "4913922de88dad21",
+        "scenario_id": "TRACE-S04",
+        "v1_role": "false_negative",
+        "use": "hypothesis only; paired output of the Example A scenario"
+      },
+      {
+        "evaluation_id": "f9aafb2598bd29ec",
+        "scenario_id": "TRACE-S09",
+        "v1_role": "false_negative",
+        "use": "hypothesis only; not copied into the prompt"
+      },
+      {
+        "evaluation_id": "13df6b9eac4fa317",
+        "scenario_id": "TRACE-S09",
+        "v1_role": "false_negative",
+        "use": "hypothesis only; not copied into the prompt"
+      },
+      {
+        "evaluation_id": "c46d129cacb772e2",
+        "scenario_id": "TRACE-S02",
+        "v1_role": "true_negative",
+        "use": "Example B (supported conditional inference); identifiers omitted from the prompt"
+      }
+    ],
+    "used_validation": false
+  },
+  "score": {
+    "metrics": {
+      "TP": 2,
+      "FN": 3,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.4,
+      "TNR": 1.0,
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail"
+    },
+    "expected_n": 20,
+    "valid_n": 20,
+    "invalid_n": 0,
+    "missing_n": 0,
+    "prediction_coverage": 1.0,
+    "valid_response_only": false,
+    "invalid": [],
+    "missing": []
+  },
+  "comparison": {
+    "held_out": false,
+    "examples_reused_calibration_cases": true,
+    "v1": {
+      "TP": 0,
+      "FN": 5,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.0,
+      "TNR": 1.0,
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "prediction_coverage": 1.0,
+      "valid_response_only": false
+    },
+    "v2": {
+      "TP": 2,
+      "FN": 3,
+      "TN": 15,
+      "FP": 0,
+      "TPR": 0.4,
+      "TNR": 1.0,
+      "positives_in_metrics": 5,
+      "negatives_in_metrics": 15,
+      "positive_class": "fail",
+      "valid_n": 20,
+      "invalid_n": 0,
+      "missing_n": 0,
+      "prediction_coverage": 1.0,
+      "valid_response_only": false
+    },
+    "false_negatives_corrected": [
+      {
+        "evaluation_id": "c953f67527f058d9",
+        "scenario_id": "TRACE-S04",
+        "reviewed_label": "fail",
+        "v1_verdict": "pass",
+        "v2_verdict": "fail"
+      },
+      {
+        "evaluation_id": "4913922de88dad21",
+        "scenario_id": "TRACE-S04",
+        "reviewed_label": "fail",
+        "v1_verdict": "pass",
+        "v2_verdict": "fail"
+      }
+    ],
+    "false_negatives_retained": [
+      {
+        "evaluation_id": "bd7ec9dcdb3fcb7c",
+        "scenario_id": "TRACE-S01",
+        "reviewed_label": "fail",
+        "v1_verdict": "pass",
+        "v2_verdict": "pass"
+      },
+      {
+        "evaluation_id": "f9aafb2598bd29ec",
+        "scenario_id": "TRACE-S09",
+        "reviewed_label": "fail",
+        "v1_verdict": "pass",
+        "v2_verdict": "pass"
+      },
+      {
+        "evaluation_id": "13df6b9eac4fa317",
+        "scenario_id": "TRACE-S09",
+        "reviewed_label": "fail",
+        "v1_verdict": "pass",
+        "v2_verdict": "pass"
+      }
+    ],
+    "new_false_positives": [],
+    "other_regressions": []
+  },
+  "false_negatives": [
+    {
+      "evaluation_id": "bd7ec9dcdb3fcb7c",
+      "scenario_id": "TRACE-S01",
+      "input": "A mid-size logistics company uses an AI system to read incoming CVs, discard applications that lack a driving licence, and show remaining candidates in a ranked list to human recruiters. Recruiters may interview anyone on the list.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe system provisionally falls within the high-risk classification scope under Annex III, point 4 via Article 6(2). However, whether the system is ultimately classified as high-risk depends on unresolved material facts: specifically, whether the automated…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer properly treats the statutory criteria and missing technical facts as open conditions rather than asserting unstated premises as established facts."
+    },
+    {
+      "evaluation_id": "f9aafb2598bd29ec",
+      "scenario_id": "TRACE-S09",
+      "input": "A government contractor uses a tool that reads asylum-file PDFs and proposes a “complexity score” so caseworkers can pick which files to open first. The score is visible on the caseworker dashboard.",
+      "relevant_answer_excerpt": "### Provisional finding\nThe tool provisionally falls within the scope of Annex III, point 7(c) as an AI system used on behalf of competent public authorities to assist in examining applications for asylum. However, its classification as high-risk under Article 6(2) versus non-hig…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer properly treats the classification under Article 6(3) as conditional and does not assume unstated premises as established facts."
+    },
+    {
+      "evaluation_id": "13df6b9eac4fa317",
+      "scenario_id": "TRACE-S09",
+      "input": "A government contractor uses a tool that reads asylum-file PDFs and proposes a “complexity score” so caseworkers can pick which files to open first. The score is visible on the caseworker dashboard.",
+      "relevant_answer_excerpt": "### Provisional finding\n\nThe tool is provisionally classified as a high-risk AI system under Article 6(2) and Annex III, point 7, unless it satisfies the conditions for an exception under Article 6(3).\n\n### Why\n\nThe tool is used by a government contractor on asylum files to gener…",
+      "reviewed_label": "fail",
+      "judge_verdict": "pass",
+      "reason": "The answer properly conditions the Annex III and Article 6(3) analysis on the facts provided without treating missing premises as established."
+    }
+  ],
+  "false_positives": [],
+  "limitations": [
+    "20 outputs from 10 paired scenarios",
+    "only 5 labeled failures",
+    "AI-assisted labels reviewed by Lily",
+    "same model family as the assessed agent",
+    "calibration performance is not held-out validation",
+    "prompt examples reuse calibration cases"
+  ]
+}

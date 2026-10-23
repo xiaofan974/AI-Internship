@@ -1,0 +1,29 @@
+# Separate pin for Langfuse OpenTelemetry export of the primary ADK preview.
+# Install into .venv-langfuse only. Do not use this file to upgrade
+# capstone/aeacusai/.venv or the ADK / google-genai pins.
+#
+# Verified 2026-10-23 in .venv-langfuse (Python 3.12.13):
+#   langfuse==4.15.6
+#   openinference-instrumentation-google-adk==1.0.4
+#   openinference-instrumentation==0.1.71
+#   openinference-semantic-conventions==0.1.41
+#   opentelemetry-api==1.42.1
+#   opentelemetry-sdk==1.42.1
+#   google-adk==2.12.0
+#   google-genai==2.32.0
+#   mcp==1.25.0
+#   pydantic==2.14.1
+#   python-dotenv==1.2.4
+#   openai==3.36.1
+#   pinecone==10.1.0
+#   streamlit==1.66.1
+langfuse==4.15.6
+openinference-instrumentation-google-adk==1.0.4
+google-adk==2.12.0
+google-genai==2.32.0
+mcp==1.25.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+openai==3.36.1
+pinecone==10.1.0
+streamlit==1.66.1

@@ -1,0 +1,673 @@
+{
+  "schema": "aeacus.week4.evaluations_recompute.v1",
+  "result_kind": "freshly_recomputed",
+  "not": [
+    "new agent runs",
+    "model or retrieval calls",
+    "an overall quality or compliance percentage"
+  ],
+  "label": "Application-layer replay of 20 saved live traces.",
+  "computed_at": "2026-10-23T11:37:54.598366+00:00",
+  "input_hashes": {
+    "taxonomy": "336f5f3e6fe9ab7042b83bf1869161be1e86aaee4c718d9e9b0738f7808d7718",
+    "annotations": "50bde98943fc656a598e2e449bf6cfaec73387cb04d3f05adadf4a3c90f489ee",
+    "annotations_f1": "c382664896c8b909654dd1628fcb1a61fd1ce75b6be35cf3cd5484e4970a819a",
+    "scenarios": "02aeb6ae8c7af29864d493c08621ba048c73680e89cd34e466ebe46cd86b2070",
+    "parent_traces": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+    "candidate_traces": "3b1fa10c5a05a8db61403ddda04d3e6d5ecf0ae06f684daf3cf30392e253f848",
+    "baseline_results": "0d88dff2fb5db2adc7958d347166979071e28813803abd5cd059aea1eed905ef",
+    "f1_assertions": "f2d423492865767363b7c0095cf96914237cbd0debc5befe3f1faf9b8364812c",
+    "timing_report": "4290fe22d2447b9601582d88438fb88dfc42c47a1023e4b01df16ac127852bfe",
+    "checkers": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33"
+  },
+  "checker_suite": "week4_codify_v1",
+  "checker_file_sha256": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33",
+  "formatter_id": "aeacus.timing_scope.v1",
+  "formatter_version": "1",
+  "uses_human_labels": false,
+  "human_labels_unchanged": true,
+  "replay": {
+    "label": "Application-layer replay of 20 saved live traces.",
+    "not": [
+      "20 new live runs",
+      "a model-quality improvement"
+    ],
+    "formatter_id": "aeacus.timing_scope.v1",
+    "formatter_version": "1",
+    "source": {
+      "path": "/Users/aureliemahe/AI-Internship/capstone/aeacusai/data/local/traces/week4_adk_preview_v1.jsonl",
+      "sha256": "29871169b2db5aebeac179cdd254a4700e36f252b2873ea9e05e334400204db1",
+      "n_traces": 20
+    },
+    "repair_status_counts": {
+      "ok": 20,
+      "failed": 0
+    },
+    "prefix_mismatches": [],
+    "deterministic_assertions": {
+      "raw": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "applicable": 20,
+          "denominator": 20,
+          "pass": 18,
+          "fail": 2,
+          "not_applicable": 0,
+          "fail_ids": [
+            "TRACE-S02",
+            "TRACE-S20"
+          ],
+          "pass_ids": [
+            "TRACE-S01",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S19"
+          ],
+          "not_applicable_ids": [],
+          "excluded_from_denominator": []
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "applicable": 1,
+          "denominator": 1,
+          "pass": 0,
+          "fail": 1,
+          "not_applicable": 19,
+          "fail_ids": [
+            "TRACE-S19"
+          ],
+          "pass_ids": [],
+          "not_applicable_ids": [
+            "TRACE-S01",
+            "TRACE-S02",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S20"
+          ],
+          "excluded_from_denominator": [
+            "TRACE-S01",
+            "TRACE-S02",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S20"
+          ]
+        }
+      },
+      "delivered": {
+        "deferred_date_qualifications_v1": {
+          "checker_id": "deferred_date_qualifications_v1",
+          "applicable": 20,
+          "denominator": 20,
+          "pass": 20,
+          "fail": 0,
+          "not_applicable": 0,
+          "fail_ids": [],
+          "pass_ids": [
+            "TRACE-S01",
+            "TRACE-S02",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S19",
+            "TRACE-S20"
+          ],
+          "not_applicable_ids": [],
+          "excluded_from_denominator": []
+        },
+        "s19_retrieval_budget_v1": {
+          "checker_id": "s19_retrieval_budget_v1",
+          "applicable": 1,
+          "denominator": 1,
+          "pass": 0,
+          "fail": 1,
+          "not_applicable": 19,
+          "fail_ids": [
+            "TRACE-S19"
+          ],
+          "pass_ids": [],
+          "not_applicable_ids": [
+            "TRACE-S01",
+            "TRACE-S02",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S20"
+          ],
+          "excluded_from_denominator": [
+            "TRACE-S01",
+            "TRACE-S02",
+            "TRACE-S03",
+            "TRACE-S04",
+            "TRACE-S05",
+            "TRACE-S06",
+            "TRACE-S07",
+            "TRACE-S08",
+            "TRACE-S09",
+            "TRACE-S10",
+            "TRACE-S11",
+            "TRACE-S12",
+            "TRACE-S13",
+            "TRACE-S14",
+            "TRACE-S15",
+            "TRACE-S16",
+            "TRACE-S17",
+            "TRACE-S18",
+            "TRACE-S20"
+          ]
+        }
+      }
+    },
+    "comparison_to_saved_baseline_assertions": {
+      "deferred_date_qualifications_v1": {
+        "baseline_denominator": 20,
+        "candidate_denominator": 20,
+        "baseline_fail_ids": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ],
+        "candidate_fail_ids": [],
+        "still_failing": [],
+        "newly_failing": [],
+        "newly_passing": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ],
+        "regressed_from_pass": []
+      },
+      "s19_retrieval_budget_v1": {
+        "baseline_denominator": 1,
+        "candidate_denominator": 1,
+        "baseline_fail_ids": [
+          "TRACE-S19"
+        ],
+        "candidate_fail_ids": [
+          "TRACE-S19"
+        ],
+        "still_failing": [
+          "TRACE-S19"
+        ],
+        "newly_failing": [],
+        "newly_passing": [],
+        "regressed_from_pass": []
+      }
+    },
+    "raw_versus_saved_baseline": {
+      "deferred_date_qualifications_v1": {
+        "baseline_denominator": 20,
+        "candidate_denominator": 20,
+        "baseline_fail_ids": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ],
+        "candidate_fail_ids": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ],
+        "still_failing": [
+          "TRACE-S02",
+          "TRACE-S20"
+        ],
+        "newly_failing": [],
+        "newly_passing": [],
+        "regressed_from_pass": []
+      },
+      "s19_retrieval_budget_v1": {
+        "baseline_denominator": 1,
+        "candidate_denominator": 1,
+        "baseline_fail_ids": [
+          "TRACE-S19"
+        ],
+        "candidate_fail_ids": [
+          "TRACE-S19"
+        ],
+        "still_failing": [
+          "TRACE-S19"
+        ],
+        "newly_failing": [],
+        "newly_passing": [],
+        "regressed_from_pass": []
+      }
+    },
+    "checker_file_sha256": "330fce7b22fc3d7ff140839dcc20dd811ee6ffef3da00111134674508a484b33",
+    "per_trace": [
+      {
+        "scenario_id": "TRACE-S01",
+        "run_id": "4c969b0c-7046-4409-bca2-f096a5d34c83",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S02",
+        "run_id": "392db6f3-1620-42d1-bf81-b554ee9e1aba",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S03",
+        "run_id": "17017bf1-7aec-4028-8e99-eebc58193325",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S04",
+        "run_id": "b5caecbd-ace2-42c1-88ea-1592d163a6ed",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S05",
+        "run_id": "2bdc75d1-a252-4bec-b287-f21aab2f91de",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S06",
+        "run_id": "8e8d9cef-85de-4cd7-b629-7c307ffa5710",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S07",
+        "run_id": "4b4980c1-3b6d-4e09-b5f4-71eccd9a96ed",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S08",
+        "run_id": "21c988a6-775a-4a2f-8513-8aa29423b18a",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S09",
+        "run_id": "1615192e-ab2a-4e8d-8902-4913644fc746",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S10",
+        "run_id": "22b36ab5-77e2-454f-87e0-320245240b75",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S11",
+        "run_id": "a08c00bc-1578-4a20-a2d6-89669e3fc29c",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S12",
+        "run_id": "e547178d-c70a-4cca-9591-ec733fd01c26",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S13",
+        "run_id": "7ccd9cdd-3612-419a-9cda-b76ce3e901b2",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S14",
+        "run_id": "ab3b0d19-a131-4304-b6af-83a24bd1dabd",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S15",
+        "run_id": "305708e0-218e-4c79-88f2-50f226ec7998",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S16",
+        "run_id": "07fb835c-7dbf-4b71-9aca-06a43c263150",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S17",
+        "run_id": "1fc62262-6590-4429-833a-2e9c269a5928",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S18",
+        "run_id": "74c715ab-7ad1-4fb5-afdf-50acc7f7057b",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S19",
+        "run_id": "fd86e112-fb20-42fa-b9f7-e0a65125342b",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      },
+      {
+        "scenario_id": "TRACE-S20",
+        "run_id": "feb73275-7e82-4159-8bb9-1e90cf15edac",
+        "prefix_unchanged": true,
+        "repair": {
+          "status": "ok",
+          "reason": null,
+          "formatter_id": "aeacus.timing_scope.v1",
+          "formatter_version": "1",
+          "source_record_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715::article/113",
+          "source_text_sha256": "0f628e97ddb44755c40162f14950a4bc8072552fda2a3c38773c5a7f30c8bd4d",
+          "source_snapshot_id": "T1-AIA-CONS-20260727@sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715"
+        }
+      }
+    ]
+  },
+  "raw_assertions_from_saved_traces": {
+    "deferred_date_qualifications_v1": {
+      "checker_id": "deferred_date_qualifications_v1",
+      "applicable": 20,
+      "denominator": 20,
+      "pass": 18,
+      "fail": 2,
+      "not_applicable": 0,
+      "fail_ids": [
+        "TRACE-S02",
+        "TRACE-S20"
+      ],
+      "pass_ids": [
+        "TRACE-S01",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S19"
+      ],
+      "not_applicable_ids": [],
+      "excluded_from_denominator": []
+    },
+    "s19_retrieval_budget_v1": {
+      "checker_id": "s19_retrieval_budget_v1",
+      "applicable": 1,
+      "denominator": 1,
+      "pass": 0,
+      "fail": 1,
+      "not_applicable": 19,
+      "fail_ids": [
+        "TRACE-S19"
+      ],
+      "pass_ids": [],
+      "not_applicable_ids": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ],
+      "excluded_from_denominator": [
+        "TRACE-S01",
+        "TRACE-S02",
+        "TRACE-S03",
+        "TRACE-S04",
+        "TRACE-S05",
+        "TRACE-S06",
+        "TRACE-S07",
+        "TRACE-S08",
+        "TRACE-S09",
+        "TRACE-S10",
+        "TRACE-S11",
+        "TRACE-S12",
+        "TRACE-S13",
+        "TRACE-S14",
+        "TRACE-S15",
+        "TRACE-S16",
+        "TRACE-S17",
+        "TRACE-S18",
+        "TRACE-S20"
+      ]
+    }
+  }
+}

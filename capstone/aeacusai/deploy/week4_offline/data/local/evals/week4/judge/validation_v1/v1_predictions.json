@@ -1,0 +1,747 @@
+{
+  "judge_id": "week4_f1_judge_v1",
+  "split": "validation",
+  "labels_included": false,
+  "predictions": [
+    {
+      "evaluation_id": "10e8132586c6a86c",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The classification clearly conditions its finding on whether the tool strictly processes aggregate geographic data versus personal or group data, without relying on unstated premises.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The classification clearly conditions its finding on whether the tool strictly processes aggregate geographic data versus personal or group data, without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6346,
+        "candidates_token_count": 52,
+        "thoughts_token_count": null,
+        "total_token_count": 6398
+      },
+      "elapsed_ms": 3205.3,
+      "started_at": "2026-10-23T12:17:29.641571+00:00",
+      "ended_at": "2026-10-23T12:17:32.846935+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 1
+    },
+    {
+      "evaluation_id": "75e945401500df7a",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer adheres strictly to the provided system description, addresses its specific characteristics, and conditions potential classification shifts on explicit missing facts without relying on unstated premises.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer adheres strictly to the provided system description, addresses its specific characteristics, and conditions potential classification shifts on explicit missing facts without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6278,
+        "candidates_token_count": 44,
+        "thoughts_token_count": null,
+        "total_token_count": 6322
+      },
+      "elapsed_ms": 2501.7,
+      "started_at": "2026-10-23T12:17:38.995784+00:00",
+      "ended_at": "2026-10-23T12:17:41.497457+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 4
+    },
+    {
+      "evaluation_id": "6ef703aeecd56f7d",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly states conditional dependencies and missing facts without relying on unstated premises or extending to an underspecified product.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly states conditional dependencies and missing facts without relying on unstated premises or extending to an underspecified product.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5489,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 5537
+      },
+      "elapsed_ms": 6454.9,
+      "started_at": "2026-10-23T12:17:41.501078+00:00",
+      "ended_at": "2026-10-23T12:17:47.955993+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 5
+    },
+    {
+      "evaluation_id": "e207b6ebdb2b8ecb",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer correctly identifies missing facts and frames potential Annex III classifications as conditional possibilities without relying on unstated premises.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer correctly identifies missing facts and frames potential Annex III classifications as conditional possibilities without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 11248,
+        "candidates_token_count": 35,
+        "thoughts_token_count": null,
+        "total_token_count": 11283
+      },
+      "elapsed_ms": 2626.2,
+      "started_at": "2026-10-23T12:17:56.357629+00:00",
+      "ended_at": "2026-10-23T12:17:58.983867+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 8
+    },
+    {
+      "evaluation_id": "d680a6aa4457bce1",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The classification does not rely on unstated premises, properly qualifies conditions, and addresses the specified system.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The classification does not rely on unstated premises, properly qualifies conditions, and addresses the specified system.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 10923,
+        "candidates_token_count": 35,
+        "thoughts_token_count": null,
+        "total_token_count": 10958
+      },
+      "elapsed_ms": 3295.2,
+      "started_at": "2026-10-23T12:17:58.986490+00:00",
+      "ended_at": "2026-10-23T12:18:02.281713+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 9
+    },
+    {
+      "evaluation_id": "6392916c190acf02",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer classifies the described system within the provided legal framework and explicitly qualifies assumptions and missing facts.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer classifies the described system within the provided legal framework and explicitly qualifies assumptions and missing facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5873,
+        "candidates_token_count": 34,
+        "thoughts_token_count": null,
+        "total_token_count": 5907
+      },
+      "elapsed_ms": 2443.8,
+      "started_at": "2026-10-23T12:18:08.224992+00:00",
+      "ended_at": "2026-10-23T12:18:10.668858+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 12
+    },
+    {
+      "evaluation_id": "47ba3c1f4fed72c1",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer properly leaves classification unresolved and explicitly conditions high-risk status on missing facts.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly leaves classification unresolved and explicitly conditions high-risk status on missing facts.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 8778,
+        "candidates_token_count": 32,
+        "thoughts_token_count": null,
+        "total_token_count": 8810
+      },
+      "elapsed_ms": 3231.4,
+      "started_at": "2026-10-23T12:18:10.671164+00:00",
+      "ended_at": "2026-10-23T12:18:13.902571+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 13
+    },
+    {
+      "evaluation_id": "41102c85a34d4846",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly leaves the classification undetermined due to missing facts, outlines explicit conditional paths, and avoids unstated premises.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly leaves the classification undetermined due to missing facts, outlines explicit conditional paths, and avoids unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4067,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 4115
+      },
+      "elapsed_ms": 2568.7,
+      "started_at": "2026-10-23T12:18:20.376621+00:00",
+      "ended_at": "2026-10-23T12:18:22.945308+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 16
+    },
+    {
+      "evaluation_id": "03256e0dd4fb2fec",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly conditions its provisional finding on missing facts and explicitly identifies the gaps rather than relying on unstated premises.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly conditions its provisional finding on missing facts and explicitly identifies the gaps rather than relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 4724,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 4772
+      },
+      "elapsed_ms": 4049.6,
+      "started_at": "2026-10-23T12:18:22.947889+00:00",
+      "ended_at": "2026-10-23T12:18:26.997547+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 17
+    },
+    {
+      "evaluation_id": "af45b0e26669df2d",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer correctly identifies that no AI system is described and refuses classification without relying on unstated premises.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer correctly identifies that no AI system is described and refuses classification without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5771,
+        "candidates_token_count": 33,
+        "thoughts_token_count": null,
+        "total_token_count": 5804
+      },
+      "elapsed_ms": 2165.7,
+      "started_at": "2026-10-23T12:18:31.730584+00:00",
+      "ended_at": "2026-10-23T12:18:33.896337+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 20
+    },
+    {
+      "evaluation_id": "fe7126be7cfcbccf",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer does not rely on unstated premises or extend to an underspecified product, framing dependencies explicitly.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer does not rely on unstated premises or extend to an underspecified product, framing dependencies explicitly.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5905,
+        "candidates_token_count": 37,
+        "thoughts_token_count": null,
+        "total_token_count": 5942
+      },
+      "elapsed_ms": 3483.3,
+      "started_at": "2026-10-23T12:18:33.900192+00:00",
+      "ended_at": "2026-10-23T12:18:37.383505+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 21
+    },
+    {
+      "evaluation_id": "7f145afb2e34321b",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The answer properly bounds its analysis to the submitted Excel macro without relying on unstated premises or extending to an underspecified product.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly bounds its analysis to the submitted Excel macro without relying on unstated premises or extending to an underspecified product.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5863,
+        "candidates_token_count": 39,
+        "thoughts_token_count": null,
+        "total_token_count": 5902
+      },
+      "elapsed_ms": 4030.2,
+      "started_at": "2026-10-23T12:18:42.763997+00:00",
+      "ended_at": "2026-10-23T12:18:46.794256+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 24
+    },
+    {
+      "evaluation_id": "7157f6b1cf029fce",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The answer evaluates the submitted warehouse monitoring software directly without relying on unstated premises or expanding to an underspecified product.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer evaluates the submitted warehouse monitoring software directly without relying on unstated premises or expanding to an underspecified product.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5673,
+        "candidates_token_count": 39,
+        "thoughts_token_count": null,
+        "total_token_count": 5712
+      },
+      "elapsed_ms": 2572.5,
+      "started_at": "2026-10-23T12:18:46.797761+00:00",
+      "ended_at": "2026-10-23T12:18:49.370315+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 25
+    },
+    {
+      "evaluation_id": "2ab7e1000409f8ae",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The classification directly evaluates the described warehouse system under Annex III, point 4(b) and explicitly identifies relevant missing facts without relying on unstated premises.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The classification directly evaluates the described warehouse system under Annex III, point 4(b) and explicitly identifies relevant missing facts without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5016,
+        "candidates_token_count": 55,
+        "thoughts_token_count": null,
+        "total_token_count": 5071
+      },
+      "elapsed_ms": 2725.2,
+      "started_at": "2026-10-23T12:18:54.462771+00:00",
+      "ended_at": "2026-10-23T12:18:57.188034+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 28
+    },
+    {
+      "evaluation_id": "21fabd94d4747fe4",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The classification does not rely on unstated premises or extend to an underspecified product, correctly addressing the submitted motor insurance system.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The classification does not rely on unstated premises or extend to an underspecified product, correctly addressing the submitted motor insurance system.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6029,
+        "candidates_token_count": 50,
+        "thoughts_token_count": null,
+        "total_token_count": 6079
+      },
+      "elapsed_ms": 2911.6,
+      "started_at": "2026-10-23T12:18:57.193089+00:00",
+      "ended_at": "2026-10-23T12:19:00.104687+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 29
+    },
+    {
+      "evaluation_id": "b8eb327b10e8d7bd",
+      "status": "valid",
+      "raw_response": "{\"verdict\":\"pass\",\"reason\":\"The response assesses the specified motor insurance system directly and states reasonable conditional dependencies under missing facts without relying on unstated premises.\",\"excerpt\":\"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The response assesses the specified motor insurance system directly and states reasonable conditional dependencies under missing facts without relying on unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 6075,
+        "candidates_token_count": 37,
+        "thoughts_token_count": null,
+        "total_token_count": 6112
+      },
+      "elapsed_ms": 2980.0,
+      "started_at": "2026-10-23T12:19:05.795780+00:00",
+      "ended_at": "2026-10-23T12:19:08.775802+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 32
+    },
+    {
+      "evaluation_id": "65770ba5d14ec9df",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly evaluates the described system under Annex III and Article 6 without relying on unstated premises or extending to an underspecified product.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly evaluates the described system under Annex III and Article 6 without relying on unstated premises or extending to an underspecified product.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5701,
+        "candidates_token_count": 53,
+        "thoughts_token_count": null,
+        "total_token_count": 5754
+      },
+      "elapsed_ms": 2176.5,
+      "started_at": "2026-10-23T12:19:08.781216+00:00",
+      "ended_at": "2026-10-23T12:19:10.957764+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 33
+    },
+    {
+      "evaluation_id": "9c7ad5cf9b42e9ab",
+      "status": "valid",
+      "raw_response": "{\"verdict\": \"pass\", \"reason\": \"The provisional classification is based strictly on the provided system description and evidence, explicitly noting missing facts and conditions without unstated premises.\", \"excerpt\": \"\"}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The provisional classification is based strictly on the provided system description and evidence, explicitly noting missing facts and conditions without unstated premises.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 30179,
+        "candidates_token_count": 40,
+        "thoughts_token_count": null,
+        "total_token_count": 30219
+      },
+      "elapsed_ms": 3678.2,
+      "started_at": "2026-10-23T12:19:17.318794+00:00",
+      "ended_at": "2026-10-23T12:19:20.997058+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 36
+    },
+    {
+      "evaluation_id": "85faf537492ca2f2",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly scopes its classification to the submitted detector without relying on unstated premises or extending to the separate tool.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly scopes its classification to the submitted detector without relying on unstated premises or extending to the separate tool.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5812,
+        "candidates_token_count": 48,
+        "thoughts_token_count": null,
+        "total_token_count": 5860
+      },
+      "elapsed_ms": 2372.8,
+      "started_at": "2026-10-23T12:19:21.001565+00:00",
+      "ended_at": "2026-10-23T12:19:23.374388+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 37
+    },
+    {
+      "evaluation_id": "d6323ff114f2071d",
+      "status": "valid",
+      "raw_response": "{\n  \"verdict\": \"pass\",\n  \"reason\": \"The answer properly classifies the described system without relying on unstated premises or improperly extending to underspecified products.\",\n  \"excerpt\": \"\"\n}",
+      "parsed": {
+        "verdict": "pass",
+        "reason": "The answer properly classifies the described system without relying on unstated premises or improperly extending to underspecified products.",
+        "excerpt": ""
+      },
+      "validation_error": null,
+      "usage": {
+        "prompt_token_count": 5943,
+        "candidates_token_count": 46,
+        "thoughts_token_count": null,
+        "total_token_count": 5989
+      },
+      "elapsed_ms": 2814.0,
+      "started_at": "2026-10-23T12:19:29.602407+00:00",
+      "ended_at": "2026-10-23T12:19:32.416438+00:00",
+      "model": "gemini-3.8-flash",
+      "prompt_version": "f1_judge_prompt_v1",
+      "prompt_sha256": "27e571fcc3830852133bed275fd00a272b41f8fabfc2d8d30e7de05e17a5c700",
+      "config_sha256": "358ad788ff2be762aaf5083114bff3cf93db1c08b8df8f15b3b7db76b6defc0c",
+      "generation": {
+        "temperature": 0.0,
+        "max_output_tokens": 400,
+        "candidate_count": 1,
+        "response_mime_type": "application/json",
+        "thinking_budget": 0,
+        "include_thoughts": false,
+        "tools": []
+      },
+      "model_version": "gemini-3.8-flash",
+      "version": "v1",
+      "judge_id": "week4_f1_judge_v1",
+      "seq": 40
+    }
+  ]
+}
