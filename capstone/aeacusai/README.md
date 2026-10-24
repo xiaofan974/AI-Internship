@@ -89,7 +89,29 @@ From `capstone/aeacusai/`:
 
 Local URL: `http://127.0.0.1:8501/`
 
-Model calls start only after **Run assessment**. Load the recruitment example, then run once. The visible trace is THINK / ACT / OBSERVE / FINAL. Evidence expanders show complete returned source text, labels, record IDs, and source URLs.
+The UI opens on **Assessment**. Model calls start only after **Run assessment**. Load the recruitment example, then run once. The visible trace is THINK / ACT / OBSERVE / FINAL. Evidence expanders show complete returned source text, labels, record IDs, and source URLs. Opening the app does not write project memory.
+
+---
+
+## Project memory
+
+The **Project memory** workspace stores user-declared context for a private workspace. It is not statutory evidence, not a classification, and not human approval. The model cannot write memory or approve a review.
+
+When a workspace is connected, **Run assessment** freshly retrieves unexpired facts and supplies the three allowed fields to the primary ADK preview as structured user-declared context. The no-workspace path is unchanged. `project_name` is untrusted data, not instructions. `declared_actor_role` is a declaration, not verified legal status. Current explicit form preferences override stored values for that run only and are shown as conflicts; stored facts are not overwritten. A French language preference applies to explanatory prose while the English timing headings and original statutory quotations stay in place. Mandatory retrieval, execution limits, and approval controls are unchanged. Unavailable memory is disclosed; cached recall is never used as a fallback. Switching or disconnecting a workspace clears assessment and pending-review state for that session.
+
+1. **What is stored.** Only `project_name`, `declared_actor_role` (`provider` / `deployer` / `both` / `unknown`), and `preferred_response_language` (`English` / `French`). Source is always `user_declared`. Credentials, tool dumps, legal conclusions, and approvals are rejected.
+
+2. **When it is written.** Only after an explicit UI confirmation and **Save project memory**. The application supplies `application_confirmed_user`. Model answers, retrieved documents, and the review register cannot write memory.
+
+3. **Where it is stored.** External Postgres (`AEACUS_MEMORY_DATABASE_URL`, schema `aeacus_memory`). If that store is unconfigured or unavailable, the UI returns `memory_unavailable`. Streamlit session state and local files are not a substitute.
+
+4. **How it is retrieved.** **Recall saved memory** reads Postgres for the connected workspace. The UI is written so a later session that enters only the private workspace code can recall the same facts. Clearing session state in the same tab is not a new process. **Run assessment** performs its own fresh `list_facts` read and does not reuse the recalled session list.
+
+5. **When it is forgotten.** Explicit **Delete saved field** removes that field, including superseded history. Active facts also stop being returned once `expires_at` has passed (default 180 days, `AEACUS_MEMORY_TTL_DAYS`). Expiry is enforced at read time. There is no scheduled job that physically deletes expired rows.
+
+The workspace code is a cryptographically random private credential. Keep it privately. Do not put it in URLs, logs, traces, reports, or screenshots.
+
+**Verified, process-level only.** Two separate Python processes wrote and recalled the three facts on live Postgres. A later two-process run supplied those facts to one assessment through the same integration path as Streamlit **Run assessment**. Isolated browser Session A / Session B and any application deployment were **not** performed. Details: `reports/week5_memory_postgres_checkpoint.md`, `reports/week5_memory_ui.md`, `reports/week5_memory_agent_integration.md`.
 
 CLI equivalent (also live Gemini, optional):
 

@@ -87,6 +87,17 @@ def _load_local_google_api_key() -> None:
 _load_local_google_api_key()
 
 from aeacus_agent.preview_agent import aeacus_preview_agent
+from aeacus_agent.project_memory import (
+    ACTOR_ROLES,
+    ALLOWED_FIELDS,
+    ALLOWED_WRITE_CHANNEL,
+    LANGUAGES,
+    delete_fact,
+    generate_workspace_code,
+    list_facts,
+    open_memory_store,
+    replace_fact,
+)
 from aeacus_agent.review_register import (
     DEFAULT_DB_PATH,
     PENDING_STATUS,
@@ -525,6 +536,19 @@ def _init_session_state() -> None:
         "eval_recompute_error": None,
         "eval_judge_fn_split": "validation",
         "eval_judge_fn_version": "v1",
+        "memory_workspace_code": "",
+        "memory_recalled_facts": [],
+        "memory_last_results": [],
+        "memory_last_action": None,
+        "memory_run_context": None,
+        "memory_role_explicit": False,
+        "memory_language_explicit": False,
+        "memory_name_explicit": False,
+        "memory_explicit_project_name": "",
+        "memory_explicit_role": "",
+        "memory_explicit_language": "",
+        "memory_widgets_ready": False,
+        "memory_run_snapshot": None,
     }
     for key, value in defaults.items():
         if key not in st.session_state:
@@ -725,8 +749,9 @@ def _execute_pending_run() -> None:
             _render_trace(st.session_state.trace)
 
     runner = _selected_runner()
+    model_input = _prepare_assessment_user_message(description)
     try:
-        result = runner(description, on_event)
+        result = runner(model_input, on_event)
     except Exception as exc:
         failure = (
             f"[FAILED] Provider/execution failure ({type(exc).__name__}): "
@@ -776,6 +801,7 @@ def _execute_pending_run() -> None:
             system_description=description,
             assessment=delivered,
             evidence=result.get("evidence") or [],
+            memory_used=st.session_state.get("memory_run_snapshot"),
         )
         st.session_state.pending_review = pending
         on_event(
@@ -815,6 +841,384 @@ def _execute_pending_run() -> None:
     )
 
 
+MEMORY_WORKSPACE_CACHE_KEYS = (
+    "memory_workspace_code",
+    "memory_recalled_facts",
+    "memory_last_results",
+    "memory_last_action",
+)
+
+
+def _memory_store():
+    injected = st.session_state.get("memory_store")
+    if injected is not None:
+        return injected
+    return open_memory_store()
+
+
+def _clear_memory_workspace_cache() -> None:
+    """Drop workspace-bound recall and write results. Do not treat as durable memory."""
+    st.session_state.memory_workspace_code = ""
+    st.session_state.memory_recalled_facts = []
+    st.session_state.memory_last_results = []
+    st.session_state.memory_last_action = None
+    st.session_state.memory_run_context = None
+    st.session_state.memory_role_explicit = False
+    st.session_state.memory_language_explicit = False
+    st.session_state.memory_name_explicit = False
+    st.session_state.memory_explicit_project_name = ""
+    st.session_state.memory_explicit_role = ""
+    st.session_state.memory_explicit_language = ""
+    st.session_state.memory_widgets_ready = False
+    st.session_state.memory_run_snapshot = None
+
+
+def _clear_workspace_bound_assessment() -> None:
+    _clear_outputs()
+    st.session_state.memory_run_context = None
+    st.session_state.memory_run_snapshot = None
+    st.session_state.review_session_id = str(uuid.uuid4())
+
+
+def _create_memory_workspace() -> None:
+    _clear_workspace_bound_assessment()
+    _clear_memory_workspace_cache()
+    code = generate_workspace_code()
+    st.session_state.memory_workspace_entry = code
+    st.session_state.memory_workspace_code = code
+
+
+def _connect_memory_workspace() -> None:
+    entered = str(st.session_state.get("memory_workspace_entry") or "").strip()
+    previous = str(st.session_state.get("memory_workspace_code") or "").strip()
+    if entered != previous:
+        _clear_workspace_bound_assessment()
+        st.session_state.memory_recalled_facts = []
+        st.session_state.memory_last_results = []
+        st.session_state.memory_last_action = None
+        st.session_state.memory_role_explicit = False
+        st.session_state.memory_language_explicit = False
+        st.session_state.memory_name_explicit = False
+        st.session_state.memory_explicit_project_name = ""
+        st.session_state.memory_explicit_role = ""
+        st.session_state.memory_explicit_language = ""
+        st.session_state.memory_widgets_ready = False
+        st.session_state.memory_run_snapshot = None
+    st.session_state.memory_workspace_code = entered
+
+
+def _disconnect_memory_workspace() -> None:
+    _clear_workspace_bound_assessment()
+    _clear_memory_workspace_cache()
+    st.session_state.memory_workspace_entry = ""
+
+
+def _memory_widgets_accept_overrides() -> bool:
+    return bool(st.session_state.get("memory_widgets_ready"))
+
+
+def _mark_memory_name_explicit() -> None:
+    if not _memory_widgets_accept_overrides():
+        return
+    st.session_state.memory_name_explicit = True
+    st.session_state.memory_explicit_project_name = str(
+        st.session_state.get("memory_project_name") or ""
+    ).strip()
+
+
+def _mark_memory_role_explicit() -> None:
+    if not _memory_widgets_accept_overrides():
+        return
+    st.session_state.memory_role_explicit = True
+    st.session_state.memory_explicit_role = str(
+        st.session_state.get("memory_actor_role") or ""
+    )
+
+
+def _mark_memory_language_explicit() -> None:
+    if not _memory_widgets_accept_overrides():
+        return
+    st.session_state.memory_language_explicit = True
+    st.session_state.memory_explicit_language = str(
+        st.session_state.get("memory_language") or ""
+    )
+
+
+def _explicit_memory_preferences() -> dict[str, str]:
+    explicit: dict[str, str] = {}
+    if st.session_state.get("memory_name_explicit"):
+        name = str(st.session_state.get("memory_explicit_project_name") or "").strip()
+        if name:
+            explicit["project_name"] = name
+    if st.session_state.get("memory_role_explicit"):
+        role = str(st.session_state.get("memory_explicit_role") or "").strip()
+        if role:
+            explicit["declared_actor_role"] = role
+    if st.session_state.get("memory_language_explicit"):
+        language = str(st.session_state.get("memory_explicit_language") or "").strip()
+        if language:
+            explicit["preferred_response_language"] = language
+    return explicit
+
+
+def _prepare_assessment_user_message(system_description: str) -> str:
+    from aeacus_agent.memory_context import (
+        prepare_assessment_input,
+        public_memory_run_view,
+    )
+
+    message, context, snapshot = prepare_assessment_input(
+        system_description,
+        store=_memory_store(),
+        workspace_code=st.session_state.get("memory_workspace_code"),
+        explicit=_explicit_memory_preferences(),
+    )
+    st.session_state.memory_run_context = public_memory_run_view(context)
+    st.session_state.memory_run_snapshot = snapshot
+    return message
+
+
+def _result_payload(result) -> dict:
+    payload = result.as_dict() if hasattr(result, "as_dict") else dict(result)
+    payload.pop("value", None)
+    return {
+        "ok": payload.get("ok"),
+        "status": payload.get("status"),
+        "reason": payload.get("reason"),
+        "field": payload.get("field"),
+        "durable": payload.get("durable"),
+        "mocked": payload.get("mocked"),
+        "unavailable": payload.get("unavailable"),
+        "fact_count": len(payload.get("facts") or []),
+    }
+
+
+def _save_project_memory() -> None:
+    store = _memory_store()
+    code = str(st.session_state.get("memory_workspace_code") or "")
+    confirmed = st.session_state.get("memory_confirm_save") is True
+    pairs = (
+        ("project_name", st.session_state.get("memory_project_name")),
+        ("declared_actor_role", st.session_state.get("memory_actor_role")),
+        ("preferred_response_language", st.session_state.get("memory_language")),
+    )
+    results = []
+    for field, value in pairs:
+        if not str(value or "").strip():
+            continue
+        result = replace_fact(
+            store,
+            workspace_code=code,
+            field=field,
+            value=str(value),
+            explicit_user_confirmation=confirmed,
+            channel=ALLOWED_WRITE_CHANNEL,
+        )
+        results.append(_result_payload(result))
+    st.session_state.memory_last_action = "save"
+    st.session_state.memory_last_results = results
+
+
+def _recall_project_memory() -> None:
+    store = _memory_store()
+    code = str(st.session_state.get("memory_workspace_code") or "")
+    result = list_facts(store, workspace_code=code)
+    st.session_state.memory_last_action = "recall"
+    st.session_state.memory_last_results = [_result_payload(result)]
+    if result.ok and not result.unavailable:
+        st.session_state.memory_recalled_facts = list(result.facts)
+    else:
+        st.session_state.memory_recalled_facts = []
+
+
+def _delete_project_memory_field() -> None:
+    store = _memory_store()
+    code = str(st.session_state.get("memory_workspace_code") or "")
+    confirmed = st.session_state.get("memory_confirm_delete") is True
+    field = str(st.session_state.get("memory_delete_field") or "")
+    result = delete_fact(
+        store,
+        workspace_code=code,
+        field=field,
+        explicit_user_confirmation=confirmed,
+        channel=ALLOWED_WRITE_CHANNEL,
+    )
+    st.session_state.memory_last_action = "delete"
+    st.session_state.memory_last_results = [_result_payload(result)]
+    st.session_state.memory_recalled_facts = []
+
+
+def _render_memory_backend_results() -> None:
+    action = st.session_state.get("memory_last_action")
+    results = st.session_state.get("memory_last_results") or []
+    if not action:
+        return
+    st.markdown("**Backend result**")
+    if not results:
+        st.info("No fields were submitted.")
+        return
+    for item in results:
+        status = item.get("status") or "unknown"
+        reason = item.get("reason")
+        field = item.get("field")
+        label = f"{field}: {status}" if field else str(status)
+        if item.get("unavailable") or status == "memory_unavailable":
+            st.error(f"{label} — memory is unavailable. Session state is not a substitute.")
+        elif item.get("ok"):
+            extra = " · not durable (mocked store)" if item.get("mocked") else ""
+            if status == "unchanged":
+                st.info(f"{label} — identical confirmed value left in place.{extra}")
+            else:
+                st.success(f"{label}{extra}")
+        else:
+            st.warning(f"{label}" + (f" ({reason})" if reason else ""))
+
+
+def _render_recalled_facts() -> None:
+    facts = st.session_state.get("memory_recalled_facts") or []
+    st.markdown("**Recalled from Postgres**")
+    st.caption(
+        "This list is filled only by Recall saved memory. Draft form values "
+        "and Streamlit session state are not treated as stored facts."
+    )
+    if not facts:
+        st.caption("No recalled facts in this workspace.")
+        return
+    for fact in facts:
+        st.write(f"**{fact.get('field')}** — {fact.get('value')}")
+        st.caption(
+            f"source: {fact.get('source') or 'user_declared'} · "
+            f"saved: {fact.get('created_at') or 'unknown'} · "
+            f"expires: {fact.get('expires_at') or 'unknown'}"
+        )
+
+
+def _render_project_memory_workspace() -> None:
+    store = _memory_store()
+    connected = bool(str(st.session_state.get("memory_workspace_code") or "").strip())
+    with st.container(border=True):
+        st.subheader("Project memory")
+        st.caption(
+            "User-declared project context only. Memory is not statutory evidence, "
+            "not a classification, and not human approval. The assessment model "
+            "does not read or write these fields yet."
+        )
+        if getattr(store, "durable", False) is False:
+            reason = getattr(store, "reason", "unconfigured")
+            st.warning(
+                f"Durable memory is unavailable ({reason}). "
+                "Nothing is written to session state or local files as a substitute."
+            )
+        else:
+            st.caption("Writes target the configured Postgres store when you confirm a save.")
+
+    with st.container(border=True):
+        st.markdown("**Workspace access**")
+        st.caption(
+            "A private workspace code grants access to that workspace's facts. "
+            "Keep it privately. Do not put it in URLs, logs, traces, reports, or screenshots. "
+            "Create a new cryptographically random code, or enter an existing one."
+        )
+        st.text_input(
+            "Workspace code",
+            key="memory_workspace_entry",
+            type="password",
+        )
+        create_col, use_col, leave_col = st.columns(3)
+        with create_col:
+            st.button(
+                "Create private workspace",
+                key="create_memory_workspace",
+                on_click=_create_memory_workspace,
+            )
+        with use_col:
+            st.button(
+                "Use this workspace",
+                key="use_memory_workspace",
+                on_click=_connect_memory_workspace,
+            )
+        with leave_col:
+            st.button(
+                "Disconnect workspace",
+                key="disconnect_memory_workspace",
+                on_click=_disconnect_memory_workspace,
+            )
+        if connected:
+            st.caption("Workspace connected. Recalled facts stay isolated to this code.")
+        else:
+            st.caption("No workspace connected.")
+
+    with st.container(border=True):
+        st.markdown("**Confirmed writes**")
+        st.text_input(
+            "Project name",
+            key="memory_project_name",
+            on_change=_mark_memory_name_explicit,
+        )
+        st.selectbox(
+            "Declared actor role",
+            options=list(ACTOR_ROLES),
+            key="memory_actor_role",
+            on_change=_mark_memory_role_explicit,
+        )
+        st.selectbox(
+            "Preferred response language",
+            options=list(LANGUAGES),
+            key="memory_language",
+            on_change=_mark_memory_language_explicit,
+        )
+        st.checkbox(
+            "I confirm these values should be stored as user-declared project memory",
+            key="memory_confirm_save",
+        )
+        save_clicked = st.button(
+            "Save project memory",
+            key="save_project_memory",
+            type="primary",
+            disabled=not connected,
+        )
+        if save_clicked:
+            _save_project_memory()
+        delete_col, confirm_col = st.columns([1.4, 1.0])
+        with delete_col:
+            st.selectbox(
+                "Field to delete",
+                options=list(ALLOWED_FIELDS),
+                key="memory_delete_field",
+            )
+        with confirm_col:
+            st.checkbox(
+                "Confirm deletion",
+                key="memory_confirm_delete",
+            )
+        delete_clicked = st.button(
+            "Delete saved field",
+            key="delete_memory_field",
+            disabled=not connected,
+        )
+        if delete_clicked:
+            _delete_project_memory_field()
+
+    with st.container(border=True):
+        st.markdown("**Cross-session recall**")
+        st.caption(
+            "Recall saved memory reads Postgres for this workspace. "
+            "Clearing this browser tab is not a new process. For a demo, "
+            "save in one session, then open a separate browser session, "
+            "enter only the workspace code, and recall."
+        )
+        recall_clicked = st.button(
+            "Recall saved memory",
+            key="recall_saved_memory",
+            disabled=not connected,
+        )
+        if recall_clicked:
+            _recall_project_memory()
+        _render_memory_backend_results()
+        _render_recalled_facts()
+    st.session_state.memory_widgets_ready = True
+
+
 def _render_header() -> None:
     title_col, meta_col = st.columns([2.2, 1.3], vertical_alignment="bottom")
     with title_col:
@@ -832,7 +1236,7 @@ def _render_header() -> None:
         )
     st.radio(
         "Workspace",
-        options=["Assessment", "Week 4 evaluations"],
+        options=["Assessment", "Week 4 evaluations", "Project memory"],
         horizontal=True,
         key="ui_view",
     )
@@ -942,6 +1346,40 @@ def _render_source_panel() -> None:
     if st.session_state.raw_answer:
         with st.expander("Raw answer and full identifiers", expanded=False):
             st.text(st.session_state.raw_answer)
+
+
+def _render_memory_run_disclosure() -> None:
+    connected = bool(str(st.session_state.get("memory_workspace_code") or "").strip())
+    ctx = st.session_state.get("memory_run_context")
+    if connected and not ctx:
+        st.caption(
+            "A workspace is connected. Unexpired user-declared memory will be "
+            "retrieved freshly when you run an assessment. Cached recall is not used."
+        )
+    if not ctx:
+        return
+    if ctx.get("unavailable"):
+        st.warning(
+            "Project memory was unavailable for this run "
+            f"({ctx.get('reason') or 'memory_unavailable'}). "
+            "No cached facts were used."
+        )
+        return
+    if ctx.get("conflicts"):
+        st.warning(
+            "This run used current explicit preferences that differ from stored "
+            "memory. Stored facts were not overwritten."
+        )
+        for item in ctx.get("conflicts") or []:
+            st.caption(
+                f"{item.get('field')}: stored {item.get('stored')} · "
+                f"this run {item.get('used')}"
+            )
+    elif ctx.get("effective"):
+        st.info(
+            "This run included freshly retrieved user-declared project context. "
+            "Memory is not statutory evidence and does not replace retrieval."
+        )
 
 
 def _render_assessment_workspace() -> None:
@@ -1609,6 +2047,10 @@ def main() -> None:
         _render_evaluations_view()
         return
 
+    if st.session_state.get("ui_view") == "Project memory":
+        _render_project_memory_workspace()
+        return
+
     if not key_configured and not using_test_runner:
         st.warning(
             "GOOGLE_API_KEY is not configured. The assessment cannot run until "
@@ -1618,6 +2060,7 @@ def main() -> None:
     run_clicked = _render_system_description(
         running=running, can_submit=can_submit
     )
+    _render_memory_run_disclosure()
 
     if run_clicked and not running:
         _clear_outputs()
@@ -1710,7 +2153,27 @@ def _render_bound_artifact(pending: dict, *, expanded: bool) -> None:
     with st.expander("Exact draft and bound evidence", expanded=expanded):
         st.caption(f"Run ID: {artifact.get('run_id')}")
         st.caption("This is the exact text bound to the pending review digest.")
+        st.markdown("**Original input**")
+        st.text(artifact.get("system_description") or "")
+        st.markdown("**Delivered answer**")
         st.markdown(artifact.get("assessment") or "", unsafe_allow_html=False)
+        memory_used = artifact.get("memory_used")
+        st.markdown("**User-declared memory used for this assessment**")
+        if not memory_used:
+            st.caption("No workspace memory was bound to this draft.")
+        else:
+            st.caption(
+                "Immutable snapshot from the fresh read used for this run. "
+                "Approval does not reload memory."
+            )
+            for item in memory_used.get("fields") or []:
+                st.write(f"**{item.get('field')}** — {item.get('value')}")
+                st.caption(
+                    f"source: {item.get('source') or 'user_declared'} · "
+                    f"saved: {item.get('created_at') or 'unknown'} · "
+                    f"expires: {item.get('expires_at') or 'unknown'} · "
+                    f"origin: {item.get('origin') or 'stored'}"
+                )
         bound = artifact.get("evidence") or []
         if not bound:
             st.caption("No evidence identities were bound to this draft.")

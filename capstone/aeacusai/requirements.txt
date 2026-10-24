@@ -3,6 +3,7 @@ google-genai==2.32.0
 mcp==1.25.0
 openai==3.36.1
 pinecone==10.1.0
+psycopg[binary]==3.3.6
 pydantic==2.14.1
 python-dotenv==1.2.4
 streamlit==1.66.1

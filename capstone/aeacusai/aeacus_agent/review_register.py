@@ -70,13 +70,17 @@ def canonical_artifact_payload(
     system_description: str,
     assessment: str,
     evidence: list[dict[str, Any]] | None,
+    memory_used: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    return {
+    payload = {
         "run_id": run_id,
         "system_description": system_description,
         "assessment": assessment,
         "evidence": evidence_binding(evidence),
     }
+    if memory_used is not None:
+        payload["memory_used"] = memory_used
+    return payload
 
 
 def digest_payload(payload: dict[str, Any]) -> str:
@@ -95,12 +99,14 @@ def build_review_artifact(
     system_description: str,
     assessment: str,
     evidence: list[dict[str, Any]] | None,
+    memory_used: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     payload = canonical_artifact_payload(
         run_id=run_id,
         system_description=system_description,
         assessment=assessment,
         evidence=evidence,
+        memory_used=memory_used,
     )
     artifact = dict(payload)
     artifact["content_digest"] = digest_payload(payload)
@@ -114,6 +120,7 @@ def create_pending_review(
     assessment: str,
     evidence: list[dict[str, Any]] | None,
     run_id: str | None = None,
+    memory_used: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Session-local pending state. Not stored in the register."""
     artifact = build_review_artifact(
@@ -121,6 +128,7 @@ def create_pending_review(
         system_description=system_description,
         assessment=assessment,
         evidence=evidence,
+        memory_used=memory_used,
     )
     return {
         "session_id": session_id,
@@ -151,6 +159,7 @@ def artifact_matches(
         system_description=system_description,
         assessment=assessment,
         evidence=evidence,
+        memory_used=artifact.get("memory_used"),
     )
     return current["content_digest"] == pending.get("digest")
 
