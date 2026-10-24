@@ -1100,8 +1100,9 @@ def _render_project_memory_workspace() -> None:
         st.subheader("Project memory")
         st.caption(
             "User-declared project context only. Memory is not statutory evidence, "
-            "not a classification, and not human approval. The assessment model "
-            "does not read or write these fields yet."
+            "not a classification, and not human approval. When a workspace is "
+            "connected, Run assessment supplies these facts as user-declared "
+            "context. Only a confirmed Save project memory writes memory."
         )
         if getattr(store, "durable", False) is False:
             reason = getattr(store, "reason", "unconfigured")

@@ -111,7 +111,7 @@ When a workspace is connected, **Run assessment** freshly retrieves unexpired fa
 
 The workspace code is a cryptographically random private credential. Keep it privately. Do not put it in URLs, logs, traces, reports, or screenshots.
 
-**Verified, process-level only.** Two separate Python processes wrote and recalled the three facts on live Postgres. A later two-process run supplied those facts to one assessment through the same integration path as Streamlit **Run assessment**. Isolated browser Session A / Session B and any application deployment were **not** performed. Details: `reports/week5_memory_postgres_checkpoint.md`, `reports/week5_memory_ui.md`, `reports/week5_memory_agent_integration.md`.
+**Verified.** Two separate Python processes wrote and recalled the three facts on live Postgres. A later two-process run supplied those facts to one assessment through the same integration path as Streamlit **Run assessment**. A later public-browser demonstration on `https://aeacusai-demo.onrender.com` saved facts in a normal browser, then recalled them in a fresh Chrome Guest session using only the workspace code; the original saved timestamps matched. Details: `reports/week5_memory_postgres_checkpoint.md`, `reports/week5_memory_ui.md`, `reports/week5_memory_agent_integration.md`, `reports/week5_public_memory_demo.md`.
 
 CLI equivalent (also live Gemini, optional):
 
